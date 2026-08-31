@@ -1,0 +1,50 @@
+{
+  "schema_version": "experiment-management/change-manifest/v1",
+  "change_id": "CHG-20260831-002-adopt-virtual-so101-model",
+  "title": "Adopt a provisional SO-101 virtual model for research only",
+  "started_at": "2026-08-31T23:56:00+09:00",
+  "ended_at": "2026-08-31T23:56:00+09:00",
+  "code": {
+    "commit": "bd8f306369f95340c0183ff4df26c8f2d9cc122d",
+    "traceable": true,
+    "dirty_at_start": false
+  },
+  "scope": {
+    "summary": "Record the project owner's limited adoption of the Menagerie SO-101 model for detachable virtual research, while explicitly excluding any hardware or robot-capability adoption.",
+    "paths": [
+      "docs/decisions/DEC-20260831-001-adopt-virtual-so101-model.md",
+      "docs/status.md",
+      "changes/CHG-20260831-002-adopt-virtual-so101-model.json"
+    ]
+  },
+  "verification": [
+    {
+      "kind": "formal-run-manifest",
+      "command": ["py", "-3", "-m", "experiment_management", "validate", "research/runs/EXP-20260831-004-so101-mujoco-observation-preflight.json"],
+      "status": "passed"
+    },
+    {
+      "kind": "run-record-pair",
+      "command": ["py", "-3", "-m", "experiment_management", "validate-pair", ".", "research/experiments/EXP-20260831-004-so101-mujoco-observation-preflight.record.json"],
+      "status": "passed"
+    },
+    {
+      "kind": "change-manifest",
+      "command": ["py", "-3", "-m", "experiment_management", "validate-change", "changes/CHG-20260831-002-adopt-virtual-so101-model.json"],
+      "status": "passed"
+    }
+  ],
+  "risk": {
+    "level": "low",
+    "rollback": "Stop using the candidate model for new research runs and create a new decision; retain this decision and linked formal run unchanged."
+  },
+  "links": {
+    "run_ids": ["EXP-20260831-004-so101-mujoco-observation-preflight"]
+  },
+  "review": {
+    "status": "approved",
+    "scope": ["virtual research model source only", "no hardware or capability adoption"],
+    "decision": "Approved by the project owner in the 2026-08-31 conversation.",
+    "reviewed_by": "project owner"
+  }
+}
