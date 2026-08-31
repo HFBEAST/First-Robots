@@ -1,0 +1,112 @@
+{
+  "artifacts": [
+    {
+      "path": "research/artifacts/EXP-20260901-002-virtual-wrist-contact-gate/config.json",
+      "sha256": "sha256:62987c482acb0caf291ff23527585aabc77435923b85063bbe94adc76911d773"
+    },
+    {
+      "path": "research/artifacts/EXP-20260901-002-virtual-wrist-contact-gate/contact-coverage.json",
+      "sha256": "sha256:ecf0a918d4427db21d154c3c4dd44292ec450fa4a0cf31fe90b341d8eac081d2"
+    },
+    {
+      "path": "research/reports/EXP-20260901-002-virtual-wrist-contact-gate.result.json",
+      "sha256": "sha256:ddc24e3c1b0a40f56b2b2c587f10e6958e841e434dab92975507891d6de6e549"
+    },
+    {
+      "path": "research/experiments/EXP-20260901-002-virtual-wrist-contact-gate.record.json",
+      "sha256": "sha256:cf1b98255edf7b12de582c7694aea75b61802ecb325886ed5c78388f7435d756"
+    }
+  ],
+  "baseline": {
+    "kind": "comparison",
+    "reference": "EXP-20260901-001 records visibility without a contact gate."
+  },
+  "code": {
+    "commit": "d30aeac9853adbceee8b6bd218cac52d07185a8d",
+    "dirty_at_start": false,
+    "repository": "H:/0_program/My_action/First-Robots",
+    "traceable": true
+  },
+  "ended_at": "2026-08-31T23:57:19.602063Z",
+  "execution": {
+    "command": [
+      "H:\\0_program\\My_action\\First-Robots\\research\\.venvs\\mrbtp-demo-py312\\Scripts\\python.exe",
+      "research/experiments/run_virtual_wrist_contact_gate.py"
+    ],
+    "parameters": {
+      "actuation": "disabled",
+      "contact_gate": "MuJoCo static contact count equals zero",
+      "cup_seeds": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "joint_limits": "candidate MJCF limits",
+      "pose_sample_seed": 11,
+      "pose_samples": 256,
+      "workspace_radius": 0.23917871793616743
+    },
+    "script": "research/experiments/run_virtual_wrist_contact_gate.py"
+  },
+  "inputs": [
+    {
+      "kind": "configuration",
+      "path": "research/configs/EXP-20260901-002-virtual-wrist-contact-gate.json",
+      "sha256": "sha256:e53f245af1cdaa12b75648140bc4337bbf95eebc5bc82c77053420bea924ef83"
+    },
+    {
+      "kind": "prior_pose_table",
+      "path": "research/artifacts/EXP-20260901-001-virtual-wrist-coverage/coverage.json",
+      "sha256": "sha256:cb0baafb10a8f15b1a0e589264bad39a3c82bc1d56eeb0d0339ed1d321946b1b"
+    },
+    {
+      "kind": "model",
+      "path": "research/sources/mujoco_menagerie_robotstudio_so101/robotstudio_so101/scene.xml",
+      "revision": "da76818e269b82289eba39808e2fb91d679d6994",
+      "sha256": "sha256:65496b0061ca3ddd92b58fe09bd30f6a4a443f137cc42cf8975d5cff23030bfd"
+    }
+  ],
+  "level": "formal",
+  "objective": "Record candidate-model static contacts alongside virtual wrist visibility without asserting physical safety.",
+  "results": {
+    "criteria": "All source poses and cup positions were recorded with MuJoCo static contacts and virtual visibility; no safety claim.",
+    "duration_seconds": 0.352036,
+    "metrics": [
+      {
+        "name": "samples",
+        "unit": "poses",
+        "value": 257
+      },
+      {
+        "name": "zero_contact_all_cups_samples",
+        "unit": "poses",
+        "value": 143
+      },
+      {
+        "name": "best_zero_contact_visible_cups",
+        "unit": "cups",
+        "value": 8
+      }
+    ],
+    "passed": true
+  },
+  "review": {
+    "note": "Candidate-model static gate only.",
+    "status": "pending_human_review"
+  },
+  "run_id": "EXP-20260901-002-virtual-wrist-contact-gate",
+  "runtime": {
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.12.11",
+    "random_seed": 11
+  },
+  "schema_version": "experiment-management/run-manifest/v1",
+  "started_at": "2026-08-31T23:57:19.249985Z"
+}

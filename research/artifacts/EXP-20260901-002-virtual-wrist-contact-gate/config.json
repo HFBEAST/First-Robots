@@ -1,0 +1,34 @@
+{
+  "experiment_id": "EXP-20260901-002-virtual-wrist-contact-gate",
+  "model": {
+    "license": "Apache-2.0",
+    "repository_revision": "da76818e269b82289eba39808e2fb91d679d6994"
+  },
+  "non_claims": [
+    "Zero MuJoCo contacts under this candidate model is not physical collision safety, a safe pose, reachability, load capacity, or real-camera validity.",
+    "No motion, IK, trajectory, torque, hardware command, or multi-robot coordination is performed."
+  ],
+  "protocol": {
+    "actuation": "disabled",
+    "contact_gate": "MuJoCo static contact count equals zero",
+    "cup_seeds": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "joint_limits": "candidate MJCF limits",
+    "pose_sample_seed": 11,
+    "pose_samples": 256,
+    "workspace_radius": 0.23917871793616743
+  },
+  "schema_version": "first-robots/research-config/v1",
+  "source_run": "EXP-20260901-001-virtual-wrist-coverage",
+  "status": "planned_not_executed"
+}

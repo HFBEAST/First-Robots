@@ -1,0 +1,12 @@
+{
+  "kind": "formal_virtual_static_contact_gate",
+  "result": {
+    "path": "research/reports/EXP-20260901-002-virtual-wrist-contact-gate.result.json",
+    "sha256": "sha256:ddc24e3c1b0a40f56b2b2c587f10e6958e841e434dab92975507891d6de6e549"
+  },
+  "review": {
+    "status": "pending_human_review"
+  },
+  "run_id": "EXP-20260901-002-virtual-wrist-contact-gate",
+  "schema_version": "first-robots/experiment-record/v1"
+}

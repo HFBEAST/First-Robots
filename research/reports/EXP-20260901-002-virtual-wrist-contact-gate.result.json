@@ -1,0 +1,19 @@
+{
+  "limits": [
+    "Zero MuJoCo contacts under this candidate model is not physical collision safety, a safe pose, reachability, load capacity, or real-camera validity.",
+    "No motion, IK, trajectory, torque, hardware command, or multi-robot coordination is performed."
+  ],
+  "observations": {
+    "best_zero_contact_sample_index": 166,
+    "best_zero_contact_visible_cups": 8,
+    "samples": 257,
+    "zero_contact_all_cups_samples": 143
+  },
+  "review": {
+    "adopted": false,
+    "status": "pending_human_review"
+  },
+  "run_id": "EXP-20260901-002-virtual-wrist-contact-gate",
+  "schema_version": "first-robots/research-result/v1",
+  "status": "observed_pending_human_review"
+}
