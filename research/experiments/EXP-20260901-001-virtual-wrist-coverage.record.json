@@ -1,0 +1,12 @@
+{
+  "kind": "formal_virtual_static_coverage_scan",
+  "result": {
+    "path": "research/reports/EXP-20260901-001-virtual-wrist-coverage.result.json",
+    "sha256": "sha256:9811879487ff3343fa2229ea0b4f479d33aa43ced98a3e2ff5a6ff239411cfed"
+  },
+  "review": {
+    "status": "pending_human_review"
+  },
+  "run_id": "EXP-20260901-001-virtual-wrist-coverage",
+  "schema_version": "first-robots/experiment-record/v1"
+}

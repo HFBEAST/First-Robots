@@ -1,0 +1,109 @@
+{
+  "artifacts": [
+    {
+      "path": "research/artifacts/EXP-20260901-001-virtual-wrist-coverage/best-pose-seed-00-wrist-rgb.png",
+      "sha256": "sha256:39f3595d3b63b1f1fd2b6ed6ac24fa1c5dd28c1788c13cdf9f87087f52d63526"
+    },
+    {
+      "path": "research/artifacts/EXP-20260901-001-virtual-wrist-coverage/config.json",
+      "sha256": "sha256:17be9e60a67fdf4d4d8b39935d241a1ef3322b09c99fd01644e895dcf24ee5e7"
+    },
+    {
+      "path": "research/artifacts/EXP-20260901-001-virtual-wrist-coverage/coverage.json",
+      "sha256": "sha256:cb0baafb10a8f15b1a0e589264bad39a3c82bc1d56eeb0d0339ed1d321946b1b"
+    },
+    {
+      "path": "research/reports/EXP-20260901-001-virtual-wrist-coverage.result.json",
+      "sha256": "sha256:9811879487ff3343fa2229ea0b4f479d33aa43ced98a3e2ff5a6ff239411cfed"
+    },
+    {
+      "path": "research/experiments/EXP-20260901-001-virtual-wrist-coverage.record.json",
+      "sha256": "sha256:8c58c065549961df2fee7a265bba882d6b07ce6bb74a922469acac392ca0c7b4"
+    }
+  ],
+  "baseline": {
+    "kind": "comparison",
+    "reference": "Default pose result from EXP-20260831-004 was 0/10."
+  },
+  "code": {
+    "commit": "b8bdaf253a6e8f625d405055c9f0da7023f6f504",
+    "dirty_at_start": false,
+    "repository": "H:/0_program/My_action/First-Robots",
+    "traceable": true
+  },
+  "ended_at": "2026-08-31T15:04:39.951676Z",
+  "execution": {
+    "command": [
+      "H:\\0_program\\My_action\\First-Robots\\research\\.venvs\\mrbtp-demo-py312\\Scripts\\python.exe",
+      "research/experiments/run_virtual_wrist_coverage.py"
+    ],
+    "parameters": {
+      "actuation": "disabled",
+      "cup_seeds": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "pose_sample_seed": 11,
+      "pose_samples": 256,
+      "workspace_radius": 0.23917871793616743
+    },
+    "script": "research/experiments/run_virtual_wrist_coverage.py"
+  },
+  "inputs": [
+    {
+      "kind": "configuration",
+      "path": "research/configs/EXP-20260901-001-virtual-wrist-coverage.json",
+      "sha256": "sha256:2cec2795acfb21ac8a94da8b84bfcf879d2c50bf98fe169a1ca2030e723fb3ff"
+    },
+    {
+      "kind": "model",
+      "path": "research/sources/mujoco_menagerie_robotstudio_so101/robotstudio_so101/scene.xml",
+      "revision": "da76818e269b82289eba39808e2fb91d679d6994",
+      "sha256": "sha256:65496b0061ca3ddd92b58fe09bd30f6a4a443f137cc42cf8975d5cff23030bfd"
+    }
+  ],
+  "level": "formal",
+  "objective": "Measure sampled virtual wrist-camera geometric coverage without claiming hardware visibility.",
+  "results": {
+    "criteria": "All deterministic samples were evaluated and coverage artifacts written; no capability criterion.",
+    "duration_seconds": 0.612112,
+    "metrics": [
+      {
+        "name": "default_visible_cups",
+        "unit": "cups",
+        "value": 0
+      },
+      {
+        "name": "best_sample_visible_cups",
+        "unit": "cups",
+        "value": 10
+      },
+      {
+        "name": "pose_samples",
+        "unit": "poses",
+        "value": 257
+      }
+    ],
+    "passed": true
+  },
+  "review": {
+    "note": "Virtual-only evidence.",
+    "status": "pending_human_review"
+  },
+  "run_id": "EXP-20260901-001-virtual-wrist-coverage",
+  "runtime": {
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.12.11",
+    "random_seed": 11
+  },
+  "schema_version": "experiment-management/run-manifest/v1",
+  "started_at": "2026-08-31T15:04:39.339626Z"
+}

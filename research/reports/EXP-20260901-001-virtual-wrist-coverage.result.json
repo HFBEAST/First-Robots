@@ -1,0 +1,20 @@
+{
+  "limits": [
+    "The scan is not IK, collision planning, motion control, physical calibration, or a claim about the physical wrist camera.",
+    "The best sampled pose is a reporting outcome, not an adopted operating pose."
+  ],
+  "observations": {
+    "best_sample_index": 229,
+    "best_sample_visible_cups": 10,
+    "cup_positions": 10,
+    "default_visible_cups": 0,
+    "pose_samples": 257
+  },
+  "review": {
+    "adopted": false,
+    "status": "pending_human_review"
+  },
+  "run_id": "EXP-20260901-001-virtual-wrist-coverage",
+  "schema_version": "first-robots/research-result/v1",
+  "status": "observed_pending_human_review"
+}

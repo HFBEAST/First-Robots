@@ -1,0 +1,32 @@
+{
+  "experiment_id": "EXP-20260901-001-virtual-wrist-coverage",
+  "model": {
+    "license": "Apache-2.0",
+    "revision": "da76818e269b82289eba39808e2fb91d679d6994"
+  },
+  "non_claims": [
+    "The scan is not IK, collision planning, motion control, physical calibration, or a claim about the physical wrist camera.",
+    "The best sampled pose is a reporting outcome, not an adopted operating pose."
+  ],
+  "protocol": {
+    "actuation": "disabled",
+    "cup_seeds": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "pose_sample_seed": 11,
+    "pose_samples": 256,
+    "workspace_radius": 0.23917871793616743
+  },
+  "purpose": "Scan static candidate-model joint configurations for virtual wrist-camera geometric visibility of the previously defined half-reach cup workspace.",
+  "schema_version": "first-robots/research-config/v1",
+  "source_run": "EXP-20260831-004-so101-mujoco-observation-preflight"
+}
