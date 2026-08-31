@@ -20,7 +20,7 @@ from PIL import Image
 from experiment_management.run import RunRecorder, sha256_bytes, strict_json_bytes, write_json_pair
 
 
-RUN_ID = "EXP-20260831-003-so101-mujoco-observation-preflight"
+RUN_ID = "EXP-20260831-004-so101-mujoco-observation-preflight"
 ROOT = Path(__file__).resolve().parents[2]
 CONFIG_PATH = ROOT / "research" / "configs" / "EXP-20260831-001-so101-mujoco-observation-preflight.json"
 SOURCE_DIR = ROOT / "research" / "sources" / "mujoco_menagerie_robotstudio_so101" / "robotstudio_so101"
@@ -103,6 +103,22 @@ def main() -> None:
     if not SOURCE_SCENE.is_file():
         raise FileNotFoundError(SOURCE_SCENE)
     config = json.loads(CONFIG_PATH.read_text(encoding="utf-8"))
+    recorder = RunRecorder(
+        run_id=RUN_ID,
+        objective="Verify repeatable virtual three-view observation artifacts for an authorized candidate SO-101 MuJoCo model without asserting hardware equivalence.",
+        script=Path(__file__),
+        repo_root=ROOT,
+        output_root=ROOT / "research" / "runs",
+        parameters={"seeds": list(range(10)), "reach_samples": 10_000, "workspace_radius_factor": 0.5, "actuation": "disabled"},
+        random_seed=0,
+        inputs=[
+            {"kind": "configuration", "path": CONFIG_PATH.relative_to(ROOT).as_posix(), "sha256": sha256(CONFIG_PATH)},
+            {"kind": "candidate_model", "path": SOURCE_SCENE.relative_to(ROOT).as_posix(), "sha256": sha256(SOURCE_SCENE), "revision": "da76818e269b82289eba39808e2fb91d679d6994", "license": "Apache-2.0"}
+        ],
+        baseline={"kind": "comparison", "reference": "Render the final identical wrist-camera state twice; equality only tests this run's renderer repeatability."},
+        level="formal",
+    )
+    recorder.__enter__()
     OUTPUT_DIR.mkdir(parents=True)
     shutil.copy2(CONFIG_PATH, OUTPUT_DIR / "config.json")
     spec = mujoco.MjSpec.from_file(str(SOURCE_SCENE))
@@ -197,38 +213,23 @@ def main() -> None:
         "review": {"status": "pending_human_review"}
     }
     write_json_pair(first_path=RECORD_PATH, first_content=record, second_path=RESULT_PATH, second_content=result)
-    with RunRecorder(
-        run_id=RUN_ID,
-        objective="Verify repeatable virtual three-view observation artifacts for an authorized candidate SO-101 MuJoCo model without asserting hardware equivalence.",
-        script=Path(__file__),
-        repo_root=ROOT,
-        output_root=ROOT / "research" / "runs",
-        parameters={"seeds": list(range(10)), "reach_samples": 10_000, "workspace_radius_factor": 0.5, "actuation": "disabled"},
-        random_seed=0,
-        inputs=[
-            {"kind": "configuration", "path": CONFIG_PATH.relative_to(ROOT).as_posix(), "sha256": sha256(CONFIG_PATH)},
-            {"kind": "candidate_model", "path": SOURCE_SCENE.relative_to(ROOT).as_posix(), "sha256": sha256(SOURCE_SCENE), "revision": "da76818e269b82289eba39808e2fb91d679d6994", "license": "Apache-2.0"}
-        ],
-        baseline={"kind": "comparison", "reference": "Render the final identical wrist-camera state twice; equality only tests this run's renderer repeatability."},
-        level="formal",
-    ) as recorder:
-        recorder.add_metric("episode_count", len(episodes), "episodes")
-        recorder.add_metric("estimated_max_radial_reach", estimated_reach, "model_units")
-        recorder.add_metric("virtual_workspace_radius", workspace_radius, "model_units")
-        recorder.add_metric("repeat_wrist_rgb_hash_equal", first_hash == second_hash, "boolean")
-        for camera_name, count in visible_counts.items():
-            recorder.add_metric(f"{camera_name}_geometry_visible_episodes", count, "episodes")
-        for path in sorted(OUTPUT_DIR.iterdir()):
-            if path.is_file():
-                recorder.add_artifact(path)
-        recorder.add_artifact(RESULT_PATH)
-        recorder.add_artifact(RECORD_PATH)
-        recorder.complete(
-            passed=True,
-            criteria="All 10 seeds emitted reviewable RGB/depth artifacts; model loading and repeated wrist rendering completed. This is not a hardware or capability acceptance criterion.",
-            review_status="pending_human_review",
-            note="Virtual-adapter evidence only; no conclusion is adopted."
-        )
+    recorder.add_metric("episode_count", len(episodes), "episodes")
+    recorder.add_metric("estimated_max_radial_reach", estimated_reach, "model_units")
+    recorder.add_metric("virtual_workspace_radius", workspace_radius, "model_units")
+    recorder.add_metric("repeat_wrist_rgb_hash_equal", first_hash == second_hash, "boolean")
+    for camera_name, count in visible_counts.items():
+        recorder.add_metric(f"{camera_name}_geometry_visible_episodes", count, "episodes")
+    for path in sorted(OUTPUT_DIR.iterdir()):
+        if path.is_file():
+            recorder.add_artifact(path)
+    recorder.add_artifact(RESULT_PATH)
+    recorder.add_artifact(RECORD_PATH)
+    recorder.complete(
+        passed=True,
+        criteria="All 10 seeds emitted reviewable RGB/depth artifacts; model loading and repeated wrist rendering completed. This is not a hardware or capability acceptance criterion.",
+        review_status="pending_human_review",
+        note="Virtual-adapter evidence only; no conclusion is adopted."
+    )
 
 
 if __name__ == "__main__":

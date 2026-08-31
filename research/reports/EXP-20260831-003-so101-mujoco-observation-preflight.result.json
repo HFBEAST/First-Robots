@@ -1,0 +1,26 @@
+{
+  "limits": [
+    "The half-reach workspace is based on an unvalidated candidate-model joint-limit sample, not a physical safety boundary.",
+    "The wrist camera comes from the candidate model and both fixed-depth cameras are virtual nominal viewpoints.",
+    "No grasping, IK, collision evaluation, physical calibration, perception metric, controller, sim-to-real result, or multi-robot capability was evaluated."
+  ],
+  "observations": {
+    "episodes": 10,
+    "estimated_max_radial_reach": 0.47835743587233487,
+    "geometry_visible_episode_count": {
+      "fixed_depth_01": 9,
+      "fixed_depth_02": 9,
+      "wrist_cam": 0
+    },
+    "repeat_wrist_rgb_hash_equal": true,
+    "scene_loaded": true,
+    "virtual_workspace_radius": 0.23917871793616743
+  },
+  "review": {
+    "adopted": false,
+    "status": "pending_human_review"
+  },
+  "run_id": "EXP-20260831-003-so101-mujoco-observation-preflight",
+  "schema_version": "first-robots/research-result/v1",
+  "status": "observed_pending_human_review"
+}

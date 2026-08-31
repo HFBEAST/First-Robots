@@ -1,0 +1,326 @@
+{
+  "episodes": [
+    {
+      "cameras": {
+        "fixed_depth_01": {
+          "depth_path": "research/artifacts/EXP-20260831-003-so101-mujoco-observation-preflight/seed-00-fixed_depth_01-depth.npy",
+          "finite_depth_fraction": 1.0,
+          "geometry_visible": true,
+          "rgb_path": "research/artifacts/EXP-20260831-003-so101-mujoco-observation-preflight/seed-00-fixed_depth_01-rgb.png"
+        },
+        "fixed_depth_02": {
+          "depth_path": "research/artifacts/EXP-20260831-003-so101-mujoco-observation-preflight/seed-00-fixed_depth_02-depth.npy",
+          "finite_depth_fraction": 1.0,
+          "geometry_visible": true,
+          "rgb_path": "research/artifacts/EXP-20260831-003-so101-mujoco-observation-preflight/seed-00-fixed_depth_02-rgb.png"
+        },
+        "wrist_cam": {
+          "depth_path": "research/artifacts/EXP-20260831-003-so101-mujoco-observation-preflight/seed-00-wrist_cam-depth.npy",
+          "finite_depth_fraction": 1.0,
+          "geometry_visible": false,
+          "rgb_path": "research/artifacts/EXP-20260831-003-so101-mujoco-observation-preflight/seed-00-wrist_cam-rgb.png"
+        }
+      },
+      "cup_position": [
+        0.02367082438375014,
+        -0.1894149275946089,
+        0.055
+      ],
+      "seed": 0
+    },
+    {
+      "cameras": {
+        "fixed_depth_01": {
+          "depth_path": "research/artifacts/EXP-20260831-003-so101-mujoco-observation-preflight/seed-01-fixed_depth_01-depth.npy",
+          "finite_depth_fraction": 1.0,
+          "geometry_visible": true,
+          "rgb_path": "research/artifacts/EXP-20260831-003-so101-mujoco-observation-preflight/seed-01-fixed_depth_01-rgb.png"
+        },
+        "fixed_depth_02": {
+          "depth_path": "research/artifacts/EXP-20260831-003-so101-mujoco-observation-preflight/seed-01-fixed_depth_02-depth.npy",
+          "finite_depth_fraction": 1.0,
+          "geometry_visible": true,
+          "rgb_path": "research/artifacts/EXP-20260831-003-so101-mujoco-observation-preflight/seed-01-fixed_depth_02-rgb.png"
+        },
+        "wrist_cam": {
+          "depth_path": "research/artifacts/EXP-20260831-003-so101-mujoco-observation-preflight/seed-01-wrist_cam-depth.npy",
+          "finite_depth_fraction": 1.0,
+          "geometry_visible": false,
+          "rgb_path": "research/artifacts/EXP-20260831-003-so101-mujoco-observation-preflight/seed-01-wrist_cam-rgb.png"
+        }
+      },
+      "cup_position": [
+        -0.1628910651366181,
+        0.052402325764452765,
+        0.055
+      ],
+      "seed": 1
+    },
+    {
+      "cameras": {
+        "fixed_depth_01": {
+          "depth_path": "research/artifacts/EXP-20260831-003-so101-mujoco-observation-preflight/seed-02-fixed_depth_01-depth.npy",
+          "finite_depth_fraction": 1.0,
+          "geometry_visible": true,
+          "rgb_path": "research/artifacts/EXP-20260831-003-so101-mujoco-observation-preflight/seed-02-fixed_depth_01-rgb.png"
+        },
+        "fixed_depth_02": {
+          "depth_path": "research/artifacts/EXP-20260831-003-so101-mujoco-observation-preflight/seed-02-fixed_depth_02-depth.npy",
+          "finite_depth_fraction": 1.0,
+          "geometry_visible": true,
+          "rgb_path": "research/artifacts/EXP-20260831-003-so101-mujoco-observation-preflight/seed-02-fixed_depth_02-rgb.png"
+        },
+        "wrist_cam": {
+          "depth_path": "research/artifacts/EXP-20260831-003-so101-mujoco-observation-preflight/seed-02-wrist_cam-depth.npy",
+          "finite_depth_fraction": 1.0,
+          "geometry_visible": false,
+          "rgb_path": "research/artifacts/EXP-20260831-003-so101-mujoco-observation-preflight/seed-02-wrist_cam-rgb.png"
+        }
+      },
+      "cup_position": [
+        0.036698951189596624,
+        -0.11670086050726365,
+        0.055
+      ],
+      "seed": 2
+    },
+    {
+      "cameras": {
+        "fixed_depth_01": {
+          "depth_path": "research/artifacts/EXP-20260831-003-so101-mujoco-observation-preflight/seed-03-fixed_depth_01-depth.npy",
+          "finite_depth_fraction": 1.0,
+          "geometry_visible": true,
+          "rgb_path": "research/artifacts/EXP-20260831-003-so101-mujoco-observation-preflight/seed-03-fixed_depth_01-rgb.png"
+        },
+        "fixed_depth_02": {
+          "depth_path": "research/artifacts/EXP-20260831-003-so101-mujoco-observation-preflight/seed-03-fixed_depth_02-depth.npy",
+          "finite_depth_fraction": 1.0,
+          "geometry_visible": false,
+          "rgb_path": "research/artifacts/EXP-20260831-003-so101-mujoco-observation-preflight/seed-03-fixed_depth_02-rgb.png"
+        },
+        "wrist_cam": {
+          "depth_path": "research/artifacts/EXP-20260831-003-so101-mujoco-observation-preflight/seed-03-wrist_cam-depth.npy",
+          "finite_depth_fraction": 1.0,
+          "geometry_visible": false,
+          "rgb_path": "research/artifacts/EXP-20260831-003-so101-mujoco-observation-preflight/seed-03-wrist_cam-rgb.png"
+        }
+      },
+      "cup_position": [
+        -0.005794218510825243,
+        -0.06975752726525995,
+        0.055
+      ],
+      "seed": 3
+    },
+    {
+      "cameras": {
+        "fixed_depth_01": {
+          "depth_path": "research/artifacts/EXP-20260831-003-so101-mujoco-observation-preflight/seed-04-fixed_depth_01-depth.npy",
+          "finite_depth_fraction": 1.0,
+          "geometry_visible": true,
+          "rgb_path": "research/artifacts/EXP-20260831-003-so101-mujoco-observation-preflight/seed-04-fixed_depth_01-rgb.png"
+        },
+        "fixed_depth_02": {
+          "depth_path": "research/artifacts/EXP-20260831-003-so101-mujoco-observation-preflight/seed-04-fixed_depth_02-depth.npy",
+          "finite_depth_fraction": 1.0,
+          "geometry_visible": true,
+          "rgb_path": "research/artifacts/EXP-20260831-003-so101-mujoco-observation-preflight/seed-04-fixed_depth_02-rgb.png"
+        },
+        "wrist_cam": {
+          "depth_path": "research/artifacts/EXP-20260831-003-so101-mujoco-observation-preflight/seed-04-wrist_cam-depth.npy",
+          "finite_depth_fraction": 1.0,
+          "geometry_visible": false,
+          "rgb_path": "research/artifacts/EXP-20260831-003-so101-mujoco-observation-preflight/seed-04-wrist_cam-rgb.png"
+        }
+      },
+      "cup_position": [
+        0.2316809821335738,
+        0.016517356412832515,
+        0.055
+      ],
+      "seed": 4
+    },
+    {
+      "cameras": {
+        "fixed_depth_01": {
+          "depth_path": "research/artifacts/EXP-20260831-003-so101-mujoco-observation-preflight/seed-05-fixed_depth_01-depth.npy",
+          "finite_depth_fraction": 1.0,
+          "geometry_visible": false,
+          "rgb_path": "research/artifacts/EXP-20260831-003-so101-mujoco-observation-preflight/seed-05-fixed_depth_01-rgb.png"
+        },
+        "fixed_depth_02": {
+          "depth_path": "research/artifacts/EXP-20260831-003-so101-mujoco-observation-preflight/seed-05-fixed_depth_02-depth.npy",
+          "finite_depth_fraction": 1.0,
+          "geometry_visible": true,
+          "rgb_path": "research/artifacts/EXP-20260831-003-so101-mujoco-observation-preflight/seed-05-fixed_depth_02-rgb.png"
+        },
+        "wrist_cam": {
+          "depth_path": "research/artifacts/EXP-20260831-003-so101-mujoco-observation-preflight/seed-05-wrist_cam-depth.npy",
+          "finite_depth_fraction": 1.0,
+          "geometry_visible": false,
+          "rgb_path": "research/artifacts/EXP-20260831-003-so101-mujoco-observation-preflight/seed-05-wrist_cam-rgb.png"
+        }
+      },
+      "cup_position": [
+        -0.07640990183679784,
+        0.20053152805693772,
+        0.055
+      ],
+      "seed": 5
+    },
+    {
+      "cameras": {
+        "fixed_depth_01": {
+          "depth_path": "research/artifacts/EXP-20260831-003-so101-mujoco-observation-preflight/seed-06-fixed_depth_01-depth.npy",
+          "finite_depth_fraction": 1.0,
+          "geometry_visible": true,
+          "rgb_path": "research/artifacts/EXP-20260831-003-so101-mujoco-observation-preflight/seed-06-fixed_depth_01-rgb.png"
+        },
+        "fixed_depth_02": {
+          "depth_path": "research/artifacts/EXP-20260831-003-so101-mujoco-observation-preflight/seed-06-fixed_depth_02-depth.npy",
+          "finite_depth_fraction": 1.0,
+          "geometry_visible": true,
+          "rgb_path": "research/artifacts/EXP-20260831-003-so101-mujoco-observation-preflight/seed-06-fixed_depth_02-rgb.png"
+        },
+        "wrist_cam": {
+          "depth_path": "research/artifacts/EXP-20260831-003-so101-mujoco-observation-preflight/seed-06-wrist_cam-depth.npy",
+          "finite_depth_fraction": 1.0,
+          "geometry_visible": false,
+          "rgb_path": "research/artifacts/EXP-20260831-003-so101-mujoco-observation-preflight/seed-06-wrist_cam-rgb.png"
+        }
+      },
+      "cup_position": [
+        0.09704113472664502,
+        -0.14618308773533226,
+        0.055
+      ],
+      "seed": 6
+    },
+    {
+      "cameras": {
+        "fixed_depth_01": {
+          "depth_path": "research/artifacts/EXP-20260831-003-so101-mujoco-observation-preflight/seed-07-fixed_depth_01-depth.npy",
+          "finite_depth_fraction": 1.0,
+          "geometry_visible": true,
+          "rgb_path": "research/artifacts/EXP-20260831-003-so101-mujoco-observation-preflight/seed-07-fixed_depth_01-rgb.png"
+        },
+        "fixed_depth_02": {
+          "depth_path": "research/artifacts/EXP-20260831-003-so101-mujoco-observation-preflight/seed-07-fixed_depth_02-depth.npy",
+          "finite_depth_fraction": 1.0,
+          "geometry_visible": true,
+          "rgb_path": "research/artifacts/EXP-20260831-003-so101-mujoco-observation-preflight/seed-07-fixed_depth_02-rgb.png"
+        },
+        "wrist_cam": {
+          "depth_path": "research/artifacts/EXP-20260831-003-so101-mujoco-observation-preflight/seed-07-wrist_cam-depth.npy",
+          "finite_depth_fraction": 1.0,
+          "geometry_visible": false,
+          "rgb_path": "research/artifacts/EXP-20260831-003-so101-mujoco-observation-preflight/seed-07-wrist_cam-rgb.png"
+        }
+      },
+      "cup_position": [
+        -0.15101740644991735,
+        0.11381230689846338,
+        0.055
+      ],
+      "seed": 7
+    },
+    {
+      "cameras": {
+        "fixed_depth_01": {
+          "depth_path": "research/artifacts/EXP-20260831-003-so101-mujoco-observation-preflight/seed-08-fixed_depth_01-depth.npy",
+          "finite_depth_fraction": 1.0,
+          "geometry_visible": true,
+          "rgb_path": "research/artifacts/EXP-20260831-003-so101-mujoco-observation-preflight/seed-08-fixed_depth_01-rgb.png"
+        },
+        "fixed_depth_02": {
+          "depth_path": "research/artifacts/EXP-20260831-003-so101-mujoco-observation-preflight/seed-08-fixed_depth_02-depth.npy",
+          "finite_depth_fraction": 1.0,
+          "geometry_visible": true,
+          "rgb_path": "research/artifacts/EXP-20260831-003-so101-mujoco-observation-preflight/seed-08-fixed_depth_02-rgb.png"
+        },
+        "wrist_cam": {
+          "depth_path": "research/artifacts/EXP-20260831-003-so101-mujoco-observation-preflight/seed-08-wrist_cam-depth.npy",
+          "finite_depth_fraction": 1.0,
+          "geometry_visible": false,
+          "rgb_path": "research/artifacts/EXP-20260831-003-so101-mujoco-observation-preflight/seed-08-wrist_cam-rgb.png"
+        }
+      },
+      "cup_position": [
+        -0.13632917053225696,
+        0.010921695605529521,
+        0.055
+      ],
+      "seed": 8
+    },
+    {
+      "cameras": {
+        "fixed_depth_01": {
+          "depth_path": "research/artifacts/EXP-20260831-003-so101-mujoco-observation-preflight/seed-09-fixed_depth_01-depth.npy",
+          "finite_depth_fraction": 1.0,
+          "geometry_visible": true,
+          "rgb_path": "research/artifacts/EXP-20260831-003-so101-mujoco-observation-preflight/seed-09-fixed_depth_01-rgb.png"
+        },
+        "fixed_depth_02": {
+          "depth_path": "research/artifacts/EXP-20260831-003-so101-mujoco-observation-preflight/seed-09-fixed_depth_02-depth.npy",
+          "finite_depth_fraction": 1.0,
+          "geometry_visible": true,
+          "rgb_path": "research/artifacts/EXP-20260831-003-so101-mujoco-observation-preflight/seed-09-fixed_depth_02-rgb.png"
+        },
+        "wrist_cam": {
+          "depth_path": "research/artifacts/EXP-20260831-003-so101-mujoco-observation-preflight/seed-09-wrist_cam-depth.npy",
+          "finite_depth_fraction": 1.0,
+          "geometry_visible": false,
+          "rgb_path": "research/artifacts/EXP-20260831-003-so101-mujoco-observation-preflight/seed-09-wrist_cam-rgb.png"
+        }
+      },
+      "cup_position": [
+        0.0511557823515081,
+        -0.21717956035859576,
+        0.055
+      ],
+      "seed": 9
+    }
+  ],
+  "model_source": {
+    "license": "Apache-2.0",
+    "model_sha256": "sha256:b5814e448689544ae8e62548419b75aee32d047355a30ada68fbf708939b88ae",
+    "repository_revision": "da76818e269b82289eba39808e2fb91d679d6994",
+    "scene_sha256": "sha256:65496b0061ca3ddd92b58fe09bd30f6a4a443f137cc42cf8975d5cff23030bfd"
+  },
+  "reach_estimate": {
+    "estimated_maximum": 0.47835743587233487,
+    "method": "10,000 seed-0 uniform joint-limit samples; radial gripperframe distance from baseframe",
+    "workspace_radius": 0.23917871793616743
+  },
+  "run_id": "EXP-20260831-003-so101-mujoco-observation-preflight",
+  "runtime": {
+    "mujoco": "3.12.0",
+    "python": "3.12.11"
+  },
+  "virtual_cameras": {
+    "fixed_depth_01": {
+      "position": [
+        0.45,
+        -0.45,
+        0.42
+      ],
+      "target": [
+        0.12,
+        0.0,
+        0.06
+      ]
+    },
+    "fixed_depth_02": {
+      "position": [
+        0.45,
+        0.45,
+        0.42
+      ],
+      "target": [
+        0.12,
+        0.0,
+        0.06
+      ]
+    }
+  }
+}
