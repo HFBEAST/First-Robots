@@ -1,0 +1,42 @@
+{
+  "interpretation": [
+    "The pinned upstream self-check was executable in this local environment.",
+    "The two initial failures in each mode and the third-attempt successes are retained in the log.",
+    "This run does not establish a performance difference between shared and no-share because retries and the upstream exit criterion are not a controlled causal comparison.",
+    "This run does not establish any MuJoCo, SO-101, camera, hardware, grasping, safety, or multi-robot-control capability for First-Robots."
+  ],
+  "observations": {
+    "collection_exception": "`python -m pip freeze` was unavailable because the uv-created environment has no pip module; the separately captured `uv pip freeze` artifact is the dependency record.",
+    "no_share": {
+      "attempt_outcomes": [
+        false,
+        false,
+        true
+      ],
+      "attempts_used": 3,
+      "successful_steps": 35
+    },
+    "process_exit_code": 0,
+    "runtime": {
+      "environment_manager": "uv",
+      "pygame": "2.6.1",
+      "python": "3.12.11"
+    },
+    "shared": {
+      "attempt_outcomes": [
+        false,
+        false,
+        true
+      ],
+      "attempts_used": 3,
+      "successful_steps": 31
+    }
+  },
+  "review": {
+    "adopted": false,
+    "status": "pending_human_review"
+  },
+  "run_id": "EXP-20260831-002-mrbtp-demo-exploratory",
+  "schema_version": "first-robots/research-result/v1",
+  "status": "observed_pending_human_review"
+}

@@ -1,0 +1,23 @@
+{
+  "schema_version": "first-robots/research-config/v1",
+  "experiment_id": "EXP-20260831-002-mrbtp-demo-exploratory",
+  "status": "planned_not_executed",
+  "source": {
+    "path": "research/sources/mrbtp-demo",
+    "repository": "https://github.com/DIDS-EI/MRBTP-demo",
+    "revision": "3824c1c62bf38c89094c37b77573711e639c1d04",
+    "license": "MIT"
+  },
+  "execution": {
+    "module": "app.verify",
+    "arguments": ["--both", "--agents", "2", "--max-steps", "400", "--seed", "6", "--attempts", "5"],
+    "environment": {"SDL_VIDEODRIVER": "dummy", "SDL_AUDIODRIVER": "dummy"},
+    "network_during_execution": false
+  },
+  "purpose": "Confirm that the pinned upstream self-check can run in its declared MiniGrid domain and preserve its stdout/stderr, dependency versions, and source revision.",
+  "interpretation_boundary": [
+    "This is an exploratory upstream-code execution, not a reproduction of paper metrics.",
+    "The shared and no-share executions have stochastic retries; their pass/fail outcomes are not a causal comparison.",
+    "No result transfers to SO-101, MuJoCo, cameras, physical hardware, or First-Robots control."
+  ]
+}

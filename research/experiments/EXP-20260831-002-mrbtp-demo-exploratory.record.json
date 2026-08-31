@@ -1,0 +1,18 @@
+{
+  "kind": "exploratory_upstream_code_execution",
+  "recorded_at": "2026-08-31T14:38:44.656940Z",
+  "result": {
+    "path": "research/reports/EXP-20260831-002-mrbtp-demo-exploratory.result.json",
+    "sha256": "sha256:b91eff74414e3f1cdc25a84328ec9dc31ade32542a32cf9d0c406ff7872e2ab6"
+  },
+  "review": {
+    "status": "pending_human_review"
+  },
+  "run_id": "EXP-20260831-002-mrbtp-demo-exploratory",
+  "schema_version": "first-robots/experiment-record/v1",
+  "source": {
+    "license": "MIT",
+    "repository": "https://github.com/DIDS-EI/MRBTP-demo",
+    "revision": "3824c1c62bf38c89094c37b77573711e639c1d04"
+  }
+}

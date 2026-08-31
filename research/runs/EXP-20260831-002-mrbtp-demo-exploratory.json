@@ -1,0 +1,118 @@
+{
+  "artifacts": [
+    {
+      "path": "research/artifacts/EXP-20260831-002-mrbtp-demo-exploratory/exit-code.txt",
+      "sha256": "sha256:1880791abf79c04b1466806b7df24ec22e85b0cefc37b46d02518c076e1a76d7"
+    },
+    {
+      "path": "research/artifacts/EXP-20260831-002-mrbtp-demo-exploratory/source-head.txt",
+      "sha256": "sha256:9f06c8f0f98c876db5ee959cc5d30bbfb9241b5ffb2cd894c3ea0d49259f53d1"
+    },
+    {
+      "path": "research/artifacts/EXP-20260831-002-mrbtp-demo-exploratory/source-status.txt",
+      "sha256": "sha256:045b87f173c5dee31ab420c830563383050272935e3c5804ad8ab704244be9e4"
+    },
+    {
+      "path": "research/artifacts/EXP-20260831-002-mrbtp-demo-exploratory/uv-pip-freeze.txt",
+      "sha256": "sha256:cf531853287dcfdfd8928a162bc8b3739143317e3c002a778dc48c2d7bde9673"
+    },
+    {
+      "path": "research/artifacts/EXP-20260831-002-mrbtp-demo-exploratory/verify.log",
+      "sha256": "sha256:68c57ed733ce806d6ebb77be47ff93d8aa247d1636c1593201e9da1c1beb7387"
+    }
+  ],
+  "baseline": {
+    "kind": "comparison",
+    "reference": "The upstream `--no-share` ablation was run only to confirm callability; stochastic retries prevent causal performance interpretation."
+  },
+  "code": {
+    "commit": "1f3f74b08cd365ca277572dc471de05bbaed7b7c",
+    "dirty_at_start": true,
+    "external_source_revision": "3824c1c62bf38c89094c37b77573711e639c1d04",
+    "repository": "H:\\0_program\\My_action\\First-Robots",
+    "traceable": true
+  },
+  "ended_at": "2026-08-31T14:38:44.657003Z",
+  "execution": {
+    "command": [
+      "research/.venvs/mrbtp-demo-py312/Scripts/python.exe",
+      "-m",
+      "app.verify",
+      "--both",
+      "--agents",
+      "2",
+      "--max-steps",
+      "400",
+      "--seed",
+      "6",
+      "--attempts",
+      "5"
+    ],
+    "parameters": {
+      "agents": 2,
+      "attempts": 5,
+      "base_seed": 6,
+      "max_steps": 400,
+      "modes": [
+        "share",
+        "no-share"
+      ]
+    },
+    "script": "research/sources/mrbtp-demo/app/verify.py"
+  },
+  "inputs": [
+    {
+      "kind": "configuration",
+      "path": "research/configs/EXP-20260831-002-mrbtp-demo-exploratory.json",
+      "sha256": "sha256:05a37f8853b467647b53327a2b35006ae7368cadf366fc5ff3a7e8b6dcc47010"
+    },
+    {
+      "kind": "source",
+      "license": "MIT",
+      "path": "research/sources/mrbtp-demo",
+      "revision": "3824c1c62bf38c89094c37b77573711e639c1d04"
+    }
+  ],
+  "level": "exploratory",
+  "objective": "Execute the pinned MRBTP-demo upstream self-check and retain raw reproducibility evidence without inferring First-Robots capability.",
+  "results": {
+    "criteria": "The upstream process exited 0 after recording both modes; this is an execution criterion only.",
+    "duration_seconds": 17.0,
+    "metrics": [
+      {
+        "name": "shared_attempts_used",
+        "unit": "attempts",
+        "value": 3
+      },
+      {
+        "name": "shared_successful_steps",
+        "unit": "steps",
+        "value": 31
+      },
+      {
+        "name": "no_share_attempts_used",
+        "unit": "attempts",
+        "value": 3
+      },
+      {
+        "name": "no_share_successful_steps",
+        "unit": "steps",
+        "value": 35
+      }
+    ],
+    "passed": true
+  },
+  "review": {
+    "note": "Validated execution evidence is not an adopted conclusion.",
+    "status": "pending_human_review"
+  },
+  "run_id": "EXP-20260831-002-mrbtp-demo-exploratory",
+  "runtime": {
+    "environment_manager": "uv",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.12.11",
+    "random_seed": 6
+  },
+  "schema_version": "experiment-management/run-manifest/v1",
+  "started_at": "2026-08-31T14:37:00Z"
+}

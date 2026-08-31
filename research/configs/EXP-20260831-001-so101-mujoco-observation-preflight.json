@@ -1,0 +1,63 @@
+{
+  "schema_version": "first-robots/research-config/v1",
+  "experiment_id": "EXP-20260831-001-so101-mujoco-observation-preflight",
+  "status": "authorized_virtual_adapter_pending_execution",
+  "purpose": "Authorized virtual-adapter MuJoCo observation-layout preflight for one SO-101. It freezes a candidate model and virtual cameras for one run, while treating real-hardware calibration as a later adjustment and not as a simulated fact.",
+  "simulator": {
+    "name": "MuJoCo",
+    "version": "resolved at environment installation and recorded in the immutable run manifest",
+    "model_asset": "research/sources/mujoco_menagerie_robotstudio_so101/robotstudio_so101/scene.xml",
+    "model_revision": "da76818e269b82289eba39808e2fb91d679d6994",
+    "model_license": "Apache-2.0",
+    "model_asset_sha256": "resolved immediately before execution and recorded in the immutable run manifest",
+    "pinning_rule": "The selected model, resolved MuJoCo version, source revision and asset SHA-256 are fixed within a run. A future run may use a revised model or calibrated cameras only as a new run, never by changing this run's evidence."
+  },
+  "scene": {
+    "robots": 1,
+    "robot_model": "SO-101",
+    "object": "one cup-like rigid body",
+    "actuation": "disabled; the arm remains at a recorded safe static pose",
+    "physical_safety": "simulation only; no command may be sent to hardware"
+  },
+  "sensors": [
+    {
+      "id": "wrist-rgb-01",
+      "kind": "RGB",
+      "mount": "wrist",
+      "intrinsics": "candidate-model wrist_cam values; virtual only",
+      "extrinsics": "derived from the frozen candidate model only; virtual only"
+    },
+    {
+      "id": "fixed-depth-01",
+      "kind": "depth",
+      "mount": "fixed",
+      "intrinsics": "virtual nominal configuration; not a physical-camera calibration",
+      "extrinsics": "virtual nominal configuration; not a physical-camera calibration"
+    },
+    {
+      "id": "fixed-depth-02",
+      "kind": "depth",
+      "mount": "fixed",
+      "intrinsics": "virtual nominal configuration; not a physical-camera calibration",
+      "extrinsics": "virtual nominal configuration; not a physical-camera calibration"
+    }
+  ],
+  "protocol": {
+    "random_seeds": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
+    "episodes_per_seed": 1,
+    "object_pose_generation": "deterministic sampler in a horizontal disk whose radius is 0.5 times the seed-0, 10,000-joint-sample estimate of the candidate model's maximum radial gripper-site reach from its baseframe; this is a virtual-only conservative workspace definition",
+    "record_per_episode": ["seed", "model hash", "scene hash", "camera metadata", "RGB/depth frame hashes", "renderer warnings/errors", "cup visibility label from simulator geometry"]
+  },
+  "metrics": [
+    "scene-load outcome",
+    "per-camera rendered-frame availability",
+    "per-depth-camera finite-pixel fraction",
+    "simulator-geometry cup visibility per camera",
+    "repeated-render hash equality for identical seed and pinned runtime"
+  ],
+  "non_claims": [
+    "No grasp, IK, collision, load, physical calibration, perception, control, sim-to-real, or multi-robot capability is evaluated.",
+    "Virtual camera intrinsics/extrinsics and sampled reach are deliberately adaptable inputs for later runs; they are not claims about the hardware.",
+    "Simulator geometry labels are evaluation metadata only and must not be passed to a future runtime perception component."
+  ]
+}

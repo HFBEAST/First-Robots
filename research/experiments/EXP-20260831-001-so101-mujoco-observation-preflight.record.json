@@ -1,0 +1,152 @@
+{
+  "schema_version": "first-robots/experiment-record/v1",
+  "experiment_id": "EXP-20260831-001-so101-mujoco-observation-preflight",
+  "recorded_at": "2026-08-31T23:30:44+09:00",
+  "status": "planned_not_executed",
+  "scope": {
+    "included": ["external literature and repository preflight", "one-SO-101 MuJoCo observation-layout proposal"],
+    "excluded": ["multi-robot control", "hardware actuation", "grasping", "IK", "collision planning", "calibration", "capability adoption"]
+  },
+  "evidence_register": [
+    {
+      "id": "P-MRBTP-2025",
+      "kind": "paper",
+      "title": "MRBTP: Efficient Multi-Robot Behavior Tree Planning and Collaboration",
+      "url": "https://arxiv.org/abs/2502.18072",
+      "venue_or_date": "AAAI 2025 Oral; arXiv:2502.18072",
+      "paper_supported": ["The paper describes decentralized multi-robot behavior-tree planning with shared symbolic goals and per-agent action models.", "The paper claims soundness and completeness for its stated formulation and reports warehouse and everyday-service evaluations."],
+      "not_established_here": ["Applicability to SO-101, MuJoCo, current cameras, real hardware, or this project's protocols."]
+    },
+    {
+      "id": "C-MRBTP-DEMO-20260627",
+      "kind": "code",
+      "repository": "https://github.com/DIDS-EI/MRBTP-demo",
+      "revision": "3824c1c62bf38c89094c37b77573711e639c1d04",
+      "revision_observed_at": "2026-08-31T23:30:44+09:00",
+      "license": "MIT",
+      "runtime_and_task": "Python >=3.9; self-contained MiniGrid multi-robot behavior-tree tutorial; its documented smoke task uses two robots in a DoorKey-style grid world.",
+      "metrics_or_execution_note": "The README documents stochastic execution and an approximately 70% single smoke-run success statement, with a verifier that retries five times; this has not been independently executed in this project.",
+      "limitations": ["2-D symbolic/grid simulation is not a MuJoCo manipulation model.", "Repository-demo behavior is not reproduction in this project."]
+    },
+    {
+      "id": "C-MRBTP-20260627",
+      "kind": "code",
+      "repository": "https://github.com/DIDS-EI/MRBTP",
+      "revision": "3d6bd240aa2903245b2335711a97ee394f174313",
+      "revision_observed_at": "2026-08-31T23:30:44+09:00",
+      "license": "MIT",
+      "runtime_and_task": "Python 3.10 declared by README; MiniGrid/BabyAI demos and optional VirtualHome household scenario; repository documents a two-agent DoorKey 8x8 example.",
+      "metrics_or_execution_note": "No upstream numeric result has been re-executed or adopted by this project.",
+      "limitations": ["VirtualHome binary is optional and the README says Windows is the fully tested platform for that scenario.", "No SO-101/camera compatibility claim is made by this record."]
+    },
+    {
+      "id": "P-ROCO-2023",
+      "kind": "paper",
+      "title": "RoCo: Dialectic Multi-Robot Collaboration with Large Language Models",
+      "url": "https://arxiv.org/abs/2307.04738",
+      "venue_or_date": "arXiv:2307.04738, 2023",
+      "paper_supported": ["RoCo introduces six tabletop multi-robot manipulation tasks (RoCoBench) plus a text dataset.", "Its described pipeline uses inter-robot LLM dialogue, task-space waypoint proposals, collision feedback, and centralized multi-arm motion planning.", "The project page describes a real-world demonstration with one robot and a human, and identifies OWL-ViT object-detection errors as a primary bottleneck."],
+      "not_established_here": ["That dialogue improves the current system, that its outcomes transfer to SO-101, or that it is safe to use an LLM for controls."]
+    },
+    {
+      "id": "C-ROCO-20231004",
+      "kind": "code",
+      "repository": "https://github.com/MandiZhao/robot-collab",
+      "revision": "9943870298e650de7ff1f9231ed279b35f196ddc",
+      "revision_observed_at": "2026-08-31T23:30:44+09:00",
+      "license": "MIT",
+      "runtime_and_task": "Paired code repository for RoCo/RoCoBench; project material describes six MuJoCo tabletop collaborative-manipulation tasks.",
+      "metrics_or_execution_note": "Task success, semantic adaptation, and RoCoBench-Text are described upstream; this project has not cloned, installed, or run the repository.",
+      "limitations": ["The benchmark requires multiple manipulation agents and its motion-planning stack; it is not a current one-SO-101 baseline."]
+    },
+    {
+      "id": "P-TAMPURA-2024",
+      "kind": "paper",
+      "title": "Partially Observable Task and Motion Planning with Uncertainty and Risk Awareness",
+      "url": "https://arxiv.org/abs/2403.10454",
+      "venue_or_date": "Robotics: Science and Systems 2024; arXiv:2403.10454",
+      "paper_supported": ["TAMPURA addresses initial-state and action-outcome uncertainty, including information gathering and undesirable/irreversible outcomes.", "The paper reports comparisons to determinized planning, direct search, and reinforcement learning in its stated robotics problems, including two real-world problems."],
+      "not_established_here": ["A TAMPURA abstraction/controller can be instantiated for SO-101, or that its reported comparisons reproduce under this project's setup."]
+    },
+    {
+      "id": "C-TAMPURA-20250514",
+      "kind": "code",
+      "repository": "https://github.com/aidan-curtis/tampura",
+      "revision": "cdddf14b45d2608fc1d3bc9c72d8ee249c4638b2",
+      "revision_observed_at": "2026-08-31T23:30:44+09:00",
+      "license": "NOASSERTION (no repository license metadata observed; do not reuse until license is clarified)",
+      "runtime_and_task": "README specifies Python 3.11, editable installation, and pygraphviz; `notebooks/grasping_env.ipynb` is an example. Paper robot environments are in a separate repository.",
+      "metrics_or_execution_note": "No notebook or environment has been executed in this project.",
+      "limitations": ["The code repository and environment repository are separate.", "Absence of observed license metadata blocks code reuse review."]
+    },
+    {
+      "id": "C-TAMPURA-ENV-20250514",
+      "kind": "code",
+      "repository": "https://github.com/aidan-curtis/tampura_environments",
+      "revision": "4167c35e41170beee48b108d4a6a64a69d4b555a",
+      "revision_observed_at": "2026-08-31T23:30:44+09:00",
+      "license": "NOASSERTION (no repository license metadata observed; do not reuse until license is clarified)",
+      "runtime_and_task": "Separate environments repository named by the TAMPURA README; its exact execution configuration has not been independently inspected or run here.",
+      "metrics_or_execution_note": "Not reproduced.",
+      "limitations": ["Not yet sufficient to specify a runnable local experiment."]
+    }
+  ],
+  "project_hardware_register": {
+    "source": "docs/overview.md, docs/status.md, research/README.md, read 2026-08-31",
+    "known": ["one SO-101", "one wrist-mounted RGB camera", "two fixed depth cameras"],
+    "unregistered": ["camera make/model", "intrinsics", "extrinsics", "synchronization", "noise", "actual coverage", "SO-101 MuJoCo model source/version/license/hash", "safe pose and workspace bounds"],
+    "inference_boundary": "No external paper/code result is treated as a fact about this hardware."
+  },
+  "candidate_simulation_assets": [
+    {
+      "id": "A-MENAGERIE-ROBOTSTUDIO-SO101-20260809",
+      "repository": "https://github.com/google-deepmind/mujoco_menagerie",
+      "repository_revision": "da76818e269b82289eba39808e2fb91d679d6994",
+      "asset_path": "robotstudio_so101/scene.xml",
+      "model_path": "robotstudio_so101/so101.xml",
+      "asset_revision_blobs": {"scene_xml": "f6d8d5b119f0966a8c1139fa65277355b8474327", "model_xml": "aee28c73c421ffb1e62bebe4dc8cafabc2daf339"},
+      "license": "Apache-2.0 declared in robotstudio_so101/LICENSE",
+      "upstream_requirements": "The asset README states MuJoCo 3.1.3 or later and documents a camera mount.",
+      "status": "candidate_only_not_downloaded_not_adopted",
+      "limitations": ["The upstream model is a public robot description, not evidence that it matches this specific physical SO-101 calibration.", "It does not provide this project's two fixed-depth-camera intrinsics, extrinsics, synchronization, noise, or actual coverage."]
+    },
+    {
+      "id": "A-JOHANNSTARK-SO101-MUJOCO-20260728",
+      "repository": "https://github.com/johannstark/so-101-mujoco",
+      "repository_revision": "92a52112c3e3b1c6274d633f75203c9482facf3e",
+      "license": "Apache-2.0 repository metadata observed",
+      "status": "candidate_only_not_downloaded_not_adopted",
+      "limitations": ["Third-party simulation environment; no equivalence to project hardware or camera setup has been checked."]
+    }
+  ],
+  "candidate_assumptions": [
+    {
+      "id": "H-OBS-001",
+      "statement": "A pinned one-SO-101 MuJoCo scene can repeatedly emit reviewable three-view observations for a fixed seed.",
+      "status": "planned_to_test",
+      "evidence_needed": "Formal run manifest, per-seed artifacts and hashes, validator outcome, and human review."
+    },
+    {
+      "id": "H-COORD-001",
+      "statement": "A behavior-tree coordination representation will transfer usefully from MRBTP's symbolic environments to this project.",
+      "status": "unverified; out of scope for this experiment",
+      "evidence_needed": "A later protocol-level experiment after core interfaces are frozen."
+    },
+    {
+      "id": "H-TAMP-001",
+      "statement": "Information actions improve task outcomes under this project's sensor uncertainty.",
+      "status": "unverified; out of scope for this experiment",
+      "evidence_needed": "Later controlled comparison with frozen perception, action, risk and acceptance definitions."
+    }
+  ],
+  "formal_run": {
+    "manifest_path": "research/runs/EXP-20260831-001-so101-mujoco-observation-preflight.json",
+    "state": "blocked_before_execution; no formal experiment has run",
+    "blockers": ["The actual SO-101 model/calibration source and safe static pose are not registered.", "The wrist RGB and two fixed-depth cameras lack make/model, intrinsics, extrinsics, synchronization, noise and coverage records.", "The table workspace bounds are not registered."],
+    "required_before_execution": ["choose and freeze a model source after checking correspondence to this hardware", "register a safe static pose and workspace bounds", "register all three camera configurations", "create immutable run manifest", "record code/config/input/artifact hashes", "validate manifest", "obtain human review separately from validation"]
+  },
+  "review": {
+    "status": "pending_human_review",
+    "adopted_conclusions": []
+  }
+}
