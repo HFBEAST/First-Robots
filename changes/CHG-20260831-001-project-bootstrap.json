@@ -1,0 +1,55 @@
+{
+  "schema_version": "experiment-management/change-manifest/v1",
+  "change_id": "CHG-20260831-001-project-bootstrap",
+  "title": "Initialize the governed First-Robots project and optional research sidecar",
+  "started_at": "2026-08-31T23:20:25+09:00",
+  "ended_at": "2026-08-31T23:20:25+09:00",
+  "code": {
+    "commit": "51386b1290698fa71314dbe34b092dad16c4942d",
+    "traceable": true,
+    "dirty_at_start": false
+  },
+  "scope": {
+    "summary": "Record the initial project index, cognitive documentation, product status entrypoint, behavior test, collaboration rules, and detachable research boundary for human review.",
+    "paths": [
+      "project.json",
+      "AGENTS.md",
+      "README.md",
+      "docs/overview.md",
+      "docs/architecture.md",
+      "docs/status.md",
+      "src/first_robots/cli.py",
+      "scripts/run.ps1",
+      "scripts/governance.ps1",
+      "tests/test_status.py",
+      "research/README.md"
+    ]
+  },
+  "verification": [
+    {
+      "kind": "behavior",
+      "command": ["py", "-3", "-m", "unittest", "discover", "-s", "tests", "-v"],
+      "status": "passed"
+    },
+    {
+      "kind": "project-index",
+      "command": ["experiment-management", "validate-index", "."],
+      "status": "passed"
+    },
+    {
+      "kind": "research-detachment",
+      "command": ["experiment-management", "verify-detachable", "."],
+      "status": "passed"
+    }
+  ],
+  "risk": {
+    "level": "low",
+    "rollback": "Archive or remove this newly created project directory; it has no deployment, external service, hardware, or adopted research dependency."
+  },
+  "links": {
+    "run_ids": []
+  },
+  "review": {
+    "status": "pending_human_review"
+  }
+}
