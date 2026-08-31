@@ -1,0 +1,12 @@
+{
+  "kind": "formal_virtual_observation_preflight",
+  "result": {
+    "path": "research/reports/EXP-20260831-004-so101-mujoco-observation-preflight.result.json",
+    "sha256": "sha256:35bd200af6335b16bbf8e79b552eb3625621a5be1073b74ae4f95ecf51afe574"
+  },
+  "review": {
+    "status": "pending_human_review"
+  },
+  "run_id": "EXP-20260831-004-so101-mujoco-observation-preflight",
+  "schema_version": "first-robots/experiment-record/v1"
+}

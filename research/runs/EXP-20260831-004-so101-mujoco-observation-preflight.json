@@ -1,0 +1,369 @@
+{
+  "artifacts": [
+    {
+      "path": "research/artifacts/EXP-20260831-004-so101-mujoco-observation-preflight/config.json",
+      "sha256": "sha256:4af86e182d5eb21613ba8fbce3fd36d06fae7804e8795796a95c766cebe9196b"
+    },
+    {
+      "path": "research/artifacts/EXP-20260831-004-so101-mujoco-observation-preflight/derived-scene.xml",
+      "sha256": "sha256:b6fa596ca5b3d3934321dd50287fa5be21dbdb1e6a6db6af100985b6a210a79c"
+    },
+    {
+      "path": "research/artifacts/EXP-20260831-004-so101-mujoco-observation-preflight/metadata.json",
+      "sha256": "sha256:8f266907b54c739e46e9b59dbea69372cfd17537c90958bad67dac629614325d"
+    },
+    {
+      "path": "research/artifacts/EXP-20260831-004-so101-mujoco-observation-preflight/seed-00-fixed_depth_01-depth.npy",
+      "sha256": "sha256:eb8357401034385710ffdcb1b367a3a557a92d26c2d2539caef0bdae520eb048"
+    },
+    {
+      "path": "research/artifacts/EXP-20260831-004-so101-mujoco-observation-preflight/seed-00-fixed_depth_01-rgb.png",
+      "sha256": "sha256:58bd4bb2d24cdd1a4eb0b9c9580737e6ab471ad3d6bbe022c640064664d4293c"
+    },
+    {
+      "path": "research/artifacts/EXP-20260831-004-so101-mujoco-observation-preflight/seed-00-fixed_depth_02-depth.npy",
+      "sha256": "sha256:7555e63171189abf2180bc5313f9dadd001e493c91f191f2b21f36cf9b141411"
+    },
+    {
+      "path": "research/artifacts/EXP-20260831-004-so101-mujoco-observation-preflight/seed-00-fixed_depth_02-rgb.png",
+      "sha256": "sha256:ccdda069a3ad8ec5375a28f0e8d6ec51b03c2c5d6e2c708b3f6125452d4e18d7"
+    },
+    {
+      "path": "research/artifacts/EXP-20260831-004-so101-mujoco-observation-preflight/seed-00-wrist_cam-depth.npy",
+      "sha256": "sha256:23189e42e58023e15f3ef589f88da941b92ac45228a8766ba058330a6cbd39fd"
+    },
+    {
+      "path": "research/artifacts/EXP-20260831-004-so101-mujoco-observation-preflight/seed-00-wrist_cam-rgb.png",
+      "sha256": "sha256:f0f04bdeaf1cdf990f865b6083368380ad1e481429da6f049cedfddf49b9d3c4"
+    },
+    {
+      "path": "research/artifacts/EXP-20260831-004-so101-mujoco-observation-preflight/seed-01-fixed_depth_01-depth.npy",
+      "sha256": "sha256:c8068d5f0de9213c65f871a124636bffecc36b31e1b3e89a4baa85b96b6cf597"
+    },
+    {
+      "path": "research/artifacts/EXP-20260831-004-so101-mujoco-observation-preflight/seed-01-fixed_depth_01-rgb.png",
+      "sha256": "sha256:a1996a5a4f9fa88b2012661d4875c6c7617159e90a0527a989497c0af3895eaf"
+    },
+    {
+      "path": "research/artifacts/EXP-20260831-004-so101-mujoco-observation-preflight/seed-01-fixed_depth_02-depth.npy",
+      "sha256": "sha256:d6d95acca8300357819e21d907ae79b9cf36bca8db61c6d609341409aa9c9b20"
+    },
+    {
+      "path": "research/artifacts/EXP-20260831-004-so101-mujoco-observation-preflight/seed-01-fixed_depth_02-rgb.png",
+      "sha256": "sha256:cf642f7321273a501b8f8daaacacbec9a543f6ea589bb595bb5a79abbdd9486c"
+    },
+    {
+      "path": "research/artifacts/EXP-20260831-004-so101-mujoco-observation-preflight/seed-01-wrist_cam-depth.npy",
+      "sha256": "sha256:23189e42e58023e15f3ef589f88da941b92ac45228a8766ba058330a6cbd39fd"
+    },
+    {
+      "path": "research/artifacts/EXP-20260831-004-so101-mujoco-observation-preflight/seed-01-wrist_cam-rgb.png",
+      "sha256": "sha256:03e9486918775b6297a47b7167aeb42e2e2bf48ad6663fba53d56e0163635326"
+    },
+    {
+      "path": "research/artifacts/EXP-20260831-004-so101-mujoco-observation-preflight/seed-02-fixed_depth_01-depth.npy",
+      "sha256": "sha256:382cc62e6e45bc148c2245db09c999d7e1853b8fd43f9c7b407f859da14d1b30"
+    },
+    {
+      "path": "research/artifacts/EXP-20260831-004-so101-mujoco-observation-preflight/seed-02-fixed_depth_01-rgb.png",
+      "sha256": "sha256:c086b71aabf3937758f96885739968c27540322c5217d271da7f2af037464e00"
+    },
+    {
+      "path": "research/artifacts/EXP-20260831-004-so101-mujoco-observation-preflight/seed-02-fixed_depth_02-depth.npy",
+      "sha256": "sha256:61214bb7257a98412b5c5ea91c9e4925e138d4163efe640abc93138f79c79584"
+    },
+    {
+      "path": "research/artifacts/EXP-20260831-004-so101-mujoco-observation-preflight/seed-02-fixed_depth_02-rgb.png",
+      "sha256": "sha256:624827283ead644efeeb41bfd879e90e77c414be24314c012f592423cc8e8322"
+    },
+    {
+      "path": "research/artifacts/EXP-20260831-004-so101-mujoco-observation-preflight/seed-02-wrist_cam-depth.npy",
+      "sha256": "sha256:23189e42e58023e15f3ef589f88da941b92ac45228a8766ba058330a6cbd39fd"
+    },
+    {
+      "path": "research/artifacts/EXP-20260831-004-so101-mujoco-observation-preflight/seed-02-wrist_cam-rgb.png",
+      "sha256": "sha256:03e9486918775b6297a47b7167aeb42e2e2bf48ad6663fba53d56e0163635326"
+    },
+    {
+      "path": "research/artifacts/EXP-20260831-004-so101-mujoco-observation-preflight/seed-03-fixed_depth_01-depth.npy",
+      "sha256": "sha256:810a040c0db9f082f51427a119b8bc468c1aa7c955220beee9b97a8685e61586"
+    },
+    {
+      "path": "research/artifacts/EXP-20260831-004-so101-mujoco-observation-preflight/seed-03-fixed_depth_01-rgb.png",
+      "sha256": "sha256:5714014d335900670355ae919f6854040a867225cb82fc60be5de04f51794fc9"
+    },
+    {
+      "path": "research/artifacts/EXP-20260831-004-so101-mujoco-observation-preflight/seed-03-fixed_depth_02-depth.npy",
+      "sha256": "sha256:6d86e38dbe0c6b42fb15e5045490bcb6b843751d734c1532cc0f5498b56dcc92"
+    },
+    {
+      "path": "research/artifacts/EXP-20260831-004-so101-mujoco-observation-preflight/seed-03-fixed_depth_02-rgb.png",
+      "sha256": "sha256:63abe1595cc0575a947f1e3acc3416cb682f84def677962874e4d0409790bc9f"
+    },
+    {
+      "path": "research/artifacts/EXP-20260831-004-so101-mujoco-observation-preflight/seed-03-wrist_cam-depth.npy",
+      "sha256": "sha256:23189e42e58023e15f3ef589f88da941b92ac45228a8766ba058330a6cbd39fd"
+    },
+    {
+      "path": "research/artifacts/EXP-20260831-004-so101-mujoco-observation-preflight/seed-03-wrist_cam-rgb.png",
+      "sha256": "sha256:03e9486918775b6297a47b7167aeb42e2e2bf48ad6663fba53d56e0163635326"
+    },
+    {
+      "path": "research/artifacts/EXP-20260831-004-so101-mujoco-observation-preflight/seed-04-fixed_depth_01-depth.npy",
+      "sha256": "sha256:70f505fe21f85d880c38ec0a7962d4486a404fee42a00e1dbfce6cdc93c785df"
+    },
+    {
+      "path": "research/artifacts/EXP-20260831-004-so101-mujoco-observation-preflight/seed-04-fixed_depth_01-rgb.png",
+      "sha256": "sha256:8505eb50f9f0592447e064a3bc8428ad99dc9854ff0f5b377813f06abd934af7"
+    },
+    {
+      "path": "research/artifacts/EXP-20260831-004-so101-mujoco-observation-preflight/seed-04-fixed_depth_02-depth.npy",
+      "sha256": "sha256:8cd9ca610266b4d2a33369c6f8eb8d540baca5ea204751702c0e209a83d3bb4b"
+    },
+    {
+      "path": "research/artifacts/EXP-20260831-004-so101-mujoco-observation-preflight/seed-04-fixed_depth_02-rgb.png",
+      "sha256": "sha256:b68d6e467e9d71882c8fc0935a016f182dd1c227e8d5976cd1b2835c257663eb"
+    },
+    {
+      "path": "research/artifacts/EXP-20260831-004-so101-mujoco-observation-preflight/seed-04-wrist_cam-depth.npy",
+      "sha256": "sha256:23189e42e58023e15f3ef589f88da941b92ac45228a8766ba058330a6cbd39fd"
+    },
+    {
+      "path": "research/artifacts/EXP-20260831-004-so101-mujoco-observation-preflight/seed-04-wrist_cam-rgb.png",
+      "sha256": "sha256:03e9486918775b6297a47b7167aeb42e2e2bf48ad6663fba53d56e0163635326"
+    },
+    {
+      "path": "research/artifacts/EXP-20260831-004-so101-mujoco-observation-preflight/seed-05-fixed_depth_01-depth.npy",
+      "sha256": "sha256:00af3d7b9c6da4d9f918e5a05d122a9961058ac4b44126b4a13bb85ad0d1ed51"
+    },
+    {
+      "path": "research/artifacts/EXP-20260831-004-so101-mujoco-observation-preflight/seed-05-fixed_depth_01-rgb.png",
+      "sha256": "sha256:829ea20a7aa55ff48b9a45a429bb2f2b88278eb05ebc8f0985dfbebf647ea3f4"
+    },
+    {
+      "path": "research/artifacts/EXP-20260831-004-so101-mujoco-observation-preflight/seed-05-fixed_depth_02-depth.npy",
+      "sha256": "sha256:28a0d868c814d66275e904ed4ad22d94acad32e86a0ef7abeca04e1bab5c7cfc"
+    },
+    {
+      "path": "research/artifacts/EXP-20260831-004-so101-mujoco-observation-preflight/seed-05-fixed_depth_02-rgb.png",
+      "sha256": "sha256:1f35269bef23c56c94c31a781e9d538366da4a9bbd4e22e63e15303f940f5603"
+    },
+    {
+      "path": "research/artifacts/EXP-20260831-004-so101-mujoco-observation-preflight/seed-05-wrist_cam-depth.npy",
+      "sha256": "sha256:23189e42e58023e15f3ef589f88da941b92ac45228a8766ba058330a6cbd39fd"
+    },
+    {
+      "path": "research/artifacts/EXP-20260831-004-so101-mujoco-observation-preflight/seed-05-wrist_cam-rgb.png",
+      "sha256": "sha256:03e9486918775b6297a47b7167aeb42e2e2bf48ad6663fba53d56e0163635326"
+    },
+    {
+      "path": "research/artifacts/EXP-20260831-004-so101-mujoco-observation-preflight/seed-06-fixed_depth_01-depth.npy",
+      "sha256": "sha256:95cc9e83f2a5ce42ea2a291b539a2fa13e6c474ed6d173e62a02a5c92882eb55"
+    },
+    {
+      "path": "research/artifacts/EXP-20260831-004-so101-mujoco-observation-preflight/seed-06-fixed_depth_01-rgb.png",
+      "sha256": "sha256:29060ddde7c178aa59a09c26d4b85ae828ecd74b176fcd0f481dd4a10cbc71d2"
+    },
+    {
+      "path": "research/artifacts/EXP-20260831-004-so101-mujoco-observation-preflight/seed-06-fixed_depth_02-depth.npy",
+      "sha256": "sha256:4fe15902e1fda6b727bef5a697cf9f488a51736717894429d69a83f796f1016a"
+    },
+    {
+      "path": "research/artifacts/EXP-20260831-004-so101-mujoco-observation-preflight/seed-06-fixed_depth_02-rgb.png",
+      "sha256": "sha256:031ff8fdedf330f6b80a731e3ebf52d2234422ef39dd6a7bbd3e47c2ca662686"
+    },
+    {
+      "path": "research/artifacts/EXP-20260831-004-so101-mujoco-observation-preflight/seed-06-wrist_cam-depth.npy",
+      "sha256": "sha256:23189e42e58023e15f3ef589f88da941b92ac45228a8766ba058330a6cbd39fd"
+    },
+    {
+      "path": "research/artifacts/EXP-20260831-004-so101-mujoco-observation-preflight/seed-06-wrist_cam-rgb.png",
+      "sha256": "sha256:03e9486918775b6297a47b7167aeb42e2e2bf48ad6663fba53d56e0163635326"
+    },
+    {
+      "path": "research/artifacts/EXP-20260831-004-so101-mujoco-observation-preflight/seed-07-fixed_depth_01-depth.npy",
+      "sha256": "sha256:19194ca79fd6c9befa7e843b41bb2e2d8f7452762263e9542ceb8634b6830815"
+    },
+    {
+      "path": "research/artifacts/EXP-20260831-004-so101-mujoco-observation-preflight/seed-07-fixed_depth_01-rgb.png",
+      "sha256": "sha256:07e3b22a4221b4443445bec27607d485e93f1b9966b6eff7e76f478e63752d60"
+    },
+    {
+      "path": "research/artifacts/EXP-20260831-004-so101-mujoco-observation-preflight/seed-07-fixed_depth_02-depth.npy",
+      "sha256": "sha256:038749ccf91ebdcbc5d4cb30a73aa8975d69fd3ee3d797045c52148ec41fe740"
+    },
+    {
+      "path": "research/artifacts/EXP-20260831-004-so101-mujoco-observation-preflight/seed-07-fixed_depth_02-rgb.png",
+      "sha256": "sha256:e42424081902f4047ec3cb97dcb3004c1de5dcc646b7c46b64c0edf39abae208"
+    },
+    {
+      "path": "research/artifacts/EXP-20260831-004-so101-mujoco-observation-preflight/seed-07-wrist_cam-depth.npy",
+      "sha256": "sha256:23189e42e58023e15f3ef589f88da941b92ac45228a8766ba058330a6cbd39fd"
+    },
+    {
+      "path": "research/artifacts/EXP-20260831-004-so101-mujoco-observation-preflight/seed-07-wrist_cam-rgb.png",
+      "sha256": "sha256:03e9486918775b6297a47b7167aeb42e2e2bf48ad6663fba53d56e0163635326"
+    },
+    {
+      "path": "research/artifacts/EXP-20260831-004-so101-mujoco-observation-preflight/seed-08-fixed_depth_01-depth.npy",
+      "sha256": "sha256:cabb4461c4e48bb3e7bfcf1701c54f6d23211da0881373ff4f4218c5b11b66ab"
+    },
+    {
+      "path": "research/artifacts/EXP-20260831-004-so101-mujoco-observation-preflight/seed-08-fixed_depth_01-rgb.png",
+      "sha256": "sha256:c4e8c4b32fb6fccddb461b6fe22868e5f0072af65c39b0553c66e27c3c930434"
+    },
+    {
+      "path": "research/artifacts/EXP-20260831-004-so101-mujoco-observation-preflight/seed-08-fixed_depth_02-depth.npy",
+      "sha256": "sha256:3fbb558398b696edd04ddefb19df03d32246f0b850245216c361d06567a75ed1"
+    },
+    {
+      "path": "research/artifacts/EXP-20260831-004-so101-mujoco-observation-preflight/seed-08-fixed_depth_02-rgb.png",
+      "sha256": "sha256:537425cfe0eaafa93e41a203245682a4cf7ac8d0b1aa03baac1c881d3fd88567"
+    },
+    {
+      "path": "research/artifacts/EXP-20260831-004-so101-mujoco-observation-preflight/seed-08-wrist_cam-depth.npy",
+      "sha256": "sha256:23189e42e58023e15f3ef589f88da941b92ac45228a8766ba058330a6cbd39fd"
+    },
+    {
+      "path": "research/artifacts/EXP-20260831-004-so101-mujoco-observation-preflight/seed-08-wrist_cam-rgb.png",
+      "sha256": "sha256:03e9486918775b6297a47b7167aeb42e2e2bf48ad6663fba53d56e0163635326"
+    },
+    {
+      "path": "research/artifacts/EXP-20260831-004-so101-mujoco-observation-preflight/seed-09-fixed_depth_01-depth.npy",
+      "sha256": "sha256:6aeca8e083d55f07a0a20484e6aca3140fcaacc4742929b851f76671432d8f28"
+    },
+    {
+      "path": "research/artifacts/EXP-20260831-004-so101-mujoco-observation-preflight/seed-09-fixed_depth_01-rgb.png",
+      "sha256": "sha256:1404d2b65ace3d0eec61f327c303f16a1534440b98dfa06bd2a40d356d8afefc"
+    },
+    {
+      "path": "research/artifacts/EXP-20260831-004-so101-mujoco-observation-preflight/seed-09-fixed_depth_02-depth.npy",
+      "sha256": "sha256:7750d4d38da3f9e4a1e01458e4e0d740befcffbfbfb971eff213a279af174951"
+    },
+    {
+      "path": "research/artifacts/EXP-20260831-004-so101-mujoco-observation-preflight/seed-09-fixed_depth_02-rgb.png",
+      "sha256": "sha256:23f9b61f3885ac8c79e138edc9d0624951f78eaf24a8912bc1316bce868e5088"
+    },
+    {
+      "path": "research/artifacts/EXP-20260831-004-so101-mujoco-observation-preflight/seed-09-wrist_cam-depth.npy",
+      "sha256": "sha256:23189e42e58023e15f3ef589f88da941b92ac45228a8766ba058330a6cbd39fd"
+    },
+    {
+      "path": "research/artifacts/EXP-20260831-004-so101-mujoco-observation-preflight/seed-09-wrist_cam-rgb.png",
+      "sha256": "sha256:03e9486918775b6297a47b7167aeb42e2e2bf48ad6663fba53d56e0163635326"
+    },
+    {
+      "path": "research/reports/EXP-20260831-004-so101-mujoco-observation-preflight.result.json",
+      "sha256": "sha256:35bd200af6335b16bbf8e79b552eb3625621a5be1073b74ae4f95ecf51afe574"
+    },
+    {
+      "path": "research/experiments/EXP-20260831-004-so101-mujoco-observation-preflight.record.json",
+      "sha256": "sha256:4e46c0ea97bb3932404151e5ddf6f25701be4d79305c2209db484e2d5ddfcbb7"
+    }
+  ],
+  "baseline": {
+    "kind": "comparison",
+    "reference": "Render the final identical wrist-camera state twice; equality only tests this run's renderer repeatability."
+  },
+  "code": {
+    "commit": "3b1c0f7bd61a4c226b52b02c51898eaabbc0cc60",
+    "dirty_at_start": false,
+    "repository": "H:/0_program/My_action/First-Robots",
+    "traceable": true
+  },
+  "ended_at": "2026-08-31T14:54:04.851585Z",
+  "execution": {
+    "command": [
+      "H:\\0_program\\My_action\\First-Robots\\research\\.venvs\\mrbtp-demo-py312\\Scripts\\python.exe",
+      "research/experiments/run_so101_mujoco_observation_preflight.py"
+    ],
+    "parameters": {
+      "actuation": "disabled",
+      "reach_samples": 10000,
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "workspace_radius_factor": 0.5
+    },
+    "script": "research/experiments/run_so101_mujoco_observation_preflight.py"
+  },
+  "inputs": [
+    {
+      "kind": "configuration",
+      "path": "research/configs/EXP-20260831-001-so101-mujoco-observation-preflight.json",
+      "sha256": "sha256:4af86e182d5eb21613ba8fbce3fd36d06fae7804e8795796a95c766cebe9196b"
+    },
+    {
+      "kind": "candidate_model",
+      "license": "Apache-2.0",
+      "path": "research/sources/mujoco_menagerie_robotstudio_so101/robotstudio_so101/scene.xml",
+      "revision": "da76818e269b82289eba39808e2fb91d679d6994",
+      "sha256": "sha256:65496b0061ca3ddd92b58fe09bd30f6a4a443f137cc42cf8975d5cff23030bfd"
+    }
+  ],
+  "level": "formal",
+  "objective": "Verify repeatable virtual three-view observation artifacts for an authorized candidate SO-101 MuJoCo model without asserting hardware equivalence.",
+  "results": {
+    "criteria": "All 10 seeds emitted reviewable RGB/depth artifacts; model loading and repeated wrist rendering completed. This is not a hardware or capability acceptance criterion.",
+    "duration_seconds": 1.286816,
+    "metrics": [
+      {
+        "name": "episode_count",
+        "unit": "episodes",
+        "value": 10
+      },
+      {
+        "name": "estimated_max_radial_reach",
+        "unit": "model_units",
+        "value": 0.47835743587233487
+      },
+      {
+        "name": "virtual_workspace_radius",
+        "unit": "model_units",
+        "value": 0.23917871793616743
+      },
+      {
+        "name": "repeat_wrist_rgb_hash_equal",
+        "unit": "boolean",
+        "value": true
+      },
+      {
+        "name": "wrist_cam_geometry_visible_episodes",
+        "unit": "episodes",
+        "value": 0
+      },
+      {
+        "name": "fixed_depth_01_geometry_visible_episodes",
+        "unit": "episodes",
+        "value": 9
+      },
+      {
+        "name": "fixed_depth_02_geometry_visible_episodes",
+        "unit": "episodes",
+        "value": 9
+      }
+    ],
+    "passed": true
+  },
+  "review": {
+    "note": "Virtual-adapter evidence only; no conclusion is adopted.",
+    "status": "pending_human_review"
+  },
+  "run_id": "EXP-20260831-004-so101-mujoco-observation-preflight",
+  "runtime": {
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.12.11",
+    "random_seed": 0
+  },
+  "schema_version": "experiment-management/run-manifest/v1",
+  "started_at": "2026-08-31T14:54:03.563855Z"
+}
