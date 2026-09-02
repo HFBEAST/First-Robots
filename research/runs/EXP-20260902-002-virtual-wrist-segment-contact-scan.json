@@ -1,0 +1,124 @@
+{
+  "artifacts": [
+    {
+      "path": "research/artifacts/EXP-20260902-002-virtual-wrist-segment-contact-scan/config.json",
+      "sha256": "sha256:38a5bb496ae18d1dfa8e97501bd80a99768ba32cd4aa019d798427d568220d39"
+    },
+    {
+      "path": "research/artifacts/EXP-20260902-002-virtual-wrist-segment-contact-scan/segment-contact-scan.json",
+      "sha256": "sha256:ad66ed399f5c6a96b6af3449cc9961f0225fddd73fc612cb8caecd651c4cf139"
+    },
+    {
+      "path": "research/reports/EXP-20260902-002-virtual-wrist-segment-contact-scan.result.json",
+      "sha256": "sha256:a753fad60fd6679de643ff44d70b2e7bd95606b0b5924adb0b7d116e8f0bb65a"
+    },
+    {
+      "path": "research/experiments/EXP-20260902-002-virtual-wrist-segment-contact-scan.record.json",
+      "sha256": "sha256:a1b52fa6f197e19ec82ef4008ad4186df4c6c8c631828b9344c93fe6e92698ff"
+    }
+  ],
+  "baseline": {
+    "kind": "comparison",
+    "reference": "EXP-20260901-002 records static sampled poses, not intermediate configurations."
+  },
+  "code": {
+    "commit": "b8061a047f03f4064922cb41df2b9f28113c6402",
+    "dirty_at_start": false,
+    "repository": "H:/0_program/My_action/First-Robots",
+    "traceable": true
+  },
+  "ended_at": "2026-09-02T12:17:09.532925Z",
+  "execution": {
+    "command": [
+      "H:\\0_program\\My_action\\First-Robots\\research\\.venvs\\mrbtp-demo-py312\\Scripts\\python.exe",
+      "research/experiments/run_virtual_wrist_segment_contact_scan_v2.py"
+    ],
+    "parameters": {
+      "actuation": "disabled",
+      "contact_measurement": "MuJoCo static contact count after mj_forward",
+      "cup_seeds": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "dynamics": "disabled",
+      "end_configuration": "EXP-20260901-002 first_maximum_zero_contact qpos",
+      "joint_limits": "candidate MJCF limits checked at every sampled configuration",
+      "segment_samples": 65,
+      "start_configuration": "default qpos from EXP-20260901-001",
+      "workspace_radius": 0.23917871793616743
+    },
+    "script": "research/experiments/run_virtual_wrist_segment_contact_scan_v2.py"
+  },
+  "inputs": [
+    {
+      "kind": "configuration",
+      "path": "research/configs/EXP-20260902-002-virtual-wrist-segment-contact-scan.json",
+      "sha256": "sha256:86e00b3b7ea75d92a5005ed4af55db37a220274140edad927601966958ac63c4"
+    },
+    {
+      "kind": "source_coverage_table",
+      "path": "research/artifacts/EXP-20260901-001-virtual-wrist-coverage/coverage.json",
+      "sha256": "sha256:cb0baafb10a8f15b1a0e589264bad39a3c82bc1d56eeb0d0339ed1d321946b1b"
+    },
+    {
+      "kind": "source_contact_table",
+      "path": "research/artifacts/EXP-20260901-002-virtual-wrist-contact-gate/contact-coverage.json",
+      "sha256": "sha256:ecf0a918d4427db21d154c3c4dd44292ec450fa4a0cf31fe90b341d8eac081d2"
+    },
+    {
+      "kind": "model",
+      "path": "research/sources/mujoco_menagerie_robotstudio_so101/robotstudio_so101/scene.xml",
+      "revision": "da76818e269b82289eba39808e2fb91d679d6994",
+      "sha256": "sha256:65496b0061ca3ddd92b58fe09bd30f6a4a443f137cc42cf8975d5cff23030bfd"
+    }
+  ],
+  "level": "formal",
+  "objective": "Record a discrete candidate-model configuration segment without asserting a safe or executable motion.",
+  "results": {
+    "criteria": "All fixed discrete configurations and cup positions were recorded; no motion or safety criterion.",
+    "duration_seconds": 0.205056,
+    "metrics": [
+      {
+        "name": "segment_samples",
+        "unit": "configurations",
+        "value": 65
+      },
+      {
+        "name": "in_candidate_joint_limits_samples",
+        "unit": "configurations",
+        "value": 65
+      },
+      {
+        "name": "zero_contact_all_cups_samples",
+        "unit": "configurations",
+        "value": 65
+      },
+      {
+        "name": "maximum_visible_cups",
+        "unit": "cups",
+        "value": 8
+      }
+    ],
+    "passed": true
+  },
+  "review": {
+    "note": "Candidate-model discrete configuration scan only.",
+    "status": "pending_human_review"
+  },
+  "run_id": "EXP-20260902-002-virtual-wrist-segment-contact-scan",
+  "runtime": {
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.12.11",
+    "random_seed": 11
+  },
+  "schema_version": "experiment-management/run-manifest/v1",
+  "started_at": "2026-09-02T12:17:09.327332Z"
+}

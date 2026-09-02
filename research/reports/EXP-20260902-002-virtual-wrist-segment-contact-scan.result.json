@@ -1,0 +1,21 @@
+{
+  "limits": [
+    "A discrete linear joint-configuration scan is not an executable, time-parameterized, dynamically feasible, or continuous collision-free trajectory.",
+    "Zero MuJoCo contacts at sampled configurations is not physical collision safety, a safe motion, reachability, load capacity, or real-camera validity.",
+    "No controller, IK, trajectory optimizer, torque, hardware command, or multi-robot coordination is performed."
+  ],
+  "observations": {
+    "in_candidate_joint_limits_samples": 65,
+    "maximum_visible_cups": 8,
+    "segment_samples": 65,
+    "source_endpoint_sample_index": 166,
+    "zero_contact_all_cups_samples": 65
+  },
+  "review": {
+    "adopted": false,
+    "status": "pending_human_review"
+  },
+  "run_id": "EXP-20260902-002-virtual-wrist-segment-contact-scan",
+  "schema_version": "first-robots/research-result/v1",
+  "status": "observed_pending_human_review"
+}
