@@ -1,0 +1,4563 @@
+{
+  "counts": {
+    "ray_and_raster_invisible": 610,
+    "ray_and_raster_visible": 0,
+    "ray_invisible_raster_visible": 0,
+    "ray_visible_raster_invisible": 40
+  },
+  "mujoco": "3.12.0",
+  "rows": [
+    {
+      "configuration_index": 0,
+      "cup_index": 0,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 0,
+      "cup_index": 1,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 0,
+      "cup_index": 2,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 0,
+      "cup_index": 3,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 0,
+      "cup_index": 4,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 0,
+      "cup_index": 5,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 0,
+      "cup_index": 6,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 0,
+      "cup_index": 7,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 0,
+      "cup_index": 8,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 0,
+      "cup_index": 9,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 1,
+      "cup_index": 0,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 1,
+      "cup_index": 1,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 1,
+      "cup_index": 2,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 1,
+      "cup_index": 3,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 1,
+      "cup_index": 4,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 1,
+      "cup_index": 5,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 1,
+      "cup_index": 6,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 1,
+      "cup_index": 7,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 1,
+      "cup_index": 8,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 1,
+      "cup_index": 9,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 2,
+      "cup_index": 0,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 2,
+      "cup_index": 1,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 2,
+      "cup_index": 2,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 2,
+      "cup_index": 3,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 2,
+      "cup_index": 4,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 2,
+      "cup_index": 5,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 2,
+      "cup_index": 6,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 2,
+      "cup_index": 7,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 2,
+      "cup_index": 8,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 2,
+      "cup_index": 9,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 3,
+      "cup_index": 0,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 3,
+      "cup_index": 1,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 3,
+      "cup_index": 2,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 3,
+      "cup_index": 3,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 3,
+      "cup_index": 4,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 3,
+      "cup_index": 5,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 3,
+      "cup_index": 6,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 3,
+      "cup_index": 7,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 3,
+      "cup_index": 8,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 3,
+      "cup_index": 9,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 4,
+      "cup_index": 0,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 4,
+      "cup_index": 1,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 4,
+      "cup_index": 2,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 4,
+      "cup_index": 3,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 4,
+      "cup_index": 4,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 4,
+      "cup_index": 5,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 4,
+      "cup_index": 6,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 4,
+      "cup_index": 7,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 4,
+      "cup_index": 8,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 4,
+      "cup_index": 9,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 5,
+      "cup_index": 0,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 5,
+      "cup_index": 1,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 5,
+      "cup_index": 2,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 5,
+      "cup_index": 3,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 5,
+      "cup_index": 4,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 5,
+      "cup_index": 5,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 5,
+      "cup_index": 6,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 5,
+      "cup_index": 7,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 5,
+      "cup_index": 8,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 5,
+      "cup_index": 9,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 6,
+      "cup_index": 0,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 6,
+      "cup_index": 1,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 6,
+      "cup_index": 2,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 6,
+      "cup_index": 3,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 6,
+      "cup_index": 4,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 6,
+      "cup_index": 5,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 6,
+      "cup_index": 6,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 6,
+      "cup_index": 7,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 6,
+      "cup_index": 8,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 6,
+      "cup_index": 9,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 7,
+      "cup_index": 0,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 7,
+      "cup_index": 1,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 7,
+      "cup_index": 2,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 7,
+      "cup_index": 3,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 7,
+      "cup_index": 4,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 7,
+      "cup_index": 5,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 7,
+      "cup_index": 6,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 7,
+      "cup_index": 7,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 7,
+      "cup_index": 8,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 7,
+      "cup_index": 9,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 8,
+      "cup_index": 0,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 8,
+      "cup_index": 1,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 8,
+      "cup_index": 2,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 8,
+      "cup_index": 3,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 8,
+      "cup_index": 4,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 8,
+      "cup_index": 5,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 8,
+      "cup_index": 6,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 8,
+      "cup_index": 7,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 8,
+      "cup_index": 8,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 8,
+      "cup_index": 9,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 9,
+      "cup_index": 0,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 9,
+      "cup_index": 1,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 9,
+      "cup_index": 2,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 9,
+      "cup_index": 3,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 9,
+      "cup_index": 4,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 9,
+      "cup_index": 5,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 9,
+      "cup_index": 6,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 9,
+      "cup_index": 7,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 9,
+      "cup_index": 8,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 9,
+      "cup_index": 9,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 10,
+      "cup_index": 0,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 10,
+      "cup_index": 1,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 10,
+      "cup_index": 2,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 10,
+      "cup_index": 3,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 10,
+      "cup_index": 4,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 10,
+      "cup_index": 5,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 10,
+      "cup_index": 6,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 10,
+      "cup_index": 7,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 10,
+      "cup_index": 8,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 10,
+      "cup_index": 9,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 11,
+      "cup_index": 0,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 11,
+      "cup_index": 1,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 11,
+      "cup_index": 2,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 11,
+      "cup_index": 3,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 11,
+      "cup_index": 4,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 11,
+      "cup_index": 5,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 11,
+      "cup_index": 6,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 11,
+      "cup_index": 7,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 11,
+      "cup_index": 8,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 11,
+      "cup_index": 9,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 12,
+      "cup_index": 0,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 12,
+      "cup_index": 1,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 12,
+      "cup_index": 2,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 12,
+      "cup_index": 3,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 12,
+      "cup_index": 4,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 12,
+      "cup_index": 5,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 12,
+      "cup_index": 6,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 12,
+      "cup_index": 7,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 12,
+      "cup_index": 8,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 12,
+      "cup_index": 9,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 13,
+      "cup_index": 0,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 13,
+      "cup_index": 1,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 13,
+      "cup_index": 2,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 13,
+      "cup_index": 3,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 13,
+      "cup_index": 4,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 13,
+      "cup_index": 5,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 13,
+      "cup_index": 6,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 13,
+      "cup_index": 7,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 13,
+      "cup_index": 8,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 13,
+      "cup_index": 9,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 14,
+      "cup_index": 0,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 14,
+      "cup_index": 1,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 14,
+      "cup_index": 2,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 14,
+      "cup_index": 3,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 14,
+      "cup_index": 4,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 14,
+      "cup_index": 5,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 14,
+      "cup_index": 6,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 14,
+      "cup_index": 7,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 14,
+      "cup_index": 8,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 14,
+      "cup_index": 9,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 15,
+      "cup_index": 0,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 15,
+      "cup_index": 1,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 15,
+      "cup_index": 2,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 15,
+      "cup_index": 3,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 15,
+      "cup_index": 4,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 15,
+      "cup_index": 5,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 15,
+      "cup_index": 6,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 15,
+      "cup_index": 7,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 15,
+      "cup_index": 8,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 15,
+      "cup_index": 9,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 16,
+      "cup_index": 0,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 16,
+      "cup_index": 1,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 16,
+      "cup_index": 2,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 16,
+      "cup_index": 3,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 16,
+      "cup_index": 4,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 16,
+      "cup_index": 5,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 16,
+      "cup_index": 6,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 16,
+      "cup_index": 7,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 16,
+      "cup_index": 8,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 16,
+      "cup_index": 9,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 17,
+      "cup_index": 0,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 17,
+      "cup_index": 1,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 17,
+      "cup_index": 2,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 17,
+      "cup_index": 3,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 17,
+      "cup_index": 4,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 17,
+      "cup_index": 5,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 17,
+      "cup_index": 6,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 17,
+      "cup_index": 7,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 17,
+      "cup_index": 8,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 17,
+      "cup_index": 9,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 18,
+      "cup_index": 0,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 18,
+      "cup_index": 1,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 18,
+      "cup_index": 2,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 18,
+      "cup_index": 3,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 18,
+      "cup_index": 4,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 18,
+      "cup_index": 5,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 18,
+      "cup_index": 6,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 18,
+      "cup_index": 7,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 18,
+      "cup_index": 8,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 18,
+      "cup_index": 9,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 19,
+      "cup_index": 0,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 19,
+      "cup_index": 1,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 19,
+      "cup_index": 2,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 19,
+      "cup_index": 3,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 19,
+      "cup_index": 4,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 19,
+      "cup_index": 5,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 19,
+      "cup_index": 6,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 19,
+      "cup_index": 7,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 19,
+      "cup_index": 8,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 19,
+      "cup_index": 9,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 20,
+      "cup_index": 0,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 20,
+      "cup_index": 1,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 20,
+      "cup_index": 2,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 20,
+      "cup_index": 3,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 20,
+      "cup_index": 4,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 20,
+      "cup_index": 5,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 20,
+      "cup_index": 6,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 20,
+      "cup_index": 7,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 20,
+      "cup_index": 8,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 20,
+      "cup_index": 9,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 21,
+      "cup_index": 0,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 21,
+      "cup_index": 1,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 21,
+      "cup_index": 2,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 21,
+      "cup_index": 3,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 21,
+      "cup_index": 4,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 21,
+      "cup_index": 5,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 21,
+      "cup_index": 6,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 21,
+      "cup_index": 7,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 21,
+      "cup_index": 8,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 21,
+      "cup_index": 9,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 22,
+      "cup_index": 0,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 22,
+      "cup_index": 1,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 22,
+      "cup_index": 2,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 22,
+      "cup_index": 3,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 22,
+      "cup_index": 4,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 22,
+      "cup_index": 5,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 22,
+      "cup_index": 6,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 22,
+      "cup_index": 7,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 22,
+      "cup_index": 8,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 22,
+      "cup_index": 9,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 23,
+      "cup_index": 0,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 23,
+      "cup_index": 1,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 23,
+      "cup_index": 2,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 23,
+      "cup_index": 3,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 23,
+      "cup_index": 4,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 23,
+      "cup_index": 5,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 23,
+      "cup_index": 6,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 23,
+      "cup_index": 7,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 23,
+      "cup_index": 8,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 23,
+      "cup_index": 9,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 24,
+      "cup_index": 0,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 24,
+      "cup_index": 1,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 24,
+      "cup_index": 2,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 24,
+      "cup_index": 3,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 24,
+      "cup_index": 4,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 24,
+      "cup_index": 5,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 24,
+      "cup_index": 6,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 24,
+      "cup_index": 7,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 24,
+      "cup_index": 8,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 24,
+      "cup_index": 9,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 25,
+      "cup_index": 0,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 25,
+      "cup_index": 1,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 25,
+      "cup_index": 2,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 25,
+      "cup_index": 3,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 25,
+      "cup_index": 4,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 25,
+      "cup_index": 5,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 25,
+      "cup_index": 6,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 25,
+      "cup_index": 7,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 25,
+      "cup_index": 8,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 25,
+      "cup_index": 9,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 26,
+      "cup_index": 0,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 26,
+      "cup_index": 1,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 26,
+      "cup_index": 2,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 26,
+      "cup_index": 3,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 26,
+      "cup_index": 4,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 26,
+      "cup_index": 5,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 26,
+      "cup_index": 6,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 26,
+      "cup_index": 7,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 26,
+      "cup_index": 8,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 26,
+      "cup_index": 9,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 27,
+      "cup_index": 0,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 27,
+      "cup_index": 1,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 27,
+      "cup_index": 2,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 27,
+      "cup_index": 3,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 27,
+      "cup_index": 4,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 27,
+      "cup_index": 5,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 27,
+      "cup_index": 6,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 27,
+      "cup_index": 7,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 27,
+      "cup_index": 8,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 27,
+      "cup_index": 9,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 28,
+      "cup_index": 0,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 28,
+      "cup_index": 1,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 28,
+      "cup_index": 2,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 28,
+      "cup_index": 3,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 28,
+      "cup_index": 4,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 28,
+      "cup_index": 5,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 28,
+      "cup_index": 6,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 28,
+      "cup_index": 7,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 28,
+      "cup_index": 8,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 28,
+      "cup_index": 9,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 29,
+      "cup_index": 0,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 29,
+      "cup_index": 1,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 29,
+      "cup_index": 2,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 29,
+      "cup_index": 3,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 29,
+      "cup_index": 4,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 29,
+      "cup_index": 5,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 29,
+      "cup_index": 6,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 29,
+      "cup_index": 7,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 29,
+      "cup_index": 8,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 29,
+      "cup_index": 9,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 30,
+      "cup_index": 0,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 30,
+      "cup_index": 1,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 30,
+      "cup_index": 2,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 30,
+      "cup_index": 3,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 30,
+      "cup_index": 4,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 30,
+      "cup_index": 5,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 30,
+      "cup_index": 6,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 30,
+      "cup_index": 7,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 30,
+      "cup_index": 8,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 30,
+      "cup_index": 9,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 31,
+      "cup_index": 0,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 31,
+      "cup_index": 1,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 31,
+      "cup_index": 2,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 31,
+      "cup_index": 3,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 31,
+      "cup_index": 4,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 31,
+      "cup_index": 5,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 31,
+      "cup_index": 6,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 31,
+      "cup_index": 7,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 31,
+      "cup_index": 8,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 31,
+      "cup_index": 9,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 32,
+      "cup_index": 0,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 32,
+      "cup_index": 1,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 32,
+      "cup_index": 2,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 32,
+      "cup_index": 3,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 32,
+      "cup_index": 4,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 32,
+      "cup_index": 5,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 32,
+      "cup_index": 6,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 32,
+      "cup_index": 7,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 32,
+      "cup_index": 8,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 32,
+      "cup_index": 9,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 33,
+      "cup_index": 0,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 33,
+      "cup_index": 1,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 33,
+      "cup_index": 2,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 33,
+      "cup_index": 3,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 33,
+      "cup_index": 4,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 33,
+      "cup_index": 5,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 33,
+      "cup_index": 6,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 33,
+      "cup_index": 7,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 33,
+      "cup_index": 8,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 33,
+      "cup_index": 9,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 34,
+      "cup_index": 0,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 34,
+      "cup_index": 1,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 34,
+      "cup_index": 2,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 34,
+      "cup_index": 3,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 34,
+      "cup_index": 4,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 34,
+      "cup_index": 5,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 34,
+      "cup_index": 6,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 34,
+      "cup_index": 7,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 34,
+      "cup_index": 8,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 34,
+      "cup_index": 9,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 35,
+      "cup_index": 0,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 35,
+      "cup_index": 1,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 35,
+      "cup_index": 2,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 35,
+      "cup_index": 3,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 35,
+      "cup_index": 4,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 35,
+      "cup_index": 5,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 35,
+      "cup_index": 6,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 35,
+      "cup_index": 7,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 35,
+      "cup_index": 8,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 35,
+      "cup_index": 9,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 36,
+      "cup_index": 0,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 36,
+      "cup_index": 1,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 36,
+      "cup_index": 2,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 36,
+      "cup_index": 3,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 36,
+      "cup_index": 4,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 36,
+      "cup_index": 5,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 36,
+      "cup_index": 6,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 36,
+      "cup_index": 7,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 36,
+      "cup_index": 8,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 36,
+      "cup_index": 9,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 37,
+      "cup_index": 0,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 37,
+      "cup_index": 1,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 37,
+      "cup_index": 2,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 37,
+      "cup_index": 3,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 37,
+      "cup_index": 4,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 37,
+      "cup_index": 5,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 37,
+      "cup_index": 6,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 37,
+      "cup_index": 7,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 37,
+      "cup_index": 8,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 37,
+      "cup_index": 9,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 38,
+      "cup_index": 0,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 38,
+      "cup_index": 1,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 38,
+      "cup_index": 2,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 38,
+      "cup_index": 3,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 38,
+      "cup_index": 4,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 38,
+      "cup_index": 5,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 38,
+      "cup_index": 6,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 38,
+      "cup_index": 7,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 38,
+      "cup_index": 8,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 38,
+      "cup_index": 9,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 39,
+      "cup_index": 0,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 39,
+      "cup_index": 1,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 39,
+      "cup_index": 2,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 39,
+      "cup_index": 3,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 39,
+      "cup_index": 4,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 39,
+      "cup_index": 5,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 39,
+      "cup_index": 6,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 39,
+      "cup_index": 7,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 39,
+      "cup_index": 8,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 39,
+      "cup_index": 9,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 40,
+      "cup_index": 0,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 40,
+      "cup_index": 1,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 40,
+      "cup_index": 2,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 40,
+      "cup_index": 3,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 40,
+      "cup_index": 4,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 40,
+      "cup_index": 5,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 40,
+      "cup_index": 6,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 40,
+      "cup_index": 7,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 40,
+      "cup_index": 8,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 40,
+      "cup_index": 9,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 41,
+      "cup_index": 0,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 41,
+      "cup_index": 1,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 41,
+      "cup_index": 2,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 41,
+      "cup_index": 3,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 41,
+      "cup_index": 4,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 41,
+      "cup_index": 5,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 41,
+      "cup_index": 6,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 41,
+      "cup_index": 7,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 41,
+      "cup_index": 8,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 41,
+      "cup_index": 9,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 42,
+      "cup_index": 0,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 42,
+      "cup_index": 1,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 42,
+      "cup_index": 2,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 42,
+      "cup_index": 3,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 42,
+      "cup_index": 4,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 42,
+      "cup_index": 5,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 42,
+      "cup_index": 6,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 42,
+      "cup_index": 7,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 42,
+      "cup_index": 8,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 42,
+      "cup_index": 9,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 43,
+      "cup_index": 0,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 43,
+      "cup_index": 1,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 43,
+      "cup_index": 2,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 43,
+      "cup_index": 3,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 43,
+      "cup_index": 4,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 43,
+      "cup_index": 5,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 43,
+      "cup_index": 6,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 43,
+      "cup_index": 7,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 43,
+      "cup_index": 8,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 43,
+      "cup_index": 9,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 44,
+      "cup_index": 0,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 44,
+      "cup_index": 1,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 44,
+      "cup_index": 2,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 44,
+      "cup_index": 3,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 44,
+      "cup_index": 4,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 44,
+      "cup_index": 5,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 44,
+      "cup_index": 6,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 44,
+      "cup_index": 7,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 44,
+      "cup_index": 8,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 44,
+      "cup_index": 9,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 45,
+      "cup_index": 0,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 45,
+      "cup_index": 1,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 45,
+      "cup_index": 2,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 45,
+      "cup_index": 3,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 45,
+      "cup_index": 4,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 45,
+      "cup_index": 5,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 45,
+      "cup_index": 6,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 45,
+      "cup_index": 7,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 45,
+      "cup_index": 8,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 45,
+      "cup_index": 9,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 46,
+      "cup_index": 0,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 46,
+      "cup_index": 1,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 46,
+      "cup_index": 2,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 46,
+      "cup_index": 3,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 46,
+      "cup_index": 4,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 46,
+      "cup_index": 5,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 46,
+      "cup_index": 6,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 46,
+      "cup_index": 7,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 46,
+      "cup_index": 8,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 46,
+      "cup_index": 9,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 47,
+      "cup_index": 0,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 47,
+      "cup_index": 1,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 47,
+      "cup_index": 2,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 47,
+      "cup_index": 3,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 47,
+      "cup_index": 4,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 47,
+      "cup_index": 5,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 47,
+      "cup_index": 6,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 47,
+      "cup_index": 7,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 47,
+      "cup_index": 8,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 47,
+      "cup_index": 9,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 48,
+      "cup_index": 0,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 48,
+      "cup_index": 1,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 48,
+      "cup_index": 2,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 48,
+      "cup_index": 3,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 48,
+      "cup_index": 4,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 48,
+      "cup_index": 5,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 48,
+      "cup_index": 6,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 48,
+      "cup_index": 7,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 48,
+      "cup_index": 8,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 48,
+      "cup_index": 9,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 49,
+      "cup_index": 0,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 49,
+      "cup_index": 1,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 49,
+      "cup_index": 2,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 49,
+      "cup_index": 3,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 49,
+      "cup_index": 4,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 49,
+      "cup_index": 5,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 49,
+      "cup_index": 6,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 49,
+      "cup_index": 7,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 49,
+      "cup_index": 8,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 49,
+      "cup_index": 9,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 50,
+      "cup_index": 0,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 50,
+      "cup_index": 1,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 50,
+      "cup_index": 2,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 50,
+      "cup_index": 3,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 50,
+      "cup_index": 4,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 50,
+      "cup_index": 5,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 50,
+      "cup_index": 6,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 50,
+      "cup_index": 7,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 50,
+      "cup_index": 8,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 50,
+      "cup_index": 9,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 51,
+      "cup_index": 0,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 51,
+      "cup_index": 1,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 51,
+      "cup_index": 2,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 51,
+      "cup_index": 3,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 51,
+      "cup_index": 4,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 51,
+      "cup_index": 5,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 51,
+      "cup_index": 6,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 51,
+      "cup_index": 7,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 51,
+      "cup_index": 8,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 51,
+      "cup_index": 9,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 52,
+      "cup_index": 0,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 52,
+      "cup_index": 1,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 52,
+      "cup_index": 2,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 52,
+      "cup_index": 3,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 52,
+      "cup_index": 4,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 52,
+      "cup_index": 5,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 52,
+      "cup_index": 6,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 52,
+      "cup_index": 7,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 52,
+      "cup_index": 8,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 52,
+      "cup_index": 9,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 53,
+      "cup_index": 0,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 53,
+      "cup_index": 1,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 53,
+      "cup_index": 2,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 53,
+      "cup_index": 3,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 53,
+      "cup_index": 4,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 53,
+      "cup_index": 5,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 53,
+      "cup_index": 6,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 53,
+      "cup_index": 7,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 53,
+      "cup_index": 8,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 53,
+      "cup_index": 9,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 54,
+      "cup_index": 0,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 54,
+      "cup_index": 1,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 54,
+      "cup_index": 2,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 54,
+      "cup_index": 3,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 54,
+      "cup_index": 4,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 54,
+      "cup_index": 5,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 54,
+      "cup_index": 6,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 54,
+      "cup_index": 7,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 54,
+      "cup_index": 8,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 54,
+      "cup_index": 9,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 55,
+      "cup_index": 0,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 55,
+      "cup_index": 1,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 55,
+      "cup_index": 2,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 55,
+      "cup_index": 3,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 55,
+      "cup_index": 4,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 55,
+      "cup_index": 5,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 55,
+      "cup_index": 6,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 55,
+      "cup_index": 7,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 55,
+      "cup_index": 8,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 55,
+      "cup_index": 9,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 56,
+      "cup_index": 0,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 56,
+      "cup_index": 1,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 56,
+      "cup_index": 2,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 56,
+      "cup_index": 3,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 56,
+      "cup_index": 4,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 56,
+      "cup_index": 5,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 56,
+      "cup_index": 6,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 56,
+      "cup_index": 7,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 56,
+      "cup_index": 8,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 56,
+      "cup_index": 9,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 57,
+      "cup_index": 0,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 57,
+      "cup_index": 1,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 57,
+      "cup_index": 2,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 57,
+      "cup_index": 3,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 57,
+      "cup_index": 4,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 57,
+      "cup_index": 5,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 57,
+      "cup_index": 6,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 57,
+      "cup_index": 7,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 57,
+      "cup_index": 8,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 57,
+      "cup_index": 9,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 58,
+      "cup_index": 0,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 58,
+      "cup_index": 1,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 58,
+      "cup_index": 2,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 58,
+      "cup_index": 3,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 58,
+      "cup_index": 4,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 58,
+      "cup_index": 5,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 58,
+      "cup_index": 6,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 58,
+      "cup_index": 7,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 58,
+      "cup_index": 8,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 58,
+      "cup_index": 9,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 59,
+      "cup_index": 0,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 59,
+      "cup_index": 1,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 59,
+      "cup_index": 2,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 59,
+      "cup_index": 3,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 59,
+      "cup_index": 4,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 59,
+      "cup_index": 5,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 59,
+      "cup_index": 6,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 59,
+      "cup_index": 7,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 59,
+      "cup_index": 8,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 59,
+      "cup_index": 9,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 60,
+      "cup_index": 0,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 60,
+      "cup_index": 1,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 60,
+      "cup_index": 2,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 60,
+      "cup_index": 3,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 60,
+      "cup_index": 4,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 60,
+      "cup_index": 5,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 60,
+      "cup_index": 6,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 60,
+      "cup_index": 7,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 60,
+      "cup_index": 8,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 60,
+      "cup_index": 9,
+      "raster_visible": false,
+      "ray_visible": false,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 61,
+      "cup_index": 0,
+      "raster_visible": false,
+      "ray_visible": true,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 61,
+      "cup_index": 1,
+      "raster_visible": false,
+      "ray_visible": true,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 61,
+      "cup_index": 2,
+      "raster_visible": false,
+      "ray_visible": true,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 61,
+      "cup_index": 3,
+      "raster_visible": false,
+      "ray_visible": true,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 61,
+      "cup_index": 4,
+      "raster_visible": false,
+      "ray_visible": true,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 61,
+      "cup_index": 5,
+      "raster_visible": false,
+      "ray_visible": true,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 61,
+      "cup_index": 6,
+      "raster_visible": false,
+      "ray_visible": true,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 61,
+      "cup_index": 7,
+      "raster_visible": false,
+      "ray_visible": true,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 61,
+      "cup_index": 8,
+      "raster_visible": false,
+      "ray_visible": true,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 61,
+      "cup_index": 9,
+      "raster_visible": false,
+      "ray_visible": true,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 62,
+      "cup_index": 0,
+      "raster_visible": false,
+      "ray_visible": true,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 62,
+      "cup_index": 1,
+      "raster_visible": false,
+      "ray_visible": true,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 62,
+      "cup_index": 2,
+      "raster_visible": false,
+      "ray_visible": true,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 62,
+      "cup_index": 3,
+      "raster_visible": false,
+      "ray_visible": true,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 62,
+      "cup_index": 4,
+      "raster_visible": false,
+      "ray_visible": true,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 62,
+      "cup_index": 5,
+      "raster_visible": false,
+      "ray_visible": true,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 62,
+      "cup_index": 6,
+      "raster_visible": false,
+      "ray_visible": true,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 62,
+      "cup_index": 7,
+      "raster_visible": false,
+      "ray_visible": true,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 62,
+      "cup_index": 8,
+      "raster_visible": false,
+      "ray_visible": true,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 62,
+      "cup_index": 9,
+      "raster_visible": false,
+      "ray_visible": true,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 63,
+      "cup_index": 0,
+      "raster_visible": false,
+      "ray_visible": true,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 63,
+      "cup_index": 1,
+      "raster_visible": false,
+      "ray_visible": true,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 63,
+      "cup_index": 2,
+      "raster_visible": false,
+      "ray_visible": true,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 63,
+      "cup_index": 3,
+      "raster_visible": false,
+      "ray_visible": true,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 63,
+      "cup_index": 4,
+      "raster_visible": false,
+      "ray_visible": true,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 63,
+      "cup_index": 5,
+      "raster_visible": false,
+      "ray_visible": true,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 63,
+      "cup_index": 6,
+      "raster_visible": false,
+      "ray_visible": true,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 63,
+      "cup_index": 7,
+      "raster_visible": false,
+      "ray_visible": true,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 63,
+      "cup_index": 8,
+      "raster_visible": false,
+      "ray_visible": true,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 63,
+      "cup_index": 9,
+      "raster_visible": false,
+      "ray_visible": true,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 64,
+      "cup_index": 0,
+      "raster_visible": false,
+      "ray_visible": true,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 64,
+      "cup_index": 1,
+      "raster_visible": false,
+      "ray_visible": true,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 64,
+      "cup_index": 2,
+      "raster_visible": false,
+      "ray_visible": true,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 64,
+      "cup_index": 3,
+      "raster_visible": false,
+      "ray_visible": true,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 64,
+      "cup_index": 4,
+      "raster_visible": false,
+      "ray_visible": true,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 64,
+      "cup_index": 5,
+      "raster_visible": false,
+      "ray_visible": true,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 64,
+      "cup_index": 6,
+      "raster_visible": false,
+      "ray_visible": true,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 64,
+      "cup_index": 7,
+      "raster_visible": false,
+      "ray_visible": true,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 64,
+      "cup_index": 8,
+      "raster_visible": false,
+      "ray_visible": true,
+      "target_pixels": 0
+    },
+    {
+      "configuration_index": 64,
+      "cup_index": 9,
+      "raster_visible": false,
+      "ray_visible": true,
+      "target_pixels": 0
+    }
+  ],
+  "run_id": "EXP-20260902-003-virtual-wrist-raster-visibility",
+  "source_run": "EXP-20260902-002-virtual-wrist-segment-contact-scan"
+}

@@ -1,0 +1,121 @@
+{
+  "artifacts": [
+    {
+      "path": "research/artifacts/EXP-20260902-003-virtual-wrist-raster-visibility/config.json",
+      "sha256": "sha256:582a9a4b7b85535db121ae4c2f82705657684fa7c29c5994aedce9b5d0c4fd3b"
+    },
+    {
+      "path": "research/artifacts/EXP-20260902-003-virtual-wrist-raster-visibility/raster-visibility.json",
+      "sha256": "sha256:09a2dd7f40ba45e660ba582a149a3a44abdd1ede73075f7062d097d4d21033db"
+    },
+    {
+      "path": "research/reports/EXP-20260902-003-virtual-wrist-raster-visibility.result.json",
+      "sha256": "sha256:65eeda87d410c01966979879322c322a773d80ba45d6ce52746616e7f95a5e4f"
+    },
+    {
+      "path": "research/experiments/EXP-20260902-003-virtual-wrist-raster-visibility.record.json",
+      "sha256": "sha256:6c75d50eb9b6f5d388e19d6d1e34e5b5a8dcf8a517e3bd364e048484c7c0b049"
+    }
+  ],
+  "baseline": {
+    "kind": "comparison",
+    "reference": "EXP-20260902-002 reports ray-derived geometric visibility only."
+  },
+  "code": {
+    "commit": "c3140b96396611442adc77500c817d7501f73a40",
+    "dirty_at_start": false,
+    "repository": "H:/0_program/My_action/First-Robots-raster-run",
+    "traceable": true
+  },
+  "ended_at": "2026-09-02T15:51:00.933228Z",
+  "execution": {
+    "command": [
+      "H:\\0_program\\My_action\\First-Robots\\research\\.venvs\\mrbtp-demo-py312\\Scripts\\python.exe",
+      "research/experiments/run_virtual_wrist_raster_visibility.py"
+    ],
+    "parameters": {
+      "actuation": "disabled",
+      "configuration_segment": "all rows from source segment-contact-scan artifact",
+      "cup_positions": "all source cup positions",
+      "dynamics": "disabled",
+      "raster_visibility": "segmentation render contains at least one virtual_cup geom pixel",
+      "ray_visibility": "mj_ray first hit equals virtual_cup geom",
+      "renderer": {
+        "camera": "wrist_cam",
+        "height": 240,
+        "mode": "MuJoCo geom segmentation",
+        "width": 320
+      }
+    },
+    "script": "research/experiments/run_virtual_wrist_raster_visibility.py"
+  },
+  "inputs": [
+    {
+      "kind": "configuration",
+      "path": "research/configs/EXP-20260902-003-virtual-wrist-raster-visibility.json",
+      "sha256": "sha256:1855b2857aa51e4d1dea48ee7e50b648f3b7b18e1b3f594e820a970f7b337c5f"
+    },
+    {
+      "kind": "source_segment_table",
+      "path": "research/artifacts/EXP-20260902-002-virtual-wrist-segment-contact-scan/segment-contact-scan.json",
+      "sha256": "sha256:1c8b4e5559d5ebb76e3add4fed4f83088e1940290fd5ec4f6efc8b77717a5126"
+    },
+    {
+      "kind": "model",
+      "path": "research/sources/mujoco_menagerie_robotstudio_so101/robotstudio_so101/scene.xml",
+      "revision": "da76818e269b82289eba39808e2fb91d679d6994",
+      "sha256": "sha256:65496b0061ca3ddd92b58fe09bd30f6a4a443f137cc42cf8975d5cff23030bfd"
+    }
+  ],
+  "level": "formal",
+  "objective": "Compare candidate-model ray hits with virtual wrist-camera segmentation pixels without asserting perception or hardware capability.",
+  "results": {
+    "criteria": "All source configuration-cup pairs were compared and artifacts written; no perception or capability criterion.",
+    "duration_seconds": 1.137991,
+    "metrics": [
+      {
+        "name": "comparisons",
+        "unit": "configuration-cup pairs",
+        "value": 650
+      },
+      {
+        "name": "ray_and_raster_visible",
+        "unit": "configuration-cup pairs",
+        "value": 0
+      },
+      {
+        "name": "ray_visible_raster_invisible",
+        "unit": "configuration-cup pairs",
+        "value": 40
+      },
+      {
+        "name": "ray_invisible_raster_visible",
+        "unit": "configuration-cup pairs",
+        "value": 0
+      },
+      {
+        "name": "ray_and_raster_invisible",
+        "unit": "configuration-cup pairs",
+        "value": 610
+      },
+      {
+        "name": "maximum_target_pixels",
+        "unit": "pixels",
+        "value": 0
+      }
+    ],
+    "passed": true
+  },
+  "review": {
+    "note": "Candidate-model virtual raster comparison only.",
+    "status": "pending_human_review"
+  },
+  "run_id": "EXP-20260902-003-virtual-wrist-raster-visibility",
+  "runtime": {
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.12.11",
+    "random_seed": 11
+  },
+  "schema_version": "experiment-management/run-manifest/v1",
+  "started_at": "2026-09-02T15:50:59.795027Z"
+}

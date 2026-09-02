@@ -1,0 +1,29 @@
+{
+  "experiment_id": "EXP-20260902-003-virtual-wrist-raster-visibility",
+  "model": {
+    "license": "Apache-2.0",
+    "repository_revision": "da76818e269b82289eba39808e2fb91d679d6994"
+  },
+  "non_claims": [
+    "MuJoCo segmentation is candidate-model truth labeling, not an RGB perception or detection result.",
+    "Raster or ray visibility in this candidate model is not physical camera coverage, calibration, real-world visibility, reachability, or a safe pose.",
+    "No perception model, controller, IK, trajectory optimizer, torque, hardware command, or multi-robot coordination is performed."
+  ],
+  "protocol": {
+    "actuation": "disabled",
+    "configuration_segment": "all rows from source segment-contact-scan artifact",
+    "cup_positions": "all source cup positions",
+    "dynamics": "disabled",
+    "raster_visibility": "segmentation render contains at least one virtual_cup geom pixel",
+    "ray_visibility": "mj_ray first hit equals virtual_cup geom",
+    "renderer": {
+      "camera": "wrist_cam",
+      "height": 240,
+      "mode": "MuJoCo geom segmentation",
+      "width": 320
+    }
+  },
+  "schema_version": "first-robots/research-config/v1",
+  "source_run": "EXP-20260902-002-virtual-wrist-segment-contact-scan",
+  "status": "planned_not_executed"
+}

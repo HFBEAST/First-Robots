@@ -1,0 +1,22 @@
+{
+  "limits": [
+    "MuJoCo segmentation is candidate-model truth labeling, not an RGB perception or detection result.",
+    "Raster or ray visibility in this candidate model is not physical camera coverage, calibration, real-world visibility, reachability, or a safe pose.",
+    "No perception model, controller, IK, trajectory optimizer, torque, hardware command, or multi-robot coordination is performed."
+  ],
+  "observations": {
+    "comparisons": 650,
+    "maximum_target_pixels": 0,
+    "ray_and_raster_invisible": 610,
+    "ray_and_raster_visible": 0,
+    "ray_invisible_raster_visible": 0,
+    "ray_visible_raster_invisible": 40
+  },
+  "review": {
+    "adopted": false,
+    "status": "pending_human_review"
+  },
+  "run_id": "EXP-20260902-003-virtual-wrist-raster-visibility",
+  "schema_version": "first-robots/research-result/v1",
+  "status": "observed_pending_human_review"
+}

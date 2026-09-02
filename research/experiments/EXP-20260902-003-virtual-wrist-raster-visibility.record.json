@@ -1,0 +1,12 @@
+{
+  "kind": "formal_virtual_ray_raster_visibility_comparison",
+  "result": {
+    "path": "research/reports/EXP-20260902-003-virtual-wrist-raster-visibility.result.json",
+    "sha256": "sha256:65eeda87d410c01966979879322c322a773d80ba45d6ce52746616e7f95a5e4f"
+  },
+  "review": {
+    "status": "pending_human_review"
+  },
+  "run_id": "EXP-20260902-003-virtual-wrist-raster-visibility",
+  "schema_version": "first-robots/experiment-record/v1"
+}
