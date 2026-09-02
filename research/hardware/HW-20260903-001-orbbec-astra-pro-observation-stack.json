@@ -1,0 +1,91 @@
+{
+  "schema_version": "first-robots/hardware-fact-record/v1",
+  "record_id": "HW-20260903-001-orbbec-astra-pro-observation-stack",
+  "recorded_at": "2026-09-03",
+  "scope": {
+    "intended_project_role": "fixed-depth-camera candidate inventory; not connected to product runtime or virtual-camera calibration",
+    "project_expected_fixed_depth_cameras": 2,
+    "physical_unit_mapping_status": "unverified"
+  },
+  "facts": [
+    {
+      "fact_id": "HW-20260903-001.device-family",
+      "value": "Orbbec Astra Pro depth camera hardware information supplied by the user",
+      "source": {"kind": "user_report", "reference": "hardware message 2026-09-03", "version": "user-message-20260903"},
+      "observed_at": "2026-09-03",
+      "confidence": "user_report_unverified",
+      "status": "recorded_not_physically_verified"
+    },
+    {
+      "fact_id": "HW-20260903-001.interface-and-power-requirement",
+      "value": "User reports that the device should connect directly to a rear motherboard USB 3.0 blue/red port because of power demand.",
+      "source": {"kind": "user_report", "reference": "hardware message 2026-09-03", "version": "user-message-20260903"},
+      "observed_at": "2026-09-03",
+      "confidence": "user_report_unverified",
+      "status": "not_physically_verified"
+    },
+    {
+      "fact_id": "HW-20260903-001.sdk-files",
+      "value": {
+        "sdk_bin_path": "D:/23333/OpenNI_2.3.0.86_202210111950_4c8f5aa4_beta6_windows_x64/OpenNI_2.3.0.86_202210111950_4c8f5aa4_beta6_windows/samples/Bin",
+        "present_files": ["OpenNI2.dll", "OpenNI2/Drivers/orbbec.dll", "OpenNI2/Drivers/orbbec.ini"],
+        "reported_sdk_release": "OpenNI 2.3.0.86 Windows x64",
+        "reported_sensor_driver": "SensorDriver V4.3.0.22"
+      },
+      "source": {"kind": "local_filesystem_probe_and_user_report", "reference": "read-only probe 2026-09-02T15:46:17.5220411Z", "version": "user-message-20260903"},
+      "observed_at": "2026-09-02T15:46:17.5220411Z",
+      "confidence": "sdk_files_verified_driver_version_user_report",
+      "status": "files_present_no_runtime_initialization"
+    },
+    {
+      "fact_id": "HW-20260903-001.windows-device-enumeration",
+      "value": {
+        "present_color_function": {"friendly_name": "Astra Pro HD Camera", "class": "Camera", "usb_vendor_product": "VID_2BC5&PID_0501"},
+        "present_depth_function": {"friendly_name": "ORBBEC Depth Sensor", "class": "Orbbec", "usb_vendor_product": "VID_2BC5&PID_0403"},
+        "present_audio_functions": ["ORBBEC Audio Device", "Microphone (ORBBEC Audio Device)"],
+        "device_count_interpretation": "Windows function enumeration does not establish whether these functions belong to one physical unit or map to the project's two expected fixed-depth cameras. Serials and USB topology are not recorded."
+      },
+      "source": {"kind": "windows_pnp_probe", "reference": "read-only Get-PnpDevice -PresentOnly probe", "version": "Windows-11-10.0.26200-SP0"},
+      "observed_at": "2026-09-02T15:46:17.5220411Z",
+      "confidence": "locally_verified_function_enumeration",
+      "status": "present_not_stream_tested"
+    },
+    {
+      "fact_id": "HW-20260903-001.python-acquisition-environment",
+      "value": {
+        "environment_path": "H:/Anaconda3/envs/Frist-robot-312",
+        "python": "3.12.13",
+        "architecture_bits": 64,
+        "openni_binding": "openni.openni2 import succeeded",
+        "openni_binding_path": "H:/Anaconda3/envs/Frist-robot-312/Lib/site-packages/openni/openni2.py",
+        "opencv": "5.0.0",
+        "numpy": "2.5.2",
+        "default_py3_limitation": "The default py -3 interpreter is Python 3.14.0 and does not import openni. The registered py -3.12 path could not start. Neither is the selected acquisition environment."
+      },
+      "source": {"kind": "local_python_import_probe", "reference": "read-only direct interpreter probe", "version": "Frist-robot-312"},
+      "observed_at": "2026-09-02T15:46:17.5220411Z",
+      "confidence": "locally_verified_import_chain",
+      "status": "ready_for_runtime_initialization_test"
+    }
+  ],
+  "data_readiness": {
+    "status": "partially_verified_no_stream_capture",
+    "confirmed": [
+      "Required SDK DLL and Orbbec driver plugin files are present at the reported SDK path.",
+      "Windows sees an Orbbec depth function and an Astra Pro HD UVC camera function.",
+      "The specified Conda environment is 64-bit Python 3.12 and imports openni, OpenCV, and NumPy."
+    ],
+    "not_yet_verified": [
+      "openni2.initialize succeeds with the recorded SDK path in the specified Conda environment.",
+      "A device can be opened and a depth stream can start without conflicting with other processes.",
+      "Frame dimensions, depth units, non-zero/finite depth fraction, timing, frame continuity, and UVC color access.",
+      "Whether two physical fixed-depth cameras are available, their serials, roles, USB topology, intrinsics, extrinsics, synchronization, noise, and workspace coverage."
+    ],
+    "deferred_next_action": "When hardware use is needed, create a formal hardware capture-smoke-test plan and record a bounded no-robot-motion run before calibration or perception work."
+  },
+  "non_claims": [
+    "Importing the SDK binding and enumerating Windows device functions is not evidence of successful frame capture.",
+    "This record does not adopt a real-camera calibration, depth accuracy, synchronization, workspace coverage, perception capability, or robot safety boundary.",
+    "No device was initialized, opened, streamed, or commanded during the local probes recorded here."
+  ]
+}
