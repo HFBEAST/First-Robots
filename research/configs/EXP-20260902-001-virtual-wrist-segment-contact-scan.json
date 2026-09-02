@@ -1,0 +1,26 @@
+{
+  "schema_version": "first-robots/research-config/v1",
+  "experiment_id": "EXP-20260902-001-virtual-wrist-segment-contact-scan",
+  "status": "planned_not_executed",
+  "source_run": "EXP-20260901-002-virtual-wrist-contact-gate",
+  "model": {
+    "repository_revision": "da76818e269b82289eba39808e2fb91d679d6994",
+    "license": "Apache-2.0"
+  },
+  "protocol": {
+    "start_configuration": "default qpos from the source coverage scan",
+    "end_configuration": "source first_maximum_zero_contact qpos",
+    "segment_samples": 65,
+    "cup_seeds": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
+    "workspace_radius": 0.23917871793616743,
+    "joint_limits": "candidate MJCF limits checked at every sampled configuration",
+    "contact_measurement": "MuJoCo static contact count after mj_forward",
+    "actuation": "disabled",
+    "dynamics": "disabled"
+  },
+  "non_claims": [
+    "A discrete linear joint-configuration scan is not an executable, time-parameterized, dynamically feasible, or continuous collision-free trajectory.",
+    "Zero MuJoCo contacts at sampled configurations is not physical collision safety, a safe motion, reachability, load capacity, or real-camera validity.",
+    "No controller, IK, trajectory optimizer, torque, hardware command, or multi-robot coordination is performed."
+  ]
+}
