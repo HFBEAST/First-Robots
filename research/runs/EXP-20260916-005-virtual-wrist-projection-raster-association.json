@@ -1,0 +1,158 @@
+{
+  "artifacts": [
+    {
+      "path": "research/artifacts/EXP-20260916-005-virtual-wrist-projection-raster-association/config.json",
+      "sha256": "sha256:bec834715236976e3e7a555733bb7fd71dee587869d2a56bc04fc06590e4bf21"
+    },
+    {
+      "path": "research/artifacts/EXP-20260916-005-virtual-wrist-projection-raster-association/projection-raster-association.json",
+      "sha256": "sha256:6d5d444adebb04f8d5734c1ffb4ae82fbe746869d6a952415c7880208e15bd8d"
+    },
+    {
+      "path": "research/reports/EXP-20260916-005-virtual-wrist-projection-raster-association.result.json",
+      "sha256": "sha256:1b707f05f6fe67db6ecd161eff59bc08b473cd92c41267e50ae208aab73135ad"
+    },
+    {
+      "path": "research/experiments/EXP-20260916-005-virtual-wrist-projection-raster-association.record.json",
+      "sha256": "sha256:12c4ebe63734a4e919ad5c4b5adff1f16f18b1b701b54d6037bb64a6a9040e40"
+    }
+  ],
+  "baseline": {
+    "kind": "comparison",
+    "reference": "EXP-20260902-003 historical all-zero table is not used as the current visibility source."
+  },
+  "code": {
+    "commit": "249c598a2984b1b9eb2f010d520a63fca8e22363",
+    "dirty_at_start": false,
+    "repository": "H:/0_program/My_action/First-Robots-projection-run",
+    "traceable": true
+  },
+  "ended_at": "2026-09-16T02:49:05.903238Z",
+  "execution": {
+    "command": [
+      "H:\\0_program\\My_action\\First-Robots\\research\\.venvs\\mrbtp-demo-py312\\Scripts\\python.exe",
+      "research/experiments/run_virtual_wrist_projection_raster_association.py"
+    ],
+    "parameters": {
+      "actuation": "disabled",
+      "conditions": [
+        "behind_camera",
+        "outside_candidate_depth_clip",
+        "outside_candidate_perspective_frustum",
+        "inside_candidate_frustum_and_clip",
+        "ray_visible"
+      ],
+      "current_visibility": "EXP-20260916-004 current_raster_visible",
+      "dynamics": "disabled",
+      "expected_pairs": 650,
+      "join_key": [
+        "configuration_index",
+        "cup_index"
+      ]
+    },
+    "script": "research/experiments/run_virtual_wrist_projection_raster_association.py"
+  },
+  "inputs": [
+    {
+      "kind": "configuration",
+      "path": "research/configs/EXP-20260916-005-virtual-wrist-projection-raster-association.json",
+      "sha256": "sha256:938f55e743240b1ace57c3d848aab9e881b8890f310aebf35357bdd47312ad3f"
+    },
+    {
+      "kind": "source_projection_table",
+      "path": "research/artifacts/EXP-20260916-002-virtual-wrist-projection-diagnosis/projection-diagnosis.json",
+      "sha256": "sha256:e0e81872957d849539bfdf01b8019251bf40af9846e59de5313e1d9118cc229e"
+    },
+    {
+      "kind": "source_raster_recheck_table",
+      "path": "research/artifacts/EXP-20260916-004-virtual-wrist-raster-recheck/raster-recheck.json",
+      "sha256": "sha256:84eb07ee8fb66c22eca8f02476cc69760443b93afd57007eed2e5ffa28288135"
+    }
+  ],
+  "level": "formal",
+  "objective": "Associate recorded candidate-model projection conditions with a raster recheck without asserting causality or hardware capability.",
+  "results": {
+    "criteria": "All source keys joined exactly once and association artifacts were written; no causal or capability criterion.",
+    "duration_seconds": 0.14709,
+    "metrics": [
+      {
+        "name": "comparisons",
+        "unit": "configuration-cup pairs",
+        "value": 650
+      },
+      {
+        "name": "current_raster_visible",
+        "unit": "configuration-cup pairs",
+        "value": 30
+      },
+      {
+        "name": "current_raster_invisible",
+        "unit": "configuration-cup pairs",
+        "value": 620
+      },
+      {
+        "name": "visible_behind_camera",
+        "unit": "configuration-cup pairs",
+        "value": 0
+      },
+      {
+        "name": "invisible_behind_camera",
+        "unit": "configuration-cup pairs",
+        "value": 228
+      },
+      {
+        "name": "visible_outside_candidate_depth_clip",
+        "unit": "configuration-cup pairs",
+        "value": 0
+      },
+      {
+        "name": "invisible_outside_candidate_depth_clip",
+        "unit": "configuration-cup pairs",
+        "value": 6
+      },
+      {
+        "name": "visible_outside_candidate_perspective_frustum",
+        "unit": "configuration-cup pairs",
+        "value": 29
+      },
+      {
+        "name": "invisible_outside_candidate_perspective_frustum",
+        "unit": "configuration-cup pairs",
+        "value": 392
+      },
+      {
+        "name": "visible_inside_candidate_frustum_and_clip",
+        "unit": "configuration-cup pairs",
+        "value": 1
+      },
+      {
+        "name": "invisible_inside_candidate_frustum_and_clip",
+        "unit": "configuration-cup pairs",
+        "value": 0
+      },
+      {
+        "name": "visible_ray_visible",
+        "unit": "configuration-cup pairs",
+        "value": 10
+      },
+      {
+        "name": "invisible_ray_visible",
+        "unit": "configuration-cup pairs",
+        "value": 30
+      }
+    ],
+    "passed": true
+  },
+  "review": {
+    "note": "Candidate-model projection/raster association only.",
+    "status": "pending_human_review"
+  },
+  "run_id": "EXP-20260916-005-virtual-wrist-projection-raster-association",
+  "runtime": {
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.12.11",
+    "random_seed": 11
+  },
+  "schema_version": "experiment-management/run-manifest/v1",
+  "started_at": "2026-09-16T02:49:05.755421Z"
+}

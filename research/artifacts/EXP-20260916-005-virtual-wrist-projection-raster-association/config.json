@@ -1,0 +1,31 @@
+{
+  "experiment_id": "EXP-20260916-005-virtual-wrist-projection-raster-association",
+  "non_claims": [
+    "Association of candidate-model boolean conditions does not establish a causal rendering, visibility, or occlusion explanation.",
+    "Neither source is physical camera, calibration, perception, reachability, control, or safety evidence.",
+    "No model loading, renderer, controller, IK, trajectory optimizer, torque, hardware command, or multi-robot coordination is performed."
+  ],
+  "protocol": {
+    "actuation": "disabled",
+    "conditions": [
+      "behind_camera",
+      "outside_candidate_depth_clip",
+      "outside_candidate_perspective_frustum",
+      "inside_candidate_frustum_and_clip",
+      "ray_visible"
+    ],
+    "current_visibility": "EXP-20260916-004 current_raster_visible",
+    "dynamics": "disabled",
+    "expected_pairs": 650,
+    "join_key": [
+      "configuration_index",
+      "cup_index"
+    ]
+  },
+  "schema_version": "first-robots/research-config/v1",
+  "source_runs": [
+    "EXP-20260916-002-virtual-wrist-projection-diagnosis",
+    "EXP-20260916-004-virtual-wrist-raster-recheck"
+  ],
+  "status": "planned_not_executed"
+}

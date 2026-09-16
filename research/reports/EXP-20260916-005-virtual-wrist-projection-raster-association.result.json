@@ -1,0 +1,29 @@
+{
+  "limits": [
+    "Association of candidate-model boolean conditions does not establish a causal rendering, visibility, or occlusion explanation.",
+    "Neither source is physical camera, calibration, perception, reachability, control, or safety evidence.",
+    "No model loading, renderer, controller, IK, trajectory optimizer, torque, hardware command, or multi-robot coordination is performed."
+  ],
+  "observations": {
+    "comparisons": 650,
+    "current_raster_invisible": 620,
+    "current_raster_visible": 30,
+    "invisible_behind_camera": 228,
+    "invisible_inside_candidate_frustum_and_clip": 0,
+    "invisible_outside_candidate_depth_clip": 6,
+    "invisible_outside_candidate_perspective_frustum": 392,
+    "invisible_ray_visible": 30,
+    "visible_behind_camera": 0,
+    "visible_inside_candidate_frustum_and_clip": 1,
+    "visible_outside_candidate_depth_clip": 0,
+    "visible_outside_candidate_perspective_frustum": 29,
+    "visible_ray_visible": 10
+  },
+  "review": {
+    "adopted": false,
+    "status": "pending_human_review"
+  },
+  "run_id": "EXP-20260916-005-virtual-wrist-projection-raster-association",
+  "schema_version": "first-robots/research-result/v1",
+  "status": "observed_pending_human_review"
+}
