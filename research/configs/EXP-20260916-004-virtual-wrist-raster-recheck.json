@@ -1,0 +1,26 @@
+{
+  "schema_version": "first-robots/research-config/v1",
+  "experiment_id": "EXP-20260916-004-virtual-wrist-raster-recheck",
+  "status": "planned_not_executed",
+  "source_runs": [
+    "EXP-20260902-002-virtual-wrist-segment-contact-scan",
+    "EXP-20260902-003-virtual-wrist-raster-visibility"
+  ],
+  "model": {
+    "repository_revision": "da76818e269b82289eba39808e2fb91d679d6994",
+    "license": "Apache-2.0"
+  },
+  "protocol": {
+    "camera": "wrist_cam",
+    "renderer": {"width": 320, "height": 240, "mode": "MuJoCo geom segmentation", "instances": 1},
+    "placement_invariant": "after mj_forward, virtual_cup geom_xpos equals the input cup position",
+    "comparison": "current target pixel and raster result against EXP-20260902-003 row with same configuration_index and cup_index",
+    "actuation": "disabled",
+    "dynamics": "disabled"
+  },
+  "non_claims": [
+    "This is a reproducibility recheck, not an attribution of any discrepancy to GPU, driver, renderer, model, or software state.",
+    "MuJoCo segmentation is candidate-model labeling, not RGB perception, physical camera coverage, calibration, or hardware observation.",
+    "No controller, IK, trajectory optimizer, torque, hardware command, or multi-robot coordination is performed."
+  ]
+}
