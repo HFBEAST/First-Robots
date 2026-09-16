@@ -1,0 +1,43 @@
+{
+  "geometry": {
+    "axial_distance": 0.03860803349778213,
+    "camera_center_inside_cylinder": false,
+    "camera_in_cup_coordinates": [
+      0.026089761601403333,
+      -0.0263769454322427,
+      0.03860803349778213
+    ],
+    "camera_position": [
+      0.12313089632804836,
+      -0.17256003316757496,
+      0.09360803349778213
+    ],
+    "half_height": 0.055,
+    "input_position": [
+      0.09704113472664502,
+      -0.14618308773533226,
+      0.055
+    ],
+    "radial_distance": 0.037100120090824085,
+    "radius": 0.035,
+    "signed_distance_to_cylinder_surface": 0.0021001200908240814,
+    "world_center": [
+      0.09704113472664502,
+      -0.14618308773533226,
+      0.055
+    ]
+  },
+  "mujoco": "3.12.0",
+  "render": {
+    "height": 240,
+    "target_pixels": 22248,
+    "width": 320
+  },
+  "run_id": "EXP-20260916-003-virtual-wrist-local-geometry-diagnostic",
+  "selection": {
+    "configuration_index": 64,
+    "cup_index": 6,
+    "source_raster_visible": false,
+    "source_ray_visible": true
+  }
+}

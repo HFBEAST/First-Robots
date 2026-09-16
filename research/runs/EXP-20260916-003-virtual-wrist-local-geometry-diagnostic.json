@@ -1,0 +1,131 @@
+{
+  "artifacts": [
+    {
+      "path": "research/artifacts/EXP-20260916-003-virtual-wrist-local-geometry-diagnostic/config.json",
+      "sha256": "sha256:6788589598072158cdaa30bb7c43b1736837bbeaecde5fd485de064154dd37d2"
+    },
+    {
+      "path": "research/artifacts/EXP-20260916-003-virtual-wrist-local-geometry-diagnostic/local-geometry.json",
+      "sha256": "sha256:168fcc05f0bac6a010c33931512f1b861e9b572d4127561397e41e2b0b902cfe"
+    },
+    {
+      "path": "research/artifacts/EXP-20260916-003-virtual-wrist-local-geometry-diagnostic/wrist-depth.npy",
+      "sha256": "sha256:3b84cdfa8921a3b410d2c547aa0dec270715479f535fabe54b16b194d9196580"
+    },
+    {
+      "path": "research/artifacts/EXP-20260916-003-virtual-wrist-local-geometry-diagnostic/wrist-rgb.png",
+      "sha256": "sha256:6200ef2418ecafb0cd02c4cb4f4afce5c3cd155649292d6c5ca383495626234b"
+    },
+    {
+      "path": "research/artifacts/EXP-20260916-003-virtual-wrist-local-geometry-diagnostic/wrist-segmentation.npy",
+      "sha256": "sha256:11d7bdae62915cd9ac21686961727b0e3399c6a573f7ea1d35d0d5d0f4416672"
+    },
+    {
+      "path": "research/reports/EXP-20260916-003-virtual-wrist-local-geometry-diagnostic.result.json",
+      "sha256": "sha256:5643442b2ff2a1a2999f2a0a2353be6603807870ea99ab1e8a2555cd9e87be70"
+    },
+    {
+      "path": "research/experiments/EXP-20260916-003-virtual-wrist-local-geometry-diagnostic.record.json",
+      "sha256": "sha256:d620a5f565344a6ebdb9521501137b889b7af228338e9fd28e354ed10d31c737"
+    }
+  ],
+  "baseline": {
+    "kind": "comparison",
+    "reference": "EXP-20260916-002 leaves one center-in-frustum/raster-invisible pair unresolved."
+  },
+  "code": {
+    "commit": "c4bcbcda1ae0489e65d077ccb3c1daeec729e488",
+    "dirty_at_start": false,
+    "repository": "H:/0_program/My_action/First-Robots-projection-run",
+    "traceable": true
+  },
+  "ended_at": "2026-09-16T02:44:30.846083Z",
+  "execution": {
+    "command": [
+      "H:\\0_program\\My_action\\First-Robots\\research\\.venvs\\mrbtp-demo-py312\\Scripts\\python.exe",
+      "research/experiments/run_virtual_wrist_local_geometry_diagnostic.py"
+    ],
+    "parameters": {
+      "actuation": "disabled",
+      "dynamics": "disabled",
+      "placement_invariant": "after mj_forward, virtual_cup geom_xpos equals selected input position",
+      "renderer": {
+        "camera": "wrist_cam",
+        "height": 240,
+        "outputs": [
+          "rgb",
+          "depth",
+          "geom_segmentation"
+        ],
+        "width": 320
+      },
+      "selection": "exactly one source row with ray_visible=true, inside_candidate_frustum_and_clip=true, raster_visible=false",
+      "target_geometry": "virtual_cup cylinder radius 0.035 and half-height 0.055"
+    },
+    "script": "research/experiments/run_virtual_wrist_local_geometry_diagnostic.py"
+  },
+  "inputs": [
+    {
+      "kind": "configuration",
+      "path": "research/configs/EXP-20260916-003-virtual-wrist-local-geometry-diagnostic.json",
+      "sha256": "sha256:c43ceb4c8c03ecf15924e10b5779333fcc610c3268c81b95761a613495a9a70c"
+    },
+    {
+      "kind": "source_segment_table",
+      "path": "research/artifacts/EXP-20260902-002-virtual-wrist-segment-contact-scan/segment-contact-scan.json",
+      "sha256": "sha256:1c8b4e5559d5ebb76e3add4fed4f83088e1940290fd5ec4f6efc8b77717a5126"
+    },
+    {
+      "kind": "source_projection_table",
+      "path": "research/artifacts/EXP-20260916-002-virtual-wrist-projection-diagnosis/projection-diagnosis.json",
+      "sha256": "sha256:e0e81872957d849539bfdf01b8019251bf40af9846e59de5313e1d9118cc229e"
+    },
+    {
+      "kind": "model",
+      "path": "research/sources/mujoco_menagerie_robotstudio_so101/robotstudio_so101/scene.xml",
+      "revision": "da76818e269b82289eba39808e2fb91d679d6994",
+      "sha256": "sha256:65496b0061ca3ddd92b58fe09bd30f6a4a443f137cc42cf8975d5cff23030bfd"
+    }
+  ],
+  "level": "formal",
+  "objective": "Record one unresolved candidate-model camera/target geometry case without asserting a visibility cause or hardware capability.",
+  "results": {
+    "criteria": "The unique source pair satisfied placement and produced all diagnostic artifacts; no visibility or capability criterion.",
+    "duration_seconds": 0.78101,
+    "metrics": [
+      {
+        "name": "selected_pairs",
+        "unit": "configuration-cup pairs",
+        "value": 1
+      },
+      {
+        "name": "camera_center_inside_cylinder",
+        "unit": "boolean",
+        "value": false
+      },
+      {
+        "name": "signed_distance_to_cylinder_surface",
+        "unit": "meters",
+        "value": 0.0021001200908240814
+      },
+      {
+        "name": "rendered_target_pixels",
+        "unit": "pixels",
+        "value": 22248
+      }
+    ],
+    "passed": true
+  },
+  "review": {
+    "note": "Candidate-model single-sample geometry diagnostic only.",
+    "status": "pending_human_review"
+  },
+  "run_id": "EXP-20260916-003-virtual-wrist-local-geometry-diagnostic",
+  "runtime": {
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.12.11",
+    "random_seed": 11
+  },
+  "schema_version": "experiment-management/run-manifest/v1",
+  "started_at": "2026-09-16T02:44:30.064619Z"
+}

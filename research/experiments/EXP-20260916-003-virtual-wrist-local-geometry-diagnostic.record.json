@@ -1,0 +1,12 @@
+{
+  "kind": "formal_virtual_wrist_local_geometry_diagnostic",
+  "result": {
+    "path": "research/reports/EXP-20260916-003-virtual-wrist-local-geometry-diagnostic.result.json",
+    "sha256": "sha256:5643442b2ff2a1a2999f2a0a2353be6603807870ea99ab1e8a2555cd9e87be70"
+  },
+  "review": {
+    "status": "pending_human_review"
+  },
+  "run_id": "EXP-20260916-003-virtual-wrist-local-geometry-diagnostic",
+  "schema_version": "first-robots/experiment-record/v1"
+}

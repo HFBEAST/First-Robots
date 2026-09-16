@@ -1,0 +1,21 @@
+{
+  "limits": [
+    "A single candidate-model cup/camera geometry diagnostic is not a camera coverage, calibration, perception, collision safety, or reachability result.",
+    "Rendered RGB, depth, and segmentation are virtual artifacts, not real hardware observations or a perception-model output.",
+    "No controller, IK, trajectory optimizer, torque, hardware command, or multi-robot coordination is performed."
+  ],
+  "observations": {
+    "camera_center_inside_cylinder": false,
+    "rendered_target_pixels": 22248,
+    "selected_configuration_index": 64,
+    "selected_cup_index": 6,
+    "signed_distance_to_cylinder_surface": 0.0021001200908240814
+  },
+  "review": {
+    "adopted": false,
+    "status": "pending_human_review"
+  },
+  "run_id": "EXP-20260916-003-virtual-wrist-local-geometry-diagnostic",
+  "schema_version": "first-robots/research-result/v1",
+  "status": "observed_pending_human_review"
+}
