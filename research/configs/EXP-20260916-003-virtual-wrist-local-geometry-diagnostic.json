@@ -1,0 +1,26 @@
+{
+  "schema_version": "first-robots/research-config/v1",
+  "experiment_id": "EXP-20260916-003-virtual-wrist-local-geometry-diagnostic",
+  "status": "planned_not_executed",
+  "source_runs": [
+    "EXP-20260902-002-virtual-wrist-segment-contact-scan",
+    "EXP-20260916-002-virtual-wrist-projection-diagnosis"
+  ],
+  "model": {
+    "repository_revision": "da76818e269b82289eba39808e2fb91d679d6994",
+    "license": "Apache-2.0"
+  },
+  "protocol": {
+    "selection": "exactly one source row with ray_visible=true, inside_candidate_frustum_and_clip=true, raster_visible=false",
+    "target_geometry": "virtual_cup cylinder radius 0.035 and half-height 0.055",
+    "placement_invariant": "after mj_forward, virtual_cup geom_xpos equals selected input position",
+    "renderer": {"camera": "wrist_cam", "width": 320, "height": 240, "outputs": ["rgb", "depth", "geom_segmentation"]},
+    "actuation": "disabled",
+    "dynamics": "disabled"
+  },
+  "non_claims": [
+    "A single candidate-model cup/camera geometry diagnostic is not a camera coverage, calibration, perception, collision safety, or reachability result.",
+    "Rendered RGB, depth, and segmentation are virtual artifacts, not real hardware observations or a perception-model output.",
+    "No controller, IK, trajectory optimizer, torque, hardware command, or multi-robot coordination is performed."
+  ]
+}
