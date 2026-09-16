@@ -1,0 +1,23 @@
+{
+  "limits": [
+    "This is a reproducibility recheck, not an attribution of any discrepancy to GPU, driver, renderer, model, or software state.",
+    "MuJoCo segmentation is candidate-model labeling, not RGB perception, physical camera coverage, calibration, or hardware observation.",
+    "No controller, IK, trajectory optimizer, torque, hardware command, or multi-robot coordination is performed."
+  ],
+  "observations": {
+    "comparisons": 650,
+    "placement_invariant_samples": 650,
+    "same_raster_visibility": 620,
+    "source_and_current_invisible": 620,
+    "source_and_current_visible": 0,
+    "source_invisible_current_visible": 30,
+    "source_visible_current_invisible": 0
+  },
+  "review": {
+    "adopted": false,
+    "status": "pending_human_review"
+  },
+  "run_id": "EXP-20260916-004-virtual-wrist-raster-recheck",
+  "schema_version": "first-robots/research-result/v1",
+  "status": "observed_pending_human_review"
+}

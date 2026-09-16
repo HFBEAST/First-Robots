@@ -1,0 +1,12 @@
+{
+  "kind": "formal_virtual_wrist_raster_recheck",
+  "result": {
+    "path": "research/reports/EXP-20260916-004-virtual-wrist-raster-recheck.result.json",
+    "sha256": "sha256:bb8469154526c4110c56ae044c48e48c29994c8ea0d87810f4f01e2fb2979cbe"
+  },
+  "review": {
+    "status": "pending_human_review"
+  },
+  "run_id": "EXP-20260916-004-virtual-wrist-raster-recheck",
+  "schema_version": "first-robots/experiment-record/v1"
+}

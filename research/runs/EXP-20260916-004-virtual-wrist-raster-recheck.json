@@ -1,0 +1,130 @@
+{
+  "artifacts": [
+    {
+      "path": "research/artifacts/EXP-20260916-004-virtual-wrist-raster-recheck/config.json",
+      "sha256": "sha256:e2c89e0ea25fccf0d94366e266d6164c6dbe55bd5ab297a845cfe40505562f62"
+    },
+    {
+      "path": "research/artifacts/EXP-20260916-004-virtual-wrist-raster-recheck/raster-recheck.json",
+      "sha256": "sha256:84eb07ee8fb66c22eca8f02476cc69760443b93afd57007eed2e5ffa28288135"
+    },
+    {
+      "path": "research/reports/EXP-20260916-004-virtual-wrist-raster-recheck.result.json",
+      "sha256": "sha256:bb8469154526c4110c56ae044c48e48c29994c8ea0d87810f4f01e2fb2979cbe"
+    },
+    {
+      "path": "research/experiments/EXP-20260916-004-virtual-wrist-raster-recheck.record.json",
+      "sha256": "sha256:6e4f152235c6893d9a31594288649dcdec82ca51b77f821d372f65571efa7c59"
+    }
+  ],
+  "baseline": {
+    "kind": "comparison",
+    "reference": "EXP-20260902-003 raster table is retained as the source comparison, not assumed reproducible."
+  },
+  "code": {
+    "commit": "75da603c1e955f1f60b41bc489297f5fc5691932",
+    "dirty_at_start": false,
+    "repository": "H:/0_program/My_action/First-Robots-projection-run",
+    "traceable": true
+  },
+  "ended_at": "2026-09-16T02:47:07.211355Z",
+  "execution": {
+    "command": [
+      "H:\\0_program\\My_action\\First-Robots\\research\\.venvs\\mrbtp-demo-py312\\Scripts\\python.exe",
+      "research/experiments/run_virtual_wrist_raster_recheck.py"
+    ],
+    "parameters": {
+      "actuation": "disabled",
+      "camera": "wrist_cam",
+      "comparison": "current target pixel and raster result against EXP-20260902-003 row with same configuration_index and cup_index",
+      "dynamics": "disabled",
+      "placement_invariant": "after mj_forward, virtual_cup geom_xpos equals the input cup position",
+      "renderer": {
+        "height": 240,
+        "instances": 1,
+        "mode": "MuJoCo geom segmentation",
+        "width": 320
+      }
+    },
+    "script": "research/experiments/run_virtual_wrist_raster_recheck.py"
+  },
+  "inputs": [
+    {
+      "kind": "configuration",
+      "path": "research/configs/EXP-20260916-004-virtual-wrist-raster-recheck.json",
+      "sha256": "sha256:27203c1d6fbec4745b3d9776f8b092bcda9178b221f2edfa7c2c3eb259cb0971"
+    },
+    {
+      "kind": "source_segment_table",
+      "path": "research/artifacts/EXP-20260902-002-virtual-wrist-segment-contact-scan/segment-contact-scan.json",
+      "sha256": "sha256:1c8b4e5559d5ebb76e3add4fed4f83088e1940290fd5ec4f6efc8b77717a5126"
+    },
+    {
+      "kind": "source_raster_table",
+      "path": "research/artifacts/EXP-20260902-003-virtual-wrist-raster-visibility/raster-visibility.json",
+      "sha256": "sha256:585dc2ea5fa475854e82b16fc16ed516ecf68c241d74b5efaf665345126ec031"
+    },
+    {
+      "kind": "model",
+      "path": "research/sources/mujoco_menagerie_robotstudio_so101/robotstudio_so101/scene.xml",
+      "revision": "da76818e269b82289eba39808e2fb91d679d6994",
+      "sha256": "sha256:65496b0061ca3ddd92b58fe09bd30f6a4a443f137cc42cf8975d5cff23030bfd"
+    }
+  ],
+  "level": "formal",
+  "objective": "Recheck candidate-model wrist segmentation rows with a target-placement invariant and without attributing discrepancies.",
+  "results": {
+    "criteria": "All source pairs satisfied target placement and were rechecked; agreement is an observation, not a capability criterion.",
+    "duration_seconds": 1.162923,
+    "metrics": [
+      {
+        "name": "comparisons",
+        "unit": "configuration-cup pairs",
+        "value": 650
+      },
+      {
+        "name": "placement_invariant_samples",
+        "unit": "configuration-cup pairs",
+        "value": 650
+      },
+      {
+        "name": "source_and_current_visible",
+        "unit": "configuration-cup pairs",
+        "value": 0
+      },
+      {
+        "name": "source_invisible_current_visible",
+        "unit": "configuration-cup pairs",
+        "value": 30
+      },
+      {
+        "name": "source_visible_current_invisible",
+        "unit": "configuration-cup pairs",
+        "value": 0
+      },
+      {
+        "name": "source_and_current_invisible",
+        "unit": "configuration-cup pairs",
+        "value": 620
+      },
+      {
+        "name": "same_raster_visibility",
+        "unit": "configuration-cup pairs",
+        "value": 620
+      }
+    ],
+    "passed": true
+  },
+  "review": {
+    "note": "Candidate-model raster reproducibility recheck only.",
+    "status": "pending_human_review"
+  },
+  "run_id": "EXP-20260916-004-virtual-wrist-raster-recheck",
+  "runtime": {
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.12.11",
+    "random_seed": 11
+  },
+  "schema_version": "experiment-management/run-manifest/v1",
+  "started_at": "2026-09-16T02:47:06.048828Z"
+}
