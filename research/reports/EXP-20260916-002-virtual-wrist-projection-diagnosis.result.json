@@ -1,0 +1,24 @@
+{
+  "limits": [
+    "Cup-center projection does not establish complete object raster visibility or occlusion.",
+    "Candidate camera parameters and rendering conditions are not physical wrist-camera intrinsics, extrinsics, calibration, coverage, or RGB perception evidence.",
+    "No renderer, perception model, controller, IK, trajectory optimizer, torque, hardware command, or multi-robot coordination is performed."
+  ],
+  "observations": {
+    "behind_camera": 228,
+    "comparisons": 650,
+    "inside_candidate_frustum_and_clip": 1,
+    "inside_frustum_raster_invisible": 1,
+    "outside_candidate_depth_clip": 6,
+    "outside_candidate_perspective_frustum": 421,
+    "placement_invariant_samples": 650,
+    "ray_visible_inside_frustum_raster_invisible": 1
+  },
+  "review": {
+    "adopted": false,
+    "status": "pending_human_review"
+  },
+  "run_id": "EXP-20260916-002-virtual-wrist-projection-diagnosis",
+  "schema_version": "first-robots/research-result/v1",
+  "status": "observed_pending_human_review"
+}

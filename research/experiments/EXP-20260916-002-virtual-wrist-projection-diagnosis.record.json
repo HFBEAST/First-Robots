@@ -1,0 +1,12 @@
+{
+  "kind": "formal_virtual_wrist_camera_projection_diagnosis",
+  "result": {
+    "path": "research/reports/EXP-20260916-002-virtual-wrist-projection-diagnosis.result.json",
+    "sha256": "sha256:bcc4395d3c1354b509910d25fcb48688d606dcf1ed4c7da94dfb3b6b10d26577"
+  },
+  "review": {
+    "status": "pending_human_review"
+  },
+  "run_id": "EXP-20260916-002-virtual-wrist-projection-diagnosis",
+  "schema_version": "first-robots/experiment-record/v1"
+}

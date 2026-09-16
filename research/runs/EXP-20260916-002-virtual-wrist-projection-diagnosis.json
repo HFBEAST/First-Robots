@@ -1,0 +1,136 @@
+{
+  "artifacts": [
+    {
+      "path": "research/artifacts/EXP-20260916-002-virtual-wrist-projection-diagnosis/config.json",
+      "sha256": "sha256:882d78fa25540c38e4a81a89fd85dca6911d99db1c21b9fe52428bcdff16b0e4"
+    },
+    {
+      "path": "research/artifacts/EXP-20260916-002-virtual-wrist-projection-diagnosis/projection-diagnosis.json",
+      "sha256": "sha256:e0e81872957d849539bfdf01b8019251bf40af9846e59de5313e1d9118cc229e"
+    },
+    {
+      "path": "research/reports/EXP-20260916-002-virtual-wrist-projection-diagnosis.result.json",
+      "sha256": "sha256:bcc4395d3c1354b509910d25fcb48688d606dcf1ed4c7da94dfb3b6b10d26577"
+    },
+    {
+      "path": "research/experiments/EXP-20260916-002-virtual-wrist-projection-diagnosis.record.json",
+      "sha256": "sha256:4b10df0ad6364cceb0c057cf12f029679c137a9f75b3cf749330d612d18badce"
+    }
+  ],
+  "baseline": {
+    "kind": "comparison",
+    "reference": "EXP-20260916-001 is retained as invalid because its cup placement invariant was absent."
+  },
+  "code": {
+    "commit": "ad3b0ab93d3e5e92ac64db7c543f63a8669863cb",
+    "dirty_at_start": false,
+    "repository": "H:/0_program/My_action/First-Robots-projection-run",
+    "traceable": true
+  },
+  "ended_at": "2026-09-16T02:41:24.766639Z",
+  "execution": {
+    "command": [
+      "H:\\0_program\\My_action\\First-Robots\\research\\.venvs\\mrbtp-demo-py312\\Scripts\\python.exe",
+      "research/experiments/run_virtual_wrist_projection_diagnosis_v2.py"
+    ],
+    "parameters": {
+      "actuation": "disabled",
+      "camera": "wrist_cam",
+      "camera_frame": "MuJoCo modeled camera: forward is -Z; +X is image right; +Y is image up",
+      "candidate_clip_planes": "model.vis.map.znear/zfar multiplied by model.stat.extent",
+      "dynamics": "disabled",
+      "placement_invariant": "after mj_forward, virtual_cup geom_xpos equals the input cup position",
+      "projection": "perspective from candidate camera fovy and 320x240 source render aspect ratio",
+      "source_raster_render_size": {
+        "height": 240,
+        "width": 320
+      },
+      "target_proxy": "virtual_cup geom center"
+    },
+    "script": "research/experiments/run_virtual_wrist_projection_diagnosis_v2.py"
+  },
+  "inputs": [
+    {
+      "kind": "configuration",
+      "path": "research/configs/EXP-20260916-002-virtual-wrist-projection-diagnosis.json",
+      "sha256": "sha256:d9eb61239541cfdde5c0baa4738dcb959cd2a8798ed1ef8ac28594369ff074b4"
+    },
+    {
+      "kind": "source_segment_table",
+      "path": "research/artifacts/EXP-20260902-002-virtual-wrist-segment-contact-scan/segment-contact-scan.json",
+      "sha256": "sha256:1c8b4e5559d5ebb76e3add4fed4f83088e1940290fd5ec4f6efc8b77717a5126"
+    },
+    {
+      "kind": "source_raster_table",
+      "path": "research/artifacts/EXP-20260902-003-virtual-wrist-raster-visibility/raster-visibility.json",
+      "sha256": "sha256:585dc2ea5fa475854e82b16fc16ed516ecf68c241d74b5efaf665345126ec031"
+    },
+    {
+      "kind": "model",
+      "path": "research/sources/mujoco_menagerie_robotstudio_so101/robotstudio_so101/scene.xml",
+      "revision": "da76818e269b82289eba39808e2fb91d679d6994",
+      "sha256": "sha256:65496b0061ca3ddd92b58fe09bd30f6a4a443f137cc42cf8975d5cff23030bfd"
+    }
+  ],
+  "level": "formal",
+  "objective": "Record candidate-camera center projection conditions with an explicit target-placement invariant and without asserting visibility capability.",
+  "results": {
+    "criteria": "All source configuration-cup pairs satisfied target placement and were diagnosed; no visibility or capability criterion.",
+    "duration_seconds": 0.211306,
+    "metrics": [
+      {
+        "name": "comparisons",
+        "unit": "configuration-cup pairs",
+        "value": 650
+      },
+      {
+        "name": "placement_invariant_samples",
+        "unit": "configuration-cup pairs",
+        "value": 650
+      },
+      {
+        "name": "behind_camera",
+        "unit": "configuration-cup pairs",
+        "value": 228
+      },
+      {
+        "name": "outside_candidate_depth_clip",
+        "unit": "configuration-cup pairs",
+        "value": 6
+      },
+      {
+        "name": "outside_candidate_perspective_frustum",
+        "unit": "configuration-cup pairs",
+        "value": 421
+      },
+      {
+        "name": "inside_candidate_frustum_and_clip",
+        "unit": "configuration-cup pairs",
+        "value": 1
+      },
+      {
+        "name": "inside_frustum_raster_invisible",
+        "unit": "configuration-cup pairs",
+        "value": 1
+      },
+      {
+        "name": "ray_visible_inside_frustum_raster_invisible",
+        "unit": "configuration-cup pairs",
+        "value": 1
+      }
+    ],
+    "passed": true
+  },
+  "review": {
+    "note": "Candidate-model camera-center projection diagnosis only.",
+    "status": "pending_human_review"
+  },
+  "run_id": "EXP-20260916-002-virtual-wrist-projection-diagnosis",
+  "runtime": {
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.12.11",
+    "random_seed": 11
+  },
+  "schema_version": "experiment-management/run-manifest/v1",
+  "started_at": "2026-09-16T02:41:24.555301Z"
+}
