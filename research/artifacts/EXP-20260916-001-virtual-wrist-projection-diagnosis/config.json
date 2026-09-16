@@ -1,0 +1,31 @@
+{
+  "experiment_id": "EXP-20260916-001-virtual-wrist-projection-diagnosis",
+  "model": {
+    "license": "Apache-2.0",
+    "repository_revision": "da76818e269b82289eba39808e2fb91d679d6994"
+  },
+  "non_claims": [
+    "Cup-center projection does not establish complete object raster visibility or occlusion.",
+    "Candidate camera parameters and rendering conditions are not physical wrist-camera intrinsics, extrinsics, calibration, coverage, or RGB perception evidence.",
+    "No renderer, perception model, controller, IK, trajectory optimizer, torque, hardware command, or multi-robot coordination is performed."
+  ],
+  "protocol": {
+    "actuation": "disabled",
+    "camera": "wrist_cam",
+    "camera_frame": "MuJoCo modeled camera: forward is -Z; +X is image right; +Y is image up",
+    "candidate_clip_planes": "model.vis.map.znear/zfar multiplied by model.stat.extent",
+    "dynamics": "disabled",
+    "projection": "perspective from candidate camera fovy and 320x240 source render aspect ratio",
+    "source_raster_render_size": {
+      "height": 240,
+      "width": 320
+    },
+    "target_proxy": "virtual_cup geom center"
+  },
+  "schema_version": "first-robots/research-config/v1",
+  "source_runs": [
+    "EXP-20260902-002-virtual-wrist-segment-contact-scan",
+    "EXP-20260902-003-virtual-wrist-raster-visibility"
+  ],
+  "status": "planned_not_executed"
+}
