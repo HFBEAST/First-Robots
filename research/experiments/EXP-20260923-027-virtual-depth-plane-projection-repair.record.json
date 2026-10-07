@@ -1,0 +1,8 @@
+{
+  "schema_version": "first-robots/experiment-record/v1",
+  "run_id": "EXP-20260923-027-virtual-depth-plane-projection-repair",
+  "kind": "formal_virtual_depth_plane_projection_repair",
+  "plan": "research/experiments/EXP-20260923-027-virtual-depth-plane-projection-repair.md",
+  "state": "planned_not_executed",
+  "review": {"status": "pending_human_review", "adopted": false}
+}

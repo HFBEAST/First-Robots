@@ -1,0 +1,116 @@
+{
+  "blocking_predecessor": {
+    "result_path": "research/reports/EXP-20260921-022-virtual-rgb-multirange-projection-sweep.result.json",
+    "result_sha256": "sha256:669caa6f34644d041e65fcea6e25d0cd676bccb9300c4b776f370e79a83e2ad1",
+    "run_id": "EXP-20260921-022-virtual-rgb-multirange-projection-sweep"
+  },
+  "experiment_id": "EXP-20260921-023-virtual-rgb-occlusion-isolation",
+  "non_claims": [
+    "This is a direct artificial-color virtual occlusion isolation for one frozen B, not an RGB generalization, camera calibration, physical occlusion measure, or visibility threshold.",
+    "Robot render disabling changes only virtual appearance for this comparison; it is not a collision, motion, or physical removal experiment.",
+    "No fusion threshold, Coordinator policy, execution, planning, IK, collision, grasp, safety, or hardware I/O follows from this run."
+  ],
+  "pass_conditions": [
+    "022 failed-result hash matches and the selected B-10 case is preserved",
+    "for each fixed camera and both render variants, the RGB fixture has one positive component",
+    "robot-visible candidate pixel count is no greater than the same-camera robot-render-disabled count; the ratio is recorded without an acceptance threshold",
+    "all four RGB/mask pairs and structured observations are retained"
+  ],
+  "scenario": {
+    "actuation": "disabled",
+    "barrier": "absent",
+    "cup": {
+      "half_height_m": 0.055,
+      "radius_m": 0.035,
+      "rgba": [
+        0.9,
+        0.1,
+        0.7,
+        1
+      ]
+    },
+    "detector": {
+      "blue_min": 100,
+      "blue_minus_green_min": 40,
+      "green_max": 130,
+      "red_min": 120,
+      "red_minus_green_min": 80
+    },
+    "dynamics": "disabled",
+    "fixed_cameras": {
+      "fixed_depth_01": {
+        "position_m": [
+          0.45,
+          -0.45,
+          0.42
+        ],
+        "target_m": [
+          0.12,
+          0,
+          0.055
+        ]
+      },
+      "fixed_depth_02": {
+        "position_m": [
+          0.45,
+          0.45,
+          0.42
+        ],
+        "target_m": [
+          0.12,
+          0,
+          0.055
+        ]
+      }
+    },
+    "frame_contract": {
+      "height": 480,
+      "pixel_encoding": "rgb_uint8",
+      "scenario_version": "virtual-rgb-contract-v2",
+      "source_kind": "mujoco_rgb_render",
+      "width": 640
+    },
+    "hardware_io": "disabled",
+    "render_variants": [
+      "robot_visible",
+      "robot_render_disabled"
+    ],
+    "robot_qpos_rad": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "table": {
+      "center_m": [
+        0,
+        0,
+        -0.025
+      ],
+      "half_extents_m": [
+        0.45,
+        0.45,
+        0.025
+      ],
+      "rgba": [
+        0.35,
+        0.3,
+        0.22,
+        1
+      ]
+    },
+    "target_case": {
+      "case_id": "B-10",
+      "cup_center_m": [
+        -0.15,
+        0.3,
+        0.055
+      ],
+      "source_run": "EXP-20260921-022-virtual-rgb-multirange-projection-sweep"
+    }
+  },
+  "schema_version": "first-robots/research-config/v1",
+  "status": "planned_not_executed"
+}

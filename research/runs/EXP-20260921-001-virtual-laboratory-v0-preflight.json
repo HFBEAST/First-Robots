@@ -1,0 +1,205 @@
+{
+  "artifacts": [
+    {
+      "path": "research/artifacts/EXP-20260921-001-virtual-laboratory-v0-preflight/config.json",
+      "sha256": "sha256:fb990232962e19b9c493831bc17b75c4862f9a8b08ba022466a0896814318a8c"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-001-virtual-laboratory-v0-preflight/derived-scene.xml",
+      "sha256": "sha256:67b0ee496bfba2d2b138d58d82a178f422c7d2c53da1eecb7fc9993e0e8089d1"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-001-virtual-laboratory-v0-preflight/fixed_depth_01-depth.npy",
+      "sha256": "sha256:13f3a207bbb4578a3de6645429cd7fac93241f200472e099ad20ac19e654de32"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-001-virtual-laboratory-v0-preflight/fixed_depth_01-rgb.png",
+      "sha256": "sha256:5af6e7b13a4bd1f3d9eb01e816fcfd58b51085380054b5c1c83c2c813d615f88"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-001-virtual-laboratory-v0-preflight/fixed_depth_01-segmentation.npy",
+      "sha256": "sha256:7897ef1220edf97bb37d0561cace74a1221a91184dac4cad25ae6fedb2e07173"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-001-virtual-laboratory-v0-preflight/fixed_depth_02-depth.npy",
+      "sha256": "sha256:7cde783c068d142672b8a6eea9572cf71794ecc8a828f79bb0cded5a1c4974df"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-001-virtual-laboratory-v0-preflight/fixed_depth_02-rgb.png",
+      "sha256": "sha256:fca77cd6f0cdc02a8a26d6ad2586787f4e6dff1ade8004ac861f6ef00dd0ad13"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-001-virtual-laboratory-v0-preflight/fixed_depth_02-segmentation.npy",
+      "sha256": "sha256:6fbf822a93540fab9910eccb7c5b0c6a2d1ab8a359e93ba91c102f15431a85ca"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-001-virtual-laboratory-v0-preflight/state.json",
+      "sha256": "sha256:4492f52d6f9676e103ab0f6d5a0c88ae80984559612febb4faf3863caf3c9bd7"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-001-virtual-laboratory-v0-preflight/wrist_cam-depth.npy",
+      "sha256": "sha256:33db821f8e8e6131cc512b4bfef6be3d86748c07cb7220237a188baab333ca75"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-001-virtual-laboratory-v0-preflight/wrist_cam-rgb.png",
+      "sha256": "sha256:7d3893422457b1f19e3667eaf2eff816b80cf803b3db09b4977a78e3e402c4e3"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-001-virtual-laboratory-v0-preflight/wrist_cam-segmentation.npy",
+      "sha256": "sha256:dd82840f7b80a1bd8c4c5800d75211aea7858bc37ebf11c64cf3fc14c2ec7981"
+    },
+    {
+      "path": "research/reports/EXP-20260921-001-virtual-laboratory-v0-preflight.result.json",
+      "sha256": "sha256:51a6a0c88993ed0c6bc3e3838b4be1bde178f3e41751053c3165350480ed7a0d"
+    },
+    {
+      "path": "research/experiments/EXP-20260921-001-virtual-laboratory-v0-preflight.record.json",
+      "sha256": "sha256:880052468b0966eccd40ee4369fbeb288ec7add257a98020b8854087f1a02550"
+    }
+  ],
+  "baseline": {
+    "kind": "virtual_laboratory",
+    "reference": "No physical-workspace equivalence is assumed."
+  },
+  "code": {
+    "commit": "5311e4a85e76bfc96a9ff235d9cd00f2c7a629fb",
+    "dirty_at_start": true,
+    "repository": "H:/0_program/My_action/First-Robots",
+    "traceable": true
+  },
+  "ended_at": "2026-09-20T21:56:01.279944Z",
+  "execution": {
+    "command": [
+      "H:\\0_program\\My_action\\First-Robots\\research\\.venvs\\mrbtp-demo-py312\\Scripts\\python.exe",
+      "research\\experiments\\run_virtual_laboratory_v0_preflight.py"
+    ],
+    "parameters": {
+      "actuation": "disabled",
+      "cameras": {
+        "fixed_depth_01": {
+          "kind": "virtual nominal depth",
+          "position_m": [
+            0.45,
+            -0.45,
+            0.42
+          ],
+          "target_m": [
+            0.12,
+            0,
+            0.055
+          ]
+        },
+        "fixed_depth_02": {
+          "kind": "virtual nominal depth",
+          "position_m": [
+            0.45,
+            0.45,
+            0.42
+          ],
+          "target_m": [
+            0.12,
+            0,
+            0.055
+          ]
+        },
+        "wrist_cam": {
+          "kind": "candidate-model wrist RGB",
+          "source": "candidate model only"
+        }
+      },
+      "coordinate_contract": "world origin is the nominal tabletop surface and candidate robot-base origin; +Z is upward.",
+      "cup": {
+        "center_m": [
+          0.12,
+          0,
+          0.055
+        ],
+        "half_height_m": 0.055,
+        "name": "vlab_cup",
+        "radius_m": 0.035,
+        "type": "cylinder"
+      },
+      "dynamics": "disabled",
+      "hardware_io": "disabled",
+      "qpos": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "renderer": {
+        "height": 240,
+        "outputs": [
+          "rgb",
+          "depth",
+          "geom_segmentation"
+        ],
+        "width": 320
+      },
+      "robot_model": "candidate Menagerie SO-101",
+      "robots": 1,
+      "table": {
+        "center_m": [
+          0,
+          0,
+          -0.025
+        ],
+        "half_extents_m": [
+          0.45,
+          0.45,
+          0.025
+        ],
+        "name": "vlab_table",
+        "top_z_m": 0
+      },
+      "version": "v0"
+    },
+    "script": "research/experiments/run_virtual_laboratory_v0_preflight.py"
+  },
+  "inputs": [
+    {
+      "kind": "configuration",
+      "path": "research/configs/EXP-20260921-001-virtual-laboratory-v0-preflight.json",
+      "sha256": "sha256:b3a70d845de5179b95c6aeba1663ad28f4f7b1208928c3146611fd3795c833f7"
+    },
+    {
+      "kind": "candidate_model",
+      "path": "research/sources/mujoco_menagerie_robotstudio_so101/robotstudio_so101/scene.xml",
+      "revision": "da76818e269b82289eba39808e2fb91d679d6994",
+      "sha256": "sha256:65496b0061ca3ddd92b58fe09bd30f6a4a443f137cc42cf8975d5cff23030bfd"
+    }
+  ],
+  "level": "formal",
+  "objective": "Build one static named virtual laboratory v0 before task or control research.",
+  "results": {
+    "criteria": "The named static laboratory must satisfy coordinate invariants, emit three-view artifacts, and show the cup in both nominal fixed cameras.",
+    "duration_seconds": 0.545325,
+    "metrics": [
+      {
+        "name": "fixed_cameras_cup_visible",
+        "unit": "boolean",
+        "value": true
+      },
+      {
+        "name": "wrist_cup_segmentation_pixels",
+        "unit": "pixels",
+        "value": 0
+      }
+    ],
+    "passed": true
+  },
+  "review": {
+    "note": "Static virtual-laboratory initialization only.",
+    "status": "pending_human_review"
+  },
+  "run_id": "EXP-20260921-001-virtual-laboratory-v0-preflight",
+  "runtime": {
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.12.11",
+    "random_seed": null
+  },
+  "schema_version": "experiment-management/run-manifest/v1",
+  "started_at": "2026-09-20T21:56:00.737498Z"
+}

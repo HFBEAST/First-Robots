@@ -1,0 +1,146 @@
+{
+  "artifacts": [],
+  "baseline": {
+    "kind": "virtual_lab_v0",
+    "reference": "EXP-20260921-001-virtual-laboratory-v0-preflight"
+  },
+  "code": {
+    "commit": "5311e4a85e76bfc96a9ff235d9cd00f2c7a629fb",
+    "dirty_at_start": true,
+    "repository": "H:/0_program/My_action/First-Robots",
+    "traceable": true
+  },
+  "ended_at": "2026-09-20T22:37:44.780826Z",
+  "execution": {
+    "command": [
+      "H:\\0_program\\My_action\\First-Robots\\research\\.venvs\\mrbtp-demo-py312\\Scripts\\python.exe",
+      "research\\experiments\\run_virtual_laboratory_barrier_observation_position_screen.py"
+    ],
+    "parameters": {
+      "actuation": "disabled",
+      "barrier": {
+        "center_m": [
+          0.28,
+          0,
+          0.16
+        ],
+        "half_extents_m": [
+          0.01,
+          0.35,
+          0.16
+        ],
+        "name": "vlab_barrier",
+        "purpose": "one fixed central occluder between the nominal fixed cameras and the unchanged cup",
+        "type": "box"
+      },
+      "cup": {
+        "center_m": [
+          0.12,
+          0,
+          0.055
+        ],
+        "half_height_m": 0.055,
+        "radius_m": 0.035
+      },
+      "dynamics": "disabled",
+      "fixed_cameras": {
+        "fixed_depth_01": {
+          "position_m": [
+            0.45,
+            -0.45,
+            0.42
+          ],
+          "target_m": [
+            0.12,
+            0,
+            0.055
+          ]
+        },
+        "fixed_depth_02": {
+          "position_m": [
+            0.45,
+            0.45,
+            0.42
+          ],
+          "target_m": [
+            0.12,
+            0,
+            0.055
+          ]
+        }
+      },
+      "hardware_io": "disabled",
+      "qpos": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "renderer": {
+        "height": 240,
+        "width": 320
+      },
+      "table": {
+        "center_m": [
+          0,
+          0,
+          -0.025
+        ],
+        "half_extents_m": [
+          0.45,
+          0.45,
+          0.025
+        ]
+      }
+    },
+    "script": "research/experiments/run_virtual_laboratory_barrier_observation_position_screen.py"
+  },
+  "failure": {
+    "message": "Refusing to overwrite evidence: H:\\0_program\\My_action\\First-Robots\\research\\experiments\\EXP-20260921-004-virtual-laboratory-barrier-observation-position-screen.record.json",
+    "type": "FileExistsError"
+  },
+  "inputs": [
+    {
+      "kind": "configuration",
+      "path": "research/configs/EXP-20260921-004-virtual-laboratory-barrier-observation-position-screen.json",
+      "sha256": "sha256:15a5fbefdd44a98f1d38fd6fba4a09e385a029aef675e2845ef153f32ac9e639"
+    },
+    {
+      "kind": "predecessor_result",
+      "path": "research/reports/EXP-20260921-001-virtual-laboratory-v0-preflight.result.json",
+      "sha256": "sha256:51a6a0c88993ed0c6bc3e3838b4be1bde178f3e41751053c3165350480ed7a0d"
+    },
+    {
+      "kind": "position_screen_source_run",
+      "path": "research/runs/EXP-20260831-004-so101-mujoco-observation-preflight.json",
+      "sha256": "sha256:2dc2c8ce727aa6344c29180fff86678900b1a220e9201c22b76a4c3bc324afed"
+    },
+    {
+      "kind": "candidate_model",
+      "path": "research/sources/mujoco_menagerie_robotstudio_so101/robotstudio_so101/scene.xml",
+      "sha256": "sha256:65496b0061ca3ddd92b58fe09bd30f6a4a443f137cc42cf8975d5cff23030bfd"
+    }
+  ],
+  "level": "failed",
+  "objective": "Evaluate one central virtual barrier for fixed-camera observability and a frozen position-only reach screen.",
+  "results": {
+    "criteria": "execution completed without an unhandled exception",
+    "duration_seconds": 0.491332,
+    "metrics": [],
+    "passed": false
+  },
+  "review": {
+    "note": null,
+    "status": "not_reviewed"
+  },
+  "run_id": "EXP-20260921-004-virtual-laboratory-barrier-observation-position-screen",
+  "runtime": {
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.12.11",
+    "random_seed": null
+  },
+  "schema_version": "experiment-management/run-manifest/v1",
+  "started_at": "2026-09-20T22:37:44.289513Z"
+}

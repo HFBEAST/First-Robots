@@ -1,0 +1,29 @@
+{
+  "schema_version": "first-robots/research-config/v1",
+  "experiment_id": "EXP-20260921-009-virtual-laboratory-barrier-geometry-position-audit",
+  "status": "planned_not_executed",
+  "blocking_predecessor": {
+    "run_id": "EXP-20260921-008-virtual-laboratory-occlusion-rgb-color-probe",
+    "result_path": "research/reports/EXP-20260921-008-virtual-laboratory-occlusion-rgb-color-probe.result.json",
+    "result_sha256": "sha256:5b45d7a79a3fef2175f7acd3405b5239c7cd3f513e78bbbc816b312391e1191b"
+  },
+  "reference_barrier_config": {
+    "path": "research/configs/EXP-20260921-006-virtual-laboratory-barrier-width-isolation.json"
+  },
+  "model": {"scene_sha256": "sha256:65496b0061ca3ddd92b58fe09bd30f6a4a443f137cc42cf8975d5cff23030bfd"},
+  "position_screen_provenance": {
+    "source_run_id": "EXP-20260831-004-so101-mujoco-observation-preflight",
+    "source_run_path": "research/runs/EXP-20260831-004-so101-mujoco-observation-preflight.json",
+    "source_run_sha256": "sha256:2dc2c8ce727aa6344c29180fff86678900b1a220e9201c22b76a4c3bc324afed",
+    "virtual_half_reach_radius_m": 0.23917871793616743
+  },
+  "pass_conditions": [
+    "008 result, source model, and half-reach source-run hashes match",
+    "008 geometry, cameras, renderer, qpos, dynamics, actuation, and hardware-I/O fields match 006; only display RGBA and measurement fields differ",
+    "the 008 cup XY radial position from candidate-model baseframe is no greater than the frozen virtual half-reach radius"
+  ],
+  "non_claims": [
+    "This configuration and position-only audit does not prove IK, end-effector pose, collision freedom, trajectory feasibility, grasp, load safety, control, or hardware reachability.",
+    "It does not add a new visibility measurement; the relevant RGB-raster observation remains the separately recorded 008 color probe."
+  ]
+}

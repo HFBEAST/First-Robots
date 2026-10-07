@@ -1,0 +1,13 @@
+{
+  "kind": "formal_no_barrier_coordinate_baseline",
+  "result": {
+    "path": "research/reports/EXP-20260921-015-no-barrier-coordinate-baseline.result.json",
+    "sha256": "sha256:4515289a511ab9892ccef649c1b6a8b4189a0d659f70d58f830fa8c60740063d"
+  },
+  "review": {
+    "adopted": false,
+    "status": "pending_human_review"
+  },
+  "run_id": "EXP-20260921-015-no-barrier-coordinate-baseline",
+  "schema_version": "first-robots/experiment-record/v1"
+}

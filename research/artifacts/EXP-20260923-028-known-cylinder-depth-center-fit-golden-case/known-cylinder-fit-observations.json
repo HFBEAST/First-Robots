@@ -1,0 +1,61 @@
+{
+  "coordinator_or_execution": "not_evaluated",
+  "fit": {
+    "circle_radial_rms_residual_m": 0.00013114903786109596,
+    "combined_point_count": 6911,
+    "combined_z_median_m": 0.07610549249400517,
+    "evaluation_only_center_error_m": 8.351525677277148e-05,
+    "evaluation_only_delta_from_b_m": [
+      -4.939298735906483e-05,
+      6.734338062177464e-05,
+      0.0
+    ],
+    "fitted_center_world_m": [
+      0.14995060701264093,
+      6.734338062177464e-05,
+      0.055
+    ],
+    "fitted_radius_m": 0.03462517222024446,
+    "known_radius_m": 0.035,
+    "side_point_count": 3455
+  },
+  "known_cylinder": {
+    "half_height_m": 0.055,
+    "radius_m": 0.035,
+    "support_plane_z_m": 0,
+    "upright_axis": "world_plus_z"
+  },
+  "per_camera": {
+    "fixed_depth_01": {
+      "finite": true,
+      "foreground_point_count": 3455,
+      "frame": {
+        "dtype": "float32",
+        "frame_id": "fixed_depth_01",
+        "height": 480,
+        "pixel_encoding": "depth_float32_m",
+        "scenario_version": "virtual-depth-contract-v1",
+        "source_kind": "mujoco_depth_render",
+        "width": 640
+      },
+      "world_z_max_m": 0.11049131452495675,
+      "world_z_min_m": 0.0005039643652819392
+    },
+    "fixed_depth_02": {
+      "finite": true,
+      "foreground_point_count": 3456,
+      "frame": {
+        "dtype": "float32",
+        "frame_id": "fixed_depth_02",
+        "height": 480,
+        "pixel_encoding": "depth_float32_m",
+        "scenario_version": "virtual-depth-contract-v1",
+        "source_kind": "mujoco_depth_render",
+        "width": 640
+      },
+      "world_z_max_m": 0.11049091570670716,
+      "world_z_min_m": 0.0005289994993429303
+    }
+  },
+  "source_run": "EXP-20260923-027-virtual-depth-plane-projection-repair"
+}

@@ -1,0 +1,8 @@
+{
+  "schema_version": "first-robots/experiment-record/v1",
+  "run_id": "EXP-20260923-031-known-cylinder-depth-x-step-compiled-scene-audit",
+  "kind": "formal_known_cylinder_depth_x_step_compiled_scene_audit",
+  "plan": "research/experiments/EXP-20260923-031-known-cylinder-depth-x-step-compiled-scene-audit.md",
+  "state": "planned_not_executed",
+  "review": {"status": "pending_human_review", "adopted": false}
+}

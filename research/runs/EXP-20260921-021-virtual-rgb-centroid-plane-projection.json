@@ -1,0 +1,194 @@
+{
+  "artifacts": [
+    {
+      "path": "research/artifacts/EXP-20260921-021-virtual-rgb-centroid-plane-projection/centroid-plane-projection-observations.json",
+      "sha256": "sha256:13370cedf7fbdaf32e14a234b85b1b418ce6ab4d4442fe300ebe3e28dd37b718"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-021-virtual-rgb-centroid-plane-projection/config.json",
+      "sha256": "sha256:143b897429a13ba0fad83a6e6f63be8214cee7d51fe5bfb0ba9045579ed04d79"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-021-virtual-rgb-centroid-plane-projection/fixed_depth_01-mask.png",
+      "sha256": "sha256:3e71a4856801a738e0f70eda4e5f5b626a392c7c1a075a70daa18b37be4fa08f"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-021-virtual-rgb-centroid-plane-projection/fixed_depth_01-rgb.png",
+      "sha256": "sha256:8f6b72d8aacd0a3e8c9575bbc78d4dec843453b454f8bef3a898f180da7b466b"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-021-virtual-rgb-centroid-plane-projection/fixed_depth_02-mask.png",
+      "sha256": "sha256:48dfdbbf1d2faa1a5cfa96849511ece986a7431b55c0dd4e734946de02b7a257"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-021-virtual-rgb-centroid-plane-projection/fixed_depth_02-rgb.png",
+      "sha256": "sha256:2db12a5616667290922ce602ae9aaed0e4540c5cd1e87249d0ea36d906b97a48"
+    },
+    {
+      "path": "research/experiments/EXP-20260921-021-virtual-rgb-centroid-plane-projection.execution.record.json",
+      "sha256": "sha256:15cd78abb9b4ba34c6a8b032305b8a88e615d9bb45cc32c6b85910d6230e5e1b"
+    },
+    {
+      "path": "research/reports/EXP-20260921-021-virtual-rgb-centroid-plane-projection.result.json",
+      "sha256": "sha256:547e2a1fbfbf52a4c246c17e6d037b7658932ede83ed6adea3797531371e8a4a"
+    }
+  ],
+  "baseline": {
+    "kind": "virtual_rgb_detection_isolation",
+    "reference": "EXP-20260921-020-virtual-rgb-detection-predicate-repair"
+  },
+  "code": {
+    "commit": "5311e4a85e76bfc96a9ff235d9cd00f2c7a629fb",
+    "dirty_at_start": true,
+    "repository": "H:/0_program/My_action/First-Robots",
+    "traceable": true
+  },
+  "ended_at": "2026-09-21T14:29:45.881585Z",
+  "execution": {
+    "command": [
+      "H:\\0_program\\My_action\\First-Robots\\research\\.venvs\\mrbtp-demo-py312\\Scripts\\python.exe",
+      "research\\experiments\\run_virtual_rgb_centroid_plane_projection.py"
+    ],
+    "parameters": {
+      "actuation": "disabled",
+      "barrier": "absent",
+      "cup_b": {
+        "center_m": [
+          0.15,
+          0,
+          0.055
+        ],
+        "half_height_m": 0.055,
+        "radius_m": 0.035,
+        "rgba": [
+          0.9,
+          0.1,
+          0.7,
+          1
+        ]
+      },
+      "detector": {
+        "blue_min": 100,
+        "blue_minus_green_min": 40,
+        "green_max": 130,
+        "kind": "candidate_artificial_magenta_signature_with_channel_dominance",
+        "red_min": 120,
+        "red_minus_green_min": 80
+      },
+      "dynamics": "disabled",
+      "fixed_cameras": {
+        "fixed_depth_01": {
+          "position_m": [
+            0.45,
+            -0.45,
+            0.42
+          ],
+          "target_m": [
+            0.12,
+            0,
+            0.055
+          ]
+        },
+        "fixed_depth_02": {
+          "position_m": [
+            0.45,
+            0.45,
+            0.42
+          ],
+          "target_m": [
+            0.12,
+            0,
+            0.055
+          ]
+        }
+      },
+      "frame_contract": {
+        "height": 480,
+        "pixel_encoding": "rgb_uint8",
+        "scenario_version": "virtual-rgb-contract-v2",
+        "source_kind": "mujoco_rgb_render",
+        "width": 640
+      },
+      "hardware_io": "disabled",
+      "projection": {
+        "assumed_cup_center_plane_z_m": 0.055,
+        "camera_fovy_degrees": 60
+      },
+      "robot_qpos_rad": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "table": {
+        "center_m": [
+          0,
+          0,
+          -0.025
+        ],
+        "half_extents_m": [
+          0.45,
+          0.45,
+          0.025
+        ],
+        "rgba": [
+          0.35,
+          0.3,
+          0.22,
+          1
+        ]
+      }
+    },
+    "script": "research/experiments/run_virtual_rgb_centroid_plane_projection.py"
+  },
+  "inputs": [
+    {
+      "kind": "configuration",
+      "path": "research/configs/EXP-20260921-021-virtual-rgb-centroid-plane-projection.json",
+      "sha256": "sha256:f05eea41b70b7fcb74b715e603baee15e1c77cb51adfa47af62922f68e24f454"
+    },
+    {
+      "kind": "predecessor_result",
+      "path": "research/reports/EXP-20260921-020-virtual-rgb-detection-predicate-repair.result.json",
+      "sha256": "sha256:889c7fd17dc8dddee8c704eae87dc0e3979b065a71ff359f6a07220a8ad519ec"
+    },
+    {
+      "kind": "candidate_model",
+      "path": "research/sources/mujoco_menagerie_robotstudio_so101/robotstudio_so101/scene.xml",
+      "sha256": "sha256:65496b0061ca3ddd92b58fe09bd30f6a4a443f137cc42cf8975d5cff23030bfd"
+    }
+  ],
+  "level": "formal",
+  "objective": "Record RGB component centroid rays intersecting a known-height virtual plane without an accuracy gate or execution.",
+  "results": {
+    "criteria": "Each isolated RGB centroid produces a finite, forward virtual plane intersection; deviations are recorded without a tolerance.",
+    "duration_seconds": 0.621437,
+    "metrics": [
+      {
+        "name": "centroid_plane_projection_valid",
+        "unit": "boolean",
+        "value": true
+      },
+      {
+        "name": "camera_count",
+        "unit": "count",
+        "value": 2
+      }
+    ],
+    "passed": true
+  },
+  "review": {
+    "note": "Virtual geometric measurement only; not a calibrated pose, fusion, acceptance gate, or robot action.",
+    "status": "pending_human_review"
+  },
+  "run_id": "EXP-20260921-021-virtual-rgb-centroid-plane-projection",
+  "runtime": {
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.12.11",
+    "random_seed": null
+  },
+  "schema_version": "experiment-management/run-manifest/v1",
+  "started_at": "2026-09-21T14:29:45.260541Z"
+}

@@ -1,0 +1,151 @@
+{
+  "limits": [
+    "This is a direct artificial-color virtual occlusion isolation for one frozen B, not an RGB generalization, camera calibration, physical occlusion measure, or visibility threshold.",
+    "Robot render disabling changes only virtual appearance for this comparison; it is not a collision, motion, or physical removal experiment.",
+    "No fusion threshold, Coordinator policy, execution, planning, IK, collision, grasp, safety, or hardware I/O follows from this run."
+  ],
+  "observations": {
+    "barrier_absent": true,
+    "cameras": {
+      "fixed_depth_01": {
+        "robot_render_disabled": {
+          "candidate_pixel_count": 1353,
+          "component_count": 1,
+          "components": [
+            {
+              "bbox_xywh": [
+                288,
+                122,
+                30,
+                54
+              ],
+              "centroid_pixel_xy": [
+                302.6688839615669,
+                147.68440502586844
+              ],
+              "pixel_count": 1353
+            }
+          ],
+          "frame": {
+            "frame_id": "fixed_depth_01",
+            "height": 480,
+            "pixel_encoding": "rgb_uint8",
+            "scenario_version": "virtual-rgb-contract-v2",
+            "source_kind": "mujoco_rgb_render",
+            "width": 640
+          },
+          "mask": "research/artifacts/EXP-20260921-023-virtual-rgb-occlusion-isolation/fixed_depth_01-robot_render_disabled-mask.png",
+          "raw_rgb": "research/artifacts/EXP-20260921-023-virtual-rgb-occlusion-isolation/fixed_depth_01-robot_render_disabled-rgb.png"
+        },
+        "robot_visible": {
+          "candidate_pixel_count": 145,
+          "component_count": 1,
+          "components": [
+            {
+              "bbox_xywh": [
+                308,
+                148,
+                8,
+                27
+              ],
+              "centroid_pixel_xy": [
+                312.35172413793106,
+                159.86206896551724
+              ],
+              "pixel_count": 145
+            }
+          ],
+          "frame": {
+            "frame_id": "fixed_depth_01",
+            "height": 480,
+            "pixel_encoding": "rgb_uint8",
+            "scenario_version": "virtual-rgb-contract-v2",
+            "source_kind": "mujoco_rgb_render",
+            "width": 640
+          },
+          "mask": "research/artifacts/EXP-20260921-023-virtual-rgb-occlusion-isolation/fixed_depth_01-robot_visible-mask.png",
+          "raw_rgb": "research/artifacts/EXP-20260921-023-virtual-rgb-occlusion-isolation/fixed_depth_01-robot_visible-rgb.png"
+        },
+        "visible_to_render_disabled_pixel_ratio": 0.10716925351071692
+      },
+      "fixed_depth_02": {
+        "robot_render_disabled": {
+          "candidate_pixel_count": 3812,
+          "component_count": 1,
+          "components": [
+            {
+              "bbox_xywh": [
+                568,
+                226,
+                72,
+                91
+              ],
+              "centroid_pixel_xy": [
+                602.8950682056663,
+                269.2667890870934
+              ],
+              "pixel_count": 3812
+            }
+          ],
+          "frame": {
+            "frame_id": "fixed_depth_02",
+            "height": 480,
+            "pixel_encoding": "rgb_uint8",
+            "scenario_version": "virtual-rgb-contract-v2",
+            "source_kind": "mujoco_rgb_render",
+            "width": 640
+          },
+          "mask": "research/artifacts/EXP-20260921-023-virtual-rgb-occlusion-isolation/fixed_depth_02-robot_render_disabled-mask.png",
+          "raw_rgb": "research/artifacts/EXP-20260921-023-virtual-rgb-occlusion-isolation/fixed_depth_02-robot_render_disabled-rgb.png"
+        },
+        "robot_visible": {
+          "candidate_pixel_count": 3812,
+          "component_count": 1,
+          "components": [
+            {
+              "bbox_xywh": [
+                568,
+                226,
+                72,
+                91
+              ],
+              "centroid_pixel_xy": [
+                602.8950682056663,
+                269.2667890870934
+              ],
+              "pixel_count": 3812
+            }
+          ],
+          "frame": {
+            "frame_id": "fixed_depth_02",
+            "height": 480,
+            "pixel_encoding": "rgb_uint8",
+            "scenario_version": "virtual-rgb-contract-v2",
+            "source_kind": "mujoco_rgb_render",
+            "width": 640
+          },
+          "mask": "research/artifacts/EXP-20260921-023-virtual-rgb-occlusion-isolation/fixed_depth_02-robot_visible-mask.png",
+          "raw_rgb": "research/artifacts/EXP-20260921-023-virtual-rgb-occlusion-isolation/fixed_depth_02-robot_visible-rgb.png"
+        },
+        "visible_to_render_disabled_pixel_ratio": 1.0
+      }
+    },
+    "robot_render_disabled_geom_count": 49,
+    "target_case": {
+      "case_id": "B-10",
+      "cup_center_m": [
+        -0.15,
+        0.3,
+        0.055
+      ],
+      "source_run": "EXP-20260921-022-virtual-rgb-multirange-projection-sweep"
+    }
+  },
+  "review": {
+    "adopted": false,
+    "status": "pending_human_review"
+  },
+  "run_id": "EXP-20260921-023-virtual-rgb-occlusion-isolation",
+  "schema_version": "first-robots/research-result/v1",
+  "status": "passed_pending_human_review"
+}

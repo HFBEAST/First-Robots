@@ -1,0 +1,8 @@
+{
+  "schema_version": "first-robots/experiment-record/v1",
+  "run_id": "EXP-20260921-014-world-coordinate-xy-map-layout-repair",
+  "kind": "formal_world_coordinate_xy_map_layout_repair",
+  "plan": "research/experiments/EXP-20260921-014-world-coordinate-xy-map-layout-repair.md",
+  "state": "planned_not_executed",
+  "review": {"status": "pending_human_review", "adopted": false}
+}

@@ -1,0 +1,8 @@
+{
+  "schema_version": "first-robots/experiment-record/v1",
+  "run_id": "EXP-20260921-022-virtual-rgb-multirange-projection-sweep",
+  "kind": "formal_virtual_rgb_multirange_projection_sweep",
+  "plan": "research/experiments/EXP-20260921-022-virtual-rgb-multirange-projection-sweep.md",
+  "state": "planned_not_executed",
+  "review": {"status": "pending_human_review", "adopted": false}
+}

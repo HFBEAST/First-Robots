@@ -1,0 +1,348 @@
+{
+  "limits": [
+    "This is a small virtual one-dimensional X step around the golden condition, not an observed reachability, visibility, accuracy, coverage, or safety range.",
+    "Known cylinder dimensions, upright orientation, virtual support plane, camera poses, robot pose, empty virtual reference, numerical epsilon, and fitting method are assumptions frozen for this run; no real Orbbec frame, calibration, synchronization, or noise is evaluated.",
+    "Coordinator acceptance and table containment do not assess numerical accuracy, collision, reachability, IK, planning, grasping, dynamics, safety, MuJoCo robot action, or hardware control."
+  ],
+  "observations": {
+    "changed_independent_variable": "cylinder_center_world_x_m",
+    "conditions": [
+      {
+        "capability_table_containment_only": true,
+        "compiled_cup_center_matches_configuration": true,
+        "configured_cylinder_center_world_m": [
+          0.125,
+          0.0,
+          0.055
+        ],
+        "coordinate_message": {
+          "agent": "coordinate",
+          "center_world_m": [
+            0.12495568802930586,
+            6.409945648884648e-05,
+            0.055
+          ],
+          "object_model_version": "upright-cylinder-r0.035-h0.110-table-z0",
+          "scenario_version": "known-cylinder-depth-x-step-agent-chain-v1",
+          "source": "dual_depth_known_cylinder_fit",
+          "source_frame_ids": [
+            "fixed_depth_01",
+            "fixed_depth_02"
+          ]
+        },
+        "coordinator": {
+          "accepted": true,
+          "reason": "accepted"
+        },
+        "executor": {
+          "applied": true,
+          "reason": "mock_state_transition_applied",
+          "state_after_m": [
+            0.12495568802930586,
+            6.409945648884648e-05,
+            0.055
+          ]
+        },
+        "fit": {
+          "circle_radial_rms_residual_m": 0.00013633238865793713,
+          "combined_point_count": 6653,
+          "evaluation_only_center_error_m": 7.792490660221524e-05,
+          "evaluation_only_delta_from_configured_center_m": [
+            -4.431197069414139e-05,
+            6.409945648884648e-05,
+            0.0
+          ],
+          "fitted_center_world_m": [
+            0.12495568802930586,
+            6.409945648884648e-05,
+            0.055
+          ],
+          "fitted_radius_m": 0.03462019050220659,
+          "side_point_count": 3326
+        },
+        "per_camera": {
+          "fixed_depth_01": {
+            "candidate_pixel_count": 3326,
+            "component_count": 1,
+            "current_depth": "research/artifacts/EXP-20260923-030-known-cylinder-depth-x-step-agent-chain/x-0.125-fixed_depth_01-current-depth.npy",
+            "current_frame": {
+              "dtype": "float32",
+              "frame_id": "fixed_depth_01",
+              "height": 480,
+              "pixel_encoding": "depth_float32_m",
+              "scenario_version": "virtual-depth-contract-v1",
+              "source_kind": "mujoco_depth_render",
+              "width": 640
+            },
+            "finite_world_points": true,
+            "foreground_mask": "research/artifacts/EXP-20260923-030-known-cylinder-depth-x-step-agent-chain/x-0.125-fixed_depth_01-foreground-mask.png",
+            "reference_depth": "research/artifacts/EXP-20260923-030-known-cylinder-depth-x-step-agent-chain/x-0.125-fixed_depth_01-reference-depth.npy",
+            "reference_frame": {
+              "dtype": "float32",
+              "frame_id": "fixed_depth_01",
+              "height": 480,
+              "pixel_encoding": "depth_float32_m",
+              "scenario_version": "virtual-depth-contract-v1",
+              "source_kind": "mujoco_depth_render",
+              "width": 640
+            }
+          },
+          "fixed_depth_02": {
+            "candidate_pixel_count": 3327,
+            "component_count": 1,
+            "current_depth": "research/artifacts/EXP-20260923-030-known-cylinder-depth-x-step-agent-chain/x-0.125-fixed_depth_02-current-depth.npy",
+            "current_frame": {
+              "dtype": "float32",
+              "frame_id": "fixed_depth_02",
+              "height": 480,
+              "pixel_encoding": "depth_float32_m",
+              "scenario_version": "virtual-depth-contract-v1",
+              "source_kind": "mujoco_depth_render",
+              "width": 640
+            },
+            "finite_world_points": true,
+            "foreground_mask": "research/artifacts/EXP-20260923-030-known-cylinder-depth-x-step-agent-chain/x-0.125-fixed_depth_02-foreground-mask.png",
+            "reference_depth": "research/artifacts/EXP-20260923-030-known-cylinder-depth-x-step-agent-chain/x-0.125-fixed_depth_02-reference-depth.npy",
+            "reference_frame": {
+              "dtype": "float32",
+              "frame_id": "fixed_depth_02",
+              "height": 480,
+              "pixel_encoding": "depth_float32_m",
+              "scenario_version": "virtual-depth-contract-v1",
+              "source_kind": "mujoco_depth_render",
+              "width": 640
+            }
+          }
+        },
+        "reviewer_state_equals_candidate": true
+      },
+      {
+        "capability_table_containment_only": true,
+        "compiled_cup_center_matches_configuration": true,
+        "configured_cylinder_center_world_m": [
+          0.15,
+          0.0,
+          0.055
+        ],
+        "coordinate_message": {
+          "agent": "coordinate",
+          "center_world_m": [
+            0.14995060701264093,
+            6.734338062177464e-05,
+            0.055
+          ],
+          "object_model_version": "upright-cylinder-r0.035-h0.110-table-z0",
+          "scenario_version": "known-cylinder-depth-x-step-agent-chain-v1",
+          "source": "dual_depth_known_cylinder_fit",
+          "source_frame_ids": [
+            "fixed_depth_01",
+            "fixed_depth_02"
+          ]
+        },
+        "coordinator": {
+          "accepted": true,
+          "reason": "accepted"
+        },
+        "executor": {
+          "applied": true,
+          "reason": "mock_state_transition_applied",
+          "state_after_m": [
+            0.14995060701264093,
+            6.734338062177464e-05,
+            0.055
+          ]
+        },
+        "fit": {
+          "circle_radial_rms_residual_m": 0.00013114903786109596,
+          "combined_point_count": 6911,
+          "evaluation_only_center_error_m": 8.351525677277148e-05,
+          "evaluation_only_delta_from_configured_center_m": [
+            -4.939298735906483e-05,
+            6.734338062177464e-05,
+            0.0
+          ],
+          "fitted_center_world_m": [
+            0.14995060701264093,
+            6.734338062177464e-05,
+            0.055
+          ],
+          "fitted_radius_m": 0.03462517222024446,
+          "side_point_count": 3455
+        },
+        "per_camera": {
+          "fixed_depth_01": {
+            "candidate_pixel_count": 3455,
+            "component_count": 1,
+            "current_depth": "research/artifacts/EXP-20260923-030-known-cylinder-depth-x-step-agent-chain/x-0.150-fixed_depth_01-current-depth.npy",
+            "current_frame": {
+              "dtype": "float32",
+              "frame_id": "fixed_depth_01",
+              "height": 480,
+              "pixel_encoding": "depth_float32_m",
+              "scenario_version": "virtual-depth-contract-v1",
+              "source_kind": "mujoco_depth_render",
+              "width": 640
+            },
+            "finite_world_points": true,
+            "foreground_mask": "research/artifacts/EXP-20260923-030-known-cylinder-depth-x-step-agent-chain/x-0.150-fixed_depth_01-foreground-mask.png",
+            "reference_depth": "research/artifacts/EXP-20260923-030-known-cylinder-depth-x-step-agent-chain/x-0.150-fixed_depth_01-reference-depth.npy",
+            "reference_frame": {
+              "dtype": "float32",
+              "frame_id": "fixed_depth_01",
+              "height": 480,
+              "pixel_encoding": "depth_float32_m",
+              "scenario_version": "virtual-depth-contract-v1",
+              "source_kind": "mujoco_depth_render",
+              "width": 640
+            }
+          },
+          "fixed_depth_02": {
+            "candidate_pixel_count": 3456,
+            "component_count": 1,
+            "current_depth": "research/artifacts/EXP-20260923-030-known-cylinder-depth-x-step-agent-chain/x-0.150-fixed_depth_02-current-depth.npy",
+            "current_frame": {
+              "dtype": "float32",
+              "frame_id": "fixed_depth_02",
+              "height": 480,
+              "pixel_encoding": "depth_float32_m",
+              "scenario_version": "virtual-depth-contract-v1",
+              "source_kind": "mujoco_depth_render",
+              "width": 640
+            },
+            "finite_world_points": true,
+            "foreground_mask": "research/artifacts/EXP-20260923-030-known-cylinder-depth-x-step-agent-chain/x-0.150-fixed_depth_02-foreground-mask.png",
+            "reference_depth": "research/artifacts/EXP-20260923-030-known-cylinder-depth-x-step-agent-chain/x-0.150-fixed_depth_02-reference-depth.npy",
+            "reference_frame": {
+              "dtype": "float32",
+              "frame_id": "fixed_depth_02",
+              "height": 480,
+              "pixel_encoding": "depth_float32_m",
+              "scenario_version": "virtual-depth-contract-v1",
+              "source_kind": "mujoco_depth_render",
+              "width": 640
+            }
+          }
+        },
+        "reviewer_state_equals_candidate": true
+      },
+      {
+        "capability_table_containment_only": true,
+        "compiled_cup_center_matches_configuration": true,
+        "configured_cylinder_center_world_m": [
+          0.175,
+          0.0,
+          0.055
+        ],
+        "coordinate_message": {
+          "agent": "coordinate",
+          "center_world_m": [
+            0.17495418696857712,
+            6.851982753424204e-05,
+            0.055
+          ],
+          "object_model_version": "upright-cylinder-r0.035-h0.110-table-z0",
+          "scenario_version": "known-cylinder-depth-x-step-agent-chain-v1",
+          "source": "dual_depth_known_cylinder_fit",
+          "source_frame_ids": [
+            "fixed_depth_01",
+            "fixed_depth_02"
+          ]
+        },
+        "coordinator": {
+          "accepted": true,
+          "reason": "accepted"
+        },
+        "executor": {
+          "applied": true,
+          "reason": "mock_state_transition_applied",
+          "state_after_m": [
+            0.17495418696857712,
+            6.851982753424204e-05,
+            0.055
+          ]
+        },
+        "fit": {
+          "circle_radial_rms_residual_m": 0.00012726664946618364,
+          "combined_point_count": 7208,
+          "evaluation_only_center_error_m": 8.242451463900255e-05,
+          "evaluation_only_delta_from_configured_center_m": [
+            -4.5813031422869965e-05,
+            6.851982753424204e-05,
+            0.0
+          ],
+          "fitted_center_world_m": [
+            0.17495418696857712,
+            6.851982753424204e-05,
+            0.055
+          ],
+          "fitted_radius_m": 0.03462629686102316,
+          "side_point_count": 3604
+        },
+        "per_camera": {
+          "fixed_depth_01": {
+            "candidate_pixel_count": 3603,
+            "component_count": 1,
+            "current_depth": "research/artifacts/EXP-20260923-030-known-cylinder-depth-x-step-agent-chain/x-0.175-fixed_depth_01-current-depth.npy",
+            "current_frame": {
+              "dtype": "float32",
+              "frame_id": "fixed_depth_01",
+              "height": 480,
+              "pixel_encoding": "depth_float32_m",
+              "scenario_version": "virtual-depth-contract-v1",
+              "source_kind": "mujoco_depth_render",
+              "width": 640
+            },
+            "finite_world_points": true,
+            "foreground_mask": "research/artifacts/EXP-20260923-030-known-cylinder-depth-x-step-agent-chain/x-0.175-fixed_depth_01-foreground-mask.png",
+            "reference_depth": "research/artifacts/EXP-20260923-030-known-cylinder-depth-x-step-agent-chain/x-0.175-fixed_depth_01-reference-depth.npy",
+            "reference_frame": {
+              "dtype": "float32",
+              "frame_id": "fixed_depth_01",
+              "height": 480,
+              "pixel_encoding": "depth_float32_m",
+              "scenario_version": "virtual-depth-contract-v1",
+              "source_kind": "mujoco_depth_render",
+              "width": 640
+            }
+          },
+          "fixed_depth_02": {
+            "candidate_pixel_count": 3605,
+            "component_count": 1,
+            "current_depth": "research/artifacts/EXP-20260923-030-known-cylinder-depth-x-step-agent-chain/x-0.175-fixed_depth_02-current-depth.npy",
+            "current_frame": {
+              "dtype": "float32",
+              "frame_id": "fixed_depth_02",
+              "height": 480,
+              "pixel_encoding": "depth_float32_m",
+              "scenario_version": "virtual-depth-contract-v1",
+              "source_kind": "mujoco_depth_render",
+              "width": 640
+            },
+            "finite_world_points": true,
+            "foreground_mask": "research/artifacts/EXP-20260923-030-known-cylinder-depth-x-step-agent-chain/x-0.175-fixed_depth_02-foreground-mask.png",
+            "reference_depth": "research/artifacts/EXP-20260923-030-known-cylinder-depth-x-step-agent-chain/x-0.175-fixed_depth_02-reference-depth.npy",
+            "reference_frame": {
+              "dtype": "float32",
+              "frame_id": "fixed_depth_02",
+              "height": 480,
+              "pixel_encoding": "depth_float32_m",
+              "scenario_version": "virtual-depth-contract-v1",
+              "source_kind": "mujoco_depth_render",
+              "width": 640
+            }
+          }
+        },
+        "reviewer_state_equals_candidate": true
+      }
+    ],
+    "only_x_varies": true,
+    "source_run": "EXP-20260923-029-known-cylinder-depth-agent-chain-golden-case"
+  },
+  "review": {
+    "adopted": false,
+    "status": "pending_human_review"
+  },
+  "run_id": "EXP-20260923-030-known-cylinder-depth-x-step-agent-chain",
+  "schema_version": "first-robots/research-result/v1",
+  "status": "passed_pending_human_review"
+}

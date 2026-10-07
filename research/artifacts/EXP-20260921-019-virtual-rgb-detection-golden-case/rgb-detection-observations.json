@@ -1,0 +1,59 @@
+{
+  "barrier_absent": true,
+  "cup_b_position_matches_configuration": true,
+  "cup_b_world_m_evaluation_only": [
+    0.15,
+    0,
+    0.055
+  ],
+  "detections": {
+    "fixed_depth_01": {
+      "agent": "detection",
+      "centroid_pixel_xy": [
+        330.6605359957961,
+        263.43194955333684
+      ],
+      "frame": {
+        "frame_id": "fixed_depth_01",
+        "height": 480,
+        "pixel_encoding": "rgb_uint8",
+        "scenario_version": "virtual-rgb-contract-v1",
+        "source_kind": "mujoco_rgb_render",
+        "width": 640
+      },
+      "frame_id": "fixed_depth_01",
+      "frame_nonuniform": true,
+      "mask": "research/artifacts/EXP-20260921-019-virtual-rgb-detection-golden-case/fixed_depth_01-mask.png",
+      "overlay": "research/artifacts/EXP-20260921-019-virtual-rgb-detection-golden-case/fixed_depth_01-overlay.png",
+      "pixel_count": 3806,
+      "raw_rgb": "research/artifacts/EXP-20260921-019-virtual-rgb-detection-golden-case/fixed_depth_01-rgb.png",
+      "scenario_version": "virtual-rgb-contract-v1",
+      "source_kind": "mujoco_rgb_render"
+    },
+    "fixed_depth_02": {
+      "agent": "detection",
+      "centroid_pixel_xy": [
+        300.9883070665989,
+        261.02313167259786
+      ],
+      "frame": {
+        "frame_id": "fixed_depth_02",
+        "height": 480,
+        "pixel_encoding": "rgb_uint8",
+        "scenario_version": "virtual-rgb-contract-v1",
+        "source_kind": "mujoco_rgb_render",
+        "width": 640
+      },
+      "frame_id": "fixed_depth_02",
+      "frame_nonuniform": true,
+      "mask": "research/artifacts/EXP-20260921-019-virtual-rgb-detection-golden-case/fixed_depth_02-mask.png",
+      "overlay": "research/artifacts/EXP-20260921-019-virtual-rgb-detection-golden-case/fixed_depth_02-overlay.png",
+      "pixel_count": 3934,
+      "raw_rgb": "research/artifacts/EXP-20260921-019-virtual-rgb-detection-golden-case/fixed_depth_02-rgb.png",
+      "scenario_version": "virtual-rgb-contract-v1",
+      "source_kind": "mujoco_rgb_render"
+    }
+  },
+  "detector_input": "RgbFrame only; no world coordinate, camera pose, MuJoCo model, or MuJoCo data argument",
+  "frame_source_interface": "RgbFrameSource.capture(camera_name) -> RgbFrame"
+}

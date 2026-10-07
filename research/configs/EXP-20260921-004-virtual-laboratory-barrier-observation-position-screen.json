@@ -1,0 +1,72 @@
+{
+  "schema_version": "first-robots/research-config/v1",
+  "experiment_id": "EXP-20260921-004-virtual-laboratory-barrier-observation-position-screen",
+  "status": "planned_not_executed",
+  "blocking_predecessor": {
+    "run_id": "EXP-20260921-001-virtual-laboratory-v0-preflight",
+    "result_path": "research/reports/EXP-20260921-001-virtual-laboratory-v0-preflight.result.json",
+    "result_sha256": "sha256:51a6a0c88993ed0c6bc3e3838b4be1bde178f3e41751053c3165350480ed7a0d"
+  },
+  "model": {
+    "repository_revision": "da76818e269b82289eba39808e2fb91d679d6994",
+    "license": "Apache-2.0",
+    "scene_sha256": "sha256:65496b0061ca3ddd92b58fe09bd30f6a4a443f137cc42cf8975d5cff23030bfd"
+  },
+  "position_screen_provenance": {
+    "source_run_id": "EXP-20260831-004-so101-mujoco-observation-preflight",
+    "source_run_path": "research/runs/EXP-20260831-004-so101-mujoco-observation-preflight.json",
+    "source_run_sha256": "sha256:2dc2c8ce727aa6344c29180fff86678900b1a220e9201c22b76a4c3bc324afed",
+    "method": "half of the candidate-model maximum radial gripperframe distance from baseframe across 10,000 seed-0 uniform joint-limit samples",
+    "virtual_half_reach_radius_m": 0.23917871793616743
+  },
+  "scenario": {
+    "qpos": [0, 0, 0, 0, 0, 0],
+    "table": {
+      "half_extents_m": [0.45, 0.45, 0.025],
+      "center_m": [0, 0, -0.025]
+    },
+    "cup": {
+      "center_m": [0.12, 0, 0.055],
+      "radius_m": 0.035,
+      "half_height_m": 0.055
+    },
+    "barrier": {
+      "name": "vlab_barrier",
+      "type": "box",
+      "center_m": [0.28, 0, 0.16],
+      "half_extents_m": [0.01, 0.35, 0.16],
+      "purpose": "one fixed central occluder between the nominal fixed cameras and the unchanged cup"
+    },
+    "fixed_cameras": {
+      "fixed_depth_01": {
+        "position_m": [0.45, -0.45, 0.42],
+        "target_m": [0.12, 0, 0.055]
+      },
+      "fixed_depth_02": {
+        "position_m": [0.45, 0.45, 0.42],
+        "target_m": [0.12, 0, 0.055]
+      }
+    },
+    "renderer": {"width": 320, "height": 240},
+    "actuation": "disabled",
+    "dynamics": "disabled",
+    "hardware_io": "disabled"
+  },
+  "pass_conditions": [
+    "predecessor result, source model, and position-screen source run hashes match",
+    "only v0 geometry change is the named barrier; cup and fixed-camera coordinates match v0",
+    "cup and barrier world positions match configuration and cup remains inside tabletop XY bounds",
+    "all three cameras emit RGB, finite-depth, and segmentation artifacts",
+    "both fixed nominal cameras have zero vlab_cup segmentation pixels",
+    "the cup XY radial position is no greater than the frozen virtual half-reach screening radius"
+  ],
+  "stop_conditions": [
+    "If either fixed camera has cup pixels, preserve the result and do not reposition or resize the barrier in this run.",
+    "If a provenance, coordinate, artifact, or finite-depth invariant fails, stop without interpreting visibility or reachability."
+  ],
+  "non_claims": [
+    "Zero simulator segmentation pixels only labels this one static virtual occlusion condition; it is not a physical-camera, calibration, depth-perception, or real blind-spot result.",
+    "The half-reach comparison is a candidate-model position screen. It is not IK, end-effector-pose, collision-free-path, grasp, load, safety, control, or hardware reachability evidence.",
+    "No deterministic IK and collision protocol is defined in this run; grasp reachability is deliberately reported as not evaluated."
+  ]
+}

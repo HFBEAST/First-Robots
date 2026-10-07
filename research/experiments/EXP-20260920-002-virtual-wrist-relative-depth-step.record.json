@@ -1,0 +1,12 @@
+{
+  "kind": "formal_virtual_wrist_relative_depth_step",
+  "result": {
+    "path": "research/reports/EXP-20260920-002-virtual-wrist-relative-depth-step.result.json",
+    "sha256": "sha256:474d9ff92ff6f3af1e4a0d15ee6d2fc424ce5734f0dafb50b7f1f9eab89ac118"
+  },
+  "review": {
+    "status": "pending_human_review"
+  },
+  "run_id": "EXP-20260920-002-virtual-wrist-relative-depth-step",
+  "schema_version": "first-robots/experiment-record/v1"
+}

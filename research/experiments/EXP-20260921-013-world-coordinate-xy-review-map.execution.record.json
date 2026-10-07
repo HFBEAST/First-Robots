@@ -1,0 +1,13 @@
+{
+  "kind": "formal_world_coordinate_xy_review_map",
+  "result": {
+    "path": "research/reports/EXP-20260921-013-world-coordinate-xy-review-map.result.json",
+    "sha256": "sha256:5899471b9e8a0cc639d21685c3e05b35b36804d2b276550fec4482d68fddcdc6"
+  },
+  "review": {
+    "adopted": false,
+    "status": "pending_human_review"
+  },
+  "run_id": "EXP-20260921-013-world-coordinate-xy-review-map",
+  "schema_version": "first-robots/experiment-record/v1"
+}

@@ -1,0 +1,36 @@
+{
+  "limits": [
+    "This is a labeled 2D projection of frozen virtual coordinates, not a physical survey, calibration image, perception result, collision map, or reachability proof.",
+    "The default gripperframe marker is a static model reference only; it is not a side-grasp target pose."
+  ],
+  "observations": {
+    "coordinate_state_source": "research/artifacts/EXP-20260921-012-world-coordinate-contract-review/coordinate-state.json",
+    "default_gripperframe_world_position_m": [
+      0.3913614999999999,
+      -0.0009794652485835562,
+      0.24634517669302677
+    ],
+    "labels": [
+      "baseframe",
+      "default gripperframe",
+      "table",
+      "cup",
+      "barrier",
+      "fixed_depth_01",
+      "fixed_depth_02",
+      "review_isometric",
+      "review_top",
+      "+X",
+      "+Y"
+    ],
+    "map_path": "research/artifacts/EXP-20260921-013-world-coordinate-xy-review-map/world-coordinate-xy-map.png",
+    "side_grasp_target_pose": "not_defined"
+  },
+  "review": {
+    "adopted": false,
+    "status": "pending_human_review"
+  },
+  "run_id": "EXP-20260921-013-world-coordinate-xy-review-map",
+  "schema_version": "first-robots/research-result/v1",
+  "status": "passed_pending_human_review"
+}

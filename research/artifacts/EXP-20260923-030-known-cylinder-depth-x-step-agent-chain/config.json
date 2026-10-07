@@ -1,0 +1,124 @@
+{
+  "blocking_predecessor": {
+    "result_path": "research/reports/EXP-20260923-029-known-cylinder-depth-agent-chain-golden-case.result.json",
+    "result_sha256": "sha256:8189c2af3e709390c5c32bf26b6b16b580af8bcf477ff8dec958b65e63011645",
+    "run_id": "EXP-20260923-029-known-cylinder-depth-agent-chain-golden-case"
+  },
+  "experiment_id": "EXP-20260923-030-known-cylinder-depth-x-step-agent-chain",
+  "model": {
+    "repository_revision": "da76818e269b82289eba39808e2fb91d679d6994",
+    "scene_sha256": "sha256:65496b0061ca3ddd92b58fe09bd30f6a4a443f137cc42cf8975d5cff23030bfd"
+  },
+  "non_claims": [
+    "This is a small virtual one-dimensional X step around the golden condition, not an observed reachability, visibility, accuracy, coverage, or safety range.",
+    "Known cylinder dimensions, upright orientation, virtual support plane, camera poses, robot pose, empty virtual reference, numerical epsilon, and fitting method are assumptions frozen for this run; no real Orbbec frame, calibration, synchronization, or noise is evaluated.",
+    "Coordinator acceptance and table containment do not assess numerical accuracy, collision, reachability, IK, planning, grasping, dynamics, safety, MuJoCo robot action, or hardware control."
+  ],
+  "pass_conditions": [
+    "029 result and candidate-model hashes match",
+    "for every declared X value, each fixed camera produces exactly one positive depth-difference foreground component and finite reconstructed points",
+    "each condition fits a finite known-cylinder center from both cameras and publishes a complete dual-depth, version-matched coordinate message",
+    "for every condition, Coordinator accepts the structural message, table containment is true, mock Executor updates A to the candidate, and Reviewer verifies equality",
+    "only world X varies across conditions; all listed controls match the configuration"
+  ],
+  "scenario": {
+    "actuation": "disabled",
+    "camera_fovy_degrees": 60.0,
+    "changed_independent_variable": "cylinder_center_world_x_m",
+    "cup": {
+      "half_height_m": 0.055,
+      "radius_m": 0.035,
+      "rgba": [
+        0.9,
+        0.1,
+        0.7,
+        1
+      ]
+    },
+    "detector": {
+      "kind": "candidate_positive_depth_foreground_difference",
+      "virtual_numerical_epsilon_m": 1e-06
+    },
+    "dynamics": "disabled",
+    "fixed_cameras": {
+      "fixed_depth_01": {
+        "position_m": [
+          0.45,
+          -0.45,
+          0.42
+        ],
+        "target_m": [
+          0.12,
+          0,
+          0.055
+        ]
+      },
+      "fixed_depth_02": {
+        "position_m": [
+          0.45,
+          0.45,
+          0.42
+        ],
+        "target_m": [
+          0.12,
+          0,
+          0.055
+        ]
+      }
+    },
+    "frame_contract": {
+      "height": 480,
+      "pixel_encoding": "depth_float32_m",
+      "scenario_version": "virtual-depth-contract-v1",
+      "source_kind": "mujoco_depth_render",
+      "width": 640
+    },
+    "frozen_center_z_m": 0.055,
+    "frozen_y_m": 0.0,
+    "hardware_io": "disabled",
+    "initial_cup_a_world_m": [
+      0.12,
+      0,
+      0.055
+    ],
+    "known_object_model_version": "upright-cylinder-r0.035-h0.110-table-z0",
+    "required_depth_frames": [
+      "fixed_depth_01",
+      "fixed_depth_02"
+    ],
+    "robot_qpos_rad": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "scenario_version": "known-cylinder-depth-x-step-agent-chain-v1",
+    "table": {
+      "center_m": [
+        0,
+        0,
+        -0.025
+      ],
+      "half_extents_m": [
+        0.45,
+        0.45,
+        0.025
+      ],
+      "rgba": [
+        0.35,
+        0.3,
+        0.22,
+        1
+      ]
+    },
+    "x_values_m": [
+      0.125,
+      0.15,
+      0.175
+    ]
+  },
+  "schema_version": "first-robots/research-config/v1",
+  "status": "planned_not_executed"
+}

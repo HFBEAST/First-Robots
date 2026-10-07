@@ -1,0 +1,28 @@
+{
+  "schema_version": "first-robots/research-config/v1",
+  "experiment_id": "EXP-20260921-013-world-coordinate-xy-review-map",
+  "status": "planned_not_executed",
+  "blocking_predecessor": {
+    "run_id": "EXP-20260921-012-world-coordinate-contract-review",
+    "result_path": "research/reports/EXP-20260921-012-world-coordinate-contract-review.result.json",
+    "result_sha256": "sha256:6cc48b93fd35d1ca932d2df5a16890e178e35b9a7b9ee40228f6dc1ecd45afc8",
+    "coordinate_state_path": "research/artifacts/EXP-20260921-012-world-coordinate-contract-review/coordinate-state.json",
+    "coordinate_state_sha256": "sha256:15de29e0b7ae0ddde14a597af039b43c7e4529e4a4be4430383ce369ffc1c190"
+  },
+  "model": {"scene_sha256": "sha256:65496b0061ca3ddd92b58fe09bd30f6a4a443f137cc42cf8975d5cff23030bfd"},
+  "map": {
+    "world_xy_bounds_m": {"x": [-0.55, 0.75], "y": [-0.75, 0.65]},
+    "image_size_px": [1000, 900],
+    "grid_step_m": 0.10,
+    "title": "Frozen virtual world coordinates — XY review map"
+  },
+  "pass_conditions": [
+    "012 result, coordinate-state, and source-model hashes match",
+    "the map labels baseframe, default gripperframe projection, table bounds, cup, barrier, two fixed cameras, two review cameras, and +X/+Y directions from the frozen state",
+    "the PNG artifact exists and is nonuniform"
+  ],
+  "non_claims": [
+    "This is a labeled 2D projection of frozen virtual coordinates, not a physical survey, calibration image, perception result, collision map, or reachability proof.",
+    "The default gripperframe marker is a static model reference only; it is not a side-grasp target pose."
+  ]
+}

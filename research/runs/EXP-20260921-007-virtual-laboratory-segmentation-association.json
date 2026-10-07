@@ -1,0 +1,185 @@
+{
+  "artifacts": [
+    {
+      "path": "research/artifacts/EXP-20260921-007-virtual-laboratory-segmentation-association/config.json",
+      "sha256": "sha256:59228e6cd7799601cbde16b0458181bafe52a3f79be45d41284952c00e9ca998"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-007-virtual-laboratory-segmentation-association/fixed_depth_01-rgb.png",
+      "sha256": "sha256:7d68865a3149522496168736daed85f0af179a39062cd8c9c50968d6b8414d04"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-007-virtual-laboratory-segmentation-association/fixed_depth_01-segmentation.npy",
+      "sha256": "sha256:0f458da672fffba17252b2e1fbc85184f671002ea755d3baadf7b8d1709d893d"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-007-virtual-laboratory-segmentation-association/fixed_depth_02-rgb.png",
+      "sha256": "sha256:905e9a20e3ace7d6a12ef44f76c908fa23f3961bf8293722fd5031d6ade72ad3"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-007-virtual-laboratory-segmentation-association/fixed_depth_02-segmentation.npy",
+      "sha256": "sha256:7a700a473e5d445e8be52f67a713035c5004b9742f890db036c4713251d5b162"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-007-virtual-laboratory-segmentation-association/terminal-assessment.json",
+      "sha256": "sha256:9b0b0351a70fe2470861594820f9e00005a2e39de2de70d90a62a7ceefe2815e"
+    },
+    {
+      "path": "research/experiments/EXP-20260921-007-virtual-laboratory-segmentation-association.execution.record.json",
+      "sha256": "sha256:9de128bf3dc98e20ac3c50356901f91972609736f0909344788e36e62fd3fbb6"
+    },
+    {
+      "path": "research/reports/EXP-20260921-007-virtual-laboratory-segmentation-association.result.json",
+      "sha256": "sha256:65b9a2f2cf5359973e58e88d0ac816715155a50b0e66a931ca814d698adeb67a"
+    }
+  ],
+  "baseline": {
+    "kind": "display_only_association",
+    "reference": "EXP-20260921-006-virtual-laboratory-barrier-width-isolation"
+  },
+  "code": {
+    "commit": "5311e4a85e76bfc96a9ff235d9cd00f2c7a629fb",
+    "dirty_at_start": true,
+    "repository": "H:/0_program/My_action/First-Robots",
+    "traceable": true
+  },
+  "ended_at": "2026-09-20T22:54:26.401483Z",
+  "execution": {
+    "command": [
+      "H:\\0_program\\My_action\\First-Robots\\research\\.venvs\\mrbtp-demo-py312\\Scripts\\python.exe",
+      "research\\experiments\\run_virtual_laboratory_segmentation_association.py"
+    ],
+    "parameters": {
+      "actuation": "disabled",
+      "barrier": {
+        "center_m": [
+          0.28,
+          0,
+          0.16
+        ],
+        "half_extents_m": [
+          0.01,
+          0.46,
+          0.16
+        ],
+        "rgba": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "cup": {
+        "center_m": [
+          0.12,
+          0,
+          0.055
+        ],
+        "half_height_m": 0.055,
+        "radius_m": 0.035,
+        "rgba": [
+          1,
+          0,
+          0,
+          1
+        ]
+      },
+      "dynamics": "disabled",
+      "fixed_cameras": {
+        "fixed_depth_01": {
+          "position_m": [
+            0.45,
+            -0.45,
+            0.42
+          ],
+          "target_m": [
+            0.12,
+            0,
+            0.055
+          ]
+        },
+        "fixed_depth_02": {
+          "position_m": [
+            0.45,
+            0.45,
+            0.42
+          ],
+          "target_m": [
+            0.12,
+            0,
+            0.055
+          ]
+        }
+      },
+      "hardware_io": "disabled",
+      "qpos": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "renderer": {
+        "height": 240,
+        "width": 320
+      },
+      "table": {
+        "center_m": [
+          0,
+          0,
+          -0.025
+        ],
+        "half_extents_m": [
+          0.45,
+          0.45,
+          0.025
+        ]
+      }
+    },
+    "script": "research/experiments/run_virtual_laboratory_segmentation_association.py"
+  },
+  "inputs": [
+    {
+      "kind": "configuration",
+      "path": "research/configs/EXP-20260921-007-virtual-laboratory-segmentation-association.json",
+      "sha256": "sha256:fdc43aafa4e24dd3f8b4c20602073993c5e419876933570ee6526ef0d62147f8"
+    },
+    {
+      "kind": "blocked_predecessor_result",
+      "path": "research/reports/EXP-20260921-006-virtual-laboratory-barrier-width-isolation.result.json",
+      "sha256": "sha256:5a66da6ca492ac8896ace7eb9c5a92705f67ebe2b145203f2b7fd8ac7f228211"
+    },
+    {
+      "kind": "candidate_model",
+      "path": "research/sources/mujoco_menagerie_robotstudio_so101/robotstudio_so101/scene.xml",
+      "sha256": "sha256:65496b0061ca3ddd92b58fe09bd30f6a4a443f137cc42cf8975d5cff23030bfd"
+    }
+  ],
+  "level": "formal",
+  "objective": "Verify renderer label association using display-only colors.",
+  "results": {
+    "criteria": "Each fixed camera's cup and barrier segmentation pixels retain the configured red/blue channel ordering.",
+    "duration_seconds": 0.441296,
+    "metrics": [
+      {
+        "name": "segmentation_association_verified",
+        "unit": "boolean",
+        "value": false
+      }
+    ],
+    "passed": false
+  },
+  "review": {
+    "note": "Display-only renderer-label association check.",
+    "status": "pending_human_review"
+  },
+  "run_id": "EXP-20260921-007-virtual-laboratory-segmentation-association",
+  "runtime": {
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.12.11",
+    "random_seed": null
+  },
+  "schema_version": "experiment-management/run-manifest/v1",
+  "started_at": "2026-09-20T22:54:25.959823Z"
+}

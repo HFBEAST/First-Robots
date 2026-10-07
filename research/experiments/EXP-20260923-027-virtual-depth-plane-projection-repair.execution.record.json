@@ -1,0 +1,13 @@
+{
+  "kind": "formal_virtual_depth_plane_projection_repair",
+  "result": {
+    "path": "research/reports/EXP-20260923-027-virtual-depth-plane-projection-repair.result.json",
+    "sha256": "sha256:16838fb1681bc5ed9ee179021f0beba3298de980c0f20ac17ef4e968d24624d3"
+  },
+  "review": {
+    "adopted": false,
+    "status": "pending_human_review"
+  },
+  "run_id": "EXP-20260923-027-virtual-depth-plane-projection-repair",
+  "schema_version": "first-robots/experiment-record/v1"
+}

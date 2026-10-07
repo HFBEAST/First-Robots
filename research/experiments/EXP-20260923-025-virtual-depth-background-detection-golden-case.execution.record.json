@@ -1,0 +1,13 @@
+{
+  "kind": "formal_virtual_depth_background_detection_golden_case",
+  "result": {
+    "path": "research/reports/EXP-20260923-025-virtual-depth-background-detection-golden-case.result.json",
+    "sha256": "sha256:5e36e69124edf6fa237002f20aa29d045bba1049976e0c60029a0a31b5646134"
+  },
+  "review": {
+    "adopted": false,
+    "status": "pending_human_review"
+  },
+  "run_id": "EXP-20260923-025-virtual-depth-background-detection-golden-case",
+  "schema_version": "first-robots/experiment-record/v1"
+}

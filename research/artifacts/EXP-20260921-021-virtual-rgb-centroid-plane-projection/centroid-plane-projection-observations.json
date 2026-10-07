@@ -1,0 +1,91 @@
+{
+  "barrier_absent": true,
+  "coordinator_or_execution": "not_evaluated",
+  "cup_b_position_matches_configuration": true,
+  "cup_b_world_m_evaluation_only": [
+    0.15,
+    0.0,
+    0.055
+  ],
+  "measurements": {
+    "fixed_depth_01": {
+      "camera_forward_distance_m": 0.6557831169648021,
+      "component": {
+        "bbox_xywh": [
+          313,
+          205,
+          46,
+          83
+        ],
+        "centroid_pixel_xy": [
+          335.2966128521684,
+          244.28648306426084
+        ],
+        "pixel_count": 3159
+      },
+      "component_count": 1,
+      "evaluation_only_delta_from_b_m": [
+        -0.0017688126084849654,
+        0.003610053055415119,
+        -6.938893903907228e-18
+      ],
+      "evaluation_only_euclidean_error_m": 0.004020097151419033,
+      "frame": {
+        "frame_id": "fixed_depth_01",
+        "height": 480,
+        "pixel_encoding": "rgb_uint8",
+        "scenario_version": "virtual-rgb-contract-v2",
+        "source_kind": "mujoco_rgb_render",
+        "width": 640
+      },
+      "mask": "research/artifacts/EXP-20260921-021-virtual-rgb-centroid-plane-projection/fixed_depth_01-mask.png",
+      "projected_world_m": [
+        0.14823118739151503,
+        0.003610053055415119,
+        0.05499999999999999
+      ],
+      "raw_rgb": "research/artifacts/EXP-20260921-021-virtual-rgb-centroid-plane-projection/fixed_depth_01-rgb.png"
+    },
+    "fixed_depth_02": {
+      "camera_forward_distance_m": 0.6555914248936984,
+      "component": {
+        "bbox_xywh": [
+          281,
+          205,
+          46,
+          83
+        ],
+        "centroid_pixel_xy": [
+          303.7866372518122,
+          244.3658997793886
+        ],
+        "pixel_count": 3173
+      },
+      "component_count": 1,
+      "evaluation_only_delta_from_b_m": [
+        -0.001747502297327147,
+        -0.0033470648978267126,
+        -6.938893903907228e-18
+      ],
+      "evaluation_only_euclidean_error_m": 0.003775792328694389,
+      "frame": {
+        "frame_id": "fixed_depth_02",
+        "height": 480,
+        "pixel_encoding": "rgb_uint8",
+        "scenario_version": "virtual-rgb-contract-v2",
+        "source_kind": "mujoco_rgb_render",
+        "width": 640
+      },
+      "mask": "research/artifacts/EXP-20260921-021-virtual-rgb-centroid-plane-projection/fixed_depth_02-mask.png",
+      "projected_world_m": [
+        0.14825249770267285,
+        -0.0033470648978267126,
+        0.05499999999999999
+      ],
+      "raw_rgb": "research/artifacts/EXP-20260921-021-virtual-rgb-centroid-plane-projection/fixed_depth_02-rgb.png"
+    }
+  },
+  "projection_assumption": {
+    "plane_z_m": 0.055
+  }
+}

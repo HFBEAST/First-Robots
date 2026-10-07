@@ -1,0 +1,13 @@
+{
+  "kind": "formal_side_grasp_jaw_motion_preflight",
+  "result": {
+    "path": "research/reports/EXP-20260921-011-side-grasp-jaw-motion-preflight.result.json",
+    "sha256": "sha256:159a160e052eb35a1ca5f69faace252dc3b145e10b49c476d11873dff518e07b"
+  },
+  "review": {
+    "adopted": false,
+    "status": "pending_human_review"
+  },
+  "run_id": "EXP-20260921-011-side-grasp-jaw-motion-preflight",
+  "schema_version": "first-robots/experiment-record/v1"
+}

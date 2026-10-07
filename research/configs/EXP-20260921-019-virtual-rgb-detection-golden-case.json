@@ -1,0 +1,16 @@
+{
+  "schema_version": "first-robots/research-config/v1",
+  "experiment_id": "EXP-20260921-019-virtual-rgb-detection-golden-case",
+  "status": "planned_not_executed",
+  "blocking_predecessor": {"run_id": "EXP-20260921-017-no-barrier-multirange-coordinate-agent-protocol-repair", "result_path": "research/reports/EXP-20260921-017-no-barrier-multirange-coordinate-agent-protocol-repair.result.json", "result_sha256": "sha256:253df9a7c0821401d892cf9fde8ffaa0611dedd096b2e7f305fbdd1c2a33c998"},
+  "model": {"repository_revision": "da76818e269b82289eba39808e2fb91d679d6994", "scene_sha256": "sha256:65496b0061ca3ddd92b58fe09bd30f6a4a443f137cc42cf8975d5cff23030bfd"},
+  "scenario": {
+    "barrier": "absent", "robot_qpos_rad": [0, 0, 0, 0, 0, 0], "table": {"center_m": [0, 0, -0.025], "half_extents_m": [0.45, 0.45, 0.025], "rgba": [0.35, 0.30, 0.22, 1]},
+    "cup_b": {"center_m": [0.15, 0, 0.055], "radius_m": 0.035, "half_height_m": 0.055, "rgba": [0.9, 0.1, 0.7, 1]},
+    "fixed_cameras": {"fixed_depth_01": {"position_m": [0.45, -0.45, 0.42], "target_m": [0.12, 0, 0.055]}, "fixed_depth_02": {"position_m": [0.45, 0.45, 0.42], "target_m": [0.12, 0, 0.055]}},
+    "frame_contract": {"pixel_encoding": "rgb_uint8", "width": 640, "height": 480, "source_kind": "mujoco_rgb_render", "scenario_version": "virtual-rgb-contract-v1"},
+    "detector": {"kind": "candidate_artificial_magenta_signature", "red_min": 120, "green_max": 130, "blue_min": 100}, "actuation": "disabled", "dynamics": "disabled", "hardware_io": "disabled"
+  },
+  "pass_conditions": ["017 result and source-model hashes match; no barrier compiles", "each named virtual RGB adapter frame is nonuniform and declares source, frame, version, RGB encoding, and dimensions", "the RGB-only detector receives only the frame contract and has a positive candidate-signature pixel count in both named frames", "all raw frames, overlays, masks, and structured outputs are retained"],
+  "non_claims": ["The cup color and pixel predicate are an artificial virtual golden-case fixture; this is not a physical RGB detection, calibration, generalization, or visibility result.", "The recorded world B is evaluation-only metadata and is not supplied to the RGB detector.", "No RGB-to-world transform, stereo fusion, acceptance tolerance, planning, IK, collision, grasp, safety, MuJoCo robot action, or hardware I/O is evaluated."]
+}

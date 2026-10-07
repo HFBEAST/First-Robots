@@ -1,0 +1,137 @@
+{
+  "artifacts": [
+    {
+      "path": "research/artifacts/EXP-20260920-003-virtual-wrist-relative-x-step/config.json",
+      "sha256": "sha256:73bd65379bfea043e2a06a72352bcc1fa0a80d95a7b4f808ef85ae350e4f4a2b"
+    },
+    {
+      "path": "research/artifacts/EXP-20260920-003-virtual-wrist-relative-x-step/relative-x-step.json",
+      "sha256": "sha256:1f0a691c992bf1b53f6c908b404001c078d1b58bb8a9c5db6c7dedcb0222a09b"
+    },
+    {
+      "path": "research/artifacts/EXP-20260920-003-virtual-wrist-relative-x-step/target-mask.npy",
+      "sha256": "sha256:22d1c2e071f276702e9045e371684796f58eda05fa4832c58c3cd3cffbd2a460"
+    },
+    {
+      "path": "research/reports/EXP-20260920-003-virtual-wrist-relative-x-step.result.json",
+      "sha256": "sha256:bace661ef1d89b181c55ad3931b6d2c26bdd23632006e5d683a138a543769bfa"
+    },
+    {
+      "path": "research/experiments/EXP-20260920-003-virtual-wrist-relative-x-step.record.json",
+      "sha256": "sha256:edc6a1bedc7b02fd4be11f31e71c1ff5fe93e13e274832435d55907b49006e60"
+    }
+  ],
+  "baseline": {
+    "kind": "prior_relative_depth_step",
+    "reference": "EXP-20260920-002-virtual-wrist-relative-depth-step"
+  },
+  "code": {
+    "commit": "5311e4a85e76bfc96a9ff235d9cd00f2c7a629fb",
+    "dirty_at_start": true,
+    "repository": "H:/0_program/My_action/First-Robots",
+    "traceable": true
+  },
+  "ended_at": "2026-09-20T06:18:55.429861Z",
+  "execution": {
+    "command": [
+      "H:\\0_program\\My_action\\First-Robots\\research\\.venvs\\mrbtp-demo-py312\\Scripts\\python.exe",
+      "research\\experiments\\run_virtual_wrist_relative_x_step.py"
+    ],
+    "parameters": {
+      "actuation": "disabled",
+      "camera": "wrist_cam",
+      "cup": {
+        "half_height_m": 0.055,
+        "radius_m": 0.035
+      },
+      "dynamics": "disabled",
+      "hardware_io": "disabled",
+      "independent_variable": {
+        "baseline_m": [
+          0,
+          0,
+          -0.25
+        ],
+        "name": "cup center camera-coordinate X",
+        "tested_m": [
+          0.05,
+          0,
+          -0.25
+        ]
+      },
+      "pass_conditions": [
+        "the predecessor result hash matches blocking_predecessor.result_sha256 and reports passed_pending_human_review",
+        "the source scene SHA-256 matches model.scene_sha256",
+        "after mj_forward, virtual_cup geom_xpos equals its camera-derived tested world position",
+        "after mj_forward, virtual_cup center expressed in wrist_cam coordinates equals independent_variable.tested_m",
+        "the tested condition renders one or more virtual_cup segmentation pixels"
+      ],
+      "qpos": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "renderer": {
+        "height": 240,
+        "mode": "MuJoCo geom segmentation",
+        "width": 320
+      },
+      "stop_conditions": [
+        "any predecessor, source, position, or nonzero-pixel condition fails"
+      ]
+    },
+    "script": "research/experiments/run_virtual_wrist_relative_x_step.py"
+  },
+  "inputs": [
+    {
+      "kind": "configuration",
+      "path": "research/configs/EXP-20260920-003-virtual-wrist-relative-x-step.json",
+      "sha256": "sha256:2af46537ae9ecd1ad0e2df9c1bd1324e1e09cf3702c4000231fcd322966400cf"
+    },
+    {
+      "kind": "predecessor_result",
+      "path": "research/reports/EXP-20260920-002-virtual-wrist-relative-depth-step.result.json",
+      "sha256": "sha256:474d9ff92ff6f3af1e4a0d15ee6d2fc424ce5734f0dafb50b7f1f9eab89ac118"
+    },
+    {
+      "kind": "model",
+      "path": "research/sources/mujoco_menagerie_robotstudio_so101/robotstudio_so101/scene.xml",
+      "revision": "da76818e269b82289eba39808e2fb91d679d6994",
+      "sha256": "sha256:65496b0061ca3ddd92b58fe09bd30f6a4a443f137cc42cf8975d5cff23030bfd"
+    }
+  ],
+  "level": "formal",
+  "objective": "Test one wrist-camera lateral X step after the frozen relative-depth step.",
+  "results": {
+    "criteria": "The frozen predecessor and source must match, both position invariants must pass, and the tested condition must have nonzero target pixels.",
+    "duration_seconds": 0.465551,
+    "metrics": [
+      {
+        "name": "tested_target_pixels",
+        "unit": "pixels",
+        "value": 7544
+      },
+      {
+        "name": "pixel_difference_from_baseline",
+        "unit": "pixels",
+        "value": 40
+      }
+    ],
+    "passed": true
+  },
+  "review": {
+    "note": "Pixel difference is recorded without a field-of-view or causal interpretation.",
+    "status": "pending_human_review"
+  },
+  "run_id": "EXP-20260920-003-virtual-wrist-relative-x-step",
+  "runtime": {
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.12.11",
+    "random_seed": null
+  },
+  "schema_version": "experiment-management/run-manifest/v1",
+  "started_at": "2026-09-20T06:18:54.963974Z"
+}

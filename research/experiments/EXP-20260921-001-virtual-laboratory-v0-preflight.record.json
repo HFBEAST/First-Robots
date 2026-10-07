@@ -1,0 +1,12 @@
+{
+  "kind": "formal_virtual_laboratory_v0_preflight",
+  "result": {
+    "path": "research/reports/EXP-20260921-001-virtual-laboratory-v0-preflight.result.json",
+    "sha256": "sha256:51a6a0c88993ed0c6bc3e3838b4be1bde178f3e41751053c3165350480ed7a0d"
+  },
+  "review": {
+    "status": "pending_human_review"
+  },
+  "run_id": "EXP-20260921-001-virtual-laboratory-v0-preflight",
+  "schema_version": "first-robots/experiment-record/v1"
+}

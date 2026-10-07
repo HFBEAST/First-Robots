@@ -1,0 +1,134 @@
+{
+  "blocking_predecessor": {
+    "result_path": "research/reports/EXP-20260921-021-virtual-rgb-centroid-plane-projection.result.json",
+    "result_sha256": "sha256:547e2a1fbfbf52a4c246c17e6d037b7658932ede83ed6adea3797531371e8a4a",
+    "run_id": "EXP-20260921-021-virtual-rgb-centroid-plane-projection"
+  },
+  "experiment_id": "EXP-20260921-022-virtual-rgb-multirange-projection-sweep",
+  "model": {
+    "repository_revision": "da76818e269b82289eba39808e2fb91d679d6994",
+    "scene_sha256": "sha256:65496b0061ca3ddd92b58fe09bd30f6a4a443f137cc42cf8975d5cff23030bfd"
+  },
+  "non_claims": [
+    "This is a synthetic colour-and-known-plane multirange sweep, not RGB calibration, physical coverage, depth sensing, stereo fusion, or a general perception result.",
+    "The recorded errors and camera disagreement describe this frozen virtual fixture only; they do not establish a threshold or a real-data accuracy expectation.",
+    "No Coordinator acceptance, mock/robot execution, planning, IK, collision, grasp, safety, or hardware I/O is evaluated."
+  ],
+  "pass_conditions": [
+    "021 result and source-model hashes match; no barrier compiles",
+    "each of 25 frozen B positions has exactly one virtual RGB component in each fixed camera and finite forward plane intersections",
+    "per-point two-camera disagreement and each evaluation-only deviation from B are recorded; no numeric acceptance threshold, fusion output, Coordinator approval, or execution is applied",
+    "raw RGB and mask artifacts are retained for every target/camera pair"
+  ],
+  "scenario": {
+    "actuation": "disabled",
+    "barrier": "absent",
+    "cup": {
+      "half_height_m": 0.055,
+      "initial_center_m": [
+        0.15,
+        0,
+        0.055
+      ],
+      "radius_m": 0.035,
+      "rgba": [
+        0.9,
+        0.1,
+        0.7,
+        1
+      ]
+    },
+    "detector": {
+      "blue_min": 100,
+      "blue_minus_green_min": 40,
+      "green_max": 130,
+      "kind": "candidate_artificial_magenta_signature_with_channel_dominance",
+      "red_min": 120,
+      "red_minus_green_min": 80
+    },
+    "dynamics": "disabled",
+    "fixed_cameras": {
+      "fixed_depth_01": {
+        "position_m": [
+          0.45,
+          -0.45,
+          0.42
+        ],
+        "target_m": [
+          0.12,
+          0,
+          0.055
+        ]
+      },
+      "fixed_depth_02": {
+        "position_m": [
+          0.45,
+          0.45,
+          0.42
+        ],
+        "target_m": [
+          0.12,
+          0,
+          0.055
+        ]
+      }
+    },
+    "frame_contract": {
+      "height": 480,
+      "pixel_encoding": "rgb_uint8",
+      "scenario_version": "virtual-rgb-contract-v2",
+      "source_kind": "mujoco_rgb_render",
+      "width": 640
+    },
+    "hardware_io": "disabled",
+    "projection": {
+      "assumed_cup_center_plane_z_m": 0.055,
+      "camera_fovy_degrees": 60
+    },
+    "robot_qpos_rad": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "table": {
+      "center_m": [
+        0,
+        0,
+        -0.025
+      ],
+      "half_extents_m": [
+        0.45,
+        0.45,
+        0.025
+      ],
+      "rgba": [
+        0.35,
+        0.3,
+        0.22,
+        1
+      ]
+    },
+    "target_b_grid_m": {
+      "x": [
+        -0.3,
+        -0.15,
+        0,
+        0.15,
+        0.3
+      ],
+      "y": [
+        -0.3,
+        -0.15,
+        0,
+        0.15,
+        0.3
+      ],
+      "z": 0.055
+    }
+  },
+  "schema_version": "first-robots/research-config/v1",
+  "status": "planned_not_executed"
+}

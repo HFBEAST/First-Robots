@@ -1,0 +1,57 @@
+{
+  "candidate_closed_state_by_representative_separation": "limit_lower",
+  "candidate_open_state_by_representative_separation": "limit_upper",
+  "grasp_reachability_assessment": "not_evaluated_no_deterministic_ik_collision_protocol",
+  "moving_tip_displacement_lower_to_upper_m": [
+    -0.07645808542542282,
+    -0.005073372539603757,
+    0.10413753039303533
+  ],
+  "side_grasp_target_pose": "not_defined",
+  "static_gripper_states": {
+    "limit_lower": {
+      "all_named_positions_finite": true,
+      "arm_qpos_rad": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "fixed_tip_world_position_m": [
+        0.39423449999999993,
+        0.00021634835868872217,
+        0.2262795953703573
+      ],
+      "gripper_qpos_rad": -0.174533,
+      "moving_tip_world_position_m": [
+        0.39136572470583797,
+        -0.0003261292508045417,
+        0.22919439467877992
+      ],
+      "representative_tip_separation_m": 0.004125555556961576
+    },
+    "limit_upper": {
+      "all_named_positions_finite": true,
+      "arm_qpos_rad": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "fixed_tip_world_position_m": [
+        0.39423449999999993,
+        0.00021634835868872217,
+        0.2262795953703573
+      ],
+      "gripper_qpos_rad": 1.7453292,
+      "moving_tip_world_position_m": [
+        0.31490763928041515,
+        -0.005399501790408299,
+        0.33333192507181525
+      ],
+      "representative_tip_separation_m": 0.13335850141266276
+    }
+  }
+}

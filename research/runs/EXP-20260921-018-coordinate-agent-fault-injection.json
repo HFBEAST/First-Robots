@@ -1,0 +1,120 @@
+{
+  "artifacts": [
+    {
+      "path": "research/artifacts/EXP-20260921-018-coordinate-agent-fault-injection/config.json",
+      "sha256": "sha256:2ab8e5eddb603f9140e455ecac37fac016e54b0511dbe8d66ebd3be732cecca6"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-018-coordinate-agent-fault-injection/fault-injection-observations.json",
+      "sha256": "sha256:3323e469dd0ef73c3f5334a161999013679094b7d674d83204708cfb33a88dcc"
+    },
+    {
+      "path": "research/experiments/EXP-20260921-018-coordinate-agent-fault-injection.execution.record.json",
+      "sha256": "sha256:dbf75f57bbcfbdb011f715b37ab1174a8bd92901491d741ab19a5c3d9eec03b6"
+    },
+    {
+      "path": "research/reports/EXP-20260921-018-coordinate-agent-fault-injection.result.json",
+      "sha256": "sha256:89e6ef47d0b2a388517a0387bdf09e311ffe01beeaac24b28c109c4b9392e5aa"
+    }
+  ],
+  "baseline": {
+    "kind": "coordinate_agent_protocol",
+    "reference": "EXP-20260921-017-no-barrier-multirange-coordinate-agent-protocol-repair"
+  },
+  "code": {
+    "commit": "5311e4a85e76bfc96a9ff235d9cd00f2c7a629fb",
+    "dirty_at_start": true,
+    "repository": "H:/0_program/My_action/First-Robots",
+    "traceable": true
+  },
+  "ended_at": "2026-09-21T14:12:14.705253Z",
+  "execution": {
+    "command": [
+      "H:\\0_program\\My_action\\First-Robots\\research\\.venvs\\mrbtp-demo-py312\\Scripts\\python.exe",
+      "research\\experiments\\run_coordinate_agent_fault_injection.py"
+    ],
+    "parameters": {
+      "actuation": "disabled",
+      "barrier": "absent",
+      "coordinate_disagreement_offset_m": [
+        0.001,
+        0,
+        0
+      ],
+      "cup_a_center_m": [
+        0.12,
+        0,
+        0.055
+      ],
+      "dynamics": "disabled",
+      "hardware_io": "disabled",
+      "registered_frames": [
+        "fixed_depth_01",
+        "fixed_depth_02"
+      ],
+      "scenario_version": "coordinate-contract-v2",
+      "target_b_grid_m": {
+        "x": [
+          -0.3,
+          -0.15,
+          0,
+          0.15,
+          0.3
+        ],
+        "y": [
+          -0.3,
+          -0.15,
+          0,
+          0.15,
+          0.3
+        ],
+        "z": 0.055
+      },
+      "wrong_version": "coordinate-contract-v1"
+    },
+    "script": "research/experiments/run_coordinate_agent_fault_injection.py"
+  },
+  "inputs": [
+    {
+      "kind": "configuration",
+      "path": "research/configs/EXP-20260921-018-coordinate-agent-fault-injection.json",
+      "sha256": "sha256:88a18a76660036258e392ca811f594687d22817a6f6ef8a208231e75c3d90999"
+    },
+    {
+      "kind": "predecessor_result",
+      "path": "research/reports/EXP-20260921-017-no-barrier-multirange-coordinate-agent-protocol-repair.result.json",
+      "sha256": "sha256:253df9a7c0821401d892cf9fde8ffaa0611dedd096b2e7f305fbdd1c2a33c998"
+    }
+  ],
+  "level": "formal",
+  "objective": "Verify Coordinator rejection of range-wide coordinate disagreement and stale-version messages before mock execution.",
+  "results": {
+    "criteria": "Every malformed coordinate/version message is rejected before mock execution while correct pairs accept.",
+    "duration_seconds": 0.126992,
+    "metrics": [
+      {
+        "name": "fault_injection_contract_valid",
+        "unit": "boolean",
+        "value": true
+      },
+      {
+        "name": "target_count",
+        "unit": "count",
+        "value": 25
+      }
+    ],
+    "passed": true
+  },
+  "review": {
+    "note": "Coordinator-only virtual fault injection; not perception, calibration, robot execution, or safety evidence.",
+    "status": "pending_human_review"
+  },
+  "run_id": "EXP-20260921-018-coordinate-agent-fault-injection",
+  "runtime": {
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.12.11",
+    "random_seed": null
+  },
+  "schema_version": "experiment-management/run-manifest/v1",
+  "started_at": "2026-09-21T14:12:14.578195Z"
+}

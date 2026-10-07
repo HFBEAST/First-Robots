@@ -1,0 +1,13 @@
+{
+  "kind": "formal_virtual_depth_surface_point_projection",
+  "result": {
+    "path": "research/reports/EXP-20260923-026-virtual-depth-surface-point-projection.result.json",
+    "sha256": "sha256:b567306994469a87c195bce85bc79f9e13e4735b4feac89430adb07bf74d757a"
+  },
+  "review": {
+    "adopted": false,
+    "status": "pending_human_review"
+  },
+  "run_id": "EXP-20260923-026-virtual-depth-surface-point-projection",
+  "schema_version": "first-robots/experiment-record/v1"
+}

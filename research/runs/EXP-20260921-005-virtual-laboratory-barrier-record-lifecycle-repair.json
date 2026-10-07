@@ -1,0 +1,211 @@
+{
+  "artifacts": [
+    {
+      "path": "research/artifacts/EXP-20260921-005-virtual-laboratory-barrier-record-lifecycle-repair/config.json",
+      "sha256": "sha256:f302d55c431dfe9f8083d29f711e08b0c1174641b90b2689e33cf85141ed7b62"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-005-virtual-laboratory-barrier-record-lifecycle-repair/fixed_depth_01-depth.npy",
+      "sha256": "sha256:f1f701b147d87259cfc4143c00043c7012ae8c137cf5a110f0f8e4c82c89eeae"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-005-virtual-laboratory-barrier-record-lifecycle-repair/fixed_depth_01-rgb.png",
+      "sha256": "sha256:6c726a533d3ef5393a450a521b356d665902dcddb6b9b947812e8414e0a21756"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-005-virtual-laboratory-barrier-record-lifecycle-repair/fixed_depth_01-segmentation.npy",
+      "sha256": "sha256:712aff5d90b34ade9e2043f0b7ae66b12a3aed97603db96bccef4e2f252ebf91"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-005-virtual-laboratory-barrier-record-lifecycle-repair/fixed_depth_02-depth.npy",
+      "sha256": "sha256:2fc815aa87fe047d6c185311cd33902a615ee30e29571d3b191599c89ab3b62a"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-005-virtual-laboratory-barrier-record-lifecycle-repair/fixed_depth_02-rgb.png",
+      "sha256": "sha256:7547c644d0bd41647cae3aebeaf5d86d340749c5183e0882d00ce9953e775131"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-005-virtual-laboratory-barrier-record-lifecycle-repair/fixed_depth_02-segmentation.npy",
+      "sha256": "sha256:0a51b49f324d09dc7a6d5836b5975018ad577516bd005f9c2aa8900c91e6ab3d"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-005-virtual-laboratory-barrier-record-lifecycle-repair/terminal-assessment.json",
+      "sha256": "sha256:6a82dbd7e7f5d2cd4184fbb5631f5fbfafec9471dc93cc5ac13fe2f973e2cd94"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-005-virtual-laboratory-barrier-record-lifecycle-repair/wrist_cam-depth.npy",
+      "sha256": "sha256:355db84e37192bf20b5fb4bbcfb009a41e596098c863d95f6ef997baaede9a18"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-005-virtual-laboratory-barrier-record-lifecycle-repair/wrist_cam-rgb.png",
+      "sha256": "sha256:34a423003e1af1cb9aaa5edd92e8d678fb51ee51892ca9d41973194892c4985b"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-005-virtual-laboratory-barrier-record-lifecycle-repair/wrist_cam-segmentation.npy",
+      "sha256": "sha256:5ab673004f8ec99807b9617bee60890028ce89c2ed760fa863df5569a94b4030"
+    },
+    {
+      "path": "research/experiments/EXP-20260921-005-virtual-laboratory-barrier-record-lifecycle-repair.execution.record.json",
+      "sha256": "sha256:abfdd6f6f4135e10210ce77b2ac8a92f89b94bd21eb7cddd6b35e129702686be"
+    },
+    {
+      "path": "research/reports/EXP-20260921-005-virtual-laboratory-barrier-record-lifecycle-repair.result.json",
+      "sha256": "sha256:fa93c883142e9ce1f288e2440a60c6276becb648d48f23e4ef84e6e89c93c4e4"
+    }
+  ],
+  "baseline": {
+    "kind": "virtual_lab_v0",
+    "reference": "EXP-20260921-001-virtual-laboratory-v0-preflight"
+  },
+  "code": {
+    "commit": "5311e4a85e76bfc96a9ff235d9cd00f2c7a629fb",
+    "dirty_at_start": true,
+    "repository": "H:/0_program/My_action/First-Robots",
+    "traceable": true
+  },
+  "ended_at": "2026-09-20T22:42:27.407649Z",
+  "execution": {
+    "command": [
+      "H:\\0_program\\My_action\\First-Robots\\research\\.venvs\\mrbtp-demo-py312\\Scripts\\python.exe",
+      "research\\experiments\\run_virtual_laboratory_barrier_record_lifecycle_repair.py"
+    ],
+    "parameters": {
+      "actuation": "disabled",
+      "barrier": {
+        "center_m": [
+          0.28,
+          0,
+          0.16
+        ],
+        "half_extents_m": [
+          0.01,
+          0.35,
+          0.16
+        ],
+        "name": "vlab_barrier",
+        "purpose": "one fixed central occluder between the nominal fixed cameras and the unchanged cup",
+        "type": "box"
+      },
+      "cup": {
+        "center_m": [
+          0.12,
+          0,
+          0.055
+        ],
+        "half_height_m": 0.055,
+        "radius_m": 0.035
+      },
+      "dynamics": "disabled",
+      "fixed_cameras": {
+        "fixed_depth_01": {
+          "position_m": [
+            0.45,
+            -0.45,
+            0.42
+          ],
+          "target_m": [
+            0.12,
+            0,
+            0.055
+          ]
+        },
+        "fixed_depth_02": {
+          "position_m": [
+            0.45,
+            0.45,
+            0.42
+          ],
+          "target_m": [
+            0.12,
+            0,
+            0.055
+          ]
+        }
+      },
+      "hardware_io": "disabled",
+      "qpos": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "renderer": {
+        "height": 240,
+        "width": 320
+      },
+      "table": {
+        "center_m": [
+          0,
+          0,
+          -0.025
+        ],
+        "half_extents_m": [
+          0.45,
+          0.45,
+          0.025
+        ]
+      }
+    },
+    "script": "research/experiments/run_virtual_laboratory_barrier_record_lifecycle_repair.py"
+  },
+  "inputs": [
+    {
+      "kind": "configuration",
+      "path": "research/configs/EXP-20260921-005-virtual-laboratory-barrier-record-lifecycle-repair.json",
+      "sha256": "sha256:bac372185509d771c5172582cc13e8d0a9fff5ea2ae25b8118acc8501a667264"
+    },
+    {
+      "kind": "predecessor_result",
+      "path": "research/reports/EXP-20260921-001-virtual-laboratory-v0-preflight.result.json",
+      "sha256": "sha256:51a6a0c88993ed0c6bc3e3838b4be1bde178f3e41751053c3165350480ed7a0d"
+    },
+    {
+      "kind": "position_screen_source_run",
+      "path": "research/runs/EXP-20260831-004-so101-mujoco-observation-preflight.json",
+      "sha256": "sha256:2dc2c8ce727aa6344c29180fff86678900b1a220e9201c22b76a4c3bc324afed"
+    },
+    {
+      "kind": "candidate_model",
+      "path": "research/sources/mujoco_menagerie_robotstudio_so101/robotstudio_so101/scene.xml",
+      "sha256": "sha256:65496b0061ca3ddd92b58fe09bd30f6a4a443f137cc42cf8975d5cff23030bfd"
+    }
+  ],
+  "level": "formal",
+  "objective": "Evaluate one frozen central virtual barrier for fixed-camera observability and a frozen position-only reach screen.",
+  "results": {
+    "criteria": "Both fixed cameras emit no cup segmentation pixels; outputs are finite; cup stays inside the frozen virtual position screen.",
+    "duration_seconds": 0.462999,
+    "metrics": [
+      {
+        "name": "fixed_cameras_cup_absent",
+        "unit": "boolean",
+        "value": false
+      },
+      {
+        "name": "cup_xy_radius_from_base",
+        "unit": "m",
+        "value": 0.12
+      },
+      {
+        "name": "inside_virtual_half_reach_screen",
+        "unit": "boolean",
+        "value": true
+      }
+    ],
+    "passed": false
+  },
+  "review": {
+    "note": "Static barrier condition with a position-only screen; grasp reachability intentionally not evaluated.",
+    "status": "pending_human_review"
+  },
+  "run_id": "EXP-20260921-005-virtual-laboratory-barrier-record-lifecycle-repair",
+  "runtime": {
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.12.11",
+    "random_seed": null
+  },
+  "schema_version": "experiment-management/run-manifest/v1",
+  "started_at": "2026-09-20T22:42:26.943898Z"
+}

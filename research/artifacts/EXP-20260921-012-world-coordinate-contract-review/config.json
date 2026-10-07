@@ -1,0 +1,216 @@
+{
+  "blocking_predecessor": {
+    "result_path": "research/reports/EXP-20260921-011-side-grasp-jaw-motion-preflight.result.json",
+    "result_sha256": "sha256:159a160e052eb35a1ca5f69faace252dc3b145e10b49c476d11873dff518e07b",
+    "run_id": "EXP-20260921-011-side-grasp-jaw-motion-preflight"
+  },
+  "experiment_id": "EXP-20260921-012-world-coordinate-contract-review",
+  "model": {
+    "license": "Apache-2.0",
+    "repository_revision": "da76818e269b82289eba39808e2fb91d679d6994",
+    "scene_sha256": "sha256:65496b0061ca3ddd92b58fe09bd30f6a4a443f137cc42cf8975d5cff23030bfd"
+  },
+  "non_claims": [
+    "Review cameras, colors, and world-axis geoms are visualization-only virtual aids; they are not physical devices, calibration, perception, or task sensors.",
+    "This coordinate contract does not establish side-grasp target pose, IK, collision freedom, trajectory feasibility, grasp, control, safety, or hardware transfer."
+  ],
+  "pass_conditions": [
+    "predecessor and source-model hashes match",
+    "baseframe, table, cup, barrier, visual-axis world positions and table-top coordinate contract exactly match configuration after mj_forward",
+    "the two fixed cameras and two review cameras compile at their configured world positions",
+    "review_isometric and review_top RGB artifacts exist and contain nonuniform pixels"
+  ],
+  "schema_version": "first-robots/research-config/v1",
+  "status": "planned_not_executed",
+  "world_coordinate_contract": {
+    "actuation": "disabled",
+    "barrier": {
+      "center_m": [
+        0.28,
+        0,
+        0.16
+      ],
+      "half_extents_m": [
+        0.01,
+        0.46,
+        0.16
+      ],
+      "name": "vlab_barrier",
+      "rgba": [
+        0.1,
+        0.7,
+        0.8,
+        1
+      ],
+      "type": "box"
+    },
+    "cup": {
+      "center_m": [
+        0.12,
+        0,
+        0.055
+      ],
+      "half_height_m": 0.055,
+      "name": "vlab_cup",
+      "radius_m": 0.035,
+      "rgba": [
+        0.9,
+        0.1,
+        0.7,
+        1
+      ],
+      "type": "cylinder"
+    },
+    "definition": "world origin equals candidate-model baseframe and nominal tabletop surface; +X points from the base toward the cup/barrier, +Y is table lateral, +Z is upward.",
+    "dynamics": "disabled",
+    "fixed_cameras": {
+      "fixed_depth_01": {
+        "position_m": [
+          0.45,
+          -0.45,
+          0.42
+        ],
+        "target_m": [
+          0.12,
+          0,
+          0.055
+        ]
+      },
+      "fixed_depth_02": {
+        "position_m": [
+          0.45,
+          0.45,
+          0.42
+        ],
+        "target_m": [
+          0.12,
+          0,
+          0.055
+        ]
+      }
+    },
+    "hardware_io": "disabled",
+    "renderer": {
+      "height": 480,
+      "width": 640
+    },
+    "review_cameras": {
+      "review_isometric": {
+        "position_m": [
+          0.65,
+          -0.65,
+          0.55
+        ],
+        "target_m": [
+          0.1,
+          0,
+          0.08
+        ]
+      },
+      "review_top": {
+        "position_m": [
+          0.12,
+          -0.1,
+          0.85
+        ],
+        "target_m": [
+          0.12,
+          0,
+          0
+        ]
+      }
+    },
+    "robot": {
+      "baseframe_world_position_m": [
+        0,
+        0,
+        0
+      ],
+      "qpos_rad": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "table": {
+      "center_m": [
+        0,
+        0,
+        -0.025
+      ],
+      "half_extents_m": [
+        0.45,
+        0.45,
+        0.025
+      ],
+      "name": "vlab_table",
+      "rgba": [
+        0.35,
+        0.3,
+        0.22,
+        1
+      ],
+      "top_z_m": 0,
+      "type": "box"
+    },
+    "visual_world_axes": {
+      "world_x_axis": {
+        "center_m": [
+          0.1,
+          0,
+          0.006
+        ],
+        "half_extents_m": [
+          0.1,
+          0.004,
+          0.004
+        ],
+        "rgba": [
+          1,
+          0,
+          0,
+          1
+        ]
+      },
+      "world_y_axis": {
+        "center_m": [
+          0,
+          0.1,
+          0.006
+        ],
+        "half_extents_m": [
+          0.004,
+          0.1,
+          0.004
+        ],
+        "rgba": [
+          0,
+          1,
+          0,
+          1
+        ]
+      },
+      "world_z_axis": {
+        "center_m": [
+          0,
+          0,
+          0.1
+        ],
+        "half_extents_m": [
+          0.004,
+          0.004,
+          0.1
+        ],
+        "rgba": [
+          0,
+          0,
+          1,
+          1
+        ]
+      }
+    }
+  }
+}

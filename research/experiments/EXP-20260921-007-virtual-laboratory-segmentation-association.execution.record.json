@@ -1,0 +1,13 @@
+{
+  "kind": "formal_virtual_laboratory_segmentation_association",
+  "result": {
+    "path": "research/reports/EXP-20260921-007-virtual-laboratory-segmentation-association.result.json",
+    "sha256": "sha256:65b9a2f2cf5359973e58e88d0ac816715155a50b0e66a931ca814d698adeb67a"
+  },
+  "review": {
+    "adopted": false,
+    "status": "pending_human_review"
+  },
+  "run_id": "EXP-20260921-007-virtual-laboratory-segmentation-association",
+  "schema_version": "first-robots/experiment-record/v1"
+}

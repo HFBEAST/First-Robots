@@ -1,0 +1,775 @@
+{
+  "limits": [
+    "This injects already world-frame messages to isolate Coordinator behavior; it does not test camera calibration, vision, or coordinate-transform accuracy.",
+    "The 1 mm disagreement is a deterministic malformed-message example, not a measurement-noise tolerance or an adopted threshold.",
+    "No robot, MuJoCo dynamics, IK, collision, grasp, planner, safety system, or hardware execution is used."
+  ],
+  "observations": {
+    "barrier_absent": true,
+    "cases": [
+      {
+        "case_id": "B-01",
+        "consistent_pair": {
+          "coordinator_accepted": true,
+          "reason": "accepted"
+        },
+        "coordinate_disagreement": {
+          "coordinator_accepted": false,
+          "execution_agent": {
+            "executed": false,
+            "reason": "not_approved_no_state_transition"
+          },
+          "reason": "camera_world_coordinate_disagreement",
+          "state_unchanged": true
+        },
+        "stale_version": {
+          "coordinator_accepted": false,
+          "execution_agent": {
+            "executed": false,
+            "reason": "not_approved_no_state_transition"
+          },
+          "reason": "scenario_version_mismatch",
+          "state_unchanged": true
+        },
+        "target_b_world_m": [
+          -0.3,
+          -0.3,
+          0.055
+        ]
+      },
+      {
+        "case_id": "B-02",
+        "consistent_pair": {
+          "coordinator_accepted": true,
+          "reason": "accepted"
+        },
+        "coordinate_disagreement": {
+          "coordinator_accepted": false,
+          "execution_agent": {
+            "executed": false,
+            "reason": "not_approved_no_state_transition"
+          },
+          "reason": "camera_world_coordinate_disagreement",
+          "state_unchanged": true
+        },
+        "stale_version": {
+          "coordinator_accepted": false,
+          "execution_agent": {
+            "executed": false,
+            "reason": "not_approved_no_state_transition"
+          },
+          "reason": "scenario_version_mismatch",
+          "state_unchanged": true
+        },
+        "target_b_world_m": [
+          -0.3,
+          -0.15,
+          0.055
+        ]
+      },
+      {
+        "case_id": "B-03",
+        "consistent_pair": {
+          "coordinator_accepted": true,
+          "reason": "accepted"
+        },
+        "coordinate_disagreement": {
+          "coordinator_accepted": false,
+          "execution_agent": {
+            "executed": false,
+            "reason": "not_approved_no_state_transition"
+          },
+          "reason": "camera_world_coordinate_disagreement",
+          "state_unchanged": true
+        },
+        "stale_version": {
+          "coordinator_accepted": false,
+          "execution_agent": {
+            "executed": false,
+            "reason": "not_approved_no_state_transition"
+          },
+          "reason": "scenario_version_mismatch",
+          "state_unchanged": true
+        },
+        "target_b_world_m": [
+          -0.3,
+          0.0,
+          0.055
+        ]
+      },
+      {
+        "case_id": "B-04",
+        "consistent_pair": {
+          "coordinator_accepted": true,
+          "reason": "accepted"
+        },
+        "coordinate_disagreement": {
+          "coordinator_accepted": false,
+          "execution_agent": {
+            "executed": false,
+            "reason": "not_approved_no_state_transition"
+          },
+          "reason": "camera_world_coordinate_disagreement",
+          "state_unchanged": true
+        },
+        "stale_version": {
+          "coordinator_accepted": false,
+          "execution_agent": {
+            "executed": false,
+            "reason": "not_approved_no_state_transition"
+          },
+          "reason": "scenario_version_mismatch",
+          "state_unchanged": true
+        },
+        "target_b_world_m": [
+          -0.3,
+          0.15,
+          0.055
+        ]
+      },
+      {
+        "case_id": "B-05",
+        "consistent_pair": {
+          "coordinator_accepted": true,
+          "reason": "accepted"
+        },
+        "coordinate_disagreement": {
+          "coordinator_accepted": false,
+          "execution_agent": {
+            "executed": false,
+            "reason": "not_approved_no_state_transition"
+          },
+          "reason": "camera_world_coordinate_disagreement",
+          "state_unchanged": true
+        },
+        "stale_version": {
+          "coordinator_accepted": false,
+          "execution_agent": {
+            "executed": false,
+            "reason": "not_approved_no_state_transition"
+          },
+          "reason": "scenario_version_mismatch",
+          "state_unchanged": true
+        },
+        "target_b_world_m": [
+          -0.3,
+          0.3,
+          0.055
+        ]
+      },
+      {
+        "case_id": "B-06",
+        "consistent_pair": {
+          "coordinator_accepted": true,
+          "reason": "accepted"
+        },
+        "coordinate_disagreement": {
+          "coordinator_accepted": false,
+          "execution_agent": {
+            "executed": false,
+            "reason": "not_approved_no_state_transition"
+          },
+          "reason": "camera_world_coordinate_disagreement",
+          "state_unchanged": true
+        },
+        "stale_version": {
+          "coordinator_accepted": false,
+          "execution_agent": {
+            "executed": false,
+            "reason": "not_approved_no_state_transition"
+          },
+          "reason": "scenario_version_mismatch",
+          "state_unchanged": true
+        },
+        "target_b_world_m": [
+          -0.15,
+          -0.3,
+          0.055
+        ]
+      },
+      {
+        "case_id": "B-07",
+        "consistent_pair": {
+          "coordinator_accepted": true,
+          "reason": "accepted"
+        },
+        "coordinate_disagreement": {
+          "coordinator_accepted": false,
+          "execution_agent": {
+            "executed": false,
+            "reason": "not_approved_no_state_transition"
+          },
+          "reason": "camera_world_coordinate_disagreement",
+          "state_unchanged": true
+        },
+        "stale_version": {
+          "coordinator_accepted": false,
+          "execution_agent": {
+            "executed": false,
+            "reason": "not_approved_no_state_transition"
+          },
+          "reason": "scenario_version_mismatch",
+          "state_unchanged": true
+        },
+        "target_b_world_m": [
+          -0.15,
+          -0.15,
+          0.055
+        ]
+      },
+      {
+        "case_id": "B-08",
+        "consistent_pair": {
+          "coordinator_accepted": true,
+          "reason": "accepted"
+        },
+        "coordinate_disagreement": {
+          "coordinator_accepted": false,
+          "execution_agent": {
+            "executed": false,
+            "reason": "not_approved_no_state_transition"
+          },
+          "reason": "camera_world_coordinate_disagreement",
+          "state_unchanged": true
+        },
+        "stale_version": {
+          "coordinator_accepted": false,
+          "execution_agent": {
+            "executed": false,
+            "reason": "not_approved_no_state_transition"
+          },
+          "reason": "scenario_version_mismatch",
+          "state_unchanged": true
+        },
+        "target_b_world_m": [
+          -0.15,
+          0.0,
+          0.055
+        ]
+      },
+      {
+        "case_id": "B-09",
+        "consistent_pair": {
+          "coordinator_accepted": true,
+          "reason": "accepted"
+        },
+        "coordinate_disagreement": {
+          "coordinator_accepted": false,
+          "execution_agent": {
+            "executed": false,
+            "reason": "not_approved_no_state_transition"
+          },
+          "reason": "camera_world_coordinate_disagreement",
+          "state_unchanged": true
+        },
+        "stale_version": {
+          "coordinator_accepted": false,
+          "execution_agent": {
+            "executed": false,
+            "reason": "not_approved_no_state_transition"
+          },
+          "reason": "scenario_version_mismatch",
+          "state_unchanged": true
+        },
+        "target_b_world_m": [
+          -0.15,
+          0.15,
+          0.055
+        ]
+      },
+      {
+        "case_id": "B-10",
+        "consistent_pair": {
+          "coordinator_accepted": true,
+          "reason": "accepted"
+        },
+        "coordinate_disagreement": {
+          "coordinator_accepted": false,
+          "execution_agent": {
+            "executed": false,
+            "reason": "not_approved_no_state_transition"
+          },
+          "reason": "camera_world_coordinate_disagreement",
+          "state_unchanged": true
+        },
+        "stale_version": {
+          "coordinator_accepted": false,
+          "execution_agent": {
+            "executed": false,
+            "reason": "not_approved_no_state_transition"
+          },
+          "reason": "scenario_version_mismatch",
+          "state_unchanged": true
+        },
+        "target_b_world_m": [
+          -0.15,
+          0.3,
+          0.055
+        ]
+      },
+      {
+        "case_id": "B-11",
+        "consistent_pair": {
+          "coordinator_accepted": true,
+          "reason": "accepted"
+        },
+        "coordinate_disagreement": {
+          "coordinator_accepted": false,
+          "execution_agent": {
+            "executed": false,
+            "reason": "not_approved_no_state_transition"
+          },
+          "reason": "camera_world_coordinate_disagreement",
+          "state_unchanged": true
+        },
+        "stale_version": {
+          "coordinator_accepted": false,
+          "execution_agent": {
+            "executed": false,
+            "reason": "not_approved_no_state_transition"
+          },
+          "reason": "scenario_version_mismatch",
+          "state_unchanged": true
+        },
+        "target_b_world_m": [
+          0.0,
+          -0.3,
+          0.055
+        ]
+      },
+      {
+        "case_id": "B-12",
+        "consistent_pair": {
+          "coordinator_accepted": true,
+          "reason": "accepted"
+        },
+        "coordinate_disagreement": {
+          "coordinator_accepted": false,
+          "execution_agent": {
+            "executed": false,
+            "reason": "not_approved_no_state_transition"
+          },
+          "reason": "camera_world_coordinate_disagreement",
+          "state_unchanged": true
+        },
+        "stale_version": {
+          "coordinator_accepted": false,
+          "execution_agent": {
+            "executed": false,
+            "reason": "not_approved_no_state_transition"
+          },
+          "reason": "scenario_version_mismatch",
+          "state_unchanged": true
+        },
+        "target_b_world_m": [
+          0.0,
+          -0.15,
+          0.055
+        ]
+      },
+      {
+        "case_id": "B-13",
+        "consistent_pair": {
+          "coordinator_accepted": true,
+          "reason": "accepted"
+        },
+        "coordinate_disagreement": {
+          "coordinator_accepted": false,
+          "execution_agent": {
+            "executed": false,
+            "reason": "not_approved_no_state_transition"
+          },
+          "reason": "camera_world_coordinate_disagreement",
+          "state_unchanged": true
+        },
+        "stale_version": {
+          "coordinator_accepted": false,
+          "execution_agent": {
+            "executed": false,
+            "reason": "not_approved_no_state_transition"
+          },
+          "reason": "scenario_version_mismatch",
+          "state_unchanged": true
+        },
+        "target_b_world_m": [
+          0.0,
+          0.0,
+          0.055
+        ]
+      },
+      {
+        "case_id": "B-14",
+        "consistent_pair": {
+          "coordinator_accepted": true,
+          "reason": "accepted"
+        },
+        "coordinate_disagreement": {
+          "coordinator_accepted": false,
+          "execution_agent": {
+            "executed": false,
+            "reason": "not_approved_no_state_transition"
+          },
+          "reason": "camera_world_coordinate_disagreement",
+          "state_unchanged": true
+        },
+        "stale_version": {
+          "coordinator_accepted": false,
+          "execution_agent": {
+            "executed": false,
+            "reason": "not_approved_no_state_transition"
+          },
+          "reason": "scenario_version_mismatch",
+          "state_unchanged": true
+        },
+        "target_b_world_m": [
+          0.0,
+          0.15,
+          0.055
+        ]
+      },
+      {
+        "case_id": "B-15",
+        "consistent_pair": {
+          "coordinator_accepted": true,
+          "reason": "accepted"
+        },
+        "coordinate_disagreement": {
+          "coordinator_accepted": false,
+          "execution_agent": {
+            "executed": false,
+            "reason": "not_approved_no_state_transition"
+          },
+          "reason": "camera_world_coordinate_disagreement",
+          "state_unchanged": true
+        },
+        "stale_version": {
+          "coordinator_accepted": false,
+          "execution_agent": {
+            "executed": false,
+            "reason": "not_approved_no_state_transition"
+          },
+          "reason": "scenario_version_mismatch",
+          "state_unchanged": true
+        },
+        "target_b_world_m": [
+          0.0,
+          0.3,
+          0.055
+        ]
+      },
+      {
+        "case_id": "B-16",
+        "consistent_pair": {
+          "coordinator_accepted": true,
+          "reason": "accepted"
+        },
+        "coordinate_disagreement": {
+          "coordinator_accepted": false,
+          "execution_agent": {
+            "executed": false,
+            "reason": "not_approved_no_state_transition"
+          },
+          "reason": "camera_world_coordinate_disagreement",
+          "state_unchanged": true
+        },
+        "stale_version": {
+          "coordinator_accepted": false,
+          "execution_agent": {
+            "executed": false,
+            "reason": "not_approved_no_state_transition"
+          },
+          "reason": "scenario_version_mismatch",
+          "state_unchanged": true
+        },
+        "target_b_world_m": [
+          0.15,
+          -0.3,
+          0.055
+        ]
+      },
+      {
+        "case_id": "B-17",
+        "consistent_pair": {
+          "coordinator_accepted": true,
+          "reason": "accepted"
+        },
+        "coordinate_disagreement": {
+          "coordinator_accepted": false,
+          "execution_agent": {
+            "executed": false,
+            "reason": "not_approved_no_state_transition"
+          },
+          "reason": "camera_world_coordinate_disagreement",
+          "state_unchanged": true
+        },
+        "stale_version": {
+          "coordinator_accepted": false,
+          "execution_agent": {
+            "executed": false,
+            "reason": "not_approved_no_state_transition"
+          },
+          "reason": "scenario_version_mismatch",
+          "state_unchanged": true
+        },
+        "target_b_world_m": [
+          0.15,
+          -0.15,
+          0.055
+        ]
+      },
+      {
+        "case_id": "B-18",
+        "consistent_pair": {
+          "coordinator_accepted": true,
+          "reason": "accepted"
+        },
+        "coordinate_disagreement": {
+          "coordinator_accepted": false,
+          "execution_agent": {
+            "executed": false,
+            "reason": "not_approved_no_state_transition"
+          },
+          "reason": "camera_world_coordinate_disagreement",
+          "state_unchanged": true
+        },
+        "stale_version": {
+          "coordinator_accepted": false,
+          "execution_agent": {
+            "executed": false,
+            "reason": "not_approved_no_state_transition"
+          },
+          "reason": "scenario_version_mismatch",
+          "state_unchanged": true
+        },
+        "target_b_world_m": [
+          0.15,
+          0.0,
+          0.055
+        ]
+      },
+      {
+        "case_id": "B-19",
+        "consistent_pair": {
+          "coordinator_accepted": true,
+          "reason": "accepted"
+        },
+        "coordinate_disagreement": {
+          "coordinator_accepted": false,
+          "execution_agent": {
+            "executed": false,
+            "reason": "not_approved_no_state_transition"
+          },
+          "reason": "camera_world_coordinate_disagreement",
+          "state_unchanged": true
+        },
+        "stale_version": {
+          "coordinator_accepted": false,
+          "execution_agent": {
+            "executed": false,
+            "reason": "not_approved_no_state_transition"
+          },
+          "reason": "scenario_version_mismatch",
+          "state_unchanged": true
+        },
+        "target_b_world_m": [
+          0.15,
+          0.15,
+          0.055
+        ]
+      },
+      {
+        "case_id": "B-20",
+        "consistent_pair": {
+          "coordinator_accepted": true,
+          "reason": "accepted"
+        },
+        "coordinate_disagreement": {
+          "coordinator_accepted": false,
+          "execution_agent": {
+            "executed": false,
+            "reason": "not_approved_no_state_transition"
+          },
+          "reason": "camera_world_coordinate_disagreement",
+          "state_unchanged": true
+        },
+        "stale_version": {
+          "coordinator_accepted": false,
+          "execution_agent": {
+            "executed": false,
+            "reason": "not_approved_no_state_transition"
+          },
+          "reason": "scenario_version_mismatch",
+          "state_unchanged": true
+        },
+        "target_b_world_m": [
+          0.15,
+          0.3,
+          0.055
+        ]
+      },
+      {
+        "case_id": "B-21",
+        "consistent_pair": {
+          "coordinator_accepted": true,
+          "reason": "accepted"
+        },
+        "coordinate_disagreement": {
+          "coordinator_accepted": false,
+          "execution_agent": {
+            "executed": false,
+            "reason": "not_approved_no_state_transition"
+          },
+          "reason": "camera_world_coordinate_disagreement",
+          "state_unchanged": true
+        },
+        "stale_version": {
+          "coordinator_accepted": false,
+          "execution_agent": {
+            "executed": false,
+            "reason": "not_approved_no_state_transition"
+          },
+          "reason": "scenario_version_mismatch",
+          "state_unchanged": true
+        },
+        "target_b_world_m": [
+          0.3,
+          -0.3,
+          0.055
+        ]
+      },
+      {
+        "case_id": "B-22",
+        "consistent_pair": {
+          "coordinator_accepted": true,
+          "reason": "accepted"
+        },
+        "coordinate_disagreement": {
+          "coordinator_accepted": false,
+          "execution_agent": {
+            "executed": false,
+            "reason": "not_approved_no_state_transition"
+          },
+          "reason": "camera_world_coordinate_disagreement",
+          "state_unchanged": true
+        },
+        "stale_version": {
+          "coordinator_accepted": false,
+          "execution_agent": {
+            "executed": false,
+            "reason": "not_approved_no_state_transition"
+          },
+          "reason": "scenario_version_mismatch",
+          "state_unchanged": true
+        },
+        "target_b_world_m": [
+          0.3,
+          -0.15,
+          0.055
+        ]
+      },
+      {
+        "case_id": "B-23",
+        "consistent_pair": {
+          "coordinator_accepted": true,
+          "reason": "accepted"
+        },
+        "coordinate_disagreement": {
+          "coordinator_accepted": false,
+          "execution_agent": {
+            "executed": false,
+            "reason": "not_approved_no_state_transition"
+          },
+          "reason": "camera_world_coordinate_disagreement",
+          "state_unchanged": true
+        },
+        "stale_version": {
+          "coordinator_accepted": false,
+          "execution_agent": {
+            "executed": false,
+            "reason": "not_approved_no_state_transition"
+          },
+          "reason": "scenario_version_mismatch",
+          "state_unchanged": true
+        },
+        "target_b_world_m": [
+          0.3,
+          0.0,
+          0.055
+        ]
+      },
+      {
+        "case_id": "B-24",
+        "consistent_pair": {
+          "coordinator_accepted": true,
+          "reason": "accepted"
+        },
+        "coordinate_disagreement": {
+          "coordinator_accepted": false,
+          "execution_agent": {
+            "executed": false,
+            "reason": "not_approved_no_state_transition"
+          },
+          "reason": "camera_world_coordinate_disagreement",
+          "state_unchanged": true
+        },
+        "stale_version": {
+          "coordinator_accepted": false,
+          "execution_agent": {
+            "executed": false,
+            "reason": "not_approved_no_state_transition"
+          },
+          "reason": "scenario_version_mismatch",
+          "state_unchanged": true
+        },
+        "target_b_world_m": [
+          0.3,
+          0.15,
+          0.055
+        ]
+      },
+      {
+        "case_id": "B-25",
+        "consistent_pair": {
+          "coordinator_accepted": true,
+          "reason": "accepted"
+        },
+        "coordinate_disagreement": {
+          "coordinator_accepted": false,
+          "execution_agent": {
+            "executed": false,
+            "reason": "not_approved_no_state_transition"
+          },
+          "reason": "camera_world_coordinate_disagreement",
+          "state_unchanged": true
+        },
+        "stale_version": {
+          "coordinator_accepted": false,
+          "execution_agent": {
+            "executed": false,
+            "reason": "not_approved_no_state_transition"
+          },
+          "reason": "scenario_version_mismatch",
+          "state_unchanged": true
+        },
+        "target_b_world_m": [
+          0.3,
+          0.3,
+          0.055
+        ]
+      }
+    ],
+    "coordinate_disagreement_offset_m": [
+      0.001,
+      0.0,
+      0.0
+    ],
+    "target_count": 25
+  },
+  "review": {
+    "adopted": false,
+    "status": "pending_human_review"
+  },
+  "run_id": "EXP-20260921-018-coordinate-agent-fault-injection",
+  "schema_version": "first-robots/research-result/v1",
+  "status": "passed_pending_human_review"
+}

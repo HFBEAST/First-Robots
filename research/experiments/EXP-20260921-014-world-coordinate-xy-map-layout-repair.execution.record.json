@@ -1,0 +1,13 @@
+{
+  "kind": "formal_world_coordinate_xy_map_layout_repair",
+  "result": {
+    "path": "research/reports/EXP-20260921-014-world-coordinate-xy-map-layout-repair.result.json",
+    "sha256": "sha256:a83c677a8afcdba26d83d74b065b5885abd0408acc4a0dc44e92131ab5547a49"
+  },
+  "review": {
+    "adopted": false,
+    "status": "pending_human_review"
+  },
+  "run_id": "EXP-20260921-014-world-coordinate-xy-map-layout-repair",
+  "schema_version": "first-robots/experiment-record/v1"
+}

@@ -1,0 +1,13 @@
+{
+  "kind": "formal_virtual_rgb_detection_golden_case",
+  "result": {
+    "path": "research/reports/EXP-20260921-019-virtual-rgb-detection-golden-case.result.json",
+    "sha256": "sha256:fa083bddbb94c1bc3fae39aa809e19a333f49a2f9e5f39f78d5c985768c899c4"
+  },
+  "review": {
+    "adopted": false,
+    "status": "pending_human_review"
+  },
+  "run_id": "EXP-20260921-019-virtual-rgb-detection-golden-case",
+  "schema_version": "first-robots/experiment-record/v1"
+}

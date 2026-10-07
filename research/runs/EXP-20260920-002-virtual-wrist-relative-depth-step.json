@@ -1,0 +1,137 @@
+{
+  "artifacts": [
+    {
+      "path": "research/artifacts/EXP-20260920-002-virtual-wrist-relative-depth-step/config.json",
+      "sha256": "sha256:f759a4a0227f9444b24d152fe9bd960e36d2f7b5b6198fe9574fd7d613366a21"
+    },
+    {
+      "path": "research/artifacts/EXP-20260920-002-virtual-wrist-relative-depth-step/relative-depth-step.json",
+      "sha256": "sha256:86074c6951fbdcb44c100be510d2a455e3805c4700f000f605d51e3046ff9c12"
+    },
+    {
+      "path": "research/artifacts/EXP-20260920-002-virtual-wrist-relative-depth-step/target-mask.npy",
+      "sha256": "sha256:e36374a785ff386e30bffd099749988578586cf39b815832f76a9e2d1426810c"
+    },
+    {
+      "path": "research/reports/EXP-20260920-002-virtual-wrist-relative-depth-step.result.json",
+      "sha256": "sha256:474d9ff92ff6f3af1e4a0d15ee6d2fc424ce5734f0dafb50b7f1f9eab89ac118"
+    },
+    {
+      "path": "research/experiments/EXP-20260920-002-virtual-wrist-relative-depth-step.record.json",
+      "sha256": "sha256:8ef593101aa90cdd9b9cfc147006041f29dae35dd1944303c88a62a4e803388b"
+    }
+  ],
+  "baseline": {
+    "kind": "prior_golden_case",
+    "reference": "EXP-20260920-001-virtual-wrist-relative-pose-golden-case"
+  },
+  "code": {
+    "commit": "5311e4a85e76bfc96a9ff235d9cd00f2c7a629fb",
+    "dirty_at_start": true,
+    "repository": "H:/0_program/My_action/First-Robots",
+    "traceable": true
+  },
+  "ended_at": "2026-09-20T06:08:52.155670Z",
+  "execution": {
+    "command": [
+      "H:\\0_program\\My_action\\First-Robots\\research\\.venvs\\mrbtp-demo-py312\\Scripts\\python.exe",
+      "research\\experiments\\run_virtual_wrist_relative_depth_step.py"
+    ],
+    "parameters": {
+      "actuation": "disabled",
+      "camera": "wrist_cam",
+      "cup": {
+        "half_height_m": 0.055,
+        "radius_m": 0.035
+      },
+      "dynamics": "disabled",
+      "hardware_io": "disabled",
+      "independent_variable": {
+        "baseline_m": [
+          0,
+          0,
+          -0.2
+        ],
+        "name": "cup center optical-axis depth in wrist_cam coordinates",
+        "tested_m": [
+          0,
+          0,
+          -0.25
+        ]
+      },
+      "pass_conditions": [
+        "the predecessor result hash matches blocking_predecessor.result_sha256 and reports passed_pending_human_review",
+        "the source scene SHA-256 matches model.scene_sha256",
+        "after mj_forward, virtual_cup geom_xpos equals its camera-derived tested world position",
+        "after mj_forward, virtual_cup center expressed in wrist_cam coordinates equals independent_variable.tested_m",
+        "the tested condition renders one or more virtual_cup segmentation pixels"
+      ],
+      "qpos": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "renderer": {
+        "height": 240,
+        "mode": "MuJoCo geom segmentation",
+        "width": 320
+      },
+      "stop_conditions": [
+        "any predecessor, source, position, or nonzero-pixel condition fails"
+      ]
+    },
+    "script": "research/experiments/run_virtual_wrist_relative_depth_step.py"
+  },
+  "inputs": [
+    {
+      "kind": "configuration",
+      "path": "research/configs/EXP-20260920-002-virtual-wrist-relative-depth-step.json",
+      "sha256": "sha256:08d39c5bc99d2bfd409d5780992b6f19f8d93006c590047f2f26650f990efba3"
+    },
+    {
+      "kind": "predecessor_result",
+      "path": "research/reports/EXP-20260920-001-virtual-wrist-relative-pose-golden-case.result.json",
+      "sha256": "sha256:a5cc80746fd17588a32b6f94131008f9821780c3bb075d070ac6ad6a3876716a"
+    },
+    {
+      "kind": "model",
+      "path": "research/sources/mujoco_menagerie_robotstudio_so101/robotstudio_so101/scene.xml",
+      "revision": "da76818e269b82289eba39808e2fb91d679d6994",
+      "sha256": "sha256:65496b0061ca3ddd92b58fe09bd30f6a4a443f137cc42cf8975d5cff23030bfd"
+    }
+  ],
+  "level": "formal",
+  "objective": "Test one wrist-camera optical-axis depth step after the fixed relative-pose golden case.",
+  "results": {
+    "criteria": "The frozen predecessor and source must match, both position invariants must pass, and the tested condition must have nonzero target pixels.",
+    "duration_seconds": 0.392016,
+    "metrics": [
+      {
+        "name": "tested_target_pixels",
+        "unit": "pixels",
+        "value": 7504
+      },
+      {
+        "name": "pixel_difference_from_baseline",
+        "unit": "pixels",
+        "value": -4586
+      }
+    ],
+    "passed": true
+  },
+  "review": {
+    "note": "Pixel difference is recorded without a coverage or causal interpretation.",
+    "status": "pending_human_review"
+  },
+  "run_id": "EXP-20260920-002-virtual-wrist-relative-depth-step",
+  "runtime": {
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.12.11",
+    "random_seed": null
+  },
+  "schema_version": "experiment-management/run-manifest/v1",
+  "started_at": "2026-09-20T06:08:51.763621Z"
+}

@@ -1,0 +1,12 @@
+{
+  "kind": "formal_virtual_wrist_relative_positive_y_center_step",
+  "result": {
+    "path": "research/reports/EXP-20260920-007-virtual-wrist-relative-positive-y-center-step.result.json",
+    "sha256": "sha256:1e2f12967e72d7d1688f437a6f242cca4d96464795f8e16594c7e52d7bc5f987"
+  },
+  "review": {
+    "status": "pending_human_review"
+  },
+  "run_id": "EXP-20260920-007-virtual-wrist-relative-positive-y-center-step",
+  "schema_version": "first-robots/experiment-record/v1"
+}

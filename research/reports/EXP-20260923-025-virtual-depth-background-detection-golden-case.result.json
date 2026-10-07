@@ -1,0 +1,104 @@
+{
+  "limits": [
+    "The empty-table reference is a virtual fixed-robot fixture; it is not a physical background-capture procedure, synchronization requirement, or accepted real-data policy.",
+    "The epsilon separates numerically unchanged virtual depth pixels only; it is not an Orbbec noise threshold or a real foreground threshold.",
+    "No depth calibration, object pose, fusion, planning, IK, collision, grasp, safety, robot action, or hardware I/O is evaluated."
+  ],
+  "observations": {
+    "barrier_absent": true,
+    "camera_positions_match_between_reference_and_current": true,
+    "cup_b_position_matches_configuration": true,
+    "depth_pose_or_fusion": "not_evaluated",
+    "detections": {
+      "fixed_depth_01": {
+        "candidate_pixel_count": 3455,
+        "component_count": 1,
+        "components": [
+          {
+            "bbox_xywh": [
+              313,
+              205,
+              47,
+              82
+            ],
+            "centroid_pixel_xy": [
+              334.9629522431259,
+              244.64283646888566
+            ],
+            "pixel_count": 3455
+          }
+        ],
+        "current_depth": "research/artifacts/EXP-20260923-025-virtual-depth-background-detection-golden-case/fixed_depth_01-current-depth.npy",
+        "current_frame": {
+          "dtype": "float32",
+          "frame_id": "fixed_depth_01",
+          "height": 480,
+          "pixel_encoding": "depth_float32_m",
+          "scenario_version": "virtual-depth-contract-v1",
+          "source_kind": "mujoco_depth_render",
+          "width": 640
+        },
+        "foreground_mask": "research/artifacts/EXP-20260923-025-virtual-depth-background-detection-golden-case/fixed_depth_01-foreground-mask.png",
+        "reference_depth": "research/artifacts/EXP-20260923-025-virtual-depth-background-detection-golden-case/fixed_depth_01-reference-depth.npy",
+        "reference_frame": {
+          "dtype": "float32",
+          "frame_id": "fixed_depth_01",
+          "height": 480,
+          "pixel_encoding": "depth_float32_m",
+          "scenario_version": "virtual-depth-contract-v1",
+          "source_kind": "mujoco_depth_render",
+          "width": 640
+        }
+      },
+      "fixed_depth_02": {
+        "candidate_pixel_count": 3456,
+        "component_count": 1,
+        "components": [
+          {
+            "bbox_xywh": [
+              280,
+              205,
+              47,
+              82
+            ],
+            "centroid_pixel_xy": [
+              304.0821759259259,
+              244.65104166666666
+            ],
+            "pixel_count": 3456
+          }
+        ],
+        "current_depth": "research/artifacts/EXP-20260923-025-virtual-depth-background-detection-golden-case/fixed_depth_02-current-depth.npy",
+        "current_frame": {
+          "dtype": "float32",
+          "frame_id": "fixed_depth_02",
+          "height": 480,
+          "pixel_encoding": "depth_float32_m",
+          "scenario_version": "virtual-depth-contract-v1",
+          "source_kind": "mujoco_depth_render",
+          "width": 640
+        },
+        "foreground_mask": "research/artifacts/EXP-20260923-025-virtual-depth-background-detection-golden-case/fixed_depth_02-foreground-mask.png",
+        "reference_depth": "research/artifacts/EXP-20260923-025-virtual-depth-background-detection-golden-case/fixed_depth_02-reference-depth.npy",
+        "reference_frame": {
+          "dtype": "float32",
+          "frame_id": "fixed_depth_02",
+          "height": 480,
+          "pixel_encoding": "depth_float32_m",
+          "scenario_version": "virtual-depth-contract-v1",
+          "source_kind": "mujoco_depth_render",
+          "width": 640
+        }
+      }
+    },
+    "detector_input": "paired DepthFrame arrays only; no world coordinate, RGB, camera pose, MuJoCo model, or MuJoCo data argument",
+    "frame_source_interface": "DepthFrameSource.capture(camera_name) -> DepthFrame"
+  },
+  "review": {
+    "adopted": false,
+    "status": "pending_human_review"
+  },
+  "run_id": "EXP-20260923-025-virtual-depth-background-detection-golden-case",
+  "schema_version": "first-robots/research-result/v1",
+  "status": "passed_pending_human_review"
+}

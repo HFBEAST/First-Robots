@@ -1,0 +1,21 @@
+{
+  "schema_version": "first-robots/research-config/v1",
+  "experiment_id": "EXP-20260921-001-virtual-laboratory-v0-preflight",
+  "status": "planned_not_executed",
+  "model": {"repository_revision": "da76818e269b82289eba39808e2fb91d679d6994", "license": "Apache-2.0", "scene_sha256": "sha256:65496b0061ca3ddd92b58fe09bd30f6a4a443f137cc42cf8975d5cff23030bfd"},
+  "laboratory": {
+    "version": "v0", "robots": 1, "robot_model": "candidate Menagerie SO-101", "qpos": [0, 0, 0, 0, 0, 0],
+    "coordinate_contract": "world origin is the nominal tabletop surface and candidate robot-base origin; +Z is upward.",
+    "table": {"name": "vlab_table", "half_extents_m": [0.45, 0.45, 0.025], "center_m": [0, 0, -0.025], "top_z_m": 0},
+    "cup": {"name": "vlab_cup", "type": "cylinder", "radius_m": 0.035, "half_height_m": 0.055, "center_m": [0.12, 0, 0.055]},
+    "cameras": {
+      "wrist_cam": {"kind": "candidate-model wrist RGB", "source": "candidate model only"},
+      "fixed_depth_01": {"kind": "virtual nominal depth", "position_m": [0.45, -0.45, 0.42], "target_m": [0.12, 0, 0.055]},
+      "fixed_depth_02": {"kind": "virtual nominal depth", "position_m": [0.45, 0.45, 0.42], "target_m": [0.12, 0, 0.055]}
+    },
+    "renderer": {"width": 320, "height": 240, "outputs": ["rgb", "depth", "geom_segmentation"]},
+    "actuation": "disabled", "dynamics": "disabled", "hardware_io": "disabled"
+  },
+  "pass_conditions": ["source scene hash matches model.scene_sha256", "named table, cup and three named cameras compile", "after mj_forward cup world position equals laboratory.cup.center_m", "table top equals coordinate-contract Z=0", "all three cameras emit RGB, depth and segmentation artifacts", "both fixed nominal cameras have one or more vlab_cup segmentation pixels"],
+  "non_claims": ["The table, cup and fixed cameras are virtual inputs, not a surveyed real workspace or physical calibration.", "This is a static laboratory initialization, not collision safety, reachability, grasping, perception, control, sim-to-real, or multi-robot evidence.", "Simulator labels are evaluation metadata only and may not be supplied to a future runtime perception component."]
+}

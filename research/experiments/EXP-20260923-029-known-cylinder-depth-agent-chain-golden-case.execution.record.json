@@ -1,0 +1,13 @@
+{
+  "kind": "formal_known_cylinder_depth_agent_chain_golden_case",
+  "result": {
+    "path": "research/reports/EXP-20260923-029-known-cylinder-depth-agent-chain-golden-case.result.json",
+    "sha256": "sha256:8189c2af3e709390c5c32bf26b6b16b580af8bcf477ff8dec958b65e63011645"
+  },
+  "review": {
+    "adopted": false,
+    "status": "pending_human_review"
+  },
+  "run_id": "EXP-20260923-029-known-cylinder-depth-agent-chain-golden-case",
+  "schema_version": "first-robots/experiment-record/v1"
+}

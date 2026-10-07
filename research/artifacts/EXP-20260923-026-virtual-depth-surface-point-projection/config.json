@@ -1,0 +1,67 @@
+{
+  "blocking_predecessor": {
+    "observations_path": "research/artifacts/EXP-20260923-025-virtual-depth-background-detection-golden-case/depth-background-detection-observations.json",
+    "observations_sha256": "sha256:3a3c20094db3e32358e40bedcd89ea53e2c1d7be121b02450cc8de756ccea079",
+    "result_path": "research/reports/EXP-20260923-025-virtual-depth-background-detection-golden-case.result.json",
+    "result_sha256": "sha256:5e36e69124edf6fa237002f20aa29d045bba1049976e0c60029a0a31b5646134",
+    "run_id": "EXP-20260923-025-virtual-depth-background-detection-golden-case"
+  },
+  "experiment_id": "EXP-20260923-026-virtual-depth-surface-point-projection",
+  "non_claims": [
+    "A depth-ray result is a visible surface-point candidate, not the cup center, object pose, calibration result, or accepted world target.",
+    "The virtual depth encoding is used only under the frozen MuJoCo contract; no relation to Orbbec units or real depth errors is established.",
+    "No fit, fusion, planning, IK, collision, grasp, safety, robot action, or hardware I/O is evaluated."
+  ],
+  "pass_conditions": [
+    "025 result and foreground-observation hashes match",
+    "each frozen depth foreground mask has one component and supplies a finite current-depth median at its centroid-neighborhood pixels",
+    "each detected component creates one finite, forward camera-ray surface point; its evaluation-only offset from cup center is recorded without a tolerance",
+    "no center fitting, fusion, Coordinator, or execution is applied"
+  ],
+  "scenario": {
+    "actuation": "disabled",
+    "camera_fovy_degrees": 60,
+    "cup_b_world_m_evaluation_only": [
+      0.15,
+      0,
+      0.055
+    ],
+    "dynamics": "disabled",
+    "fixed_cameras": {
+      "fixed_depth_01": {
+        "position_m": [
+          0.45,
+          -0.45,
+          0.42
+        ],
+        "target_m": [
+          0.12,
+          0,
+          0.055
+        ]
+      },
+      "fixed_depth_02": {
+        "position_m": [
+          0.45,
+          0.45,
+          0.42
+        ],
+        "target_m": [
+          0.12,
+          0,
+          0.055
+        ]
+      }
+    },
+    "frame_contract": {
+      "height": 480,
+      "pixel_encoding": "depth_float32_m",
+      "scenario_version": "virtual-depth-contract-v1",
+      "source_kind": "mujoco_depth_render",
+      "width": 640
+    },
+    "hardware_io": "disabled"
+  },
+  "schema_version": "first-robots/research-config/v1",
+  "status": "planned_not_executed"
+}

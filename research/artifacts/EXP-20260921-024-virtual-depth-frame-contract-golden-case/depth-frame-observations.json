@@ -1,0 +1,44 @@
+{
+  "barrier_absent": true,
+  "cup_b_position_matches_configuration": true,
+  "depth_perception": "not_evaluated",
+  "frame_source_interface": "DepthFrameSource.capture(camera_name) -> DepthFrame",
+  "frames": {
+    "fixed_depth_01": {
+      "finite": true,
+      "frame": {
+        "dtype": "float32",
+        "frame_id": "fixed_depth_01",
+        "height": 480,
+        "pixel_encoding": "depth_float32_m",
+        "scenario_version": "virtual-depth-contract-v1",
+        "source_kind": "mujoco_depth_render",
+        "width": 640
+      },
+      "max": 6.365901947021484,
+      "min": 0.4076443612575531,
+      "nonuniform": true,
+      "positive": true,
+      "preview": "research/artifacts/EXP-20260921-024-virtual-depth-frame-contract-golden-case/fixed_depth_01-depth-preview.png",
+      "raw_depth": "research/artifacts/EXP-20260921-024-virtual-depth-frame-contract-golden-case/fixed_depth_01-depth.npy"
+    },
+    "fixed_depth_02": {
+      "finite": true,
+      "frame": {
+        "dtype": "float32",
+        "frame_id": "fixed_depth_02",
+        "height": 480,
+        "pixel_encoding": "depth_float32_m",
+        "scenario_version": "virtual-depth-contract-v1",
+        "source_kind": "mujoco_depth_render",
+        "width": 640
+      },
+      "max": 6.365933418273926,
+      "min": 0.39243844151496887,
+      "nonuniform": true,
+      "positive": true,
+      "preview": "research/artifacts/EXP-20260921-024-virtual-depth-frame-contract-golden-case/fixed_depth_02-depth-preview.png",
+      "raw_depth": "research/artifacts/EXP-20260921-024-virtual-depth-frame-contract-golden-case/fixed_depth_02-depth.npy"
+    }
+  }
+}

@@ -1,0 +1,158 @@
+{
+  "artifacts": [
+    {
+      "path": "research/artifacts/EXP-20260920-001-virtual-wrist-relative-pose-golden-case/attempt-00-target-mask.npy",
+      "sha256": "sha256:4f52909cdae15f857444d5c75f17f71017cda38de0b091b954f458297a867508"
+    },
+    {
+      "path": "research/artifacts/EXP-20260920-001-virtual-wrist-relative-pose-golden-case/attempt-00.json",
+      "sha256": "sha256:cc97db4f8026dc4e5ebc58ac3dc93e7559565731777b5c7565a7377afe17607b"
+    },
+    {
+      "path": "research/artifacts/EXP-20260920-001-virtual-wrist-relative-pose-golden-case/attempt-01-target-mask.npy",
+      "sha256": "sha256:4f52909cdae15f857444d5c75f17f71017cda38de0b091b954f458297a867508"
+    },
+    {
+      "path": "research/artifacts/EXP-20260920-001-virtual-wrist-relative-pose-golden-case/attempt-01.json",
+      "sha256": "sha256:00f76e7540c34c476cabf6b6362d23b498381d713e2dddb3c295e6486e0fbe1d"
+    },
+    {
+      "path": "research/artifacts/EXP-20260920-001-virtual-wrist-relative-pose-golden-case/attempt-02-target-mask.npy",
+      "sha256": "sha256:4f52909cdae15f857444d5c75f17f71017cda38de0b091b954f458297a867508"
+    },
+    {
+      "path": "research/artifacts/EXP-20260920-001-virtual-wrist-relative-pose-golden-case/attempt-02.json",
+      "sha256": "sha256:ecebb7c3b60f2d7111a6f2ebcec84d259bb7c3ba7091f2fd21de132b83f330e1"
+    },
+    {
+      "path": "research/artifacts/EXP-20260920-001-virtual-wrist-relative-pose-golden-case/config.json",
+      "sha256": "sha256:d47529093bd1e8b7ab676db26bd4a48de7c42f187e61ba44c4350c914849374d"
+    },
+    {
+      "path": "research/reports/EXP-20260920-001-virtual-wrist-relative-pose-golden-case.result.json",
+      "sha256": "sha256:a5cc80746fd17588a32b6f94131008f9821780c3bb075d070ac6ad6a3876716a"
+    },
+    {
+      "path": "research/experiments/EXP-20260920-001-virtual-wrist-relative-pose-golden-case.record.json",
+      "sha256": "sha256:f7f0ff6cf536a67a10fb13a0d80e890e7033b465074a5634f4ba04f622cedb36"
+    }
+  ],
+  "baseline": {
+    "kind": "golden_case",
+    "reference": "No earlier raster observation is a baseline for this fixed camera-relative pose."
+  },
+  "code": {
+    "commit": "5311e4a85e76bfc96a9ff235d9cd00f2c7a629fb",
+    "dirty_at_start": true,
+    "repository": "H:/0_program/My_action/First-Robots",
+    "traceable": true
+  },
+  "ended_at": "2026-09-20T06:06:17.072817Z",
+  "execution": {
+    "command": [
+      "H:\\0_program\\My_action\\First-Robots\\research\\.venvs\\mrbtp-demo-py312\\Scripts\\python.exe",
+      "research\\experiments\\run_virtual_wrist_relative_pose_golden_case.py"
+    ],
+    "parameters": {
+      "actuation": "disabled",
+      "camera": "wrist_cam",
+      "cup": {
+        "center_in_camera_coordinates_m": [
+          0,
+          0,
+          -0.2
+        ],
+        "half_height_m": 0.055,
+        "radius_m": 0.035,
+        "type": "cylinder"
+      },
+      "dynamics": "disabled",
+      "fresh_process_attempts": 3,
+      "hardware_io": "disabled",
+      "pass_conditions": [
+        "all fresh-process attempts satisfy both semantic invariants",
+        "all fresh-process attempts render one or more virtual_cup segmentation pixels",
+        "all fresh-process attempts have identical target-pixel counts and segmentation SHA-256 values"
+      ],
+      "qpos": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "renderer": {
+        "height": 240,
+        "mode": "MuJoCo geom segmentation",
+        "width": 320
+      },
+      "semantic_invariants": [
+        "scene SHA-256 equals model.scene_sha256 before model compilation",
+        "after mj_forward, virtual_cup geom_xpos equals its camera-derived world position",
+        "after mj_forward, virtual_cup center expressed in wrist_cam coordinates equals cup.center_in_camera_coordinates_m"
+      ],
+      "stop_conditions": [
+        "any child process fails",
+        "any semantic invariant fails",
+        "any attempt has zero target pixels",
+        "target-pixel count or segmentation SHA-256 differs between attempts"
+      ]
+    },
+    "script": "research/experiments/run_virtual_wrist_relative_pose_golden_case.py"
+  },
+  "inputs": [
+    {
+      "kind": "configuration",
+      "path": "research/configs/EXP-20260920-001-virtual-wrist-relative-pose-golden-case.json",
+      "sha256": "sha256:41290671116651c1b4ca1305c5599e98e71b95a692f1f0f4c9a2cfea20006a37"
+    },
+    {
+      "kind": "model",
+      "path": "research/sources/mujoco_menagerie_robotstudio_so101/robotstudio_so101/scene.xml",
+      "revision": "da76818e269b82289eba39808e2fb91d679d6994",
+      "sha256": "sha256:65496b0061ca3ddd92b58fe09bd30f6a4a443f137cc42cf8975d5cff23030bfd"
+    }
+  ],
+  "level": "formal",
+  "objective": "Establish one fixed candidate-model wrist-camera relative-pose golden case before any position sweep.",
+  "results": {
+    "criteria": "All three independent attempts must satisfy position invariants and have identical nonzero segmentation output.",
+    "duration_seconds": 1.972784,
+    "metrics": [
+      {
+        "name": "fresh_process_attempts",
+        "unit": "processes",
+        "value": 3
+      },
+      {
+        "name": "world_position_invariants_passed",
+        "unit": "processes",
+        "value": 3
+      },
+      {
+        "name": "camera_relative_position_invariants_passed",
+        "unit": "processes",
+        "value": 3
+      },
+      {
+        "name": "target_pixels",
+        "unit": "pixels",
+        "value": 12090
+      }
+    ],
+    "passed": true
+  },
+  "review": {
+    "note": "A failed gate blocks downstream relative-position sweeps.",
+    "status": "pending_human_review"
+  },
+  "run_id": "EXP-20260920-001-virtual-wrist-relative-pose-golden-case",
+  "runtime": {
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.12.11",
+    "random_seed": null
+  },
+  "schema_version": "experiment-management/run-manifest/v1",
+  "started_at": "2026-09-20T06:06:15.099789Z"
+}

@@ -1,0 +1,8 @@
+{
+  "schema_version": "first-robots/experiment-record/v1",
+  "run_id": "EXP-20260923-029-known-cylinder-depth-agent-chain-golden-case",
+  "kind": "formal_known_cylinder_depth_agent_chain_golden_case",
+  "plan": "research/experiments/EXP-20260923-029-known-cylinder-depth-agent-chain-golden-case.md",
+  "state": "planned_not_executed",
+  "review": {"status": "pending_human_review", "adopted": false}
+}

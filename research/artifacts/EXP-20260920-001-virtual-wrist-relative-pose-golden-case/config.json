@@ -1,0 +1,65 @@
+{
+  "experiment_id": "EXP-20260920-001-virtual-wrist-relative-pose-golden-case",
+  "model": {
+    "license": "Apache-2.0",
+    "repository_revision": "da76818e269b82289eba39808e2fb91d679d6994",
+    "scene_sha256": "sha256:65496b0061ca3ddd92b58fe09bd30f6a4a443f137cc42cf8975d5cff23030bfd"
+  },
+  "non_claims": [
+    "This establishes only a candidate-model golden case for the stated fixed relative pose and current recorded runtime.",
+    "It does not reproduce or explain any earlier raster table, validate a visibility proxy, or establish a workspace coverage boundary.",
+    "It does not establish physical camera calibration, RGB perception, collision safety, reachability, grasping, control, sim-to-real, or multi-robot capability."
+  ],
+  "protocol": {
+    "actuation": "disabled",
+    "camera": "wrist_cam",
+    "cup": {
+      "center_in_camera_coordinates_m": [
+        0,
+        0,
+        -0.2
+      ],
+      "half_height_m": 0.055,
+      "radius_m": 0.035,
+      "type": "cylinder"
+    },
+    "dynamics": "disabled",
+    "fresh_process_attempts": 3,
+    "hardware_io": "disabled",
+    "pass_conditions": [
+      "all fresh-process attempts satisfy both semantic invariants",
+      "all fresh-process attempts render one or more virtual_cup segmentation pixels",
+      "all fresh-process attempts have identical target-pixel counts and segmentation SHA-256 values"
+    ],
+    "qpos": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "renderer": {
+      "height": 240,
+      "mode": "MuJoCo geom segmentation",
+      "width": 320
+    },
+    "semantic_invariants": [
+      "scene SHA-256 equals model.scene_sha256 before model compilation",
+      "after mj_forward, virtual_cup geom_xpos equals its camera-derived world position",
+      "after mj_forward, virtual_cup center expressed in wrist_cam coordinates equals cup.center_in_camera_coordinates_m"
+    ],
+    "stop_conditions": [
+      "any child process fails",
+      "any semantic invariant fails",
+      "any attempt has zero target pixels",
+      "target-pixel count or segmentation SHA-256 differs between attempts"
+    ]
+  },
+  "schema_version": "first-robots/research-config/v1",
+  "source_evidence": [
+    "docs/decisions/DEC-20260831-001-adopt-virtual-so101-model.md",
+    "research/runs/EXP-20260831-004-so101-mujoco-observation-preflight.json"
+  ],
+  "status": "planned_not_executed"
+}

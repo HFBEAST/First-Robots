@@ -1,0 +1,42 @@
+{
+  "blocking_predecessor": {
+    "coordinate_state_path": "research/artifacts/EXP-20260921-012-world-coordinate-contract-review/coordinate-state.json",
+    "coordinate_state_sha256": "sha256:15de29e0b7ae0ddde14a597af039b43c7e4529e4a4be4430383ce369ffc1c190",
+    "result_path": "research/reports/EXP-20260921-013-world-coordinate-xy-review-map.result.json",
+    "result_sha256": "sha256:5899471b9e8a0cc639d21685c3e05b35b36804d2b276550fec4482d68fddcdc6",
+    "run_id": "EXP-20260921-013-world-coordinate-xy-review-map"
+  },
+  "experiment_id": "EXP-20260921-014-world-coordinate-xy-map-layout-repair",
+  "map": {
+    "grid_step_m": 0.1,
+    "image_size_px": [
+      1300,
+      1100
+    ],
+    "title": "Frozen virtual world coordinates - XY review map",
+    "world_xy_bounds_m": {
+      "x": [
+        -0.7,
+        1.1
+      ],
+      "y": [
+        -0.9,
+        0.8
+      ]
+    }
+  },
+  "model": {
+    "scene_sha256": "sha256:65496b0061ca3ddd92b58fe09bd30f6a4a443f137cc42cf8975d5cff23030bfd"
+  },
+  "non_claims": [
+    "This is a repaired presentation of frozen virtual coordinates, not a physical survey, calibration image, perception result, collision map, or reachability proof.",
+    "It does not add or change any world coordinate, side-grasp target, IK, collision, or hardware conclusion."
+  ],
+  "pass_conditions": [
+    "013 result, 012 coordinate-state, and source-model hashes match",
+    "the repaired map includes all 013 coordinate labels within the image bounds without label clipping",
+    "the PNG artifact exists and is nonuniform"
+  ],
+  "schema_version": "first-robots/research-config/v1",
+  "status": "planned_not_executed"
+}

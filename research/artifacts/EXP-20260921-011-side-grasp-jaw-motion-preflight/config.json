@@ -1,0 +1,43 @@
+{
+  "blocking_predecessor": {
+    "result_path": "research/reports/EXP-20260921-010-virtual-laboratory-compiled-geometry-position-audit.result.json",
+    "result_sha256": "sha256:b9ee8d264a2fae14f14de68e41ca3919e2d0464b0f1bcf360b320b25403cc095",
+    "run_id": "EXP-20260921-010-virtual-laboratory-compiled-geometry-position-audit"
+  },
+  "experiment_id": "EXP-20260921-011-side-grasp-jaw-motion-preflight",
+  "model": {
+    "repository_revision": "da76818e269b82289eba39808e2fb91d679d6994",
+    "scene_sha256": "sha256:65496b0061ca3ddd92b58fe09bd30f6a4a443f137cc42cf8975d5cff23030bfd"
+  },
+  "non_claims": [
+    "A representative tip-separation comparison identifies only a candidate-model jaw-motion convention; it is not a validated aperture, contact model, grasp quality, IK, collision-free motion, or hardware result.",
+    "This run intentionally does not define a grasp standoff, end-effector target pose, orientation tolerance, collision criterion, approach trajectory, controller, or hardware command."
+  ],
+  "pass_conditions": [
+    "010 result and source-model hashes match",
+    "at both declared gripper joint limits, the five arm joints equal the fixed static values and all named geometry world positions are finite",
+    "the representative fixed-to-moving tip separations differ between the two static gripper states"
+  ],
+  "schema_version": "first-robots/research-config/v1",
+  "static_conditions": {
+    "actuation": "disabled",
+    "arm_joint_qpos_rad": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "dynamics": "disabled",
+    "fixed_tip_geom": "fixed_jaw_sph_tip1",
+    "gripper_joint": "gripper",
+    "gripper_joint_limits_rad": [
+      -0.174533,
+      1.7453292
+    ],
+    "hardware_io": "disabled",
+    "moving_tip_geom": "moving_jaw_sph_tip1"
+  },
+  "status": "planned_not_executed",
+  "task_intent": "side_grasp_selected_by_human"
+}

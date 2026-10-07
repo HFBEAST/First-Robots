@@ -1,0 +1,105 @@
+{
+  "artifacts": [
+    {
+      "path": "research/artifacts/EXP-20260921-011-side-grasp-jaw-motion-preflight/config.json",
+      "sha256": "sha256:45e15e193f9a47603f3ec5142ad2d051eef8791319a53d8681072b2945b14cd2"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-011-side-grasp-jaw-motion-preflight/terminal-assessment.json",
+      "sha256": "sha256:a2add69abbe1905265ef50ac0adefa2ea3663db74327e0014f25def50debb857"
+    },
+    {
+      "path": "research/experiments/EXP-20260921-011-side-grasp-jaw-motion-preflight.execution.record.json",
+      "sha256": "sha256:217b01ca0265063590d92df1222e820fba534bfecd8888675348d539ece82a22"
+    },
+    {
+      "path": "research/reports/EXP-20260921-011-side-grasp-jaw-motion-preflight.result.json",
+      "sha256": "sha256:159a160e052eb35a1ca5f69faace252dc3b145e10b49c476d11873dff518e07b"
+    }
+  ],
+  "baseline": {
+    "kind": "static_side_grasp_preflight",
+    "reference": "EXP-20260921-010-virtual-laboratory-compiled-geometry-position-audit"
+  },
+  "code": {
+    "commit": "5311e4a85e76bfc96a9ff235d9cd00f2c7a629fb",
+    "dirty_at_start": true,
+    "repository": "H:/0_program/My_action/First-Robots",
+    "traceable": true
+  },
+  "ended_at": "2026-09-21T06:08:28.542165Z",
+  "execution": {
+    "command": [
+      "H:\\0_program\\My_action\\First-Robots\\research\\.venvs\\mrbtp-demo-py312\\Scripts\\python.exe",
+      "research\\experiments\\run_side_grasp_jaw_motion_preflight.py"
+    ],
+    "parameters": {
+      "actuation": "disabled",
+      "arm_joint_qpos_rad": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "dynamics": "disabled",
+      "fixed_tip_geom": "fixed_jaw_sph_tip1",
+      "gripper_joint": "gripper",
+      "gripper_joint_limits_rad": [
+        -0.174533,
+        1.7453292
+      ],
+      "hardware_io": "disabled",
+      "moving_tip_geom": "moving_jaw_sph_tip1"
+    },
+    "script": "research/experiments/run_side_grasp_jaw_motion_preflight.py"
+  },
+  "inputs": [
+    {
+      "kind": "configuration",
+      "path": "research/configs/EXP-20260921-011-side-grasp-jaw-motion-preflight.json",
+      "sha256": "sha256:c261c7121cd501a6c9f964ad4b6a972c00a9488f21bf8792b6a2f2323b346a0c"
+    },
+    {
+      "kind": "predecessor_result",
+      "path": "research/reports/EXP-20260921-010-virtual-laboratory-compiled-geometry-position-audit.result.json",
+      "sha256": "sha256:b9ee8d264a2fae14f14de68e41ca3919e2d0464b0f1bcf360b320b25403cc095"
+    },
+    {
+      "kind": "candidate_model",
+      "path": "research/sources/mujoco_menagerie_robotstudio_so101/robotstudio_so101/scene.xml",
+      "sha256": "sha256:65496b0061ca3ddd92b58fe09bd30f6a4a443f137cc42cf8975d5cff23030bfd"
+    }
+  ],
+  "level": "formal",
+  "objective": "Establish a static candidate-model jaw-motion convention before side-grasp target design.",
+  "results": {
+    "criteria": "Arm state is fixed, named tip positions are finite, and representative tip separation changes across gripper limits.",
+    "duration_seconds": 0.082912,
+    "metrics": [
+      {
+        "name": "representative_tip_separation_lower",
+        "unit": "m",
+        "value": 0.004125555556961576
+      },
+      {
+        "name": "representative_tip_separation_upper",
+        "unit": "m",
+        "value": 0.13335850141266276
+      }
+    ],
+    "passed": true
+  },
+  "review": {
+    "note": "Static jaw-motion convention only; no target pose, IK, collision, grasp, control, or hardware evidence.",
+    "status": "pending_human_review"
+  },
+  "run_id": "EXP-20260921-011-side-grasp-jaw-motion-preflight",
+  "runtime": {
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.12.11",
+    "random_seed": null
+  },
+  "schema_version": "experiment-management/run-manifest/v1",
+  "started_at": "2026-09-21T06:08:28.459760Z"
+}

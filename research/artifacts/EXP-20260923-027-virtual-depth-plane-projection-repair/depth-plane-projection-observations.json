@@ -1,0 +1,98 @@
+{
+  "center_fit_or_fusion": "not_evaluated",
+  "cup_b_world_m_evaluation_only": [
+    0.15,
+    0.0,
+    0.055
+  ],
+  "measurements": {
+    "fixed_depth_01": {
+      "camera_local_surface_point_m": [
+        0.02322580235382126,
+        -0.007724689405120739,
+        -0.6243817210197449
+      ],
+      "component": {
+        "bbox_xywh": [
+          313,
+          205,
+          47,
+          82
+        ],
+        "centroid_pixel_xy": [
+          334.9629522431259,
+          244.64283646888566
+        ],
+        "pixel_count": 3455
+      },
+      "component_count": 1,
+      "depth_sample_count": 3455,
+      "evaluation_only_delta_from_cup_center_m": [
+        0.012223738880528495,
+        -0.018302835106150883,
+        0.016755798865690445
+      ],
+      "evaluation_only_distance_from_cup_center_m": 0.02766171290375501,
+      "foreground_planar_depth_median_m": 0.6243817210197449,
+      "frame": {
+        "dtype": "float32",
+        "frame_id": "fixed_depth_01",
+        "height": 480,
+        "pixel_encoding": "depth_float32_m",
+        "scenario_version": "virtual-depth-contract-v1",
+        "source_kind": "mujoco_depth_render",
+        "width": 640
+      },
+      "surface_point_world_m": [
+        0.1622237388805285,
+        -0.018302835106150883,
+        0.07175579886569045
+      ]
+    },
+    "fixed_depth_02": {
+      "camera_local_surface_point_m": [
+        -0.023152750419772033,
+        -0.0077352537904958225,
+        -0.6242396831512451
+      ],
+      "component": {
+        "bbox_xywh": [
+          280,
+          205,
+          47,
+          82
+        ],
+        "centroid_pixel_xy": [
+          304.0821759259259,
+          244.65104166666666
+        ],
+        "pixel_count": 3456
+      },
+      "component_count": 1,
+      "depth_sample_count": 3456,
+      "evaluation_only_delta_from_cup_center_m": [
+        0.012238543657198425,
+        0.018446554758110967,
+        0.016824707701284018
+      ],
+      "evaluation_only_distance_from_cup_center_m": 0.02780518157694324,
+      "foreground_planar_depth_median_m": 0.6242396831512451,
+      "frame": {
+        "dtype": "float32",
+        "frame_id": "fixed_depth_02",
+        "height": 480,
+        "pixel_encoding": "depth_float32_m",
+        "scenario_version": "virtual-depth-contract-v1",
+        "source_kind": "mujoco_depth_render",
+        "width": 640
+      },
+      "surface_point_world_m": [
+        0.16223854365719842,
+        0.018446554758110967,
+        0.07182470770128402
+      ]
+    }
+  },
+  "repaired_semantics": "depth is distance from camera plane",
+  "source_run": "EXP-20260923-025-virtual-depth-background-detection-golden-case"
+}

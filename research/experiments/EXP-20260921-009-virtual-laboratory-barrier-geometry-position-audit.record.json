@@ -1,0 +1,8 @@
+{
+  "schema_version": "first-robots/experiment-record/v1",
+  "run_id": "EXP-20260921-009-virtual-laboratory-barrier-geometry-position-audit",
+  "kind": "formal_virtual_laboratory_barrier_geometry_position_audit",
+  "plan": "research/experiments/EXP-20260921-009-virtual-laboratory-barrier-geometry-position-audit.md",
+  "state": "planned_not_executed",
+  "review": {"status": "pending_human_review", "adopted": false}
+}

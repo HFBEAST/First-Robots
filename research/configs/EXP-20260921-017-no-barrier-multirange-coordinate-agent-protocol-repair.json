@@ -1,0 +1,16 @@
+{
+  "schema_version": "first-robots/research-config/v1",
+  "experiment_id": "EXP-20260921-017-no-barrier-multirange-coordinate-agent-protocol-repair",
+  "status": "planned_not_executed",
+  "blocking_predecessor": {"run_id": "EXP-20260921-015-no-barrier-coordinate-baseline", "result_path": "research/reports/EXP-20260921-015-no-barrier-coordinate-baseline.result.json", "result_sha256": "sha256:4515289a511ab9892ccef649c1b6a8b4189a0d659f70d58f830fa8c60740063d"},
+  "repair_of": {"run_id": "EXP-20260921-016-no-barrier-multirange-coordinate-agent-protocol", "result_path": "research/reports/EXP-20260921-016-no-barrier-multirange-coordinate-agent-protocol.result.json", "result_sha256": "sha256:afe7d3dce8ed5cde09b2585d858d33df46c6cebe0077cdb4fe57f2df9911c844", "defect": "table_contains_cup used two tabletop half-heights in the required cup-center Z, rejecting the declared on-table cup height."},
+  "model": {"repository_revision": "da76818e269b82289eba39808e2fb91d679d6994", "scene_sha256": "sha256:65496b0061ca3ddd92b58fe09bd30f6a4a443f137cc42cf8975d5cff23030bfd"},
+  "scenario": {
+    "barrier": "absent", "coordinate_contract": "world origin equals candidate-model baseframe and nominal tabletop surface; +X is from base toward initial cup A; +Y is lateral; +Z is upward.", "robot_qpos_rad": [0, 0, 0, 0, 0, 0], "baseframe_world_position_m": [0, 0, 0],
+    "table": {"center_m": [0, 0, -0.025], "half_extents_m": [0.45, 0.45, 0.025], "top_z_m": 0}, "cup_a_center_m": [0.12, 0, 0.055], "cup_radius_m": 0.035, "cup_half_height_m": 0.055,
+    "fixed_cameras": {"fixed_depth_01": {"position_m": [0.45, -0.45, 0.42], "target_m": [0.12, 0, 0.055]}, "fixed_depth_02": {"position_m": [0.45, 0.45, 0.42], "target_m": [0.12, 0, 0.055]}},
+    "target_b_grid_m": {"x": [-0.30, -0.15, 0, 0.15, 0.30], "y": [-0.30, -0.15, 0, 0.15, 0.30], "z": 0.055}, "negative_cases": {"wrong_frame": {"frame_id": "unregistered_camera_frame"}, "outside_table_b_m": [0.42, 0, 0.055]}, "actuation": "disabled", "dynamics": "disabled", "hardware_io": "disabled"
+  },
+  "pass_conditions": ["015 result, 016 failed-result, and source-model hashes match", "the corrected table containment equation accepts the configured on-table A height and all 25 B coordinates", "all 25 two-camera simulator-truth messages restore a common B, pass the contract/table gates, perform the mock A-to-B state update, and are reviewed equal", "wrong-frame and table-external B messages reject without a mock state update"],
+  "non_claims": ["The Detection Agent receives simulator-truth coordinates solely to test message contracts; it is not an RGB/depth detector, calibration result, or visibility claim.", "The Executor is a mock virtual state transition, not MuJoCo robot motion, grasping, IK, collision checking, path planning, safety validation, or hardware control.", "The B grid is a coordinate-coverage set inside the modelled tabletop, not a measured or adopted reachability/safety envelope."]
+}

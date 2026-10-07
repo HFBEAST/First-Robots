@@ -1,0 +1,48 @@
+{
+  "limits": [
+    "Zero simulator segmentation pixels only labels this one static virtual occlusion condition; it is not a physical-camera, calibration, depth-perception, or real blind-spot result.",
+    "The half-reach comparison is a candidate-model position screen. It is not IK, end-effector-pose, collision-free-path, grasp, load, safety, control, or hardware reachability evidence.",
+    "No deterministic IK and collision protocol is defined in this run; grasp reachability is deliberately reported as not evaluated."
+  ],
+  "observations": {
+    "all_depth_values_finite": true,
+    "barrier_is_camera_side_of_cup": true,
+    "barrier_position_invariant": true,
+    "camera_observations": {
+      "fixed_depth_01": {
+        "cup_segmentation_pixels": 59,
+        "finite_depth_fraction": 1.0
+      },
+      "fixed_depth_02": {
+        "cup_segmentation_pixels": 43,
+        "finite_depth_fraction": 1.0
+      },
+      "wrist_cam": {
+        "cup_segmentation_pixels": 0,
+        "finite_depth_fraction": 1.0
+      }
+    },
+    "cup_position_invariant": true,
+    "cup_within_table_bounds": true,
+    "grasp_reachability_assessment": "not_evaluated_no_deterministic_ik_collision_protocol",
+    "observation_terminal_assessment": "barrier_candidate_remains_observable_by_nominal_fixed_depth",
+    "position_screen": {
+      "assessment": "inside_virtual_half_reach_screen",
+      "baseframe_world_position_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "cup_xy_radius_from_base_m": 0.12,
+      "source_run_id": "EXP-20260831-004-so101-mujoco-observation-preflight",
+      "virtual_half_reach_radius_m": 0.23917871793616743
+    }
+  },
+  "review": {
+    "adopted": false,
+    "status": "pending_human_review"
+  },
+  "run_id": "EXP-20260921-005-virtual-laboratory-barrier-record-lifecycle-repair",
+  "schema_version": "first-robots/research-result/v1",
+  "status": "blocked_pending_human_review"
+}

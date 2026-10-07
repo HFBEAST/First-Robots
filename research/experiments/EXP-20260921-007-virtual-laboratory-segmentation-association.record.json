@@ -1,0 +1,8 @@
+{
+  "schema_version": "first-robots/experiment-record/v1",
+  "run_id": "EXP-20260921-007-virtual-laboratory-segmentation-association",
+  "kind": "formal_virtual_laboratory_segmentation_association",
+  "plan": "research/experiments/EXP-20260921-007-virtual-laboratory-segmentation-association.md",
+  "state": "planned_not_executed",
+  "review": {"status": "pending_human_review", "adopted": false}
+}

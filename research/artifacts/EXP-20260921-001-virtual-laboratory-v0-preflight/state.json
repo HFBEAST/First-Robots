@@ -1,0 +1,28 @@
+{
+  "cameras": {
+    "fixed_depth_01": {
+      "cup_segmentation_pixels": 822,
+      "finite_depth_fraction": 1.0
+    },
+    "fixed_depth_02": {
+      "cup_segmentation_pixels": 824,
+      "finite_depth_fraction": 1.0
+    },
+    "wrist_cam": {
+      "cup_segmentation_pixels": 0,
+      "finite_depth_fraction": 1.0
+    }
+  },
+  "coordinate_contract": "world origin is the nominal tabletop surface and candidate robot-base origin; +Z is upward.",
+  "cup_input_center_m": [
+    0.12,
+    0,
+    0.055
+  ],
+  "cup_world_center_m": [
+    0.12,
+    0.0,
+    0.055
+  ],
+  "table_top_z_m": 0.0
+}

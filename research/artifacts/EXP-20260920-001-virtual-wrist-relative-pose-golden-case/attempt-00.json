@@ -1,0 +1,48 @@
+{
+  "input": {
+    "qpos": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "requested_camera_relative_center_m": [
+      0.0,
+      0.0,
+      -0.2
+    ],
+    "requested_world_center_m": [
+      0.5066146950324537,
+      -0.05304151240071902,
+      0.23179458548975482
+    ]
+  },
+  "invariants": {
+    "camera_relative_position": true,
+    "observed_camera_relative_center_m": [
+      6.938893903907228e-18,
+      2.5912431922403556e-17,
+      -0.19999999999999996
+    ],
+    "observed_world_center_m": [
+      0.5066146950324537,
+      -0.05304151240071902,
+      0.23179458548975482
+    ],
+    "world_position": true
+  },
+  "render": {
+    "mask_path": "research/artifacts/EXP-20260920-001-virtual-wrist-relative-pose-golden-case/attempt-00-target-mask.npy",
+    "segmentation_sha256": "sha256:527a6d5c2fbe3ed5194519052401f368079cdf55a14b010580241441d41f614b",
+    "target_pixels": 12090
+  },
+  "run_id": "EXP-20260920-001-virtual-wrist-relative-pose-golden-case",
+  "runtime": {
+    "mujoco": "3.12.0",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.12.11 (main, Aug 18 2025, 19:17:54) [MSC v.1944 64 bit (AMD64)]"
+  },
+  "source_scene_sha256": "sha256:65496b0061ca3ddd92b58fe09bd30f6a4a443f137cc42cf8975d5cff23030bfd"
+}

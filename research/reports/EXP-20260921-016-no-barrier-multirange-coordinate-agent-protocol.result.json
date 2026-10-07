@@ -1,0 +1,618 @@
+{
+  "limits": [
+    "The Detection Agent receives simulator-truth coordinates solely to test message contracts; it is not an RGB/depth detector, calibration result, or visibility claim.",
+    "The Executor is a mock virtual state transition, not MuJoCo robot motion, grasping, IK, collision checking, path planning, safety validation, or hardware control.",
+    "The B grid is a coordinate-coverage set inside the modelled tabletop, not a measured or adopted reachability/safety envelope."
+  ],
+  "observations": {
+    "barrier_absent": true,
+    "coverage": {
+      "map": "research/artifacts/EXP-20260921-016-no-barrier-multirange-coordinate-agent-protocol/target-b-coordinate-coverage.png",
+      "target_count": 25,
+      "x_m": [
+        -0.3,
+        -0.15,
+        0,
+        0.15,
+        0.3
+      ],
+      "y_m": [
+        -0.3,
+        -0.15,
+        0,
+        0.15,
+        0.3
+      ],
+      "z_m": 0.055
+    },
+    "negative_cases": {
+      "outside_table": {
+        "capability_table_contained": false,
+        "coordinator_accepted": true,
+        "coordinator_reason": "accepted",
+        "execution_agent": {
+          "executed": false,
+          "reason": "not_approved_no_state_transition"
+        },
+        "state_unchanged": true
+      },
+      "wrong_frame": {
+        "coordinator_accepted": false,
+        "execution_agent": {
+          "executed": false,
+          "reason": "not_approved_no_state_transition"
+        },
+        "reason": "unregistered_frame",
+        "state_unchanged": true
+      }
+    },
+    "positive_cases": [
+      {
+        "capability_agent": {
+          "table_contained": false
+        },
+        "case_id": "B-01",
+        "coordinate_agent": {
+          "accepted": true,
+          "reason": "accepted"
+        },
+        "evidence_reviewer": {
+          "virtual_state_matches_b": false
+        },
+        "execution_agent": {
+          "executed": false,
+          "reason": "not_approved_no_state_transition"
+        },
+        "target_b_world_m": [
+          -0.3,
+          -0.3,
+          0.055
+        ]
+      },
+      {
+        "capability_agent": {
+          "table_contained": false
+        },
+        "case_id": "B-02",
+        "coordinate_agent": {
+          "accepted": true,
+          "reason": "accepted"
+        },
+        "evidence_reviewer": {
+          "virtual_state_matches_b": false
+        },
+        "execution_agent": {
+          "executed": false,
+          "reason": "not_approved_no_state_transition"
+        },
+        "target_b_world_m": [
+          -0.3,
+          -0.15,
+          0.055
+        ]
+      },
+      {
+        "capability_agent": {
+          "table_contained": false
+        },
+        "case_id": "B-03",
+        "coordinate_agent": {
+          "accepted": true,
+          "reason": "accepted"
+        },
+        "evidence_reviewer": {
+          "virtual_state_matches_b": false
+        },
+        "execution_agent": {
+          "executed": false,
+          "reason": "not_approved_no_state_transition"
+        },
+        "target_b_world_m": [
+          -0.3,
+          0.0,
+          0.055
+        ]
+      },
+      {
+        "capability_agent": {
+          "table_contained": false
+        },
+        "case_id": "B-04",
+        "coordinate_agent": {
+          "accepted": true,
+          "reason": "accepted"
+        },
+        "evidence_reviewer": {
+          "virtual_state_matches_b": false
+        },
+        "execution_agent": {
+          "executed": false,
+          "reason": "not_approved_no_state_transition"
+        },
+        "target_b_world_m": [
+          -0.3,
+          0.15,
+          0.055
+        ]
+      },
+      {
+        "capability_agent": {
+          "table_contained": false
+        },
+        "case_id": "B-05",
+        "coordinate_agent": {
+          "accepted": true,
+          "reason": "accepted"
+        },
+        "evidence_reviewer": {
+          "virtual_state_matches_b": false
+        },
+        "execution_agent": {
+          "executed": false,
+          "reason": "not_approved_no_state_transition"
+        },
+        "target_b_world_m": [
+          -0.3,
+          0.3,
+          0.055
+        ]
+      },
+      {
+        "capability_agent": {
+          "table_contained": false
+        },
+        "case_id": "B-06",
+        "coordinate_agent": {
+          "accepted": true,
+          "reason": "accepted"
+        },
+        "evidence_reviewer": {
+          "virtual_state_matches_b": false
+        },
+        "execution_agent": {
+          "executed": false,
+          "reason": "not_approved_no_state_transition"
+        },
+        "target_b_world_m": [
+          -0.15,
+          -0.3,
+          0.055
+        ]
+      },
+      {
+        "capability_agent": {
+          "table_contained": false
+        },
+        "case_id": "B-07",
+        "coordinate_agent": {
+          "accepted": true,
+          "reason": "accepted"
+        },
+        "evidence_reviewer": {
+          "virtual_state_matches_b": false
+        },
+        "execution_agent": {
+          "executed": false,
+          "reason": "not_approved_no_state_transition"
+        },
+        "target_b_world_m": [
+          -0.15,
+          -0.15,
+          0.055
+        ]
+      },
+      {
+        "capability_agent": {
+          "table_contained": false
+        },
+        "case_id": "B-08",
+        "coordinate_agent": {
+          "accepted": true,
+          "reason": "accepted"
+        },
+        "evidence_reviewer": {
+          "virtual_state_matches_b": false
+        },
+        "execution_agent": {
+          "executed": false,
+          "reason": "not_approved_no_state_transition"
+        },
+        "target_b_world_m": [
+          -0.15,
+          0.0,
+          0.055
+        ]
+      },
+      {
+        "capability_agent": {
+          "table_contained": false
+        },
+        "case_id": "B-09",
+        "coordinate_agent": {
+          "accepted": true,
+          "reason": "accepted"
+        },
+        "evidence_reviewer": {
+          "virtual_state_matches_b": false
+        },
+        "execution_agent": {
+          "executed": false,
+          "reason": "not_approved_no_state_transition"
+        },
+        "target_b_world_m": [
+          -0.15,
+          0.15,
+          0.055
+        ]
+      },
+      {
+        "capability_agent": {
+          "table_contained": false
+        },
+        "case_id": "B-10",
+        "coordinate_agent": {
+          "accepted": true,
+          "reason": "accepted"
+        },
+        "evidence_reviewer": {
+          "virtual_state_matches_b": false
+        },
+        "execution_agent": {
+          "executed": false,
+          "reason": "not_approved_no_state_transition"
+        },
+        "target_b_world_m": [
+          -0.15,
+          0.3,
+          0.055
+        ]
+      },
+      {
+        "capability_agent": {
+          "table_contained": false
+        },
+        "case_id": "B-11",
+        "coordinate_agent": {
+          "accepted": true,
+          "reason": "accepted"
+        },
+        "evidence_reviewer": {
+          "virtual_state_matches_b": false
+        },
+        "execution_agent": {
+          "executed": false,
+          "reason": "not_approved_no_state_transition"
+        },
+        "target_b_world_m": [
+          0.0,
+          -0.3,
+          0.055
+        ]
+      },
+      {
+        "capability_agent": {
+          "table_contained": false
+        },
+        "case_id": "B-12",
+        "coordinate_agent": {
+          "accepted": true,
+          "reason": "accepted"
+        },
+        "evidence_reviewer": {
+          "virtual_state_matches_b": false
+        },
+        "execution_agent": {
+          "executed": false,
+          "reason": "not_approved_no_state_transition"
+        },
+        "target_b_world_m": [
+          0.0,
+          -0.15,
+          0.055
+        ]
+      },
+      {
+        "capability_agent": {
+          "table_contained": false
+        },
+        "case_id": "B-13",
+        "coordinate_agent": {
+          "accepted": true,
+          "reason": "accepted"
+        },
+        "evidence_reviewer": {
+          "virtual_state_matches_b": false
+        },
+        "execution_agent": {
+          "executed": false,
+          "reason": "not_approved_no_state_transition"
+        },
+        "target_b_world_m": [
+          0.0,
+          0.0,
+          0.055
+        ]
+      },
+      {
+        "capability_agent": {
+          "table_contained": false
+        },
+        "case_id": "B-14",
+        "coordinate_agent": {
+          "accepted": true,
+          "reason": "accepted"
+        },
+        "evidence_reviewer": {
+          "virtual_state_matches_b": false
+        },
+        "execution_agent": {
+          "executed": false,
+          "reason": "not_approved_no_state_transition"
+        },
+        "target_b_world_m": [
+          0.0,
+          0.15,
+          0.055
+        ]
+      },
+      {
+        "capability_agent": {
+          "table_contained": false
+        },
+        "case_id": "B-15",
+        "coordinate_agent": {
+          "accepted": true,
+          "reason": "accepted"
+        },
+        "evidence_reviewer": {
+          "virtual_state_matches_b": false
+        },
+        "execution_agent": {
+          "executed": false,
+          "reason": "not_approved_no_state_transition"
+        },
+        "target_b_world_m": [
+          0.0,
+          0.3,
+          0.055
+        ]
+      },
+      {
+        "capability_agent": {
+          "table_contained": false
+        },
+        "case_id": "B-16",
+        "coordinate_agent": {
+          "accepted": true,
+          "reason": "accepted"
+        },
+        "evidence_reviewer": {
+          "virtual_state_matches_b": false
+        },
+        "execution_agent": {
+          "executed": false,
+          "reason": "not_approved_no_state_transition"
+        },
+        "target_b_world_m": [
+          0.15,
+          -0.3,
+          0.055
+        ]
+      },
+      {
+        "capability_agent": {
+          "table_contained": false
+        },
+        "case_id": "B-17",
+        "coordinate_agent": {
+          "accepted": true,
+          "reason": "accepted"
+        },
+        "evidence_reviewer": {
+          "virtual_state_matches_b": false
+        },
+        "execution_agent": {
+          "executed": false,
+          "reason": "not_approved_no_state_transition"
+        },
+        "target_b_world_m": [
+          0.15,
+          -0.15,
+          0.055
+        ]
+      },
+      {
+        "capability_agent": {
+          "table_contained": false
+        },
+        "case_id": "B-18",
+        "coordinate_agent": {
+          "accepted": true,
+          "reason": "accepted"
+        },
+        "evidence_reviewer": {
+          "virtual_state_matches_b": false
+        },
+        "execution_agent": {
+          "executed": false,
+          "reason": "not_approved_no_state_transition"
+        },
+        "target_b_world_m": [
+          0.15,
+          0.0,
+          0.055
+        ]
+      },
+      {
+        "capability_agent": {
+          "table_contained": false
+        },
+        "case_id": "B-19",
+        "coordinate_agent": {
+          "accepted": true,
+          "reason": "accepted"
+        },
+        "evidence_reviewer": {
+          "virtual_state_matches_b": false
+        },
+        "execution_agent": {
+          "executed": false,
+          "reason": "not_approved_no_state_transition"
+        },
+        "target_b_world_m": [
+          0.15,
+          0.15,
+          0.055
+        ]
+      },
+      {
+        "capability_agent": {
+          "table_contained": false
+        },
+        "case_id": "B-20",
+        "coordinate_agent": {
+          "accepted": true,
+          "reason": "accepted"
+        },
+        "evidence_reviewer": {
+          "virtual_state_matches_b": false
+        },
+        "execution_agent": {
+          "executed": false,
+          "reason": "not_approved_no_state_transition"
+        },
+        "target_b_world_m": [
+          0.15,
+          0.3,
+          0.055
+        ]
+      },
+      {
+        "capability_agent": {
+          "table_contained": false
+        },
+        "case_id": "B-21",
+        "coordinate_agent": {
+          "accepted": true,
+          "reason": "accepted"
+        },
+        "evidence_reviewer": {
+          "virtual_state_matches_b": false
+        },
+        "execution_agent": {
+          "executed": false,
+          "reason": "not_approved_no_state_transition"
+        },
+        "target_b_world_m": [
+          0.3,
+          -0.3,
+          0.055
+        ]
+      },
+      {
+        "capability_agent": {
+          "table_contained": false
+        },
+        "case_id": "B-22",
+        "coordinate_agent": {
+          "accepted": true,
+          "reason": "accepted"
+        },
+        "evidence_reviewer": {
+          "virtual_state_matches_b": false
+        },
+        "execution_agent": {
+          "executed": false,
+          "reason": "not_approved_no_state_transition"
+        },
+        "target_b_world_m": [
+          0.3,
+          -0.15,
+          0.055
+        ]
+      },
+      {
+        "capability_agent": {
+          "table_contained": false
+        },
+        "case_id": "B-23",
+        "coordinate_agent": {
+          "accepted": true,
+          "reason": "accepted"
+        },
+        "evidence_reviewer": {
+          "virtual_state_matches_b": false
+        },
+        "execution_agent": {
+          "executed": false,
+          "reason": "not_approved_no_state_transition"
+        },
+        "target_b_world_m": [
+          0.3,
+          0.0,
+          0.055
+        ]
+      },
+      {
+        "capability_agent": {
+          "table_contained": false
+        },
+        "case_id": "B-24",
+        "coordinate_agent": {
+          "accepted": true,
+          "reason": "accepted"
+        },
+        "evidence_reviewer": {
+          "virtual_state_matches_b": false
+        },
+        "execution_agent": {
+          "executed": false,
+          "reason": "not_approved_no_state_transition"
+        },
+        "target_b_world_m": [
+          0.3,
+          0.15,
+          0.055
+        ]
+      },
+      {
+        "capability_agent": {
+          "table_contained": false
+        },
+        "case_id": "B-25",
+        "coordinate_agent": {
+          "accepted": true,
+          "reason": "accepted"
+        },
+        "evidence_reviewer": {
+          "virtual_state_matches_b": false
+        },
+        "execution_agent": {
+          "executed": false,
+          "reason": "not_approved_no_state_transition"
+        },
+        "target_b_world_m": [
+          0.3,
+          0.3,
+          0.055
+        ]
+      }
+    ],
+    "roles": {
+      "capability": "table containment only",
+      "coordinate": "compiled-extrinsic inverse transform",
+      "coordinator": "frame/version/pair agreement gate",
+      "detection": "simulator-truth camera-coordinate emitter",
+      "execution": "mock in-memory state transition only",
+      "reviewer": "final virtual state equality"
+    },
+    "scenario_version": "EXP-20260921-016-no-barrier-multirange-coordinate-agent-protocol:coordinate-contract-v1"
+  },
+  "review": {
+    "adopted": false,
+    "status": "pending_human_review"
+  },
+  "run_id": "EXP-20260921-016-no-barrier-multirange-coordinate-agent-protocol",
+  "schema_version": "first-robots/research-result/v1",
+  "status": "blocked_pending_human_review"
+}

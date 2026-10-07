@@ -1,0 +1,201 @@
+{
+  "artifacts": [
+    {
+      "path": "research/artifacts/EXP-20260921-015-no-barrier-coordinate-baseline/config.json",
+      "sha256": "sha256:b6254cb7ac118da593848276c1702f0e59abe6179eb5a647b8b54251dddaf388"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-015-no-barrier-coordinate-baseline/coordinate-state.json",
+      "sha256": "sha256:f843c6bcc4f831b9edb95489bf0502db199ce1933c0ff85c0d557ec68412b173"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-015-no-barrier-coordinate-baseline/review_isometric-rgb.png",
+      "sha256": "sha256:e1d035f1b0b86c0dc8e1b858c46ca2bfb9a59a4130b0cfd2f88e1e9ae21ada65"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-015-no-barrier-coordinate-baseline/review_top-rgb.png",
+      "sha256": "sha256:0aed8bf34098137fb0b252e1373b32aaf5851a6574125432c8793289ffe4ec9f"
+    },
+    {
+      "path": "research/experiments/EXP-20260921-015-no-barrier-coordinate-baseline.execution.record.json",
+      "sha256": "sha256:e6e7ca2354be667b63c90247048d28be11ed517a11c53605911b5fd3fa31e54a"
+    },
+    {
+      "path": "research/reports/EXP-20260921-015-no-barrier-coordinate-baseline.result.json",
+      "sha256": "sha256:4515289a511ab9892ccef649c1b6a8b4189a0d659f70d58f830fa8c60740063d"
+    }
+  ],
+  "baseline": {
+    "kind": "no_barrier_coordinate_baseline",
+    "reference": "EXP-20260921-012-world-coordinate-contract-review"
+  },
+  "code": {
+    "commit": "5311e4a85e76bfc96a9ff235d9cd00f2c7a629fb",
+    "dirty_at_start": true,
+    "repository": "H:/0_program/My_action/First-Robots",
+    "traceable": true
+  },
+  "ended_at": "2026-09-21T13:56:37.098070Z",
+  "execution": {
+    "command": [
+      "H:\\0_program\\My_action\\First-Robots\\research\\.venvs\\mrbtp-demo-py312\\Scripts\\python.exe",
+      "research\\experiments\\run_no_barrier_coordinate_baseline.py"
+    ],
+    "parameters": {
+      "actuation": "disabled",
+      "barrier": "absent",
+      "baseframe_world_position_m": [
+        0,
+        0,
+        0
+      ],
+      "coordinate_contract": "world origin equals candidate-model baseframe and nominal tabletop surface; +X is from base toward initial cup A; +Y is lateral; +Z is upward.",
+      "cup_a": {
+        "center_m": [
+          0.12,
+          0,
+          0.055
+        ],
+        "half_height_m": 0.055,
+        "name": "vlab_cup",
+        "radius_m": 0.035,
+        "rgba": [
+          0.9,
+          0.1,
+          0.7,
+          1
+        ]
+      },
+      "dynamics": "disabled",
+      "fixed_cameras": {
+        "fixed_depth_01": {
+          "position_m": [
+            0.45,
+            -0.45,
+            0.42
+          ],
+          "target_m": [
+            0.12,
+            0,
+            0.055
+          ]
+        },
+        "fixed_depth_02": {
+          "position_m": [
+            0.45,
+            0.45,
+            0.42
+          ],
+          "target_m": [
+            0.12,
+            0,
+            0.055
+          ]
+        }
+      },
+      "hardware_io": "disabled",
+      "renderer": {
+        "height": 480,
+        "width": 640
+      },
+      "review_cameras": {
+        "review_isometric": {
+          "position_m": [
+            0.55,
+            -0.65,
+            0.5
+          ],
+          "target_m": [
+            0.1,
+            0,
+            0.06
+          ]
+        },
+        "review_top": {
+          "position_m": [
+            0.12,
+            -0.1,
+            0.85
+          ],
+          "target_m": [
+            0.12,
+            0,
+            0
+          ]
+        }
+      },
+      "robot_qpos_rad": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "table": {
+        "center_m": [
+          0,
+          0,
+          -0.025
+        ],
+        "half_extents_m": [
+          0.45,
+          0.45,
+          0.025
+        ],
+        "name": "vlab_table",
+        "rgba": [
+          0.35,
+          0.3,
+          0.22,
+          1
+        ],
+        "top_z_m": 0
+      }
+    },
+    "script": "research/experiments/run_no_barrier_coordinate_baseline.py"
+  },
+  "inputs": [
+    {
+      "kind": "configuration",
+      "path": "research/configs/EXP-20260921-015-no-barrier-coordinate-baseline.json",
+      "sha256": "sha256:936a7ea0bf3d3e05cd7428bebc5eef2fa81a72317ea0697387d7eed4f67a6327"
+    },
+    {
+      "kind": "predecessor_result",
+      "path": "research/reports/EXP-20260921-012-world-coordinate-contract-review.result.json",
+      "sha256": "sha256:6cc48b93fd35d1ca932d2df5a16890e178e35b9a7b9ee40228f6dc1ecd45afc8"
+    },
+    {
+      "kind": "candidate_model",
+      "path": "research/sources/mujoco_menagerie_robotstudio_so101/robotstudio_so101/scene.xml",
+      "sha256": "sha256:65496b0061ca3ddd92b58fe09bd30f6a4a443f137cc42cf8975d5cff23030bfd"
+    }
+  ],
+  "level": "formal",
+  "objective": "Freeze no-barrier world coordinates before multi-range coordinate and Agent protocol simulation.",
+  "results": {
+    "criteria": "No barrier compiles; frozen coordinates/cameras match; review images complete.",
+    "duration_seconds": 0.479259,
+    "metrics": [
+      {
+        "name": "no_barrier_coordinate_baseline_valid",
+        "unit": "boolean",
+        "value": true
+      }
+    ],
+    "passed": true
+  },
+  "review": {
+    "note": "No-barrier coordinate baseline only; no transfer or robot action.",
+    "status": "pending_human_review"
+  },
+  "run_id": "EXP-20260921-015-no-barrier-coordinate-baseline",
+  "runtime": {
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.12.11",
+    "random_seed": null
+  },
+  "schema_version": "experiment-management/run-manifest/v1",
+  "started_at": "2026-09-21T13:56:36.618165Z"
+}

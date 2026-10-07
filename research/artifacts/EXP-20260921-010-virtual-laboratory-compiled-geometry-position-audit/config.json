@@ -1,0 +1,30 @@
+{
+  "blocking_predecessor": {
+    "result_path": "research/reports/EXP-20260921-008-virtual-laboratory-occlusion-rgb-color-probe.result.json",
+    "result_sha256": "sha256:5b45d7a79a3fef2175f7acd3405b5239c7cd3f513e78bbbc816b312391e1191b",
+    "run_id": "EXP-20260921-008-virtual-laboratory-occlusion-rgb-color-probe"
+  },
+  "experiment_id": "EXP-20260921-010-virtual-laboratory-compiled-geometry-position-audit",
+  "model": {
+    "scene_sha256": "sha256:65496b0061ca3ddd92b58fe09bd30f6a4a443f137cc42cf8975d5cff23030bfd"
+  },
+  "non_claims": [
+    "Compiled-scene equality and a position-only screen do not prove IK, end-effector pose, collision freedom, trajectory feasibility, grasp, load safety, control, or hardware reachability.",
+    "This adds no new visibility measurement; the separately recorded 008 artificial-color RGB result remains limited to a static virtual raster observation."
+  ],
+  "pass_conditions": [
+    "008 result, reference/probe config, source-model, and half-reach source-run hashes match",
+    "the two separately compiled scenes have equal qpos, world positions, sizes, and types for vlab_table, vlab_cup, and vlab_barrier; fixed camera positions, quaternions, fovy, and resolution also match",
+    "the probe cup XY radial position from candidate-model baseframe is no greater than the frozen virtual half-reach radius"
+  ],
+  "position_screen_provenance": {
+    "source_run_id": "EXP-20260831-004-so101-mujoco-observation-preflight",
+    "source_run_path": "research/runs/EXP-20260831-004-so101-mujoco-observation-preflight.json",
+    "source_run_sha256": "sha256:2dc2c8ce727aa6344c29180fff86678900b1a220e9201c22b76a4c3bc324afed",
+    "virtual_half_reach_radius_m": 0.23917871793616743
+  },
+  "probe_config_path": "research/configs/EXP-20260921-008-virtual-laboratory-occlusion-rgb-color-probe.json",
+  "reference_config_path": "research/configs/EXP-20260921-006-virtual-laboratory-barrier-width-isolation.json",
+  "schema_version": "first-robots/research-config/v1",
+  "status": "planned_not_executed"
+}

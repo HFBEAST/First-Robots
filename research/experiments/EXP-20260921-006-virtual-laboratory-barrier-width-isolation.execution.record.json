@@ -1,0 +1,13 @@
+{
+  "kind": "formal_virtual_laboratory_barrier_width_isolation",
+  "result": {
+    "path": "research/reports/EXP-20260921-006-virtual-laboratory-barrier-width-isolation.result.json",
+    "sha256": "sha256:5a66da6ca492ac8896ace7eb9c5a92705f67ebe2b145203f2b7fd8ac7f228211"
+  },
+  "review": {
+    "adopted": false,
+    "status": "pending_human_review"
+  },
+  "run_id": "EXP-20260921-006-virtual-laboratory-barrier-width-isolation",
+  "schema_version": "first-robots/experiment-record/v1"
+}

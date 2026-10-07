@@ -1,0 +1,12 @@
+{
+  "kind": "formal_virtual_laboratory_not_observable_candidate",
+  "result": {
+    "path": "research/reports/EXP-20260921-003-virtual-laboratory-not-observable-candidate.result.json",
+    "sha256": "sha256:120ad10eee2b17aa5dd46d2cbfa826cc060584d3ab630133a0e6c246bb6d2781"
+  },
+  "review": {
+    "status": "pending_human_review"
+  },
+  "run_id": "EXP-20260921-003-virtual-laboratory-not-observable-candidate",
+  "schema_version": "first-robots/experiment-record/v1"
+}

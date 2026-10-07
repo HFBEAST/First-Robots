@@ -1,0 +1,13 @@
+{
+  "kind": "formal_virtual_laboratory_barrier_record_lifecycle_repair",
+  "result": {
+    "path": "research/reports/EXP-20260921-005-virtual-laboratory-barrier-record-lifecycle-repair.result.json",
+    "sha256": "sha256:fa93c883142e9ce1f288e2440a60c6276becb648d48f23e4ef84e6e89c93c4e4"
+  },
+  "review": {
+    "adopted": false,
+    "status": "pending_human_review"
+  },
+  "run_id": "EXP-20260921-005-virtual-laboratory-barrier-record-lifecycle-repair",
+  "schema_version": "first-robots/experiment-record/v1"
+}

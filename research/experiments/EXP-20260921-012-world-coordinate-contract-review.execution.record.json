@@ -1,0 +1,13 @@
+{
+  "kind": "formal_world_coordinate_contract_review",
+  "result": {
+    "path": "research/reports/EXP-20260921-012-world-coordinate-contract-review.result.json",
+    "sha256": "sha256:6cc48b93fd35d1ca932d2df5a16890e178e35b9a7b9ee40228f6dc1ecd45afc8"
+  },
+  "review": {
+    "adopted": false,
+    "status": "pending_human_review"
+  },
+  "run_id": "EXP-20260921-012-world-coordinate-contract-review",
+  "schema_version": "first-robots/experiment-record/v1"
+}

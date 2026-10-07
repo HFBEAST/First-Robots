@@ -1,0 +1,112 @@
+{
+  "blocking_predecessor": {
+    "result_path": "research/reports/EXP-20260921-006-virtual-laboratory-barrier-width-isolation.result.json",
+    "result_sha256": "sha256:5a66da6ca492ac8896ace7eb9c5a92705f67ebe2b145203f2b7fd8ac7f228211",
+    "run_id": "EXP-20260921-006-virtual-laboratory-barrier-width-isolation"
+  },
+  "experiment_id": "EXP-20260921-007-virtual-laboratory-segmentation-association",
+  "frozen_geometry": {
+    "actuation": "disabled",
+    "barrier": {
+      "center_m": [
+        0.28,
+        0,
+        0.16
+      ],
+      "half_extents_m": [
+        0.01,
+        0.46,
+        0.16
+      ],
+      "rgba": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "cup": {
+      "center_m": [
+        0.12,
+        0,
+        0.055
+      ],
+      "half_height_m": 0.055,
+      "radius_m": 0.035,
+      "rgba": [
+        1,
+        0,
+        0,
+        1
+      ]
+    },
+    "dynamics": "disabled",
+    "fixed_cameras": {
+      "fixed_depth_01": {
+        "position_m": [
+          0.45,
+          -0.45,
+          0.42
+        ],
+        "target_m": [
+          0.12,
+          0,
+          0.055
+        ]
+      },
+      "fixed_depth_02": {
+        "position_m": [
+          0.45,
+          0.45,
+          0.42
+        ],
+        "target_m": [
+          0.12,
+          0,
+          0.055
+        ]
+      }
+    },
+    "hardware_io": "disabled",
+    "qpos": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "renderer": {
+      "height": 240,
+      "width": 320
+    },
+    "table": {
+      "center_m": [
+        0,
+        0,
+        -0.025
+      ],
+      "half_extents_m": [
+        0.45,
+        0.45,
+        0.025
+      ]
+    }
+  },
+  "model": {
+    "repository_revision": "da76818e269b82289eba39808e2fb91d679d6994",
+    "scene_sha256": "sha256:65496b0061ca3ddd92b58fe09bd30f6a4a443f137cc42cf8975d5cff23030bfd"
+  },
+  "non_claims": [
+    "This checks only MuJoCo renderer label-to-RGB association under deliberate display colors; it is not a physical perception, calibration, visibility, or camera claim.",
+    "This does not establish the reason for any prior nonzero cup-pixel result and does not alter geometry, reachability, collision, or grasp evidence."
+  ],
+  "pass_conditions": [
+    "006 result and source model hashes match",
+    "all geometry and camera fields match 006 except configured display rgba",
+    "for each fixed camera, every segmentation-labeled cup pixel has red channel strictly greater than blue, and every barrier pixel has blue strictly greater than red",
+    "RGB and segmentation artifacts exist for both fixed cameras"
+  ],
+  "schema_version": "first-robots/research-config/v1",
+  "status": "planned_not_executed"
+}

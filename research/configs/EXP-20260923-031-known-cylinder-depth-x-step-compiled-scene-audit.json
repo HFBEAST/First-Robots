@@ -1,0 +1,10 @@
+{
+  "schema_version": "first-robots/research-config/v1",
+  "experiment_id": "EXP-20260923-031-known-cylinder-depth-x-step-compiled-scene-audit",
+  "status": "planned_not_executed",
+  "blocking_predecessor": {"run_id": "EXP-20260923-030-known-cylinder-depth-x-step-agent-chain", "result_path": "research/reports/EXP-20260923-030-known-cylinder-depth-x-step-agent-chain.result.json", "result_sha256": "sha256:d8b067303ced302a58ed2b72d297eebbc63c5bdf3f7420ccb915d3f5a733b65f"},
+  "model": {"repository_revision": "da76818e269b82289eba39808e2fb91d679d6994", "scene_sha256": "sha256:65496b0061ca3ddd92b58fe09bd30f6a4a443f137cc42cf8975d5cff23030bfd"},
+  "scenario": {"x_values_m": [0.125, 0.15, 0.175], "frozen_y_m": 0.0, "frozen_center_z_m": 0.055, "table": {"center_m": [0, 0, -0.025], "half_extents_m": [0.45, 0.45, 0.025]}, "cup": {"radius_m": 0.035, "half_height_m": 0.055}, "robot_qpos_rad": [0, 0, 0, 0, 0, 0], "camera_fovy_degrees": 60.0, "camera_resolution_px": [640, 480], "fixed_cameras": {"fixed_depth_01": {"position_m": [0.45, -0.45, 0.42], "target_m": [0.12, 0, 0.055]}, "fixed_depth_02": {"position_m": [0.45, 0.45, 0.42], "target_m": [0.12, 0, 0.055]}}, "actuation": "disabled", "dynamics": "disabled", "hardware_io": "disabled"},
+  "pass_conditions": ["030 result and source-model hashes match", "for every declared X value, a newly compiled scene contains no barrier and has cup/table/camera/robot state equal to its frozen configuration", "the compiled cup centers have the declared X sequence and identical frozen Y/Z; this compiled check is included in the pass predicate", "this audit only repairs the missing 030 pass-predicate conjunct and does not re-interpret its perception or agent-chain outcomes"],
+  "non_claims": ["Compiled-scene equality establishes only the stated virtual geometry/state configuration, not RGB/depth observability, calibration, accuracy, reachability, collision, grasping, planning, safety, robot control, or hardware behavior.", "This audit does not rerun 030 perception or alter its formal result; it supplies the missing explicit compiled-configuration gate for later research."]
+}

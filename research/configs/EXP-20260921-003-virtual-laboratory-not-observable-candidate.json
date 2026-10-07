@@ -1,0 +1,8 @@
+{
+  "schema_version":"first-robots/research-config/v1", "experiment_id":"EXP-20260921-003-virtual-laboratory-not-observable-candidate", "status":"planned_not_executed",
+  "blocking_predecessor":{"run_id":"EXP-20260921-001-virtual-laboratory-v0-preflight","result_path":"research/reports/EXP-20260921-001-virtual-laboratory-v0-preflight.result.json","result_sha256":"sha256:51a6a0c88993ed0c6bc3e3838b4be1bde178f3e41751053c3165350480ed7a0d"},
+  "model":{"repository_revision":"da76818e269b82289eba39808e2fb91d679d6994","scene_sha256":"sha256:65496b0061ca3ddd92b58fe09bd30f6a4a443f137cc42cf8975d5cff23030bfd"},
+  "scenario":{"qpos":[0,0,0,0,0,0],"table":{"half_extents_m":[0.45,0.45,0.025],"center_m":[0,0,-0.025]},"cup_center_m":[-0.40,0,0.055],"cup_radius_m":0.035,"cup_half_height_m":0.055,"fixed_cameras":{"fixed_depth_01":{"position_m":[0.45,-0.45,0.42],"target_m":[0.12,0,0.055]},"fixed_depth_02":{"position_m":[0.45,0.45,0.42],"target_m":[0.12,0,0.055]}},"renderer":{"width":320,"height":240},"actuation":"disabled","dynamics":"disabled","hardware_io":"disabled"},
+  "pass_conditions":["predecessor and source hashes match","cup is within tabletop XY bounds and has correct world position","all camera artifacts exist with finite depth","both fixed cameras have zero cup segmentation pixels"],
+  "non_claims":["This is one virtual candidate failure scene, not a real-world blind spot or camera calibration claim.","If either fixed camera sees the cup, the run establishes only that this candidate did not create the requested failure state."]
+}

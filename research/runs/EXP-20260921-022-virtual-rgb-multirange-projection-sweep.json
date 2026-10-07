@@ -1,0 +1,595 @@
+{
+  "artifacts": [
+    {
+      "path": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-01-fixed_depth_01-mask.png",
+      "sha256": "sha256:d07bd38abbad4291769dc510888fc327843c6dfad8208f69a1ce792fdf04616a"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-01-fixed_depth_01-rgb.png",
+      "sha256": "sha256:82c2a96f9def54a09bef20cdec495df4b969be5c6a8d6c05f84d9c7d5afe2269"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-01-fixed_depth_02-mask.png",
+      "sha256": "sha256:8afaa00a089391ef7a8ff381e453c7f8ce19f84ebee547fa8c126128c57abca6"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-01-fixed_depth_02-rgb.png",
+      "sha256": "sha256:ad63f0563f0690788cf5f45ed8f062ed1877534a7e955fa1d659415a90c73f0e"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-02-fixed_depth_01-mask.png",
+      "sha256": "sha256:648c9ff2785b1c6071f773a9f4001d6ec3f227726374278397a1de02f99c18aa"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-02-fixed_depth_01-rgb.png",
+      "sha256": "sha256:9ec1233240f4fd29daad8f1db074059757f7c1c0a07bb56c225ec1270293498f"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-02-fixed_depth_02-mask.png",
+      "sha256": "sha256:09a21643c7d4a3de844fcc496fef588aba8bdd38fcc1e29297b9075764da32af"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-02-fixed_depth_02-rgb.png",
+      "sha256": "sha256:2f9e1ce5bfd72ea3df0f958a74f091e8a02477163847e8381acee7ec996f7290"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-03-fixed_depth_01-mask.png",
+      "sha256": "sha256:55ce419b96ce687dd573a508af911caf31a658d94c79e768c96bfe85bba673bd"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-03-fixed_depth_01-rgb.png",
+      "sha256": "sha256:8ab789679d260d7aa492ccd6c186adfbffa283f3d6de05e3e852d92c2d853c90"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-03-fixed_depth_02-mask.png",
+      "sha256": "sha256:5afd12e00e0dc628aa5745967a048bbc07c179ee01cfd2318e0e0305e4bb9c6c"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-03-fixed_depth_02-rgb.png",
+      "sha256": "sha256:8a4abd4c6c141763396e9c3265dc6dcbda5d02c7eb176d82dc306e3a13a99506"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-04-fixed_depth_01-mask.png",
+      "sha256": "sha256:3c2b4ef1bd7592f008d01db5274f329f538031b42202536aa4f9ae9cdd33d47b"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-04-fixed_depth_01-rgb.png",
+      "sha256": "sha256:0c6340935540921d9f58b15614446ef767312eb1e7cbb14a6ca75ff91b54967a"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-04-fixed_depth_02-mask.png",
+      "sha256": "sha256:d1dbe6d250de8bc9f712b14ba5ac6809c2e08900d336b6fcdf3f4dc0a46f4501"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-04-fixed_depth_02-rgb.png",
+      "sha256": "sha256:3a44b3cb804fd39c4f9ead76a3d3a7a51e270094ae2b4ed6ae2b1b0f878fd969"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-05-fixed_depth_01-mask.png",
+      "sha256": "sha256:e131738abfb58d73df4f92cd5ff0c9af75829a09b22bfe19aaaf91d958e290a1"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-05-fixed_depth_01-rgb.png",
+      "sha256": "sha256:51de0d06b7fcd0aae4fe9f2bbfd632e3866ab20c380bc3014e1b779f452dcb50"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-05-fixed_depth_02-mask.png",
+      "sha256": "sha256:0b01c9be1a5c767340cf51099a05fb786f509df615e401b2f098017bb619eb40"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-05-fixed_depth_02-rgb.png",
+      "sha256": "sha256:39b4b4bf01ee1486e72f31855ce430678970abe64148c6aad190569a7d4fd71c"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-06-fixed_depth_01-mask.png",
+      "sha256": "sha256:41dd68c4ad6866cd9c840a56e8afd779ad0a8988ae654d60757d756f05b10449"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-06-fixed_depth_01-rgb.png",
+      "sha256": "sha256:7f5036b8c2b9a3e17b944276667f8d52ab9222317c18a5708301007ece57b904"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-06-fixed_depth_02-mask.png",
+      "sha256": "sha256:32694080af5c22660185d8944ef35849a1a2187863f95836dcdea77e0af448f1"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-06-fixed_depth_02-rgb.png",
+      "sha256": "sha256:0ae95d7ffe8dc628d1ad52518fa88af95f16f164fcb49691062f852aab31fb1f"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-07-fixed_depth_01-mask.png",
+      "sha256": "sha256:cf77be385c739ffeac4b30f14303bcfb3b3e7b717a28e20c3f80590058d32534"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-07-fixed_depth_01-rgb.png",
+      "sha256": "sha256:dcf08b26873ab3cc8f56fb7b53a182e570358ae0704409cfd5f909ab21ff07e6"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-07-fixed_depth_02-mask.png",
+      "sha256": "sha256:ef3cc5576d1da30ef4c84c6ec648bc9529f77994a66d5df08c07cf97a7e39c96"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-07-fixed_depth_02-rgb.png",
+      "sha256": "sha256:fe0311e6923586364bd1556b3ef09b2ba605a85ef251db6105e429ee33144b5b"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-08-fixed_depth_01-mask.png",
+      "sha256": "sha256:9a91e8c4f90a469a0da33d43059bf0d1e6f440bada91148f04d58b23d46465b3"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-08-fixed_depth_01-rgb.png",
+      "sha256": "sha256:1d5363350f4abc433e52fee1dc2a49902a7015e77761c915ed455369c268531a"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-08-fixed_depth_02-mask.png",
+      "sha256": "sha256:2acd8771231826d22a4da8ee44ad3d1dc08ff9874ab5003c05c741c66f730432"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-08-fixed_depth_02-rgb.png",
+      "sha256": "sha256:f96d1330e4d9f606fb8c7103764af7616b2f1eda15f899289c37cd337c97e220"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-09-fixed_depth_01-mask.png",
+      "sha256": "sha256:a5da74e1644b6c4136a61d4d3b0be9216b241b84dea0a1351a4b4f49596cb3c4"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-09-fixed_depth_01-rgb.png",
+      "sha256": "sha256:05f589c798f5188f12bb118d9126b9ad04d2bf304d34e1b2b1b0fec6aa493905"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-09-fixed_depth_02-mask.png",
+      "sha256": "sha256:d585eb65f337811ece08fed006f6aa9c914cb8ba8b186031c5d48afb34e51801"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-09-fixed_depth_02-rgb.png",
+      "sha256": "sha256:513ff3a54dd4ca05bc673377c8db6dbcf78a125d14614ea774f6458ceb155a9f"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-10-fixed_depth_01-mask.png",
+      "sha256": "sha256:7d46f834bb653bf92f81c33d5bbeae99a49a2455c5737208bccf30a8913712c1"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-10-fixed_depth_01-rgb.png",
+      "sha256": "sha256:7e1c75c5e5123c0eff2e91eae008ce8aa912850e7a0a0a70697a5636ecbe883a"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-10-fixed_depth_02-mask.png",
+      "sha256": "sha256:82da2c76b2e4f3bb3f771cbb624f78aa7f792dc64e1d34cf7d5ec7a89fa42150"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-10-fixed_depth_02-rgb.png",
+      "sha256": "sha256:c7b8d87c5df1684a1e367ed4fc4170531b0512b78d87ca2950f682c438ca5b49"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-11-fixed_depth_01-mask.png",
+      "sha256": "sha256:b757ec109cbbce0f5cd21b57b537808c7495ee7d7277c1dbec283aa7a9a43e17"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-11-fixed_depth_01-rgb.png",
+      "sha256": "sha256:7646e2cc2857f76cd926108afd60701f6242530b67ce81fd6e93a6fdf766387f"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-11-fixed_depth_02-mask.png",
+      "sha256": "sha256:eb098891e9fed580ddb6767c347400711833a0521207beaba846b8e79abfa0b4"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-11-fixed_depth_02-rgb.png",
+      "sha256": "sha256:a4ecfeee366e4cc5310ef2222cf9c65f2583098e1eb3ce3d60529fea20b4c3ac"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-12-fixed_depth_01-mask.png",
+      "sha256": "sha256:de7c940aa31c4f0592c449acb2d2313f8da4150fff7262c9b85841127862b346"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-12-fixed_depth_01-rgb.png",
+      "sha256": "sha256:106c65b1eca2a429c0361f4b8bb9cdb8e1580e97366673a9c08e4203f0519849"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-12-fixed_depth_02-mask.png",
+      "sha256": "sha256:14be047e1ae183871dc1a2d511b056314b9a3857b861ac1f45dc53b49d09eedc"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-12-fixed_depth_02-rgb.png",
+      "sha256": "sha256:5c2dd1078ec225af9125e1ed4614f087c411897786e87002f67cb09f6deb1662"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-13-fixed_depth_01-mask.png",
+      "sha256": "sha256:1611acbf744774d7efbb8707de08ee48f6d814e6b6c0131681b10527ca56f7c1"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-13-fixed_depth_01-rgb.png",
+      "sha256": "sha256:a942f99e069f39ccd96b84aa3c596dbaf771aa68849f30b0b3a74424a5f322f1"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-13-fixed_depth_02-mask.png",
+      "sha256": "sha256:1cebc8df0f778a7c0a36d0dad12b9f2c84fa978c197364e9a8b58fb50de60d18"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-13-fixed_depth_02-rgb.png",
+      "sha256": "sha256:4178ceea5b888097b007710a807320c50762659724de2d1014e7e7a4ae2cba09"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-14-fixed_depth_01-mask.png",
+      "sha256": "sha256:1dc20ae5892547f4a4ec1e1de9b02b2a84511e7c31ed7d0e38cc7331a55e3cf0"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-14-fixed_depth_01-rgb.png",
+      "sha256": "sha256:f1290adc291886e146f131e93fa7819176f9512f65d2f49d20b9cfe104b257c1"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-14-fixed_depth_02-mask.png",
+      "sha256": "sha256:7d75e527d6de619726f5247f578ae364d5fb15e95e20397b361beebc0b695fb7"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-14-fixed_depth_02-rgb.png",
+      "sha256": "sha256:75feccf20a2b37a6acdd4f94f55e55b5a0f9258202df12cecde7d899577188d6"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-15-fixed_depth_01-mask.png",
+      "sha256": "sha256:69faa12f39f09cc63ed2f71e2c0d70855c3a8ed20162da54c8f38e9801133781"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-15-fixed_depth_01-rgb.png",
+      "sha256": "sha256:e74a93229734dcf47f4aff2af4cd2239a9785f25428c42831c87153db5b8b5a4"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-15-fixed_depth_02-mask.png",
+      "sha256": "sha256:639dfcbc7785ed41b1464f1aae1c67140c3c690832c114140a5b2d1a2dfc9927"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-15-fixed_depth_02-rgb.png",
+      "sha256": "sha256:172a078ef8eb0a17dad6c2b58b91d7db82ed6a2a3d64a6976f513881e13f5619"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-16-fixed_depth_01-mask.png",
+      "sha256": "sha256:3e208ff9f24752b01c69e6cc7c4cb9b7787749c14a76f9e995db536655214e1e"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-16-fixed_depth_01-rgb.png",
+      "sha256": "sha256:478716b70a836659452781c56817856190bf669831566e3a473e1c206b9764de"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-16-fixed_depth_02-mask.png",
+      "sha256": "sha256:4b882ae2be3478b3f01352b72c03558956c1246c930a007c941124956289c713"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-16-fixed_depth_02-rgb.png",
+      "sha256": "sha256:5f3798eacd86e361eb517f1d62aefe92f5296f48d6c6c1cd7fbb535e45c7b313"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-17-fixed_depth_01-mask.png",
+      "sha256": "sha256:f5dfc5b5aa9a55b0b63d1b6ba3611defe1cc1062605eda771c6c5d8859a64f35"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-17-fixed_depth_01-rgb.png",
+      "sha256": "sha256:5afb0baad3725197689c6d12b9295926c8978d9fcd01cd405d611fa106c4b3d9"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-17-fixed_depth_02-mask.png",
+      "sha256": "sha256:753333f390431154aa5d91839f2b86f6444013d1a7019db1a9d69c47e0594f43"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-17-fixed_depth_02-rgb.png",
+      "sha256": "sha256:ecd252a4877a551ebf997b1d716a372658fe2a4f96595e9b9153d31b70348de1"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-18-fixed_depth_01-mask.png",
+      "sha256": "sha256:3e71a4856801a738e0f70eda4e5f5b626a392c7c1a075a70daa18b37be4fa08f"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-18-fixed_depth_01-rgb.png",
+      "sha256": "sha256:d34cf89569c6ac540b9f99cb6fda886248766fea13d255ffbfe94333d93c2d26"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-18-fixed_depth_02-mask.png",
+      "sha256": "sha256:48dfdbbf1d2faa1a5cfa96849511ece986a7431b55c0dd4e734946de02b7a257"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-18-fixed_depth_02-rgb.png",
+      "sha256": "sha256:2db12a5616667290922ce602ae9aaed0e4540c5cd1e87249d0ea36d906b97a48"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-19-fixed_depth_01-mask.png",
+      "sha256": "sha256:51d06593018d91f228d65c1654a80912d123fb79e3d9fbdd294e132cb7bac9d4"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-19-fixed_depth_01-rgb.png",
+      "sha256": "sha256:a883847814f81d66e3ab67b57bfae21b76ffbaaf3bd5b75a791e754e0570bf8a"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-19-fixed_depth_02-mask.png",
+      "sha256": "sha256:11afdf0adb6203d96feb572a5857840cc6629072710cad6f17c14761a6d45524"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-19-fixed_depth_02-rgb.png",
+      "sha256": "sha256:28ef90fd38fb0a1ae3582e61256db7d0a220f2360bffd8f0070c6e33e1fd631f"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-20-fixed_depth_01-mask.png",
+      "sha256": "sha256:29b7e08726b99752ddbfd84f6756a0cb38bbdc8f11abedb625345805998e6f53"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-20-fixed_depth_01-rgb.png",
+      "sha256": "sha256:c24e780148e2bc8be6a9023ac140cd95534f07293e7489c9b044bdca669e7802"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-20-fixed_depth_02-mask.png",
+      "sha256": "sha256:ed682a5539075e75aa6e1ef22e5af57e2a35c94df6eb5752383919a4b54cb467"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-20-fixed_depth_02-rgb.png",
+      "sha256": "sha256:cdfd113250a9e5b5c2a67875f67b04c4e535d0a29dd0f69ea56330f0f5e443f9"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-21-fixed_depth_01-mask.png",
+      "sha256": "sha256:161dee1d1c07cb81f3f3b39adb6860d114cf2604b1b536a792523eb934437170"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-21-fixed_depth_01-rgb.png",
+      "sha256": "sha256:6ada9cfced05463a84e827119721de2014c3849dee949009fdc04b00d328ea84"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-21-fixed_depth_02-mask.png",
+      "sha256": "sha256:f6752f1f843ec21d666c0f8e2511f79b2f405b7894c162fbc76f92e5d09a3e16"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-21-fixed_depth_02-rgb.png",
+      "sha256": "sha256:2ef9b55955d16f9235937e5a9784e235cdf17ac04f502dcfead0eb775895035e"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-22-fixed_depth_01-mask.png",
+      "sha256": "sha256:e0f99f7836b9499cd84659579da9b4d4d126520fd9a2892408ada3eb4a95f9d7"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-22-fixed_depth_01-rgb.png",
+      "sha256": "sha256:9ab2be8bc30290a23e6b028966da15ba70ca709309d9aaf05a8572f7f3b6ee34"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-22-fixed_depth_02-mask.png",
+      "sha256": "sha256:8ad338f4c43426055730b8c42b4f099660a711ba2d303b0f5b1dd61794e56199"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-22-fixed_depth_02-rgb.png",
+      "sha256": "sha256:d7ddc21af6aac45715687157ee3d9da530b83da756762b0a7fdcbed33ad678f9"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-23-fixed_depth_01-mask.png",
+      "sha256": "sha256:a507b1d6b0e0079c76c472f52ad0acdfc9d61b1d6dd85ed3cf97d4bd7f851f9f"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-23-fixed_depth_01-rgb.png",
+      "sha256": "sha256:98712c70adb932795d16ff88a802b2a40bcdb2583599cf5fe51ac50c3037574b"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-23-fixed_depth_02-mask.png",
+      "sha256": "sha256:8bb94e842348f4f3b233d9f76f7c9e73445a792f75d0d3e3878c2d46a004ef9d"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-23-fixed_depth_02-rgb.png",
+      "sha256": "sha256:83b6acd3cdc7976dee5bc6757c33fab99d219444e6c0840b1c58a3317ee30798"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-24-fixed_depth_01-mask.png",
+      "sha256": "sha256:7efcef00378626eb730a9303511c0279e26d891753f1184ac8c0b1ad90cf70e7"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-24-fixed_depth_01-rgb.png",
+      "sha256": "sha256:bd3bd4b89503e3efcf20afcbdd2b8039f08bf9109f67493502e44e07259611fe"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-24-fixed_depth_02-mask.png",
+      "sha256": "sha256:ffeac9ff06a320d2527b54fbe07dae59e0b1d007080030c7370178b14de20ed9"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-24-fixed_depth_02-rgb.png",
+      "sha256": "sha256:4122c65ecafece64b9e6dad02db7ade0b7ccd8d769899811687511606e466515"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-25-fixed_depth_01-mask.png",
+      "sha256": "sha256:4bcad14a9451206b23182cd0672ab04d3d1f4972105baf153233f32ece941392"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-25-fixed_depth_01-rgb.png",
+      "sha256": "sha256:ace9e2e35ff4631c586968421cb3057b412948819ee283b8828cd1a7b1e378d4"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-25-fixed_depth_02-mask.png",
+      "sha256": "sha256:cd9b5a4277ecdaf71f21a2706990f1ded36678301092b7430452ce3378dbc05f"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-25-fixed_depth_02-rgb.png",
+      "sha256": "sha256:ff9dc2692bf06cc550b8d4931621fc7db9a2f44dfc9535e16c39653838bea9ec"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/config.json",
+      "sha256": "sha256:0a98d4a2c8be7322c9261baa77ff7c659a7d3950b1adbc93e2110dc359230103"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/multirange-projection-observations.json",
+      "sha256": "sha256:b3519b812273915516af634f6ec595e7be36452d0a1d54e118940bc34c240036"
+    },
+    {
+      "path": "research/experiments/EXP-20260921-022-virtual-rgb-multirange-projection-sweep.execution.record.json",
+      "sha256": "sha256:907aab13e470e340e8bd6052e8b7d070c55f379cdd0dfecbb742c24849898f3d"
+    },
+    {
+      "path": "research/reports/EXP-20260921-022-virtual-rgb-multirange-projection-sweep.result.json",
+      "sha256": "sha256:669caa6f34644d041e65fcea6e25d0cd676bccb9300c4b776f370e79a83e2ad1"
+    }
+  ],
+  "baseline": {
+    "kind": "virtual_rgb_centroid_plane_projection",
+    "reference": "EXP-20260921-021-virtual-rgb-centroid-plane-projection"
+  },
+  "code": {
+    "commit": "5311e4a85e76bfc96a9ff235d9cd00f2c7a629fb",
+    "dirty_at_start": true,
+    "repository": "H:/0_program/My_action/First-Robots",
+    "traceable": true
+  },
+  "ended_at": "2026-09-21T14:36:05.232621Z",
+  "execution": {
+    "command": [
+      "H:\\0_program\\My_action\\First-Robots\\research\\.venvs\\mrbtp-demo-py312\\Scripts\\python.exe",
+      "research\\experiments\\run_virtual_rgb_multirange_projection_sweep.py"
+    ],
+    "parameters": {
+      "actuation": "disabled",
+      "barrier": "absent",
+      "cup": {
+        "half_height_m": 0.055,
+        "initial_center_m": [
+          0.15,
+          0,
+          0.055
+        ],
+        "radius_m": 0.035,
+        "rgba": [
+          0.9,
+          0.1,
+          0.7,
+          1
+        ]
+      },
+      "detector": {
+        "blue_min": 100,
+        "blue_minus_green_min": 40,
+        "green_max": 130,
+        "kind": "candidate_artificial_magenta_signature_with_channel_dominance",
+        "red_min": 120,
+        "red_minus_green_min": 80
+      },
+      "dynamics": "disabled",
+      "fixed_cameras": {
+        "fixed_depth_01": {
+          "position_m": [
+            0.45,
+            -0.45,
+            0.42
+          ],
+          "target_m": [
+            0.12,
+            0,
+            0.055
+          ]
+        },
+        "fixed_depth_02": {
+          "position_m": [
+            0.45,
+            0.45,
+            0.42
+          ],
+          "target_m": [
+            0.12,
+            0,
+            0.055
+          ]
+        }
+      },
+      "frame_contract": {
+        "height": 480,
+        "pixel_encoding": "rgb_uint8",
+        "scenario_version": "virtual-rgb-contract-v2",
+        "source_kind": "mujoco_rgb_render",
+        "width": 640
+      },
+      "hardware_io": "disabled",
+      "projection": {
+        "assumed_cup_center_plane_z_m": 0.055,
+        "camera_fovy_degrees": 60
+      },
+      "robot_qpos_rad": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "table": {
+        "center_m": [
+          0,
+          0,
+          -0.025
+        ],
+        "half_extents_m": [
+          0.45,
+          0.45,
+          0.025
+        ],
+        "rgba": [
+          0.35,
+          0.3,
+          0.22,
+          1
+        ]
+      },
+      "target_b_grid_m": {
+        "x": [
+          -0.3,
+          -0.15,
+          0,
+          0.15,
+          0.3
+        ],
+        "y": [
+          -0.3,
+          -0.15,
+          0,
+          0.15,
+          0.3
+        ],
+        "z": 0.055
+      }
+    },
+    "script": "research/experiments/run_virtual_rgb_multirange_projection_sweep.py"
+  },
+  "inputs": [
+    {
+      "kind": "configuration",
+      "path": "research/configs/EXP-20260921-022-virtual-rgb-multirange-projection-sweep.json",
+      "sha256": "sha256:4d5cacca301457ece74d7448d9363707c2fe5e031cc674dcfdb4aea36aa518b9"
+    },
+    {
+      "kind": "predecessor_result",
+      "path": "research/reports/EXP-20260921-021-virtual-rgb-centroid-plane-projection.result.json",
+      "sha256": "sha256:547e2a1fbfbf52a4c246c17e6d037b7658932ede83ed6adea3797531371e8a4a"
+    },
+    {
+      "kind": "candidate_model",
+      "path": "research/sources/mujoco_menagerie_robotstudio_so101/robotstudio_so101/scene.xml",
+      "sha256": "sha256:65496b0061ca3ddd92b58fe09bd30f6a4a443f137cc42cf8975d5cff23030bfd"
+    }
+  ],
+  "level": "formal",
+  "objective": "Measure range-wide virtual RGB centroid plane projections before choosing a virtual fusion rule.",
+  "results": {
+    "criteria": "All 25 targets yield one RGB component and finite forward plane projections in both cameras; errors are recorded only.",
+    "duration_seconds": 7.451894,
+    "metrics": [
+      {
+        "name": "valid_two_camera_case_count",
+        "unit": "count",
+        "value": 18
+      },
+      {
+        "name": "multirange_projection_valid",
+        "unit": "boolean",
+        "value": false
+      }
+    ],
+    "passed": false
+  },
+  "review": {
+    "note": "Synthetic multirange measurement only; no tolerance, fusion, Coordinator, execution, or hardware claim.",
+    "status": "pending_human_review"
+  },
+  "run_id": "EXP-20260921-022-virtual-rgb-multirange-projection-sweep",
+  "runtime": {
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.12.11",
+    "random_seed": null
+  },
+  "schema_version": "experiment-management/run-manifest/v1",
+  "started_at": "2026-09-21T14:35:57.780954Z"
+}

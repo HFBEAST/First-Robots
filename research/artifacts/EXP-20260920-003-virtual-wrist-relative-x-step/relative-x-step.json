@@ -1,0 +1,18 @@
+{
+  "baseline_target_pixels": 7504,
+  "camera_relative_position_invariant": true,
+  "input_tested_camera_relative_center_m": [
+    0.05,
+    0.0,
+    -0.25
+  ],
+  "observed_tested_camera_relative_center_m": [
+    0.049999999999999954,
+    -3.0140820395097023e-17,
+    -0.24999999999999986
+  ],
+  "pixel_difference_from_baseline": 40,
+  "segmentation_sha256": "sha256:28b83c97000b03a8bfdd647dcea512ad14daac22886210638a9ed886d2688bce",
+  "tested_target_pixels": 7544,
+  "world_position_invariant": true
+}

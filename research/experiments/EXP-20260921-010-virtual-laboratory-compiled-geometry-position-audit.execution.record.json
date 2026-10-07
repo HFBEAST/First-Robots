@@ -1,0 +1,13 @@
+{
+  "kind": "formal_virtual_laboratory_compiled_geometry_position_audit",
+  "result": {
+    "path": "research/reports/EXP-20260921-010-virtual-laboratory-compiled-geometry-position-audit.result.json",
+    "sha256": "sha256:b9ee8d264a2fae14f14de68e41ca3919e2d0464b0f1bcf360b320b25403cc095"
+  },
+  "review": {
+    "adopted": false,
+    "status": "pending_human_review"
+  },
+  "run_id": "EXP-20260921-010-virtual-laboratory-compiled-geometry-position-audit",
+  "schema_version": "first-robots/experiment-record/v1"
+}

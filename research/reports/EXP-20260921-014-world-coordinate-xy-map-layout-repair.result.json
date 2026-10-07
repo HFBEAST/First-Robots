@@ -1,0 +1,32 @@
+{
+  "limits": [
+    "This is a repaired presentation of frozen virtual coordinates, not a physical survey, calibration image, perception result, collision map, or reachability proof.",
+    "It does not add or change any world coordinate, side-grasp target, IK, collision, or hardware conclusion."
+  ],
+  "observations": {
+    "coordinate_state_source": "research/artifacts/EXP-20260921-012-world-coordinate-contract-review/coordinate-state.json",
+    "label_layout_repaired": true,
+    "labels": [
+      "baseframe",
+      "default gripperframe",
+      "table",
+      "cup",
+      "barrier",
+      "fixed_depth_01",
+      "fixed_depth_02",
+      "review_isometric",
+      "review_top",
+      "+X",
+      "+Y"
+    ],
+    "map_path": "research/artifacts/EXP-20260921-014-world-coordinate-xy-map-layout-repair/world-coordinate-xy-map-layout-repaired.png",
+    "side_grasp_target_pose": "not_defined"
+  },
+  "review": {
+    "adopted": false,
+    "status": "pending_human_review"
+  },
+  "run_id": "EXP-20260921-014-world-coordinate-xy-map-layout-repair",
+  "schema_version": "first-robots/research-result/v1",
+  "status": "passed_pending_human_review"
+}

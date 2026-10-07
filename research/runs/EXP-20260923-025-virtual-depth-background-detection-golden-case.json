@@ -1,0 +1,194 @@
+{
+  "artifacts": [
+    {
+      "path": "research/artifacts/EXP-20260923-025-virtual-depth-background-detection-golden-case/config.json",
+      "sha256": "sha256:a9c9e11a0a510ea6a441f4469de7ca58b7c12e819102e94beb2a5a952c434e46"
+    },
+    {
+      "path": "research/artifacts/EXP-20260923-025-virtual-depth-background-detection-golden-case/depth-background-detection-observations.json",
+      "sha256": "sha256:3a3c20094db3e32358e40bedcd89ea53e2c1d7be121b02450cc8de756ccea079"
+    },
+    {
+      "path": "research/artifacts/EXP-20260923-025-virtual-depth-background-detection-golden-case/fixed_depth_01-current-depth.npy",
+      "sha256": "sha256:1604ab2cd3f9e5e463e6e5f0e4edaa40b7538cb8abef7af1bf3789fddfb38ff7"
+    },
+    {
+      "path": "research/artifacts/EXP-20260923-025-virtual-depth-background-detection-golden-case/fixed_depth_01-foreground-mask.png",
+      "sha256": "sha256:8f03f00373585fa13f243592a0dcc77ec4df2ef729e4dbb7f1efdbcb9b3e12f2"
+    },
+    {
+      "path": "research/artifacts/EXP-20260923-025-virtual-depth-background-detection-golden-case/fixed_depth_01-reference-depth.npy",
+      "sha256": "sha256:d462c71a303493156e54beb1cdba4e1f327f9274fbe0eeb11c1231f1e8fc41f0"
+    },
+    {
+      "path": "research/artifacts/EXP-20260923-025-virtual-depth-background-detection-golden-case/fixed_depth_02-current-depth.npy",
+      "sha256": "sha256:df2ea85dce3ca87cc9855b8fecc50072ff72c885fffcb41115cf609a11d723ae"
+    },
+    {
+      "path": "research/artifacts/EXP-20260923-025-virtual-depth-background-detection-golden-case/fixed_depth_02-foreground-mask.png",
+      "sha256": "sha256:3208df70191282b68f2fc0d7238d07e6e1ad5a9fb99ca42c2bb73dc806dea1e1"
+    },
+    {
+      "path": "research/artifacts/EXP-20260923-025-virtual-depth-background-detection-golden-case/fixed_depth_02-reference-depth.npy",
+      "sha256": "sha256:4dd463dfd34e79386690519b8cc120685eb0dcb030ade8d473e4775ff56d0c6f"
+    },
+    {
+      "path": "research/experiments/EXP-20260923-025-virtual-depth-background-detection-golden-case.execution.record.json",
+      "sha256": "sha256:4142ccbb5eedae5e547ba62b85b245ddc1f5b10c701b9a41833823b514d95994"
+    },
+    {
+      "path": "research/reports/EXP-20260923-025-virtual-depth-background-detection-golden-case.result.json",
+      "sha256": "sha256:5e36e69124edf6fa237002f20aa29d045bba1049976e0c60029a0a31b5646134"
+    }
+  ],
+  "baseline": {
+    "kind": "virtual_depth_frame_contract",
+    "reference": "EXP-20260921-024-virtual-depth-frame-contract-golden-case"
+  },
+  "code": {
+    "commit": "5311e4a85e76bfc96a9ff235d9cd00f2c7a629fb",
+    "dirty_at_start": true,
+    "repository": "H:/0_program/My_action/First-Robots",
+    "traceable": true
+  },
+  "ended_at": "2026-09-23T05:55:07.244022Z",
+  "execution": {
+    "command": [
+      "H:\\0_program\\My_action\\First-Robots\\research\\.venvs\\mrbtp-demo-py312\\Scripts\\python.exe",
+      "research\\experiments\\run_virtual_depth_background_detection_golden_case.py"
+    ],
+    "parameters": {
+      "actuation": "disabled",
+      "barrier": "absent",
+      "cup_b": {
+        "center_m": [
+          0.15,
+          0,
+          0.055
+        ],
+        "half_height_m": 0.055,
+        "radius_m": 0.035,
+        "rgba": [
+          0.9,
+          0.1,
+          0.7,
+          1
+        ]
+      },
+      "detector": {
+        "kind": "candidate_positive_depth_foreground_difference",
+        "virtual_numerical_epsilon_m": 1e-06
+      },
+      "dynamics": "disabled",
+      "fixed_cameras": {
+        "fixed_depth_01": {
+          "position_m": [
+            0.45,
+            -0.45,
+            0.42
+          ],
+          "target_m": [
+            0.12,
+            0,
+            0.055
+          ]
+        },
+        "fixed_depth_02": {
+          "position_m": [
+            0.45,
+            0.45,
+            0.42
+          ],
+          "target_m": [
+            0.12,
+            0,
+            0.055
+          ]
+        }
+      },
+      "frame_contract": {
+        "height": 480,
+        "pixel_encoding": "depth_float32_m",
+        "scenario_version": "virtual-depth-contract-v1",
+        "source_kind": "mujoco_depth_render",
+        "width": 640
+      },
+      "hardware_io": "disabled",
+      "robot_qpos_rad": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "table": {
+        "center_m": [
+          0,
+          0,
+          -0.025
+        ],
+        "half_extents_m": [
+          0.45,
+          0.45,
+          0.025
+        ],
+        "rgba": [
+          0.35,
+          0.3,
+          0.22,
+          1
+        ]
+      }
+    },
+    "script": "research/experiments/run_virtual_depth_background_detection_golden_case.py"
+  },
+  "inputs": [
+    {
+      "kind": "configuration",
+      "path": "research/configs/EXP-20260923-025-virtual-depth-background-detection-golden-case.json",
+      "sha256": "sha256:db56ce371ed1418f45efdd0aacb8636748c91f044b7255c46aaeee5e40c0cf77"
+    },
+    {
+      "kind": "predecessor_result",
+      "path": "research/reports/EXP-20260921-024-virtual-depth-frame-contract-golden-case.result.json",
+      "sha256": "sha256:10fd72547f251a9a8af27a92ed1ef1fa147d5500be4ad737e0618d111ecbdd7b"
+    },
+    {
+      "kind": "candidate_model",
+      "path": "research/sources/mujoco_menagerie_robotstudio_so101/robotstudio_so101/scene.xml",
+      "sha256": "sha256:65496b0061ca3ddd92b58fe09bd30f6a4a443f137cc42cf8975d5cff23030bfd"
+    }
+  ],
+  "level": "formal",
+  "objective": "Verify virtual fixed-depth background subtraction detects one cup before pose or fusion work.",
+  "results": {
+    "criteria": "Both paired virtual depth frames produce one positive foreground component.",
+    "duration_seconds": 0.915664,
+    "metrics": [
+      {
+        "name": "depth_background_detection_valid",
+        "unit": "boolean",
+        "value": true
+      },
+      {
+        "name": "camera_count",
+        "unit": "count",
+        "value": 2
+      }
+    ],
+    "passed": true
+  },
+  "review": {
+    "note": "Virtual background-difference detection only; no real capture policy, pose, fusion, or execution claim.",
+    "status": "pending_human_review"
+  },
+  "run_id": "EXP-20260923-025-virtual-depth-background-detection-golden-case",
+  "runtime": {
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.12.11",
+    "random_seed": null
+  },
+  "schema_version": "experiment-management/run-manifest/v1",
+  "started_at": "2026-09-23T05:55:06.328716Z"
+}

@@ -1,0 +1,130 @@
+{
+  "artifacts": [
+    {
+      "path": "research/artifacts/EXP-20260923-026-virtual-depth-surface-point-projection/config.json",
+      "sha256": "sha256:a95d4284832762428264f80aba6666f2e34ac77a55af2eac88bd155b3304ad47"
+    },
+    {
+      "path": "research/artifacts/EXP-20260923-026-virtual-depth-surface-point-projection/depth-surface-point-observations.json",
+      "sha256": "sha256:edb566746efa049a2447b91648117a67815a729e83c28ba529bf447969411360"
+    },
+    {
+      "path": "research/experiments/EXP-20260923-026-virtual-depth-surface-point-projection.execution.record.json",
+      "sha256": "sha256:57cfb31584c8b88b85067a4a1a433d52ceb85326d8122a5c3a7be0702ce5d216"
+    },
+    {
+      "path": "research/reports/EXP-20260923-026-virtual-depth-surface-point-projection.result.json",
+      "sha256": "sha256:b567306994469a87c195bce85bc79f9e13e4735b4feac89430adb07bf74d757a"
+    }
+  ],
+  "baseline": {
+    "kind": "virtual_depth_background_detection",
+    "reference": "EXP-20260923-025-virtual-depth-background-detection-golden-case"
+  },
+  "code": {
+    "commit": "5311e4a85e76bfc96a9ff235d9cd00f2c7a629fb",
+    "dirty_at_start": true,
+    "repository": "H:/0_program/My_action/First-Robots",
+    "traceable": true
+  },
+  "ended_at": "2026-09-23T05:57:13.086290Z",
+  "execution": {
+    "command": [
+      "H:\\0_program\\My_action\\First-Robots\\research\\.venvs\\mrbtp-demo-py312\\Scripts\\python.exe",
+      "research\\experiments\\run_virtual_depth_surface_point_projection.py"
+    ],
+    "parameters": {
+      "actuation": "disabled",
+      "camera_fovy_degrees": 60,
+      "cup_b_world_m_evaluation_only": [
+        0.15,
+        0,
+        0.055
+      ],
+      "dynamics": "disabled",
+      "fixed_cameras": {
+        "fixed_depth_01": {
+          "position_m": [
+            0.45,
+            -0.45,
+            0.42
+          ],
+          "target_m": [
+            0.12,
+            0,
+            0.055
+          ]
+        },
+        "fixed_depth_02": {
+          "position_m": [
+            0.45,
+            0.45,
+            0.42
+          ],
+          "target_m": [
+            0.12,
+            0,
+            0.055
+          ]
+        }
+      },
+      "frame_contract": {
+        "height": 480,
+        "pixel_encoding": "depth_float32_m",
+        "scenario_version": "virtual-depth-contract-v1",
+        "source_kind": "mujoco_depth_render",
+        "width": 640
+      },
+      "hardware_io": "disabled"
+    },
+    "script": "research/experiments/run_virtual_depth_surface_point_projection.py"
+  },
+  "inputs": [
+    {
+      "kind": "configuration",
+      "path": "research/configs/EXP-20260923-026-virtual-depth-surface-point-projection.json",
+      "sha256": "sha256:2d33c8f543ac87379b13ac6d3a479b004fa9fbe03c38c824c7e8d8c1eab52bd6"
+    },
+    {
+      "kind": "predecessor_result",
+      "path": "research/reports/EXP-20260923-025-virtual-depth-background-detection-golden-case.result.json",
+      "sha256": "sha256:5e36e69124edf6fa237002f20aa29d045bba1049976e0c60029a0a31b5646134"
+    },
+    {
+      "kind": "predecessor_observations",
+      "path": "research/artifacts/EXP-20260923-025-virtual-depth-background-detection-golden-case/depth-background-detection-observations.json",
+      "sha256": "sha256:3a3c20094db3e32358e40bedcd89ea53e2c1d7be121b02450cc8de756ccea079"
+    }
+  ],
+  "level": "formal",
+  "objective": "Record per-camera virtual depth foreground surface-point candidates without center fitting or fusion.",
+  "results": {
+    "criteria": "Both frozen foreground components give finite depth-ray surface candidates; center deviations are recorded only.",
+    "duration_seconds": 0.14121,
+    "metrics": [
+      {
+        "name": "depth_surface_projection_valid",
+        "unit": "boolean",
+        "value": true
+      },
+      {
+        "name": "camera_count",
+        "unit": "count",
+        "value": 2
+      }
+    ],
+    "passed": true
+  },
+  "review": {
+    "note": "Virtual depth surface points only; no center fit, fusion, Coordinator, execution, or hardware claim.",
+    "status": "pending_human_review"
+  },
+  "run_id": "EXP-20260923-026-virtual-depth-surface-point-projection",
+  "runtime": {
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.12.11",
+    "random_seed": null
+  },
+  "schema_version": "experiment-management/run-manifest/v1",
+  "started_at": "2026-09-23T05:57:12.944865Z"
+}

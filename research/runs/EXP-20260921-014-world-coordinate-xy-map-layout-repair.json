@@ -1,0 +1,108 @@
+{
+  "artifacts": [
+    {
+      "path": "research/artifacts/EXP-20260921-014-world-coordinate-xy-map-layout-repair/config.json",
+      "sha256": "sha256:6ab1ebb760b4a49310be84d34e35a89b4b43d710bee6ef575324d2f9e443d4f9"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-014-world-coordinate-xy-map-layout-repair/map-assessment.json",
+      "sha256": "sha256:f096d8ebd41bdd5d10009118d9ea617cd0c0bfe42d934e7da4d7ed69299c26ce"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-014-world-coordinate-xy-map-layout-repair/world-coordinate-xy-map-layout-repaired.png",
+      "sha256": "sha256:7801c1d3fadbe91aecfd3bb0cf19e978dd1d15cbe2c21b334f4346843f102e2f"
+    },
+    {
+      "path": "research/experiments/EXP-20260921-014-world-coordinate-xy-map-layout-repair.execution.record.json",
+      "sha256": "sha256:2d50ba5e6d9561abcea4dfa97f056180d3222ba61b5521ec0dff9df2320fa930"
+    },
+    {
+      "path": "research/reports/EXP-20260921-014-world-coordinate-xy-map-layout-repair.result.json",
+      "sha256": "sha256:a83c677a8afcdba26d83d74b065b5885abd0408acc4a0dc44e92131ab5547a49"
+    }
+  ],
+  "baseline": {
+    "kind": "presentation_only_repair",
+    "reference": "EXP-20260921-013-world-coordinate-xy-review-map"
+  },
+  "code": {
+    "commit": "5311e4a85e76bfc96a9ff235d9cd00f2c7a629fb",
+    "dirty_at_start": true,
+    "repository": "H:/0_program/My_action/First-Robots",
+    "traceable": true
+  },
+  "ended_at": "2026-09-21T13:43:11.802258Z",
+  "execution": {
+    "command": [
+      "H:\\0_program\\My_action\\First-Robots\\research\\.venvs\\mrbtp-demo-py312\\Scripts\\python.exe",
+      "research\\experiments\\run_world_coordinate_xy_map_layout_repair.py"
+    ],
+    "parameters": {
+      "grid_step_m": 0.1,
+      "image_size_px": [
+        1300,
+        1100
+      ],
+      "title": "Frozen virtual world coordinates - XY review map",
+      "world_xy_bounds_m": {
+        "x": [
+          -0.7,
+          1.1
+        ],
+        "y": [
+          -0.9,
+          0.8
+        ]
+      }
+    },
+    "script": "research/experiments/run_world_coordinate_xy_map_layout_repair.py"
+  },
+  "inputs": [
+    {
+      "kind": "configuration",
+      "path": "research/configs/EXP-20260921-014-world-coordinate-xy-map-layout-repair.json",
+      "sha256": "sha256:31220ed1a31f29a6f7b887c869cbdd704f17f567515be83fedb2f823166acb22"
+    },
+    {
+      "kind": "prior_map_result",
+      "path": "research/reports/EXP-20260921-013-world-coordinate-xy-review-map.result.json",
+      "sha256": "sha256:5899471b9e8a0cc639d21685c3e05b35b36804d2b276550fec4482d68fddcdc6"
+    },
+    {
+      "kind": "coordinate_state",
+      "path": "research/artifacts/EXP-20260921-012-world-coordinate-contract-review/coordinate-state.json",
+      "sha256": "sha256:15de29e0b7ae0ddde14a597af039b43c7e4529e4a4be4430383ce369ffc1c190"
+    },
+    {
+      "kind": "candidate_model",
+      "path": "research/sources/mujoco_menagerie_robotstudio_so101/robotstudio_so101/scene.xml",
+      "sha256": "sha256:65496b0061ca3ddd92b58fe09bd30f6a4a443f137cc42cf8975d5cff23030bfd"
+    }
+  ],
+  "level": "formal",
+  "objective": "Repair XY coordinate-map label layout without changing frozen coordinates.",
+  "results": {
+    "criteria": "Layout-repaired frozen coordinate map contains all required labels and a nonuniform PNG artifact.",
+    "duration_seconds": 0.116528,
+    "metrics": [
+      {
+        "name": "coordinate_map_nonuniform",
+        "unit": "boolean",
+        "value": true
+      }
+    ],
+    "passed": true
+  },
+  "review": {
+    "note": "Presentation-only repair; no coordinate or reachability conclusion changed.",
+    "status": "pending_human_review"
+  },
+  "run_id": "EXP-20260921-014-world-coordinate-xy-map-layout-repair",
+  "runtime": {
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.12.11",
+    "random_seed": null
+  },
+  "schema_version": "experiment-management/run-manifest/v1",
+  "started_at": "2026-09-21T13:43:11.685610Z"
+}

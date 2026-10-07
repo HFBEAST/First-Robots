@@ -1,0 +1,109 @@
+{
+  "blocking_predecessor": {
+    "result_path": "research/reports/EXP-20260921-024-virtual-depth-frame-contract-golden-case.result.json",
+    "result_sha256": "sha256:10fd72547f251a9a8af27a92ed1ef1fa147d5500be4ad737e0618d111ecbdd7b",
+    "run_id": "EXP-20260921-024-virtual-depth-frame-contract-golden-case"
+  },
+  "experiment_id": "EXP-20260923-025-virtual-depth-background-detection-golden-case",
+  "model": {
+    "repository_revision": "da76818e269b82289eba39808e2fb91d679d6994",
+    "scene_sha256": "sha256:65496b0061ca3ddd92b58fe09bd30f6a4a443f137cc42cf8975d5cff23030bfd"
+  },
+  "non_claims": [
+    "The empty-table reference is a virtual fixed-robot fixture; it is not a physical background-capture procedure, synchronization requirement, or accepted real-data policy.",
+    "The epsilon separates numerically unchanged virtual depth pixels only; it is not an Orbbec noise threshold or a real foreground threshold.",
+    "No depth calibration, object pose, fusion, planning, IK, collision, grasp, safety, robot action, or hardware I/O is evaluated."
+  ],
+  "pass_conditions": [
+    "024 result and source-model hashes match; no barrier compiles",
+    "for each fixed camera, an empty-table reference DepthFrame and same-scene cup-current DepthFrame conform to the depth contract",
+    "reference minus current depth has one positive four-connected foreground component using the declared virtual numerical epsilon",
+    "all reference/current arrays and masks are retained; no 3D pose, fusion, Coordinator, or execution is attempted"
+  ],
+  "scenario": {
+    "actuation": "disabled",
+    "barrier": "absent",
+    "cup_b": {
+      "center_m": [
+        0.15,
+        0,
+        0.055
+      ],
+      "half_height_m": 0.055,
+      "radius_m": 0.035,
+      "rgba": [
+        0.9,
+        0.1,
+        0.7,
+        1
+      ]
+    },
+    "detector": {
+      "kind": "candidate_positive_depth_foreground_difference",
+      "virtual_numerical_epsilon_m": 1e-06
+    },
+    "dynamics": "disabled",
+    "fixed_cameras": {
+      "fixed_depth_01": {
+        "position_m": [
+          0.45,
+          -0.45,
+          0.42
+        ],
+        "target_m": [
+          0.12,
+          0,
+          0.055
+        ]
+      },
+      "fixed_depth_02": {
+        "position_m": [
+          0.45,
+          0.45,
+          0.42
+        ],
+        "target_m": [
+          0.12,
+          0,
+          0.055
+        ]
+      }
+    },
+    "frame_contract": {
+      "height": 480,
+      "pixel_encoding": "depth_float32_m",
+      "scenario_version": "virtual-depth-contract-v1",
+      "source_kind": "mujoco_depth_render",
+      "width": 640
+    },
+    "hardware_io": "disabled",
+    "robot_qpos_rad": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "table": {
+      "center_m": [
+        0,
+        0,
+        -0.025
+      ],
+      "half_extents_m": [
+        0.45,
+        0.45,
+        0.025
+      ],
+      "rgba": [
+        0.35,
+        0.3,
+        0.22,
+        1
+      ]
+    }
+  },
+  "schema_version": "first-robots/research-config/v1",
+  "status": "planned_not_executed"
+}

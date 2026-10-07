@@ -1,0 +1,177 @@
+{
+  "artifacts": [
+    {
+      "path": "research/artifacts/EXP-20260921-008-virtual-laboratory-occlusion-rgb-color-probe/config.json",
+      "sha256": "sha256:11673a5290669c16ab10e06722a70c01513107833641703ee1303c3e05c02e45"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-008-virtual-laboratory-occlusion-rgb-color-probe/fixed_depth_01-rgb.png",
+      "sha256": "sha256:5a9cb6cab9fd41f18e45b6d5125a52716e834a8cabc9799a312ecd4c730931f7"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-008-virtual-laboratory-occlusion-rgb-color-probe/fixed_depth_02-rgb.png",
+      "sha256": "sha256:720c68942efd37b039b1f061eb50634ce8e9f345827e2c771c37923ef126966e"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-008-virtual-laboratory-occlusion-rgb-color-probe/terminal-assessment.json",
+      "sha256": "sha256:0dbec625f3b7d3c2f81a9593bc367b9d51830e8de13f2be799180ef65a845ac8"
+    },
+    {
+      "path": "research/experiments/EXP-20260921-008-virtual-laboratory-occlusion-rgb-color-probe.execution.record.json",
+      "sha256": "sha256:880640dbc6b13e641b596d967f16ecfea3f3a7219dce0e7d2294cdcae62ae999"
+    },
+    {
+      "path": "research/reports/EXP-20260921-008-virtual-laboratory-occlusion-rgb-color-probe.result.json",
+      "sha256": "sha256:5b45d7a79a3fef2175f7acd3405b5239c7cd3f513e78bbbc816b312391e1191b"
+    }
+  ],
+  "baseline": {
+    "kind": "frozen_barrier_geometry",
+    "reference": "EXP-20260921-006-virtual-laboratory-barrier-width-isolation"
+  },
+  "code": {
+    "commit": "5311e4a85e76bfc96a9ff235d9cd00f2c7a629fb",
+    "dirty_at_start": true,
+    "repository": "H:/0_program/My_action/First-Robots",
+    "traceable": true
+  },
+  "ended_at": "2026-09-20T22:59:08.483539Z",
+  "execution": {
+    "command": [
+      "H:\\0_program\\My_action\\First-Robots\\research\\.venvs\\mrbtp-demo-py312\\Scripts\\python.exe",
+      "research\\experiments\\run_virtual_laboratory_occlusion_rgb_color_probe.py"
+    ],
+    "parameters": {
+      "actuation": "disabled",
+      "barrier": {
+        "center_m": [
+          0.28,
+          0,
+          0.16
+        ],
+        "half_extents_m": [
+          0.01,
+          0.46,
+          0.16
+        ],
+        "rgba": [
+          0,
+          1,
+          1,
+          1
+        ]
+      },
+      "cup": {
+        "center_m": [
+          0.12,
+          0,
+          0.055
+        ],
+        "half_height_m": 0.055,
+        "radius_m": 0.035,
+        "rgba": [
+          1,
+          0,
+          1,
+          1
+        ]
+      },
+      "dynamics": "disabled",
+      "fixed_cameras": {
+        "fixed_depth_01": {
+          "position_m": [
+            0.45,
+            -0.45,
+            0.42
+          ],
+          "target_m": [
+            0.12,
+            0,
+            0.055
+          ]
+        },
+        "fixed_depth_02": {
+          "position_m": [
+            0.45,
+            0.45,
+            0.42
+          ],
+          "target_m": [
+            0.12,
+            0,
+            0.055
+          ]
+        }
+      },
+      "hardware_io": "disabled",
+      "qpos": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "renderer": {
+        "height": 240,
+        "width": 320
+      },
+      "table": {
+        "center_m": [
+          0,
+          0,
+          -0.025
+        ],
+        "half_extents_m": [
+          0.45,
+          0.45,
+          0.025
+        ]
+      }
+    },
+    "script": "research/experiments/run_virtual_laboratory_occlusion_rgb_color_probe.py"
+  },
+  "inputs": [
+    {
+      "kind": "configuration",
+      "path": "research/configs/EXP-20260921-008-virtual-laboratory-occlusion-rgb-color-probe.json",
+      "sha256": "sha256:0971da5b1ec41ff1f0627644a60f47144f85bec83aac8d47b3c77139849e8e9f"
+    },
+    {
+      "kind": "renderer_association_predecessor",
+      "path": "research/reports/EXP-20260921-007-virtual-laboratory-segmentation-association.result.json",
+      "sha256": "sha256:65b9a2f2cf5359973e58e88d0ac816715155a50b0e66a931ca814d698adeb67a"
+    },
+    {
+      "kind": "candidate_model",
+      "path": "research/sources/mujoco_menagerie_robotstudio_so101/robotstudio_so101/scene.xml",
+      "sha256": "sha256:65496b0061ca3ddd92b58fe09bd30f6a4a443f137cc42cf8975d5cff23030bfd"
+    }
+  ],
+  "level": "formal",
+  "objective": "Measure only the frozen virtual cup RGB color signature through the central barrier.",
+  "results": {
+    "criteria": "Both fixed RGB images have zero predeclared cup-color signature pixels.",
+    "duration_seconds": 0.430252,
+    "metrics": [
+      {
+        "name": "fixed_cameras_cup_color_signature_absent",
+        "unit": "boolean",
+        "value": true
+      }
+    ],
+    "passed": true
+  },
+  "review": {
+    "note": "Artificial-color static RGB measurement; no reachability or physical interpretation.",
+    "status": "pending_human_review"
+  },
+  "run_id": "EXP-20260921-008-virtual-laboratory-occlusion-rgb-color-probe",
+  "runtime": {
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.12.11",
+    "random_seed": null
+  },
+  "schema_version": "experiment-management/run-manifest/v1",
+  "started_at": "2026-09-20T22:59:08.053207Z"
+}

@@ -1,0 +1,65 @@
+{
+  "blocking_predecessor": {
+    "result_path": "research/reports/EXP-20260920-002-virtual-wrist-relative-depth-step.result.json",
+    "result_sha256": "sha256:474d9ff92ff6f3af1e4a0d15ee6d2fc424ce5734f0dafb50b7f1f9eab89ac118",
+    "run_id": "EXP-20260920-002-virtual-wrist-relative-depth-step"
+  },
+  "experiment_id": "EXP-20260920-005-virtual-wrist-relative-negative-x-step",
+  "model": {
+    "license": "Apache-2.0",
+    "repository_revision": "da76818e269b82289eba39808e2fb91d679d6994",
+    "scene_sha256": "sha256:65496b0061ca3ddd92b58fe09bd30f6a4a443f137cc42cf8975d5cff23030bfd"
+  },
+  "non_claims": [
+    "This tests one fixed negative-X displacement only; comparison with positive X is an observation, not a symmetry, field-of-view, coverage, or causal conclusion.",
+    "It does not validate projection or ray proxies, physical cameras, perception, safety, reachability, control, sim-to-real, or multi-robot capability."
+  ],
+  "protocol": {
+    "actuation": "disabled",
+    "camera": "wrist_cam",
+    "cup": {
+      "half_height_m": 0.055,
+      "radius_m": 0.035
+    },
+    "dynamics": "disabled",
+    "hardware_io": "disabled",
+    "independent_variable": {
+      "baseline_m": [
+        0,
+        0,
+        -0.25
+      ],
+      "name": "cup center camera-coordinate X",
+      "tested_m": [
+        -0.05,
+        0,
+        -0.25
+      ]
+    },
+    "pass_conditions": [
+      "the predecessor result hash matches blocking_predecessor.result_sha256 and reports passed_pending_human_review",
+      "the source scene SHA-256 matches model.scene_sha256",
+      "after mj_forward, virtual_cup geom_xpos equals its camera-derived tested world position",
+      "after mj_forward, virtual_cup center expressed in wrist_cam coordinates equals independent_variable.tested_m",
+      "the tested condition renders one or more virtual_cup segmentation pixels"
+    ],
+    "qpos": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "renderer": {
+      "height": 240,
+      "mode": "MuJoCo geom segmentation",
+      "width": 320
+    },
+    "stop_conditions": [
+      "any predecessor, source, position, or nonzero-pixel condition fails"
+    ]
+  },
+  "schema_version": "first-robots/research-config/v1",
+  "status": "planned_not_executed"
+}

@@ -1,0 +1,198 @@
+{
+  "artifacts": [
+    {
+      "path": "research/artifacts/EXP-20260921-020-virtual-rgb-detection-predicate-repair/config.json",
+      "sha256": "sha256:8d65311ed331cbbfb756e9caf332258293e237dbb8364164ae81e3274ef3af77"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-020-virtual-rgb-detection-predicate-repair/fixed_depth_01-mask.png",
+      "sha256": "sha256:3e71a4856801a738e0f70eda4e5f5b626a392c7c1a075a70daa18b37be4fa08f"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-020-virtual-rgb-detection-predicate-repair/fixed_depth_01-overlay.png",
+      "sha256": "sha256:e7443538320cb763372f7c5e31edc916209cf180d403efaf0b81c04d4258e0d8"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-020-virtual-rgb-detection-predicate-repair/fixed_depth_01-rgb.png",
+      "sha256": "sha256:d34cf89569c6ac540b9f99cb6fda886248766fea13d255ffbfe94333d93c2d26"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-020-virtual-rgb-detection-predicate-repair/fixed_depth_02-mask.png",
+      "sha256": "sha256:48dfdbbf1d2faa1a5cfa96849511ece986a7431b55c0dd4e734946de02b7a257"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-020-virtual-rgb-detection-predicate-repair/fixed_depth_02-overlay.png",
+      "sha256": "sha256:4e1232f729e789191ad81f75dbd9a013ef1ee1c3b57401d9c2fae165102cc465"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-020-virtual-rgb-detection-predicate-repair/fixed_depth_02-rgb.png",
+      "sha256": "sha256:7bddc6685827171cd950d5749feaaf3ee4a3319dce7c409f3f2fae64140b572b"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-020-virtual-rgb-detection-predicate-repair/rgb-detection-observations.json",
+      "sha256": "sha256:aba53095fca4827e8b42fd8c4b8ea05996b3d1f5d47993a84a8fb6218616762a"
+    },
+    {
+      "path": "research/experiments/EXP-20260921-020-virtual-rgb-detection-predicate-repair.execution.record.json",
+      "sha256": "sha256:e6048fe94bbbb783585720e74a75daef9723af9bcd845328fb9696252e949437"
+    },
+    {
+      "path": "research/reports/EXP-20260921-020-virtual-rgb-detection-predicate-repair.result.json",
+      "sha256": "sha256:889c7fd17dc8dddee8c704eae87dc0e3979b065a71ff359f6a07220a8ad519ec"
+    }
+  ],
+  "baseline": {
+    "kind": "virtual_rgb_detection_golden_case",
+    "reference": "EXP-20260921-019-virtual-rgb-detection-golden-case"
+  },
+  "code": {
+    "commit": "5311e4a85e76bfc96a9ff235d9cd00f2c7a629fb",
+    "dirty_at_start": true,
+    "repository": "H:/0_program/My_action/First-Robots",
+    "traceable": true
+  },
+  "ended_at": "2026-09-21T14:25:40.095272Z",
+  "execution": {
+    "command": [
+      "H:\\0_program\\My_action\\First-Robots\\research\\.venvs\\mrbtp-demo-py312\\Scripts\\python.exe",
+      "research\\experiments\\run_virtual_rgb_detection_predicate_repair.py"
+    ],
+    "parameters": {
+      "actuation": "disabled",
+      "barrier": "absent",
+      "cup_b": {
+        "center_m": [
+          0.15,
+          0,
+          0.055
+        ],
+        "half_height_m": 0.055,
+        "radius_m": 0.035,
+        "rgba": [
+          0.9,
+          0.1,
+          0.7,
+          1
+        ]
+      },
+      "detector": {
+        "blue_min": 100,
+        "blue_minus_green_min": 40,
+        "green_max": 130,
+        "kind": "candidate_artificial_magenta_signature_with_channel_dominance",
+        "red_min": 120,
+        "red_minus_green_min": 80
+      },
+      "dynamics": "disabled",
+      "fixed_cameras": {
+        "fixed_depth_01": {
+          "position_m": [
+            0.45,
+            -0.45,
+            0.42
+          ],
+          "target_m": [
+            0.12,
+            0,
+            0.055
+          ]
+        },
+        "fixed_depth_02": {
+          "position_m": [
+            0.45,
+            0.45,
+            0.42
+          ],
+          "target_m": [
+            0.12,
+            0,
+            0.055
+          ]
+        }
+      },
+      "frame_contract": {
+        "height": 480,
+        "pixel_encoding": "rgb_uint8",
+        "scenario_version": "virtual-rgb-contract-v2",
+        "source_kind": "mujoco_rgb_render",
+        "width": 640
+      },
+      "hardware_io": "disabled",
+      "robot_qpos_rad": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "table": {
+        "center_m": [
+          0,
+          0,
+          -0.025
+        ],
+        "half_extents_m": [
+          0.45,
+          0.45,
+          0.025
+        ],
+        "rgba": [
+          0.35,
+          0.3,
+          0.22,
+          1
+        ]
+      }
+    },
+    "script": "research/experiments/run_virtual_rgb_detection_predicate_repair.py"
+  },
+  "inputs": [
+    {
+      "kind": "configuration",
+      "path": "research/configs/EXP-20260921-020-virtual-rgb-detection-predicate-repair.json",
+      "sha256": "sha256:76110feb9a6acdbdb5994e3cdd8b89b2a3aa1dae8d0759de1e6c0640dd063161"
+    },
+    {
+      "kind": "predecessor_result",
+      "path": "research/reports/EXP-20260921-019-virtual-rgb-detection-golden-case.result.json",
+      "sha256": "sha256:fa083bddbb94c1bc3fae39aa809e19a333f49a2f9e5f39f78d5c985768c899c4"
+    },
+    {
+      "kind": "candidate_model",
+      "path": "research/sources/mujoco_menagerie_robotstudio_so101/robotstudio_so101/scene.xml",
+      "sha256": "sha256:65496b0061ca3ddd92b58fe09bd30f6a4a443f137cc42cf8975d5cff23030bfd"
+    }
+  ],
+  "level": "formal",
+  "objective": "Repair one RGB mask predicate and verify single-component isolation in a frozen virtual golden case.",
+  "results": {
+    "criteria": "Both virtual RGB frames conform and each repaired mask contains exactly one component.",
+    "duration_seconds": 0.653976,
+    "metrics": [
+      {
+        "name": "rgb_detection_isolation_valid",
+        "unit": "boolean",
+        "value": true
+      },
+      {
+        "name": "camera_count",
+        "unit": "count",
+        "value": 2
+      }
+    ],
+    "passed": true
+  },
+  "review": {
+    "note": "Virtual RGB fixture and adapter contract only; no RGB-to-world pose or hardware implication.",
+    "status": "pending_human_review"
+  },
+  "run_id": "EXP-20260921-020-virtual-rgb-detection-predicate-repair",
+  "runtime": {
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.12.11",
+    "random_seed": null
+  },
+  "schema_version": "experiment-management/run-manifest/v1",
+  "started_at": "2026-09-21T14:25:39.441016Z"
+}

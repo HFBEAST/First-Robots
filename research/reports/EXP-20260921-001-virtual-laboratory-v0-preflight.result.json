@@ -1,0 +1,33 @@
+{
+  "limits": [
+    "The table, cup and fixed cameras are virtual inputs, not a surveyed real workspace or physical calibration.",
+    "This is a static laboratory initialization, not collision safety, reachability, grasping, perception, control, sim-to-real, or multi-robot evidence.",
+    "Simulator labels are evaluation metadata only and may not be supplied to a future runtime perception component."
+  ],
+  "observations": {
+    "camera_observations": {
+      "fixed_depth_01": {
+        "cup_segmentation_pixels": 822,
+        "finite_depth_fraction": 1.0
+      },
+      "fixed_depth_02": {
+        "cup_segmentation_pixels": 824,
+        "finite_depth_fraction": 1.0
+      },
+      "wrist_cam": {
+        "cup_segmentation_pixels": 0,
+        "finite_depth_fraction": 1.0
+      }
+    },
+    "cup_position_invariant": true,
+    "fixed_cameras_cup_visible": true,
+    "table_top_invariant": true
+  },
+  "review": {
+    "adopted": false,
+    "status": "pending_human_review"
+  },
+  "run_id": "EXP-20260921-001-virtual-laboratory-v0-preflight",
+  "schema_version": "first-robots/research-result/v1",
+  "status": "passed_pending_human_review"
+}

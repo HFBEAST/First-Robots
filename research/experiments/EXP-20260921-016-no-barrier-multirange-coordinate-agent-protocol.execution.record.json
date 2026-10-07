@@ -1,0 +1,13 @@
+{
+  "kind": "formal_no_barrier_multirange_coordinate_agent_protocol",
+  "result": {
+    "path": "research/reports/EXP-20260921-016-no-barrier-multirange-coordinate-agent-protocol.result.json",
+    "sha256": "sha256:afe7d3dce8ed5cde09b2585d858d33df46c6cebe0077cdb4fe57f2df9911c844"
+  },
+  "review": {
+    "adopted": false,
+    "status": "pending_human_review"
+  },
+  "run_id": "EXP-20260921-016-no-barrier-multirange-coordinate-agent-protocol",
+  "schema_version": "first-robots/experiment-record/v1"
+}

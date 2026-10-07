@@ -1,0 +1,60 @@
+{
+  "limits": [
+    "This checks only MuJoCo renderer label-to-RGB association under deliberate display colors; it is not a physical perception, calibration, visibility, or camera claim.",
+    "This does not establish the reason for any prior nonzero cup-pixel result and does not alter geometry, reachability, collision, or grasp evidence."
+  ],
+  "observations": {
+    "association_verified": false,
+    "camera_observations": {
+      "fixed_depth_01": {
+        "barrier": {
+          "all_pixels_have_expected_channel_order": false,
+          "median_rgb": [
+            0.0,
+            0.0,
+            152.0
+          ],
+          "pixel_count": 32082
+        },
+        "cup": {
+          "all_pixels_have_expected_channel_order": false,
+          "median_rgb": [
+            8.0,
+            12.0,
+            137.0
+          ],
+          "pixel_count": 45
+        }
+      },
+      "fixed_depth_02": {
+        "barrier": {
+          "all_pixels_have_expected_channel_order": false,
+          "median_rgb": [
+            0.0,
+            0.0,
+            152.0
+          ],
+          "pixel_count": 32089
+        },
+        "cup": {
+          "all_pixels_have_expected_channel_order": false,
+          "median_rgb": [
+            8.0,
+            12.0,
+            133.0
+          ],
+          "pixel_count": 22
+        }
+      }
+    },
+    "change": "display rgba only",
+    "geometry_changed_from_006": false
+  },
+  "review": {
+    "adopted": false,
+    "status": "pending_human_review"
+  },
+  "run_id": "EXP-20260921-007-virtual-laboratory-segmentation-association",
+  "schema_version": "first-robots/research-result/v1",
+  "status": "blocked_pending_human_review"
+}

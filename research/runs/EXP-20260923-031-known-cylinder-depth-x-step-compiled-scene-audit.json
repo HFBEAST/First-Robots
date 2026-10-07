@@ -1,0 +1,148 @@
+{
+  "artifacts": [
+    {
+      "path": "research/artifacts/EXP-20260923-031-known-cylinder-depth-x-step-compiled-scene-audit/compiled-scene-audit-observations.json",
+      "sha256": "sha256:4095e6387b1ad70265d28599ffbef70dadaffbb8ffda412f83a76c6a59a7078a"
+    },
+    {
+      "path": "research/artifacts/EXP-20260923-031-known-cylinder-depth-x-step-compiled-scene-audit/config.json",
+      "sha256": "sha256:0c4dc48234d3cbf2de0ba188e7db02580ff059bd53ec4c000991ad4a41214ec8"
+    },
+    {
+      "path": "research/experiments/EXP-20260923-031-known-cylinder-depth-x-step-compiled-scene-audit.execution.record.json",
+      "sha256": "sha256:c56b6be84988bc55f99392dcd2c827445eb46db280b49836daa43892c665534b"
+    },
+    {
+      "path": "research/reports/EXP-20260923-031-known-cylinder-depth-x-step-compiled-scene-audit.result.json",
+      "sha256": "sha256:9d3cbc21b33358c0b1a8c5e9c42f2f3125647b907f2e6244602866880d55f36a"
+    }
+  ],
+  "baseline": {
+    "kind": "x_step_agent_chain_missing_compiled_gate",
+    "reference": "EXP-20260923-030-known-cylinder-depth-x-step-agent-chain"
+  },
+  "code": {
+    "commit": "5311e4a85e76bfc96a9ff235d9cd00f2c7a629fb",
+    "dirty_at_start": true,
+    "repository": "H:/0_program/My_action/First-Robots",
+    "traceable": true
+  },
+  "ended_at": "2026-09-23T09:18:57.398531Z",
+  "execution": {
+    "command": [
+      "H:\\0_program\\My_action\\First-Robots\\research\\.venvs\\mrbtp-demo-py312\\Scripts\\python.exe",
+      "research\\experiments\\run_known_cylinder_depth_x_step_compiled_scene_audit.py"
+    ],
+    "parameters": {
+      "actuation": "disabled",
+      "camera_fovy_degrees": 60.0,
+      "camera_resolution_px": [
+        640,
+        480
+      ],
+      "cup": {
+        "half_height_m": 0.055,
+        "radius_m": 0.035
+      },
+      "dynamics": "disabled",
+      "fixed_cameras": {
+        "fixed_depth_01": {
+          "position_m": [
+            0.45,
+            -0.45,
+            0.42
+          ],
+          "target_m": [
+            0.12,
+            0,
+            0.055
+          ]
+        },
+        "fixed_depth_02": {
+          "position_m": [
+            0.45,
+            0.45,
+            0.42
+          ],
+          "target_m": [
+            0.12,
+            0,
+            0.055
+          ]
+        }
+      },
+      "frozen_center_z_m": 0.055,
+      "frozen_y_m": 0.0,
+      "hardware_io": "disabled",
+      "robot_qpos_rad": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "table": {
+        "center_m": [
+          0,
+          0,
+          -0.025
+        ],
+        "half_extents_m": [
+          0.45,
+          0.45,
+          0.025
+        ]
+      },
+      "x_values_m": [
+        0.125,
+        0.15,
+        0.175
+      ]
+    },
+    "script": "research/experiments/run_known_cylinder_depth_x_step_compiled_scene_audit.py"
+  },
+  "inputs": [
+    {
+      "kind": "configuration",
+      "path": "research/configs/EXP-20260923-031-known-cylinder-depth-x-step-compiled-scene-audit.json",
+      "sha256": "sha256:b26316d7734e5f7560c194795c75299473426d29e48e7962d8ea1d5b642e5ae0"
+    },
+    {
+      "kind": "predecessor_result",
+      "path": "research/reports/EXP-20260923-030-known-cylinder-depth-x-step-agent-chain.result.json",
+      "sha256": "sha256:d8b067303ced302a58ed2b72d297eebbc63c5bdf3f7420ccb915d3f5a733b65f"
+    },
+    {
+      "kind": "candidate_model",
+      "path": "research/sources/mujoco_menagerie_robotstudio_so101/robotstudio_so101/scene.xml",
+      "sha256": "sha256:65496b0061ca3ddd92b58fe09bd30f6a4a443f137cc42cf8975d5cff23030bfd"
+    }
+  ],
+  "level": "formal",
+  "objective": "Repair the 030 omission by making its compiled virtual geometry and frozen controls explicit pass-predicate conditions.",
+  "results": {
+    "criteria": "Every declared X condition compiles with the frozen table, cameras, robot state and cup geometry, and compiled cup centers vary only in the declared X sequence.",
+    "duration_seconds": 0.367824,
+    "metrics": [
+      {
+        "name": "compiled_x_step_conditions_valid",
+        "unit": "boolean",
+        "value": true
+      }
+    ],
+    "passed": true
+  },
+  "review": {
+    "note": "Configuration audit only; it repairs the 030 pass-predicate omission without rerunning or broadening perception, agent-chain, or robot capability claims.",
+    "status": "pending_human_review"
+  },
+  "run_id": "EXP-20260923-031-known-cylinder-depth-x-step-compiled-scene-audit",
+  "runtime": {
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.12.11",
+    "random_seed": null
+  },
+  "schema_version": "experiment-management/run-manifest/v1",
+  "started_at": "2026-09-23T09:18:57.030250Z"
+}

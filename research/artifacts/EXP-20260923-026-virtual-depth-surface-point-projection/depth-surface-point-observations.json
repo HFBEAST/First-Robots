@@ -1,0 +1,97 @@
+{
+  "center_fit_or_fusion": "not_evaluated",
+  "cup_b_world_m_evaluation_only": [
+    0.15,
+    0.0,
+    0.055
+  ],
+  "measurements": {
+    "fixed_depth_01": {
+      "component": {
+        "bbox_xywh": [
+          313,
+          205,
+          47,
+          82
+        ],
+        "centroid_pixel_xy": [
+          334.9629522431259,
+          244.64283646888566
+        ],
+        "pixel_count": 3455
+      },
+      "component_count": 1,
+      "depth_sample_count": 3455,
+      "evaluation_only_delta_from_cup_center_m": [
+        0.012444605482339027,
+        -0.01863416016211772,
+        0.017023074258752928
+      ],
+      "evaluation_only_distance_from_cup_center_m": 0.028140454647669327,
+      "foreground_depth_median_m": 0.6243817210197449,
+      "frame": {
+        "dtype": "float32",
+        "frame_id": "fixed_depth_01",
+        "height": 480,
+        "pixel_encoding": "depth_float32_m",
+        "scenario_version": "virtual-depth-contract-v1",
+        "source_kind": "mujoco_depth_render",
+        "width": 640
+      },
+      "ray_direction_world": [
+        -0.4605442229282808,
+        0.6908687831754146,
+        -0.5573144024346653
+      ],
+      "surface_point_world_m": [
+        0.16244460548233902,
+        -0.01863416016211772,
+        0.07202307425875293
+      ]
+    },
+    "fixed_depth_02": {
+      "component": {
+        "bbox_xywh": [
+          280,
+          205,
+          47,
+          82
+        ],
+        "centroid_pixel_xy": [
+          304.0821759259259,
+          244.65104166666666
+        ],
+        "pixel_count": 3456
+      },
+      "component_count": 1,
+      "depth_sample_count": 3456,
+      "evaluation_only_delta_from_cup_center_m": [
+        0.012458311360404123,
+        0.01877613854141763,
+        0.017090614349359594
+      ],
+      "evaluation_only_distance_from_cup_center_m": 0.028281478025694116,
+      "foreground_depth_median_m": 0.6242396831512451,
+      "frame": {
+        "dtype": "float32",
+        "frame_id": "fixed_depth_02",
+        "height": 480,
+        "pixel_encoding": "depth_float32_m",
+        "scenario_version": "virtual-depth-contract-v1",
+        "source_kind": "mujoco_depth_render",
+        "width": 640
+      },
+      "ray_direction_world": [
+        -0.46062705784426766,
+        -0.6907985395636926,
+        -0.5573330165335652
+      ],
+      "surface_point_world_m": [
+        0.16245831136040412,
+        0.01877613854141763,
+        0.0720906143493596
+      ]
+    }
+  },
+  "source_run": "EXP-20260923-025-virtual-depth-background-detection-golden-case"
+}

@@ -1,0 +1,8 @@
+{
+  "schema_version": "first-robots/experiment-record/v1",
+  "run_id": "EXP-20260921-006-virtual-laboratory-barrier-width-isolation",
+  "kind": "formal_virtual_laboratory_barrier_width_isolation",
+  "plan": "research/experiments/EXP-20260921-006-virtual-laboratory-barrier-width-isolation.md",
+  "state": "planned_not_executed",
+  "review": {"status": "pending_human_review", "adopted": false}
+}

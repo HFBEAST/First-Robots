@@ -1,0 +1,31 @@
+{
+  "limits": [
+    "This supplies one fixed positive-Y point with X=0; comparison with negative Y is an observation, not a symmetry, field-of-view, coverage, or causal conclusion.",
+    "It does not validate projection or ray proxies, physical cameras, perception, safety, reachability, control, sim-to-real, or multi-robot capability."
+  ],
+  "observations": {
+    "baseline_target_pixels": 7504,
+    "camera_relative_position_invariant": true,
+    "input_tested_camera_relative_center_m": [
+      0.0,
+      0.05,
+      -0.25
+    ],
+    "observed_tested_camera_relative_center_m": [
+      1.0408340855860843e-17,
+      0.04999999999999994,
+      -0.24999999999999986
+    ],
+    "pixel_difference_from_baseline": 136,
+    "segmentation_sha256": "sha256:29a35b1d2f125e0c7706dd321c769cf114af8a00aba4251861c42b53ce8f91e4",
+    "tested_target_pixels": 7640,
+    "world_position_invariant": true
+  },
+  "review": {
+    "adopted": false,
+    "status": "pending_human_review"
+  },
+  "run_id": "EXP-20260920-007-virtual-wrist-relative-positive-y-center-step",
+  "schema_version": "first-robots/research-result/v1",
+  "status": "passed_pending_human_review"
+}

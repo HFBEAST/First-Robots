@@ -1,0 +1,108 @@
+{
+  "artifacts": [
+    {
+      "path": "research/artifacts/EXP-20260921-013-world-coordinate-xy-review-map/config.json",
+      "sha256": "sha256:72c20116eeb27ce92c59decb5daf47ea73c801ddf40f731c3a116a77e7969e49"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-013-world-coordinate-xy-review-map/map-assessment.json",
+      "sha256": "sha256:c9316ef6b8d4fba0a05f79fb18bb6ca7c49ab9381c97ed19893d8879e003c165"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-013-world-coordinate-xy-review-map/world-coordinate-xy-map.png",
+      "sha256": "sha256:868a4636a7f0b8361d14de5bae319327c1ce8ba07b7d2ca4194bb84b126f1cbf"
+    },
+    {
+      "path": "research/experiments/EXP-20260921-013-world-coordinate-xy-review-map.execution.record.json",
+      "sha256": "sha256:64e44e0342c556659ef708bc2eac9729fe5a9f03741c7ad98c831ceade69cae7"
+    },
+    {
+      "path": "research/reports/EXP-20260921-013-world-coordinate-xy-review-map.result.json",
+      "sha256": "sha256:5899471b9e8a0cc639d21685c3e05b35b36804d2b276550fec4482d68fddcdc6"
+    }
+  ],
+  "baseline": {
+    "kind": "frozen_coordinate_state",
+    "reference": "EXP-20260921-012-world-coordinate-contract-review"
+  },
+  "code": {
+    "commit": "5311e4a85e76bfc96a9ff235d9cd00f2c7a629fb",
+    "dirty_at_start": true,
+    "repository": "H:/0_program/My_action/First-Robots",
+    "traceable": true
+  },
+  "ended_at": "2026-09-21T13:39:45.851297Z",
+  "execution": {
+    "command": [
+      "H:\\0_program\\My_action\\First-Robots\\research\\.venvs\\mrbtp-demo-py312\\Scripts\\python.exe",
+      "research\\experiments\\run_world_coordinate_xy_review_map.py"
+    ],
+    "parameters": {
+      "grid_step_m": 0.1,
+      "image_size_px": [
+        1000,
+        900
+      ],
+      "title": "Frozen virtual world coordinates — XY review map",
+      "world_xy_bounds_m": {
+        "x": [
+          -0.55,
+          0.75
+        ],
+        "y": [
+          -0.75,
+          0.65
+        ]
+      }
+    },
+    "script": "research/experiments/run_world_coordinate_xy_review_map.py"
+  },
+  "inputs": [
+    {
+      "kind": "configuration",
+      "path": "research/configs/EXP-20260921-013-world-coordinate-xy-review-map.json",
+      "sha256": "sha256:93e8072bb9b57dbf4b5a575dd033a3766e5ea599f4fee5a63b144f42fc83e806"
+    },
+    {
+      "kind": "predecessor_result",
+      "path": "research/reports/EXP-20260921-012-world-coordinate-contract-review.result.json",
+      "sha256": "sha256:6cc48b93fd35d1ca932d2df5a16890e178e35b9a7b9ee40228f6dc1ecd45afc8"
+    },
+    {
+      "kind": "coordinate_state",
+      "path": "research/artifacts/EXP-20260921-012-world-coordinate-contract-review/coordinate-state.json",
+      "sha256": "sha256:15de29e0b7ae0ddde14a597af039b43c7e4529e4a4be4430383ce369ffc1c190"
+    },
+    {
+      "kind": "candidate_model",
+      "path": "research/sources/mujoco_menagerie_robotstudio_so101/robotstudio_so101/scene.xml",
+      "sha256": "sha256:65496b0061ca3ddd92b58fe09bd30f6a4a443f137cc42cf8975d5cff23030bfd"
+    }
+  ],
+  "level": "formal",
+  "objective": "Create a labeled XY coordinate review map from the frozen virtual state.",
+  "results": {
+    "criteria": "Frozen coordinate state produced a labeled nonuniform XY review-map artifact.",
+    "duration_seconds": 0.112199,
+    "metrics": [
+      {
+        "name": "coordinate_map_nonuniform",
+        "unit": "boolean",
+        "value": true
+      }
+    ],
+    "passed": true
+  },
+  "review": {
+    "note": "Coordinate review visualization only; no reachability or grasp conclusion.",
+    "status": "pending_human_review"
+  },
+  "run_id": "EXP-20260921-013-world-coordinate-xy-review-map",
+  "runtime": {
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.12.11",
+    "random_seed": null
+  },
+  "schema_version": "experiment-management/run-manifest/v1",
+  "started_at": "2026-09-21T13:39:45.739084Z"
+}

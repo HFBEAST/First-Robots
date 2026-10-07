@@ -1,0 +1,179 @@
+{
+  "artifacts": [
+    {
+      "path": "research/artifacts/EXP-20260921-003-virtual-laboratory-not-observable-candidate/config.json",
+      "sha256": "sha256:224012aafdb8408275d64bf9582b60898665a05f6499dce9097bd67d103940de"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-003-virtual-laboratory-not-observable-candidate/fixed_depth_01-depth.npy",
+      "sha256": "sha256:b366da4b5dcf3695f25f875549380db42928257b1a15fe3c31717568831fff95"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-003-virtual-laboratory-not-observable-candidate/fixed_depth_01-rgb.png",
+      "sha256": "sha256:1ca6a86a03750fa78fcee1cd228f5f1bc6f338ff7b305a621a44fa21b663b9d0"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-003-virtual-laboratory-not-observable-candidate/fixed_depth_01-segmentation.npy",
+      "sha256": "sha256:5265416de2c16ac3226855323b589172fcc86f00963abb5fd7007f3b51f2032c"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-003-virtual-laboratory-not-observable-candidate/fixed_depth_02-depth.npy",
+      "sha256": "sha256:2a61518fa7565306230106ee8aa4e6f0b5034517d9286bace7265395a3fbc01e"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-003-virtual-laboratory-not-observable-candidate/fixed_depth_02-rgb.png",
+      "sha256": "sha256:67e2f9f759a861ea5183ca6fc52b17bec90454bfd26535adba63f72aad562444"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-003-virtual-laboratory-not-observable-candidate/fixed_depth_02-segmentation.npy",
+      "sha256": "sha256:aee774114325a02c1c110a799e750efd348c657100ba027bd822e2c8865b3500"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-003-virtual-laboratory-not-observable-candidate/terminal-assessment.json",
+      "sha256": "sha256:c0253215b49a967a741d8b67bea5c09ab22516b7bb7f0e38d1c7e8a3ce3848d5"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-003-virtual-laboratory-not-observable-candidate/wrist_cam-depth.npy",
+      "sha256": "sha256:33db821f8e8e6131cc512b4bfef6be3d86748c07cb7220237a188baab333ca75"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-003-virtual-laboratory-not-observable-candidate/wrist_cam-rgb.png",
+      "sha256": "sha256:7d3893422457b1f19e3667eaf2eff816b80cf803b3db09b4977a78e3e402c4e3"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-003-virtual-laboratory-not-observable-candidate/wrist_cam-segmentation.npy",
+      "sha256": "sha256:dd82840f7b80a1bd8c4c5800d75211aea7858bc37ebf11c64cf3fc14c2ec7981"
+    },
+    {
+      "path": "research/reports/EXP-20260921-003-virtual-laboratory-not-observable-candidate.result.json",
+      "sha256": "sha256:120ad10eee2b17aa5dd46d2cbfa826cc060584d3ab630133a0e6c246bb6d2781"
+    },
+    {
+      "path": "research/experiments/EXP-20260921-003-virtual-laboratory-not-observable-candidate.record.json",
+      "sha256": "sha256:29bc2d5fdf2816c7fc1ba950d8409fd511a8e4f53c6169c1627db259bb2cf6c0"
+    }
+  ],
+  "baseline": {
+    "kind": "virtual_lab_v0",
+    "reference": "EXP-20260921-001-virtual-laboratory-v0-preflight"
+  },
+  "code": {
+    "commit": "5311e4a85e76bfc96a9ff235d9cd00f2c7a629fb",
+    "dirty_at_start": true,
+    "repository": "H:/0_program/My_action/First-Robots",
+    "traceable": true
+  },
+  "ended_at": "2026-09-20T22:09:00.557979Z",
+  "execution": {
+    "command": [
+      "H:\\0_program\\My_action\\First-Robots\\research\\.venvs\\mrbtp-demo-py312\\Scripts\\python.exe",
+      "research\\experiments\\run_virtual_laboratory_not_observable_candidate.py"
+    ],
+    "parameters": {
+      "actuation": "disabled",
+      "cup_center_m": [
+        -0.4,
+        0,
+        0.055
+      ],
+      "cup_half_height_m": 0.055,
+      "cup_radius_m": 0.035,
+      "dynamics": "disabled",
+      "fixed_cameras": {
+        "fixed_depth_01": {
+          "position_m": [
+            0.45,
+            -0.45,
+            0.42
+          ],
+          "target_m": [
+            0.12,
+            0,
+            0.055
+          ]
+        },
+        "fixed_depth_02": {
+          "position_m": [
+            0.45,
+            0.45,
+            0.42
+          ],
+          "target_m": [
+            0.12,
+            0,
+            0.055
+          ]
+        }
+      },
+      "hardware_io": "disabled",
+      "qpos": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "renderer": {
+        "height": 240,
+        "width": 320
+      },
+      "table": {
+        "center_m": [
+          0,
+          0,
+          -0.025
+        ],
+        "half_extents_m": [
+          0.45,
+          0.45,
+          0.025
+        ]
+      }
+    },
+    "script": "research/experiments/run_virtual_laboratory_not_observable_candidate.py"
+  },
+  "inputs": [
+    {
+      "kind": "configuration",
+      "path": "research/configs/EXP-20260921-003-virtual-laboratory-not-observable-candidate.json",
+      "sha256": "sha256:de4bc986efbf3928eec13196b4c4f978ae67efd3f86f616b9b5abfc2e54dd1e6"
+    },
+    {
+      "kind": "predecessor_result",
+      "path": "research/reports/EXP-20260921-001-virtual-laboratory-v0-preflight.result.json",
+      "sha256": "sha256:51a6a0c88993ed0c6bc3e3838b4be1bde178f3e41751053c3165350480ed7a0d"
+    },
+    {
+      "kind": "model",
+      "path": "research/sources/mujoco_menagerie_robotstudio_so101/robotstudio_so101/scene.xml",
+      "sha256": "sha256:65496b0061ca3ddd92b58fe09bd30f6a4a443f137cc42cf8975d5cff23030bfd"
+    }
+  ],
+  "level": "formal",
+  "objective": "Test one table-contained virtual cup position as a not-observable candidate.",
+  "results": {
+    "criteria": "Cup remains table-contained and both fixed cameras emit no cup segmentation pixels.",
+    "duration_seconds": 0.445132,
+    "metrics": [
+      {
+        "name": "fixed_cameras_cup_absent",
+        "unit": "boolean",
+        "value": false
+      }
+    ],
+    "passed": false
+  },
+  "review": {
+    "note": "One candidate static failure scene; no retry or cause attribution.",
+    "status": "pending_human_review"
+  },
+  "run_id": "EXP-20260921-003-virtual-laboratory-not-observable-candidate",
+  "runtime": {
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.12.11",
+    "random_seed": null
+  },
+  "schema_version": "experiment-management/run-manifest/v1",
+  "started_at": "2026-09-20T22:09:00.113127Z"
+}

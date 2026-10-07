@@ -1,0 +1,137 @@
+{
+  "artifacts": [
+    {
+      "path": "research/artifacts/EXP-20260920-007-virtual-wrist-relative-positive-y-center-step/config.json",
+      "sha256": "sha256:2621bee519c432d53cbb70418e67c84e3ae9060a4e389fbaf4f850329a621d10"
+    },
+    {
+      "path": "research/artifacts/EXP-20260920-007-virtual-wrist-relative-positive-y-center-step/relative-positive-y-center-step.json",
+      "sha256": "sha256:7174598f8421ed0d8e1fb54280f75cf383ffcaf99aa13ae5ec673ba60d0645ed"
+    },
+    {
+      "path": "research/artifacts/EXP-20260920-007-virtual-wrist-relative-positive-y-center-step/target-mask.npy",
+      "sha256": "sha256:0418eb6c3bc6ea31384aa6c8252baebae32b951d22364a0fac6fa4dd2f1ca3f0"
+    },
+    {
+      "path": "research/reports/EXP-20260920-007-virtual-wrist-relative-positive-y-center-step.result.json",
+      "sha256": "sha256:1e2f12967e72d7d1688f437a6f242cca4d96464795f8e16594c7e52d7bc5f987"
+    },
+    {
+      "path": "research/experiments/EXP-20260920-007-virtual-wrist-relative-positive-y-center-step.record.json",
+      "sha256": "sha256:5f8a91c81d7ec937c058cdee0826b089b30bb170acf2a1a5d6a8d2f0a3234221"
+    }
+  ],
+  "baseline": {
+    "kind": "center_relative_depth_step",
+    "reference": "EXP-20260920-002-virtual-wrist-relative-depth-step"
+  },
+  "code": {
+    "commit": "5311e4a85e76bfc96a9ff235d9cd00f2c7a629fb",
+    "dirty_at_start": true,
+    "repository": "H:/0_program/My_action/First-Robots",
+    "traceable": true
+  },
+  "ended_at": "2026-09-20T07:00:19.598508Z",
+  "execution": {
+    "command": [
+      "H:\\0_program\\My_action\\First-Robots\\research\\.venvs\\mrbtp-demo-py312\\Scripts\\python.exe",
+      "research\\experiments\\run_virtual_wrist_relative_positive_y_center_step.py"
+    ],
+    "parameters": {
+      "actuation": "disabled",
+      "camera": "wrist_cam",
+      "cup": {
+        "half_height_m": 0.055,
+        "radius_m": 0.035
+      },
+      "dynamics": "disabled",
+      "hardware_io": "disabled",
+      "independent_variable": {
+        "baseline_m": [
+          0,
+          0,
+          -0.25
+        ],
+        "name": "cup center camera-coordinate Y",
+        "tested_m": [
+          0,
+          0.05,
+          -0.25
+        ]
+      },
+      "pass_conditions": [
+        "the predecessor result hash matches blocking_predecessor.result_sha256 and reports passed_pending_human_review",
+        "the source scene SHA-256 matches model.scene_sha256",
+        "after mj_forward, virtual_cup geom_xpos equals its camera-derived tested world position",
+        "after mj_forward, virtual_cup center expressed in wrist_cam coordinates equals independent_variable.tested_m",
+        "the tested condition renders one or more virtual_cup segmentation pixels"
+      ],
+      "qpos": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "renderer": {
+        "height": 240,
+        "mode": "MuJoCo geom segmentation",
+        "width": 320
+      },
+      "stop_conditions": [
+        "any predecessor, source, position, or nonzero-pixel condition fails"
+      ]
+    },
+    "script": "research/experiments/run_virtual_wrist_relative_positive_y_center_step.py"
+  },
+  "inputs": [
+    {
+      "kind": "configuration",
+      "path": "research/configs/EXP-20260920-007-virtual-wrist-relative-positive-y-center-step.json",
+      "sha256": "sha256:6a224a7c58617605fda608103800ce33c286447ae7f7c96df30be5e7a629811b"
+    },
+    {
+      "kind": "predecessor_result",
+      "path": "research/reports/EXP-20260920-002-virtual-wrist-relative-depth-step.result.json",
+      "sha256": "sha256:474d9ff92ff6f3af1e4a0d15ee6d2fc424ce5734f0dafb50b7f1f9eab89ac118"
+    },
+    {
+      "kind": "model",
+      "path": "research/sources/mujoco_menagerie_robotstudio_so101/robotstudio_so101/scene.xml",
+      "revision": "da76818e269b82289eba39808e2fb91d679d6994",
+      "sha256": "sha256:65496b0061ca3ddd92b58fe09bd30f6a4a443f137cc42cf8975d5cff23030bfd"
+    }
+  ],
+  "level": "formal",
+  "objective": "Supply one centered positive-Y step before any positive/negative-Y comparison.",
+  "results": {
+    "criteria": "The frozen predecessor and source must match, both position invariants must pass, and the tested condition must have nonzero target pixels.",
+    "duration_seconds": 0.397431,
+    "metrics": [
+      {
+        "name": "tested_target_pixels",
+        "unit": "pixels",
+        "value": 7640
+      },
+      {
+        "name": "pixel_difference_from_baseline",
+        "unit": "pixels",
+        "value": 136
+      }
+    ],
+    "passed": true
+  },
+  "review": {
+    "note": "This supplies the missing centered positive-Y point; comparison remains an observation.",
+    "status": "pending_human_review"
+  },
+  "run_id": "EXP-20260920-007-virtual-wrist-relative-positive-y-center-step",
+  "runtime": {
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.12.11",
+    "random_seed": null
+  },
+  "schema_version": "experiment-management/run-manifest/v1",
+  "started_at": "2026-09-20T07:00:19.200944Z"
+}

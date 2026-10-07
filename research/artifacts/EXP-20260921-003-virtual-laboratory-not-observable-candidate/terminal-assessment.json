@@ -1,0 +1,19 @@
+{
+  "camera_observations": {
+    "fixed_depth_01": {
+      "cup_segmentation_pixels": 477,
+      "finite_depth_fraction": 1.0
+    },
+    "fixed_depth_02": {
+      "cup_segmentation_pixels": 480,
+      "finite_depth_fraction": 1.0
+    },
+    "wrist_cam": {
+      "cup_segmentation_pixels": 0,
+      "finite_depth_fraction": 1.0
+    }
+  },
+  "cup_position_invariant": true,
+  "cup_within_table_bounds": true,
+  "terminal_assessment": "candidate_remains_observable_by_nominal_fixed_depth"
+}

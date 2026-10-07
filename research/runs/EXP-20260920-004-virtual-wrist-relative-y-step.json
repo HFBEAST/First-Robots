@@ -1,0 +1,137 @@
+{
+  "artifacts": [
+    {
+      "path": "research/artifacts/EXP-20260920-004-virtual-wrist-relative-y-step/config.json",
+      "sha256": "sha256:f430e7c7cd3d4c7514573754a53825572a8292a9bbcb78b3ca393021ec96db04"
+    },
+    {
+      "path": "research/artifacts/EXP-20260920-004-virtual-wrist-relative-y-step/relative-y-step.json",
+      "sha256": "sha256:a9c2fe9ce7e13cb835d13e05f75d4ce9a8da58f6eb15ad0299a8dc236229a193"
+    },
+    {
+      "path": "research/artifacts/EXP-20260920-004-virtual-wrist-relative-y-step/target-mask.npy",
+      "sha256": "sha256:f9efd664e2833c9ff748018490f408a7e8550aea7878ffd7a598d5138b214025"
+    },
+    {
+      "path": "research/reports/EXP-20260920-004-virtual-wrist-relative-y-step.result.json",
+      "sha256": "sha256:b9c11a5fd107cf02ab5593b88f565e5974f018d74c9b972c408170cb50c1f355"
+    },
+    {
+      "path": "research/experiments/EXP-20260920-004-virtual-wrist-relative-y-step.record.json",
+      "sha256": "sha256:a822df739532f557850d3685d7689bafa04f5faf09fdd5c99bd0f270051f82e0"
+    }
+  ],
+  "baseline": {
+    "kind": "prior_relative_x_step",
+    "reference": "EXP-20260920-003-virtual-wrist-relative-x-step"
+  },
+  "code": {
+    "commit": "5311e4a85e76bfc96a9ff235d9cd00f2c7a629fb",
+    "dirty_at_start": true,
+    "repository": "H:/0_program/My_action/First-Robots",
+    "traceable": true
+  },
+  "ended_at": "2026-09-20T06:25:43.420996Z",
+  "execution": {
+    "command": [
+      "H:\\0_program\\My_action\\First-Robots\\research\\.venvs\\mrbtp-demo-py312\\Scripts\\python.exe",
+      "research\\experiments\\run_virtual_wrist_relative_y_step.py"
+    ],
+    "parameters": {
+      "actuation": "disabled",
+      "camera": "wrist_cam",
+      "cup": {
+        "half_height_m": 0.055,
+        "radius_m": 0.035
+      },
+      "dynamics": "disabled",
+      "hardware_io": "disabled",
+      "independent_variable": {
+        "baseline_m": [
+          0.05,
+          0,
+          -0.25
+        ],
+        "name": "cup center camera-coordinate Y",
+        "tested_m": [
+          0.05,
+          0.05,
+          -0.25
+        ]
+      },
+      "pass_conditions": [
+        "the predecessor result hash matches blocking_predecessor.result_sha256 and reports passed_pending_human_review",
+        "the source scene SHA-256 matches model.scene_sha256",
+        "after mj_forward, virtual_cup geom_xpos equals its camera-derived tested world position",
+        "after mj_forward, virtual_cup center expressed in wrist_cam coordinates equals independent_variable.tested_m",
+        "the tested condition renders one or more virtual_cup segmentation pixels"
+      ],
+      "qpos": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "renderer": {
+        "height": 240,
+        "mode": "MuJoCo geom segmentation",
+        "width": 320
+      },
+      "stop_conditions": [
+        "any predecessor, source, position, or nonzero-pixel condition fails"
+      ]
+    },
+    "script": "research/experiments/run_virtual_wrist_relative_y_step.py"
+  },
+  "inputs": [
+    {
+      "kind": "configuration",
+      "path": "research/configs/EXP-20260920-004-virtual-wrist-relative-y-step.json",
+      "sha256": "sha256:e54967b4f2d79f87ca3c70b836e2affc744c5cd5dfdccfa4157b5f095dbd494a"
+    },
+    {
+      "kind": "predecessor_result",
+      "path": "research/reports/EXP-20260920-003-virtual-wrist-relative-x-step.result.json",
+      "sha256": "sha256:bace661ef1d89b181c55ad3931b6d2c26bdd23632006e5d683a138a543769bfa"
+    },
+    {
+      "kind": "model",
+      "path": "research/sources/mujoco_menagerie_robotstudio_so101/robotstudio_so101/scene.xml",
+      "revision": "da76818e269b82289eba39808e2fb91d679d6994",
+      "sha256": "sha256:65496b0061ca3ddd92b58fe09bd30f6a4a443f137cc42cf8975d5cff23030bfd"
+    }
+  ],
+  "level": "formal",
+  "objective": "Test one wrist-camera lateral Y step after the frozen relative-X step.",
+  "results": {
+    "criteria": "The frozen predecessor and source must match, both position invariants must pass, and the tested condition must have nonzero target pixels.",
+    "duration_seconds": 0.421646,
+    "metrics": [
+      {
+        "name": "tested_target_pixels",
+        "unit": "pixels",
+        "value": 7668
+      },
+      {
+        "name": "pixel_difference_from_baseline",
+        "unit": "pixels",
+        "value": 124
+      }
+    ],
+    "passed": true
+  },
+  "review": {
+    "note": "Pixel difference is recorded without a field-of-view or causal interpretation.",
+    "status": "pending_human_review"
+  },
+  "run_id": "EXP-20260920-004-virtual-wrist-relative-y-step",
+  "runtime": {
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.12.11",
+    "random_seed": null
+  },
+  "schema_version": "experiment-management/run-manifest/v1",
+  "started_at": "2026-09-20T06:25:42.998892Z"
+}

@@ -1,0 +1,8 @@
+{
+  "schema_version": "first-robots/experiment-record/v1",
+  "run_id": "EXP-20260921-015-no-barrier-coordinate-baseline",
+  "kind": "formal_no_barrier_coordinate_baseline",
+  "plan": "research/experiments/EXP-20260921-015-no-barrier-coordinate-baseline.md",
+  "state": "planned_not_executed",
+  "review": {"status": "pending_human_review", "adopted": false}
+}

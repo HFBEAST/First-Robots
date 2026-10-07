@@ -1,0 +1,31 @@
+{
+  "limits": [
+    "This tests one fixed Y displacement only; pixel-count change is an observation, not a field-of-view, coverage, or causal conclusion.",
+    "It does not validate projection or ray proxies, physical cameras, perception, safety, reachability, control, sim-to-real, or multi-robot capability."
+  ],
+  "observations": {
+    "baseline_target_pixels": 7544,
+    "camera_relative_position_invariant": true,
+    "input_tested_camera_relative_center_m": [
+      0.05,
+      0.05,
+      -0.25
+    ],
+    "observed_tested_camera_relative_center_m": [
+      0.04999999999999996,
+      0.04999999999999994,
+      -0.2499999999999999
+    ],
+    "pixel_difference_from_baseline": 124,
+    "segmentation_sha256": "sha256:fa5b1b20485513d6cb9131106526d1d0a33deefd81bbc3f7d600f2392b678c28",
+    "tested_target_pixels": 7668,
+    "world_position_invariant": true
+  },
+  "review": {
+    "adopted": false,
+    "status": "pending_human_review"
+  },
+  "run_id": "EXP-20260920-004-virtual-wrist-relative-y-step",
+  "schema_version": "first-robots/research-result/v1",
+  "status": "passed_pending_human_review"
+}

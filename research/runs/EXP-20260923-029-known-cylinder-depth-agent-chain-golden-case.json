@@ -1,0 +1,113 @@
+{
+  "artifacts": [
+    {
+      "path": "research/artifacts/EXP-20260923-029-known-cylinder-depth-agent-chain-golden-case/agent-chain-observations.json",
+      "sha256": "sha256:54cfbb6b2ff012e359e48738278893700a959dc6d6a02ab30514fcbd9d8760a9"
+    },
+    {
+      "path": "research/artifacts/EXP-20260923-029-known-cylinder-depth-agent-chain-golden-case/config.json",
+      "sha256": "sha256:db303e7e02dbab39a80118f4271fd33055d4155ffdca1ece6867a010bbdc3a31"
+    },
+    {
+      "path": "research/experiments/EXP-20260923-029-known-cylinder-depth-agent-chain-golden-case.execution.record.json",
+      "sha256": "sha256:0812538202487ce279e864334902a75f60236d87900fcafa8d536585a4e641f3"
+    },
+    {
+      "path": "research/reports/EXP-20260923-029-known-cylinder-depth-agent-chain-golden-case.result.json",
+      "sha256": "sha256:8189c2af3e709390c5c32bf26b6b16b580af8bcf477ff8dec958b65e63011645"
+    }
+  ],
+  "baseline": {
+    "kind": "known_cylinder_depth_center_fit",
+    "reference": "EXP-20260923-028-known-cylinder-depth-center-fit-golden-case"
+  },
+  "code": {
+    "commit": "5311e4a85e76bfc96a9ff235d9cd00f2c7a629fb",
+    "dirty_at_start": true,
+    "repository": "H:/0_program/My_action/First-Robots",
+    "traceable": true
+  },
+  "ended_at": "2026-09-23T06:06:52.222655Z",
+  "execution": {
+    "command": [
+      "H:\\0_program\\My_action\\First-Robots\\research\\.venvs\\mrbtp-demo-py312\\Scripts\\python.exe",
+      "research\\experiments\\run_known_cylinder_depth_agent_chain_golden_case.py"
+    ],
+    "parameters": {
+      "actuation": "disabled",
+      "cup": {
+        "half_height_m": 0.055,
+        "radius_m": 0.035
+      },
+      "dynamics": "disabled",
+      "evaluation_only_b_world_m": [
+        0.15,
+        0,
+        0.055
+      ],
+      "hardware_io": "disabled",
+      "initial_cup_a_world_m": [
+        0.12,
+        0,
+        0.055
+      ],
+      "known_object_model_version": "upright-cylinder-r0.035-h0.110-table-z0",
+      "required_depth_frames": [
+        "fixed_depth_01",
+        "fixed_depth_02"
+      ],
+      "scenario_version": "known-cylinder-depth-agent-chain-v1",
+      "table": {
+        "center_m": [
+          0,
+          0,
+          -0.025
+        ],
+        "half_extents_m": [
+          0.45,
+          0.45,
+          0.025
+        ]
+      }
+    },
+    "script": "research/experiments/run_known_cylinder_depth_agent_chain_golden_case.py"
+  },
+  "inputs": [
+    {
+      "kind": "configuration",
+      "path": "research/configs/EXP-20260923-029-known-cylinder-depth-agent-chain-golden-case.json",
+      "sha256": "sha256:864a9d7e550b6e3340820cf6f8dd7d923bd42b6a3ff6ff57651292da3a975d6e"
+    },
+    {
+      "kind": "predecessor_result",
+      "path": "research/reports/EXP-20260923-028-known-cylinder-depth-center-fit-golden-case.result.json",
+      "sha256": "sha256:448512131f3954c74f56b0d5b71930047eb0cbbb2a744b00d50d12b73ee3cb93"
+    }
+  ],
+  "level": "formal",
+  "objective": "Run one known-cylinder virtual dual-depth coordinate message through structural coordination, table containment, mock execution, and review.",
+  "results": {
+    "criteria": "Frozen known-cylinder fit produces a complete dual-depth message, table-only capability acceptance, mock state transition, reviewer equality, and safe missing-frame rejection.",
+    "duration_seconds": 0.127029,
+    "metrics": [
+      {
+        "name": "known_cylinder_depth_agent_chain_valid",
+        "unit": "boolean",
+        "value": true
+      }
+    ],
+    "passed": true
+  },
+  "review": {
+    "note": "Virtual known-cylinder message and in-memory mock state chain only; no robot action, planning, collision, grasping, safety, or hardware capability claim.",
+    "status": "pending_human_review"
+  },
+  "run_id": "EXP-20260923-029-known-cylinder-depth-agent-chain-golden-case",
+  "runtime": {
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.12.11",
+    "random_seed": null
+  },
+  "schema_version": "experiment-management/run-manifest/v1",
+  "started_at": "2026-09-23T06:06:52.095734Z"
+}

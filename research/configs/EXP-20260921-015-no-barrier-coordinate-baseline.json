@@ -1,0 +1,38 @@
+{
+  "schema_version": "first-robots/research-config/v1",
+  "experiment_id": "EXP-20260921-015-no-barrier-coordinate-baseline",
+  "status": "planned_not_executed",
+  "blocking_predecessor": {
+    "run_id": "EXP-20260921-012-world-coordinate-contract-review",
+    "result_path": "research/reports/EXP-20260921-012-world-coordinate-contract-review.result.json",
+    "result_sha256": "sha256:6cc48b93fd35d1ca932d2df5a16890e178e35b9a7b9ee40228f6dc1ecd45afc8"
+  },
+  "model": {"repository_revision": "da76818e269b82289eba39808e2fb91d679d6994", "scene_sha256": "sha256:65496b0061ca3ddd92b58fe09bd30f6a4a443f137cc42cf8975d5cff23030bfd"},
+  "scenario": {
+    "barrier": "absent",
+    "coordinate_contract": "world origin equals candidate-model baseframe and nominal tabletop surface; +X is from base toward initial cup A; +Y is lateral; +Z is upward.",
+    "robot_qpos_rad": [0, 0, 0, 0, 0, 0],
+    "baseframe_world_position_m": [0, 0, 0],
+    "table": {"name": "vlab_table", "center_m": [0, 0, -0.025], "half_extents_m": [0.45, 0.45, 0.025], "top_z_m": 0, "rgba": [0.35, 0.30, 0.22, 1]},
+    "cup_a": {"name": "vlab_cup", "center_m": [0.12, 0, 0.055], "radius_m": 0.035, "half_height_m": 0.055, "rgba": [0.9, 0.1, 0.7, 1]},
+    "fixed_cameras": {
+      "fixed_depth_01": {"position_m": [0.45, -0.45, 0.42], "target_m": [0.12, 0, 0.055]},
+      "fixed_depth_02": {"position_m": [0.45, 0.45, 0.42], "target_m": [0.12, 0, 0.055]}
+    },
+    "review_cameras": {
+      "review_isometric": {"position_m": [0.55, -0.65, 0.50], "target_m": [0.10, 0, 0.06]},
+      "review_top": {"position_m": [0.12, -0.10, 0.85], "target_m": [0.12, 0, 0]}
+    },
+    "renderer": {"width": 640, "height": 480},
+    "actuation": "disabled", "dynamics": "disabled", "hardware_io": "disabled"
+  },
+  "pass_conditions": [
+    "012 result and source-model hashes match",
+    "no vlab_barrier geometry compiles; baseframe, table, cup A, table top, and all camera positions match configuration",
+    "review_isometric and review_top RGB artifacts exist and are nonuniform"
+  ],
+  "non_claims": [
+    "This establishes a no-barrier virtual coordinate baseline only; review images are not physical calibration or perception evidence.",
+    "It does not move the cup, prove an A-to-B transfer, or establish IK, collision, grasp, execution, safety, or hardware capability."
+  ]
+}

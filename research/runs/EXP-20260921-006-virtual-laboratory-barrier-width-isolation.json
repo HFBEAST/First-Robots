@@ -1,0 +1,217 @@
+{
+  "artifacts": [
+    {
+      "path": "research/artifacts/EXP-20260921-006-virtual-laboratory-barrier-width-isolation/config.json",
+      "sha256": "sha256:7a0c494863e1d96b1566fe4156eb54b099c1560943d04b3f7f73c438c5809e1d"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-006-virtual-laboratory-barrier-width-isolation/fixed_depth_01-depth.npy",
+      "sha256": "sha256:060148fa53215a84e0eaa0b7782eb6029fe6ae78f5883ff1e634f4ea023b42bb"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-006-virtual-laboratory-barrier-width-isolation/fixed_depth_01-rgb.png",
+      "sha256": "sha256:0bc06e8cf1a0bed70723302b47126fd8f4e0cee8605b858c1a244d7045d7c81c"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-006-virtual-laboratory-barrier-width-isolation/fixed_depth_01-segmentation.npy",
+      "sha256": "sha256:0f458da672fffba17252b2e1fbc85184f671002ea755d3baadf7b8d1709d893d"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-006-virtual-laboratory-barrier-width-isolation/fixed_depth_02-depth.npy",
+      "sha256": "sha256:c16a4cd6266d2eadf8a4dce5bb339270e70c74ab688bcf353bba8c2c66829413"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-006-virtual-laboratory-barrier-width-isolation/fixed_depth_02-rgb.png",
+      "sha256": "sha256:e9bd8a38b03f5149afe349729ca8a20534fdb6ab8a1d0302efabcbea799f98f7"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-006-virtual-laboratory-barrier-width-isolation/fixed_depth_02-segmentation.npy",
+      "sha256": "sha256:7a700a473e5d445e8be52f67a713035c5004b9742f890db036c4713251d5b162"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-006-virtual-laboratory-barrier-width-isolation/terminal-assessment.json",
+      "sha256": "sha256:cecb2cb11f16fdc7d5d5b4f73fbe85bb14c1c12099e5336d49f3997e28e27988"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-006-virtual-laboratory-barrier-width-isolation/wrist_cam-depth.npy",
+      "sha256": "sha256:690037536aec16e1f5172054e8543248cbe452c462b9501cee678f453f4e1dd4"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-006-virtual-laboratory-barrier-width-isolation/wrist_cam-rgb.png",
+      "sha256": "sha256:1573940f64795b7919304f63aa3528e299b8d3dc6d4fe5dd8dfec70014b78e4c"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-006-virtual-laboratory-barrier-width-isolation/wrist_cam-segmentation.npy",
+      "sha256": "sha256:2c92d42117e544dc1c61fcf8ce7e1f1cfe45ef23518fc9f926a6993eb7d64e1e"
+    },
+    {
+      "path": "research/experiments/EXP-20260921-006-virtual-laboratory-barrier-width-isolation.execution.record.json",
+      "sha256": "sha256:fa000d96e889c11b34ce633c6aea23c0fb8010464fc021f9dde753f3e6dd538a"
+    },
+    {
+      "path": "research/reports/EXP-20260921-006-virtual-laboratory-barrier-width-isolation.result.json",
+      "sha256": "sha256:5a66da6ca492ac8896ace7eb9c5a92705f67ebe2b145203f2b7fd8ac7f228211"
+    }
+  ],
+  "baseline": {
+    "kind": "barrier_width_isolation",
+    "reference": "EXP-20260921-005-virtual-laboratory-barrier-record-lifecycle-repair"
+  },
+  "code": {
+    "commit": "5311e4a85e76bfc96a9ff235d9cd00f2c7a629fb",
+    "dirty_at_start": true,
+    "repository": "H:/0_program/My_action/First-Robots",
+    "traceable": true
+  },
+  "ended_at": "2026-09-20T22:49:01.962043Z",
+  "execution": {
+    "command": [
+      "H:\\0_program\\My_action\\First-Robots\\research\\.venvs\\mrbtp-demo-py312\\Scripts\\python.exe",
+      "research\\experiments\\run_virtual_laboratory_barrier_width_isolation.py"
+    ],
+    "parameters": {
+      "actuation": "disabled",
+      "barrier": {
+        "center_m": [
+          0.28,
+          0,
+          0.16
+        ],
+        "changed_field_from_005": "half_extents_m[1] only; 0.35 m to 0.46 m",
+        "half_extents_m": [
+          0.01,
+          0.46,
+          0.16
+        ],
+        "name": "vlab_barrier",
+        "purpose": "single-variable lateral-width isolation for the same central virtual occluder",
+        "type": "box"
+      },
+      "cup": {
+        "center_m": [
+          0.12,
+          0,
+          0.055
+        ],
+        "half_height_m": 0.055,
+        "radius_m": 0.035
+      },
+      "dynamics": "disabled",
+      "fixed_cameras": {
+        "fixed_depth_01": {
+          "position_m": [
+            0.45,
+            -0.45,
+            0.42
+          ],
+          "target_m": [
+            0.12,
+            0,
+            0.055
+          ]
+        },
+        "fixed_depth_02": {
+          "position_m": [
+            0.45,
+            0.45,
+            0.42
+          ],
+          "target_m": [
+            0.12,
+            0,
+            0.055
+          ]
+        }
+      },
+      "hardware_io": "disabled",
+      "qpos": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "renderer": {
+        "height": 240,
+        "width": 320
+      },
+      "table": {
+        "center_m": [
+          0,
+          0,
+          -0.025
+        ],
+        "half_extents_m": [
+          0.45,
+          0.45,
+          0.025
+        ]
+      }
+    },
+    "script": "research/experiments/run_virtual_laboratory_barrier_width_isolation.py"
+  },
+  "inputs": [
+    {
+      "kind": "configuration",
+      "path": "research/configs/EXP-20260921-006-virtual-laboratory-barrier-width-isolation.json",
+      "sha256": "sha256:294169ad0ab6a2c26655086d231a13ccb0317d0dc1d6648ebe3c2587618f95dd"
+    },
+    {
+      "kind": "predecessor_result",
+      "path": "research/reports/EXP-20260921-001-virtual-laboratory-v0-preflight.result.json",
+      "sha256": "sha256:51a6a0c88993ed0c6bc3e3838b4be1bde178f3e41751053c3165350480ed7a0d"
+    },
+    {
+      "kind": "isolation_predecessor_result",
+      "path": "research/reports/EXP-20260921-005-virtual-laboratory-barrier-record-lifecycle-repair.result.json",
+      "sha256": "sha256:fa93c883142e9ce1f288e2440a60c6276becb648d48f23e4ef84e6e89c93c4e4"
+    },
+    {
+      "kind": "position_screen_source_run",
+      "path": "research/runs/EXP-20260831-004-so101-mujoco-observation-preflight.json",
+      "sha256": "sha256:2dc2c8ce727aa6344c29180fff86678900b1a220e9201c22b76a4c3bc324afed"
+    },
+    {
+      "kind": "candidate_model",
+      "path": "research/sources/mujoco_menagerie_robotstudio_so101/robotstudio_so101/scene.xml",
+      "sha256": "sha256:65496b0061ca3ddd92b58fe09bd30f6a4a443f137cc42cf8975d5cff23030bfd"
+    }
+  ],
+  "level": "formal",
+  "objective": "Change only virtual barrier lateral half-width after a preserved blocked candidate.",
+  "results": {
+    "criteria": "Both fixed cameras emit no cup segmentation pixels; outputs are finite; cup stays inside the frozen virtual position screen.",
+    "duration_seconds": 0.46092,
+    "metrics": [
+      {
+        "name": "fixed_cameras_cup_absent",
+        "unit": "boolean",
+        "value": false
+      },
+      {
+        "name": "cup_xy_radius_from_base",
+        "unit": "m",
+        "value": 0.12
+      },
+      {
+        "name": "inside_virtual_half_reach_screen",
+        "unit": "boolean",
+        "value": true
+      }
+    ],
+    "passed": false
+  },
+  "review": {
+    "note": "Single-variable barrier-width isolation; grasp reachability intentionally not evaluated.",
+    "status": "pending_human_review"
+  },
+  "run_id": "EXP-20260921-006-virtual-laboratory-barrier-width-isolation",
+  "runtime": {
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.12.11",
+    "random_seed": null
+  },
+  "schema_version": "experiment-management/run-manifest/v1",
+  "started_at": "2026-09-20T22:49:01.501333Z"
+}

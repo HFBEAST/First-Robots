@@ -1,0 +1,12 @@
+{
+  "kind": "formal_virtual_wrist_relative_negative_x_step",
+  "result": {
+    "path": "research/reports/EXP-20260920-005-virtual-wrist-relative-negative-x-step.result.json",
+    "sha256": "sha256:a666a5f65cb62718b626f2dfcc8dcf3075b88b9fe0b133ba45389595962915a3"
+  },
+  "review": {
+    "status": "pending_human_review"
+  },
+  "run_id": "EXP-20260920-005-virtual-wrist-relative-negative-x-step",
+  "schema_version": "first-robots/experiment-record/v1"
+}

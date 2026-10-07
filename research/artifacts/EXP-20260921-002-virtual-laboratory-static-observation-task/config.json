@@ -1,0 +1,26 @@
+{
+  "blocking_predecessor": {
+    "result_path": "research/reports/EXP-20260921-001-virtual-laboratory-v0-preflight.result.json",
+    "result_sha256": "sha256:51a6a0c88993ed0c6bc3e3838b4be1bde178f3e41751053c3165350480ed7a0d",
+    "run_id": "EXP-20260921-001-virtual-laboratory-v0-preflight",
+    "state_path": "research/artifacts/EXP-20260921-001-virtual-laboratory-v0-preflight/state.json",
+    "state_sha256": "sha256:4492f52d6f9676e103ab0f6d5a0c88ae80984559612febb4faf3863caf3c9bd7"
+  },
+  "experiment_id": "EXP-20260921-002-virtual-laboratory-static-observation-task",
+  "non_claims": [
+    "This is a simulator-label task evaluation, not an RGB/depth perception implementation or hardware observation.",
+    "It does not establish calibration, object detection, collision safety, reachability, grasping, control, sim-to-real, or multi-robot capability."
+  ],
+  "schema_version": "first-robots/research-config/v1",
+  "status": "planned_not_executed",
+  "task": {
+    "actuation": "disabled",
+    "dynamics": "disabled",
+    "failure_terminal_assessment": "not_observable_by_nominal_fixed_depth",
+    "hardware_io": "disabled",
+    "id": "observe-static-cup-v0",
+    "input": "frozen virtual laboratory v0 state",
+    "success_condition": "at least one named nominal fixed camera has one or more vlab_cup simulator segmentation pixels",
+    "success_terminal_assessment": "observable_by_nominal_fixed_depth"
+  }
+}

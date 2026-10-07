@@ -1,0 +1,91 @@
+{
+  "artifacts": [
+    {
+      "path": "research/artifacts/EXP-20260921-002-virtual-laboratory-static-observation-task/config.json",
+      "sha256": "sha256:6d7df7ae81b4a5be9aca13511c13a126b586af985c56acce9a0f8624fddca540"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-002-virtual-laboratory-static-observation-task/terminal-assessment.json",
+      "sha256": "sha256:845ac13e77fe9d18f9c0f13ee73dfb100cc594c2f19228cba8795f45a195d43c"
+    },
+    {
+      "path": "research/reports/EXP-20260921-002-virtual-laboratory-static-observation-task.result.json",
+      "sha256": "sha256:06bc473317f9175b2eb11e933bea5528bb4eb0aacb6a601d40f04bf6acfc80bb"
+    },
+    {
+      "path": "research/experiments/EXP-20260921-002-virtual-laboratory-static-observation-task.record.json",
+      "sha256": "sha256:e493940d00fd95abcdf0f5917597e87b5b44f436d67afac59abb96a8cdd6e821"
+    }
+  ],
+  "baseline": {
+    "kind": "frozen_virtual_laboratory",
+    "reference": "EXP-20260921-001-virtual-laboratory-v0-preflight"
+  },
+  "code": {
+    "commit": "5311e4a85e76bfc96a9ff235d9cd00f2c7a629fb",
+    "dirty_at_start": true,
+    "repository": "H:/0_program/My_action/First-Robots",
+    "traceable": true
+  },
+  "ended_at": "2026-09-20T22:00:07.406652Z",
+  "execution": {
+    "command": [
+      "H:\\0_program\\My_action\\First-Robots\\research\\.venvs\\mrbtp-demo-py312\\Scripts\\python.exe",
+      "research\\experiments\\run_virtual_laboratory_static_observation_task.py"
+    ],
+    "parameters": {
+      "actuation": "disabled",
+      "dynamics": "disabled",
+      "failure_terminal_assessment": "not_observable_by_nominal_fixed_depth",
+      "hardware_io": "disabled",
+      "id": "observe-static-cup-v0",
+      "input": "frozen virtual laboratory v0 state",
+      "success_condition": "at least one named nominal fixed camera has one or more vlab_cup simulator segmentation pixels",
+      "success_terminal_assessment": "observable_by_nominal_fixed_depth"
+    },
+    "script": "research/experiments/run_virtual_laboratory_static_observation_task.py"
+  },
+  "inputs": [
+    {
+      "kind": "configuration",
+      "path": "research/configs/EXP-20260921-002-virtual-laboratory-static-observation-task.json",
+      "sha256": "sha256:1538be0c05022d61f7fc0481b0978e147d78600d8855cd2c6e28934266ef07e9"
+    },
+    {
+      "kind": "virtual_lab_result",
+      "path": "research/reports/EXP-20260921-001-virtual-laboratory-v0-preflight.result.json",
+      "sha256": "sha256:51a6a0c88993ed0c6bc3e3838b4be1bde178f3e41751053c3165350480ed7a0d"
+    },
+    {
+      "kind": "virtual_lab_state",
+      "path": "research/artifacts/EXP-20260921-001-virtual-laboratory-v0-preflight/state.json",
+      "sha256": "sha256:4492f52d6f9676e103ab0f6d5a0c88ae80984559612febb4faf3863caf3c9bd7"
+    }
+  ],
+  "level": "formal",
+  "objective": "Evaluate one simulator-label static observation task from a frozen virtual laboratory.",
+  "results": {
+    "criteria": "At least one named nominal fixed camera must have nonzero simulator cup segmentation pixels.",
+    "duration_seconds": 0.120231,
+    "metrics": [
+      {
+        "name": "contributing_fixed_cameras",
+        "unit": "cameras",
+        "value": 2
+      }
+    ],
+    "passed": true
+  },
+  "review": {
+    "note": "Simulator-label terminal assessment only.",
+    "status": "pending_human_review"
+  },
+  "run_id": "EXP-20260921-002-virtual-laboratory-static-observation-task",
+  "runtime": {
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.12.11",
+    "random_seed": null
+  },
+  "schema_version": "experiment-management/run-manifest/v1",
+  "started_at": "2026-09-20T22:00:07.288369Z"
+}

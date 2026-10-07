@@ -1,0 +1,13 @@
+{
+  "kind": "formal_virtual_depth_frame_contract_golden_case",
+  "result": {
+    "path": "research/reports/EXP-20260921-024-virtual-depth-frame-contract-golden-case.result.json",
+    "sha256": "sha256:10fd72547f251a9a8af27a92ed1ef1fa147d5500be4ad737e0618d111ecbdd7b"
+  },
+  "review": {
+    "adopted": false,
+    "status": "pending_human_review"
+  },
+  "run_id": "EXP-20260921-024-virtual-depth-frame-contract-golden-case",
+  "schema_version": "first-robots/experiment-record/v1"
+}

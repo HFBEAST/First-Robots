@@ -1,0 +1,37 @@
+{
+  "schema_version": "first-robots/research-config/v1",
+  "experiment_id": "EXP-20260921-008-virtual-laboratory-occlusion-rgb-color-probe",
+  "status": "planned_not_executed",
+  "blocking_predecessor": {
+    "run_id": "EXP-20260921-007-virtual-laboratory-segmentation-association",
+    "result_path": "research/reports/EXP-20260921-007-virtual-laboratory-segmentation-association.result.json",
+    "result_sha256": "sha256:65b9a2f2cf5359973e58e88d0ac816715155a50b0e66a931ca814d698adeb67a"
+  },
+  "model": {"repository_revision": "da76818e269b82289eba39808e2fb91d679d6994", "scene_sha256": "sha256:65496b0061ca3ddd92b58fe09bd30f6a4a443f137cc42cf8975d5cff23030bfd"},
+  "scenario": {
+    "qpos": [0, 0, 0, 0, 0, 0],
+    "table": {"half_extents_m": [0.45, 0.45, 0.025], "center_m": [0, 0, -0.025]},
+    "cup": {"center_m": [0.12, 0, 0.055], "radius_m": 0.035, "half_height_m": 0.055, "rgba": [1, 0, 1, 1]},
+    "barrier": {"center_m": [0.28, 0, 0.16], "half_extents_m": [0.01, 0.46, 0.16], "rgba": [0, 1, 1, 1]},
+    "fixed_cameras": {
+      "fixed_depth_01": {"position_m": [0.45, -0.45, 0.42], "target_m": [0.12, 0, 0.055]},
+      "fixed_depth_02": {"position_m": [0.45, 0.45, 0.42], "target_m": [0.12, 0, 0.055]}
+    },
+    "renderer": {"width": 320, "height": 240},
+    "actuation": "disabled", "dynamics": "disabled", "hardware_io": "disabled"
+  },
+  "measurement": {
+    "cup_color_signature": "RGB raster pixels with red strictly greater than green and blue strictly greater than green",
+    "expected_for_this_occlusion_candidate": "zero signature pixels in each fixed camera"
+  },
+  "pass_conditions": [
+    "007 result and source model hashes match",
+    "all geometry, camera, renderer, and execution fields match 006; only display RGBA and RGB measurement differ",
+    "both fixed RGB artifacts exist",
+    "each fixed camera has zero pixels matching the configured cup color signature"
+  ],
+  "non_claims": [
+    "This is an artificial-color, static virtual RGB-raster measurement. It is not physical RGB/depth perception, camera calibration, real occlusion, or a deployed detector result.",
+    "A zero signature count does not prove grasp reachability, IK, collision freedom, trajectory feasibility, load safety, control, or hardware transfer."
+  ]
+}

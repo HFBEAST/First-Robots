@@ -1,0 +1,208 @@
+{
+  "artifacts": [
+    {
+      "path": "research/artifacts/EXP-20260921-023-virtual-rgb-occlusion-isolation/config.json",
+      "sha256": "sha256:bd9fe9c7d1a4318ff63d496868fb32c39bd63f039e1aef439ee3d8f1edd0870a"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-023-virtual-rgb-occlusion-isolation/fixed_depth_01-robot_render_disabled-mask.png",
+      "sha256": "sha256:41deceac5054ee1de01da0ab0827308566206d01796e8785bba2a8ea3ee0d650"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-023-virtual-rgb-occlusion-isolation/fixed_depth_01-robot_render_disabled-rgb.png",
+      "sha256": "sha256:af5466af16d27b3571cab91dac9c177880be3f046aeef85fc43aaa056bac36a1"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-023-virtual-rgb-occlusion-isolation/fixed_depth_01-robot_visible-mask.png",
+      "sha256": "sha256:7d46f834bb653bf92f81c33d5bbeae99a49a2455c5737208bccf30a8913712c1"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-023-virtual-rgb-occlusion-isolation/fixed_depth_01-robot_visible-rgb.png",
+      "sha256": "sha256:7e1c75c5e5123c0eff2e91eae008ce8aa912850e7a0a0a70697a5636ecbe883a"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-023-virtual-rgb-occlusion-isolation/fixed_depth_02-robot_render_disabled-mask.png",
+      "sha256": "sha256:82da2c76b2e4f3bb3f771cbb624f78aa7f792dc64e1d34cf7d5ec7a89fa42150"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-023-virtual-rgb-occlusion-isolation/fixed_depth_02-robot_render_disabled-rgb.png",
+      "sha256": "sha256:098809774f50070d05da336a29bb29e14e309347f367163d8dfdef58ac861082"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-023-virtual-rgb-occlusion-isolation/fixed_depth_02-robot_visible-mask.png",
+      "sha256": "sha256:82da2c76b2e4f3bb3f771cbb624f78aa7f792dc64e1d34cf7d5ec7a89fa42150"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-023-virtual-rgb-occlusion-isolation/fixed_depth_02-robot_visible-rgb.png",
+      "sha256": "sha256:c7b8d87c5df1684a1e367ed4fc4170531b0512b78d87ca2950f682c438ca5b49"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-023-virtual-rgb-occlusion-isolation/occlusion-isolation-observations.json",
+      "sha256": "sha256:913845fa3e539e273bd4a5e778184b7cbd5af04ef8a7840c4919e18aac169d56"
+    },
+    {
+      "path": "research/experiments/EXP-20260921-023-virtual-rgb-occlusion-isolation.execution.record.json",
+      "sha256": "sha256:f1f3eaff91d64d4af7d3aee244115c32a9ec962bac97d715d7233c5973181d06"
+    },
+    {
+      "path": "research/reports/EXP-20260921-023-virtual-rgb-occlusion-isolation.result.json",
+      "sha256": "sha256:c0cffa9fb80ce6181ee9a2bff96e991cf7135bd558e4c5481c894be1d9034f58"
+    }
+  ],
+  "baseline": {
+    "kind": "failed_virtual_rgb_range_sweep",
+    "reference": "EXP-20260921-022-virtual-rgb-multirange-projection-sweep"
+  },
+  "code": {
+    "commit": "5311e4a85e76bfc96a9ff235d9cd00f2c7a629fb",
+    "dirty_at_start": true,
+    "repository": "H:/0_program/My_action/First-Robots",
+    "traceable": true
+  },
+  "ended_at": "2026-09-21T14:39:54.204607Z",
+  "execution": {
+    "command": [
+      "H:\\0_program\\My_action\\First-Robots\\research\\.venvs\\mrbtp-demo-py312\\Scripts\\python.exe",
+      "research\\experiments\\run_virtual_rgb_occlusion_isolation.py"
+    ],
+    "parameters": {
+      "actuation": "disabled",
+      "barrier": "absent",
+      "cup": {
+        "half_height_m": 0.055,
+        "radius_m": 0.035,
+        "rgba": [
+          0.9,
+          0.1,
+          0.7,
+          1
+        ]
+      },
+      "detector": {
+        "blue_min": 100,
+        "blue_minus_green_min": 40,
+        "green_max": 130,
+        "red_min": 120,
+        "red_minus_green_min": 80
+      },
+      "dynamics": "disabled",
+      "fixed_cameras": {
+        "fixed_depth_01": {
+          "position_m": [
+            0.45,
+            -0.45,
+            0.42
+          ],
+          "target_m": [
+            0.12,
+            0,
+            0.055
+          ]
+        },
+        "fixed_depth_02": {
+          "position_m": [
+            0.45,
+            0.45,
+            0.42
+          ],
+          "target_m": [
+            0.12,
+            0,
+            0.055
+          ]
+        }
+      },
+      "frame_contract": {
+        "height": 480,
+        "pixel_encoding": "rgb_uint8",
+        "scenario_version": "virtual-rgb-contract-v2",
+        "source_kind": "mujoco_rgb_render",
+        "width": 640
+      },
+      "hardware_io": "disabled",
+      "render_variants": [
+        "robot_visible",
+        "robot_render_disabled"
+      ],
+      "robot_qpos_rad": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "table": {
+        "center_m": [
+          0,
+          0,
+          -0.025
+        ],
+        "half_extents_m": [
+          0.45,
+          0.45,
+          0.025
+        ],
+        "rgba": [
+          0.35,
+          0.3,
+          0.22,
+          1
+        ]
+      },
+      "target_case": {
+        "case_id": "B-10",
+        "cup_center_m": [
+          -0.15,
+          0.3,
+          0.055
+        ],
+        "source_run": "EXP-20260921-022-virtual-rgb-multirange-projection-sweep"
+      }
+    },
+    "script": "research/experiments/run_virtual_rgb_occlusion_isolation.py"
+  },
+  "inputs": [
+    {
+      "kind": "configuration",
+      "path": "research/configs/EXP-20260921-023-virtual-rgb-occlusion-isolation.json",
+      "sha256": "sha256:ce746076822d2c9614640a4549a4ed03583811c4dd6ebe859308b37e1aa89474"
+    },
+    {
+      "kind": "failed_sweep_result",
+      "path": "research/reports/EXP-20260921-022-virtual-rgb-multirange-projection-sweep.result.json",
+      "sha256": "sha256:669caa6f34644d041e65fcea6e25d0cd676bccb9300c4b776f370e79a83e2ad1"
+    },
+    {
+      "kind": "candidate_model",
+      "path": "research/sources/mujoco_menagerie_robotstudio_so101/robotstudio_so101/scene.xml",
+      "sha256": "sha256:65496b0061ca3ddd92b58fe09bd30f6a4a443f137cc42cf8975d5cff23030bfd"
+    }
+  ],
+  "level": "formal",
+  "objective": "Isolate whether virtual robot render occlusion explains the B-10 RGB fixture incompleteness.",
+  "results": {
+    "criteria": "Each B-10 camera comparison yields one component and visible candidate pixels do not exceed robot-render-disabled pixels.",
+    "duration_seconds": 0.905708,
+    "metrics": [
+      {
+        "name": "occlusion_isolation_valid",
+        "unit": "boolean",
+        "value": true
+      }
+    ],
+    "passed": true
+  },
+  "review": {
+    "note": "Single virtual render-appearance isolation only; no physical occlusion, fusion, or execution claim.",
+    "status": "pending_human_review"
+  },
+  "run_id": "EXP-20260921-023-virtual-rgb-occlusion-isolation",
+  "runtime": {
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.12.11",
+    "random_seed": null
+  },
+  "schema_version": "experiment-management/run-manifest/v1",
+  "started_at": "2026-09-21T14:39:53.299453Z"
+}

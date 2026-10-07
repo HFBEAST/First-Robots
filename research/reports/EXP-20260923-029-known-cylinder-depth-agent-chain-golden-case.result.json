@@ -1,0 +1,81 @@
+{
+  "limits": [
+    "Coordinator acceptance checks message structure and table containment, not numerical accuracy, calibration, sensor quality, collision, reachability, or safety.",
+    "Mock execution changes an in-memory cup coordinate only; it is not MuJoCo robot action, motion planning, IK, collision checking, grasping, or hardware control.",
+    "The evaluation-only B comparison does not convert this one virtual known-cylinder result into an adopted real-world capability."
+  ],
+  "observations": {
+    "negative_missing_depth_frame": {
+      "coordinate_message": {
+        "agent": "coordinate",
+        "center_world_m": [
+          0.14995060701264093,
+          6.734338062177464e-05,
+          0.055
+        ],
+        "object_model_version": "upright-cylinder-r0.035-h0.110-table-z0",
+        "scenario_version": "known-cylinder-depth-agent-chain-v1",
+        "source": "dual_depth_known_cylinder_fit",
+        "source_frame_ids": [
+          "fixed_depth_01"
+        ]
+      },
+      "coordinator": {
+        "accepted": false,
+        "reason": "required_depth_frames_incomplete"
+      },
+      "executor": {
+        "applied": false,
+        "reason": "not_approved_no_state_transition"
+      },
+      "state_unchanged": true
+    },
+    "positive_chain": {
+      "capability_table_containment_only": true,
+      "coordinate_message": {
+        "agent": "coordinate",
+        "center_world_m": [
+          0.14995060701264093,
+          6.734338062177464e-05,
+          0.055
+        ],
+        "object_model_version": "upright-cylinder-r0.035-h0.110-table-z0",
+        "scenario_version": "known-cylinder-depth-agent-chain-v1",
+        "source": "dual_depth_known_cylinder_fit",
+        "source_frame_ids": [
+          "fixed_depth_01",
+          "fixed_depth_02"
+        ]
+      },
+      "coordinator": {
+        "accepted": true,
+        "reason": "accepted"
+      },
+      "evaluation_only_center_error_m": 8.351525677277148e-05,
+      "evaluation_only_delta_from_b_m": [
+        -4.939298735906483e-05,
+        6.734338062177464e-05,
+        0.0
+      ],
+      "executor": {
+        "applied": true,
+        "reason": "mock_state_transition_applied",
+        "state_after_m": [
+          0.14995060701264093,
+          6.734338062177464e-05,
+          0.055
+        ]
+      },
+      "reviewer_state_equals_candidate": true
+    },
+    "source_fit_is_finite": true,
+    "source_run": "EXP-20260923-028-known-cylinder-depth-center-fit-golden-case"
+  },
+  "review": {
+    "adopted": false,
+    "status": "pending_human_review"
+  },
+  "run_id": "EXP-20260923-029-known-cylinder-depth-agent-chain-golden-case",
+  "schema_version": "first-robots/research-result/v1",
+  "status": "passed_pending_human_review"
+}

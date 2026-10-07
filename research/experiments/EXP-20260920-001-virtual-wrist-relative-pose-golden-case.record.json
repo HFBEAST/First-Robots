@@ -1,0 +1,12 @@
+{
+  "kind": "formal_virtual_wrist_relative_pose_golden_case",
+  "result": {
+    "path": "research/reports/EXP-20260920-001-virtual-wrist-relative-pose-golden-case.result.json",
+    "sha256": "sha256:a5cc80746fd17588a32b6f94131008f9821780c3bb075d070ac6ad6a3876716a"
+  },
+  "review": {
+    "status": "pending_human_review"
+  },
+  "run_id": "EXP-20260920-001-virtual-wrist-relative-pose-golden-case",
+  "schema_version": "first-robots/experiment-record/v1"
+}

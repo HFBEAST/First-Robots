@@ -1,0 +1,16 @@
+{
+  "camera_observations": {
+    "fixed_depth_01": {
+      "cup_color_signature_pixels": 0
+    },
+    "fixed_depth_02": {
+      "cup_color_signature_pixels": 0
+    }
+  },
+  "geometry_changed_from_006": false,
+  "measurement": {
+    "cup_color_signature": "RGB raster pixels with red strictly greater than green and blue strictly greater than green",
+    "expected_for_this_occlusion_candidate": "zero signature pixels in each fixed camera"
+  },
+  "terminal_assessment": "not_observable_by_nominal_fixed_rgb_color_probe"
+}

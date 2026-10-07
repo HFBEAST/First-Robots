@@ -1,0 +1,31 @@
+{
+  "limits": [
+    "This establishes only a candidate-model golden case for the stated fixed relative pose and current recorded runtime.",
+    "It does not reproduce or explain any earlier raster table, validate a visibility proxy, or establish a workspace coverage boundary.",
+    "It does not establish physical camera calibration, RGB perception, collision safety, reachability, grasping, control, sim-to-real, or multi-robot capability."
+  ],
+  "observations": {
+    "all_segmentation_sha256_equal": true,
+    "all_target_pixel_counts_equal": true,
+    "camera_relative_position_invariants_passed": 3,
+    "fresh_process_attempts": 3,
+    "segmentation_sha256_by_attempt": [
+      "sha256:527a6d5c2fbe3ed5194519052401f368079cdf55a14b010580241441d41f614b",
+      "sha256:527a6d5c2fbe3ed5194519052401f368079cdf55a14b010580241441d41f614b",
+      "sha256:527a6d5c2fbe3ed5194519052401f368079cdf55a14b010580241441d41f614b"
+    ],
+    "target_pixels_by_attempt": [
+      12090,
+      12090,
+      12090
+    ],
+    "world_position_invariants_passed": 3
+  },
+  "review": {
+    "adopted": false,
+    "status": "pending_human_review"
+  },
+  "run_id": "EXP-20260920-001-virtual-wrist-relative-pose-golden-case",
+  "schema_version": "first-robots/research-result/v1",
+  "status": "passed_pending_human_review"
+}

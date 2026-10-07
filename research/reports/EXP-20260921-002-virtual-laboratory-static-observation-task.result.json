@@ -1,0 +1,36 @@
+{
+  "limits": [
+    "This is a simulator-label task evaluation, not an RGB/depth perception implementation or hardware observation.",
+    "It does not establish calibration, object detection, collision safety, reachability, grasping, control, sim-to-real, or multi-robot capability."
+  ],
+  "observations": {
+    "contributing_cameras": [
+      "fixed_depth_01",
+      "fixed_depth_02"
+    ],
+    "fixed_camera_evidence": {
+      "fixed_depth_01": {
+        "cup_segmentation_pixels": 822,
+        "finite_depth_fraction": 1.0
+      },
+      "fixed_depth_02": {
+        "cup_segmentation_pixels": 824,
+        "finite_depth_fraction": 1.0
+      }
+    },
+    "simulator_labels_only": true,
+    "task_id": "observe-static-cup-v0",
+    "terminal_assessment": "observable_by_nominal_fixed_depth",
+    "wrist_camera_evidence": {
+      "cup_segmentation_pixels": 0,
+      "finite_depth_fraction": 1.0
+    }
+  },
+  "review": {
+    "adopted": false,
+    "status": "pending_human_review"
+  },
+  "run_id": "EXP-20260921-002-virtual-laboratory-static-observation-task",
+  "schema_version": "first-robots/research-result/v1",
+  "status": "passed_pending_human_review"
+}

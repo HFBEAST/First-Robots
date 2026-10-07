@@ -1,0 +1,41 @@
+{
+  "schema_version": "first-robots/research-config/v1",
+  "experiment_id": "EXP-20260920-004-virtual-wrist-relative-y-step",
+  "status": "planned_not_executed",
+  "blocking_predecessor": {
+    "run_id": "EXP-20260920-003-virtual-wrist-relative-x-step",
+    "result_path": "research/reports/EXP-20260920-003-virtual-wrist-relative-x-step.result.json",
+    "result_sha256": "sha256:bace661ef1d89b181c55ad3931b6d2c26bdd23632006e5d683a138a543769bfa"
+  },
+  "model": {
+    "repository_revision": "da76818e269b82289eba39808e2fb91d679d6994",
+    "license": "Apache-2.0",
+    "scene_sha256": "sha256:65496b0061ca3ddd92b58fe09bd30f6a4a443f137cc42cf8975d5cff23030bfd"
+  },
+  "protocol": {
+    "camera": "wrist_cam",
+    "qpos": [0, 0, 0, 0, 0, 0],
+    "cup": {"radius_m": 0.035, "half_height_m": 0.055},
+    "independent_variable": {
+      "name": "cup center camera-coordinate Y",
+      "baseline_m": [0.05, 0, -0.25],
+      "tested_m": [0.05, 0.05, -0.25]
+    },
+    "renderer": {"mode": "MuJoCo geom segmentation", "width": 320, "height": 240},
+    "pass_conditions": [
+      "the predecessor result hash matches blocking_predecessor.result_sha256 and reports passed_pending_human_review",
+      "the source scene SHA-256 matches model.scene_sha256",
+      "after mj_forward, virtual_cup geom_xpos equals its camera-derived tested world position",
+      "after mj_forward, virtual_cup center expressed in wrist_cam coordinates equals independent_variable.tested_m",
+      "the tested condition renders one or more virtual_cup segmentation pixels"
+    ],
+    "stop_conditions": ["any predecessor, source, position, or nonzero-pixel condition fails"],
+    "actuation": "disabled",
+    "dynamics": "disabled",
+    "hardware_io": "disabled"
+  },
+  "non_claims": [
+    "This tests one fixed Y displacement only; pixel-count change is an observation, not a field-of-view, coverage, or causal conclusion.",
+    "It does not validate projection or ray proxies, physical cameras, perception, safety, reachability, control, sim-to-real, or multi-robot capability."
+  ]
+}

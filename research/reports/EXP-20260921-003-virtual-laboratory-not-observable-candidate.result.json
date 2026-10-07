@@ -1,0 +1,32 @@
+{
+  "limits": [
+    "This is one virtual candidate failure scene, not a real-world blind spot or camera calibration claim.",
+    "If either fixed camera sees the cup, the run establishes only that this candidate did not create the requested failure state."
+  ],
+  "observations": {
+    "camera_observations": {
+      "fixed_depth_01": {
+        "cup_segmentation_pixels": 477,
+        "finite_depth_fraction": 1.0
+      },
+      "fixed_depth_02": {
+        "cup_segmentation_pixels": 480,
+        "finite_depth_fraction": 1.0
+      },
+      "wrist_cam": {
+        "cup_segmentation_pixels": 0,
+        "finite_depth_fraction": 1.0
+      }
+    },
+    "cup_position_invariant": true,
+    "cup_within_table_bounds": true,
+    "terminal_assessment": "candidate_remains_observable_by_nominal_fixed_depth"
+  },
+  "review": {
+    "adopted": false,
+    "status": "pending_human_review"
+  },
+  "run_id": "EXP-20260921-003-virtual-laboratory-not-observable-candidate",
+  "schema_version": "first-robots/research-result/v1",
+  "status": "blocked_pending_human_review"
+}

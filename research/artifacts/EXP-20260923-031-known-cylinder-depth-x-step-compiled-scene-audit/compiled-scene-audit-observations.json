@@ -1,0 +1,85 @@
+{
+  "all_compiled_conditions_valid": true,
+  "conditions": [
+    {
+      "barrier_absent": true,
+      "cameras": {
+        "fixed_depth_01": {
+          "fovy_matches": true,
+          "orientation_matches": true,
+          "position_matches": true
+        },
+        "fixed_depth_02": {
+          "fovy_matches": true,
+          "orientation_matches": true,
+          "position_matches": true
+        }
+      },
+      "compiled_cup_center_world_m": [
+        0.125,
+        0.0,
+        0.055
+      ],
+      "cup_center_matches": true,
+      "declared_x_m": 0.125,
+      "predecessor_recorded_compiled_cup_match": true,
+      "robot_qpos_matches": true,
+      "table_center_matches": true,
+      "table_half_extents_matches": true
+    },
+    {
+      "barrier_absent": true,
+      "cameras": {
+        "fixed_depth_01": {
+          "fovy_matches": true,
+          "orientation_matches": true,
+          "position_matches": true
+        },
+        "fixed_depth_02": {
+          "fovy_matches": true,
+          "orientation_matches": true,
+          "position_matches": true
+        }
+      },
+      "compiled_cup_center_world_m": [
+        0.15,
+        0.0,
+        0.055
+      ],
+      "cup_center_matches": true,
+      "declared_x_m": 0.15,
+      "predecessor_recorded_compiled_cup_match": true,
+      "robot_qpos_matches": true,
+      "table_center_matches": true,
+      "table_half_extents_matches": true
+    },
+    {
+      "barrier_absent": true,
+      "cameras": {
+        "fixed_depth_01": {
+          "fovy_matches": true,
+          "orientation_matches": true,
+          "position_matches": true
+        },
+        "fixed_depth_02": {
+          "fovy_matches": true,
+          "orientation_matches": true,
+          "position_matches": true
+        }
+      },
+      "compiled_cup_center_world_m": [
+        0.175,
+        0.0,
+        0.055
+      ],
+      "cup_center_matches": true,
+      "declared_x_m": 0.175,
+      "predecessor_recorded_compiled_cup_match": true,
+      "robot_qpos_matches": true,
+      "table_center_matches": true,
+      "table_half_extents_matches": true
+    }
+  ],
+  "only_x_varies_in_compiled_scene": true,
+  "source_run": "EXP-20260923-030-known-cylinder-depth-x-step-agent-chain"
+}

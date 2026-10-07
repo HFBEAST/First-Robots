@@ -1,0 +1,130 @@
+{
+  "artifacts": [
+    {
+      "path": "research/artifacts/EXP-20260923-027-virtual-depth-plane-projection-repair/config.json",
+      "sha256": "sha256:7341d81df1db432dde047510932d2a92cbba78bd21e0401793a777279fb8dd7a"
+    },
+    {
+      "path": "research/artifacts/EXP-20260923-027-virtual-depth-plane-projection-repair/depth-plane-projection-observations.json",
+      "sha256": "sha256:e91ea4ab95e00d3054c48fe592b9ea178395705dae3f793361801d4f05f2db2b"
+    },
+    {
+      "path": "research/experiments/EXP-20260923-027-virtual-depth-plane-projection-repair.execution.record.json",
+      "sha256": "sha256:2239bf92a9d155a0db68dad4fb3eaee073d4498ae63216ecb3d6684f250118d1"
+    },
+    {
+      "path": "research/reports/EXP-20260923-027-virtual-depth-plane-projection-repair.result.json",
+      "sha256": "sha256:16838fb1681bc5ed9ee179021f0beba3298de980c0f20ac17ef4e968d24624d3"
+    }
+  ],
+  "baseline": {
+    "kind": "virtual_depth_background_detection",
+    "reference": "EXP-20260923-025-virtual-depth-background-detection-golden-case"
+  },
+  "code": {
+    "commit": "5311e4a85e76bfc96a9ff235d9cd00f2c7a629fb",
+    "dirty_at_start": true,
+    "repository": "H:/0_program/My_action/First-Robots",
+    "traceable": true
+  },
+  "ended_at": "2026-09-23T05:59:25.135710Z",
+  "execution": {
+    "command": [
+      "H:\\0_program\\My_action\\First-Robots\\research\\.venvs\\mrbtp-demo-py312\\Scripts\\python.exe",
+      "research\\experiments\\run_virtual_depth_plane_projection_repair.py"
+    ],
+    "parameters": {
+      "actuation": "disabled",
+      "camera_fovy_degrees": 60,
+      "cup_b_world_m_evaluation_only": [
+        0.15,
+        0,
+        0.055
+      ],
+      "dynamics": "disabled",
+      "fixed_cameras": {
+        "fixed_depth_01": {
+          "position_m": [
+            0.45,
+            -0.45,
+            0.42
+          ],
+          "target_m": [
+            0.12,
+            0,
+            0.055
+          ]
+        },
+        "fixed_depth_02": {
+          "position_m": [
+            0.45,
+            0.45,
+            0.42
+          ],
+          "target_m": [
+            0.12,
+            0,
+            0.055
+          ]
+        }
+      },
+      "frame_contract": {
+        "height": 480,
+        "pixel_encoding": "depth_float32_m",
+        "scenario_version": "virtual-depth-contract-v1",
+        "source_kind": "mujoco_depth_render",
+        "width": 640
+      },
+      "hardware_io": "disabled"
+    },
+    "script": "research/experiments/run_virtual_depth_plane_projection_repair.py"
+  },
+  "inputs": [
+    {
+      "kind": "configuration",
+      "path": "research/configs/EXP-20260923-027-virtual-depth-plane-projection-repair.json",
+      "sha256": "sha256:0472bd0251911f921ad92b7ffd6ce4f427be765a1b56e0982c6e4d12fe97ff02"
+    },
+    {
+      "kind": "predecessor_result",
+      "path": "research/reports/EXP-20260923-025-virtual-depth-background-detection-golden-case.result.json",
+      "sha256": "sha256:5e36e69124edf6fa237002f20aa29d045bba1049976e0c60029a0a31b5646134"
+    },
+    {
+      "kind": "predecessor_observations",
+      "path": "research/artifacts/EXP-20260923-025-virtual-depth-background-detection-golden-case/depth-background-detection-observations.json",
+      "sha256": "sha256:3a3c20094db3e32358e40bedcd89ea53e2c1d7be121b02450cc8de756ccea079"
+    },
+    {
+      "kind": "failed_projection_result",
+      "path": "research/reports/EXP-20260923-026-virtual-depth-surface-point-projection.result.json",
+      "sha256": "sha256:b567306994469a87c195bce85bc79f9e13e4735b4feac89430adb07bf74d757a"
+    }
+  ],
+  "level": "formal",
+  "objective": "Correct virtual MuJoCo planar-depth projection while retaining the same frozen depth foreground inputs.",
+  "results": {
+    "criteria": "Both frozen foreground components produce finite planar-depth surface candidates; center offsets are recorded only.",
+    "duration_seconds": 0.139817,
+    "metrics": [
+      {
+        "name": "depth_plane_projection_valid",
+        "unit": "boolean",
+        "value": true
+      }
+    ],
+    "passed": true
+  },
+  "review": {
+    "note": "Corrected virtual depth surface points only; no center fit, fusion, Coordinator, execution, or hardware claim.",
+    "status": "pending_human_review"
+  },
+  "run_id": "EXP-20260923-027-virtual-depth-plane-projection-repair",
+  "runtime": {
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.12.11",
+    "random_seed": null
+  },
+  "schema_version": "experiment-management/run-manifest/v1",
+  "started_at": "2026-09-23T05:59:24.996281Z"
+}

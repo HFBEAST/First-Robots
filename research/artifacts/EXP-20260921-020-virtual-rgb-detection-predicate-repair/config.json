@@ -1,0 +1,117 @@
+{
+  "blocking_predecessor": {
+    "result_path": "research/reports/EXP-20260921-019-virtual-rgb-detection-golden-case.result.json",
+    "result_sha256": "sha256:fa083bddbb94c1bc3fae39aa809e19a333f49a2f9e5f39f78d5c985768c899c4",
+    "run_id": "EXP-20260921-019-virtual-rgb-detection-golden-case"
+  },
+  "experiment_id": "EXP-20260921-020-virtual-rgb-detection-predicate-repair",
+  "model": {
+    "repository_revision": "da76818e269b82289eba39808e2fb91d679d6994",
+    "scene_sha256": "sha256:65496b0061ca3ddd92b58fe09bd30f6a4a443f137cc42cf8975d5cff23030bfd"
+  },
+  "non_claims": [
+    "The repaired color signature and one-component condition are artificial virtual golden-case fixture criteria, not physical detector metrics, generalization, calibration, or a production acceptance threshold.",
+    "No world coordinate is supplied to the detector; the fixed world B remains evaluation-only metadata.",
+    "No RGB-to-world transform, stereo fusion, planning, IK, collision, grasp, safety, robot action, or hardware I/O is evaluated."
+  ],
+  "pass_conditions": [
+    "019 result and source-model hashes match; no barrier compiles",
+    "both frames conform to the versioned RGB frame contract",
+    "for each frame, the repaired RGB-only predicate produces exactly one positive four-connected component with a positive pixel count and centroid",
+    "raw frame, repaired mask, overlay, and component metadata are retained"
+  ],
+  "repair_of": {
+    "defect": "the original absolute RGB predicate selected non-cup edge pixels on visual review; positive pixel count alone was not an isolation predicate.",
+    "run_id": "EXP-20260921-019-virtual-rgb-detection-golden-case"
+  },
+  "scenario": {
+    "actuation": "disabled",
+    "barrier": "absent",
+    "cup_b": {
+      "center_m": [
+        0.15,
+        0,
+        0.055
+      ],
+      "half_height_m": 0.055,
+      "radius_m": 0.035,
+      "rgba": [
+        0.9,
+        0.1,
+        0.7,
+        1
+      ]
+    },
+    "detector": {
+      "blue_min": 100,
+      "blue_minus_green_min": 40,
+      "green_max": 130,
+      "kind": "candidate_artificial_magenta_signature_with_channel_dominance",
+      "red_min": 120,
+      "red_minus_green_min": 80
+    },
+    "dynamics": "disabled",
+    "fixed_cameras": {
+      "fixed_depth_01": {
+        "position_m": [
+          0.45,
+          -0.45,
+          0.42
+        ],
+        "target_m": [
+          0.12,
+          0,
+          0.055
+        ]
+      },
+      "fixed_depth_02": {
+        "position_m": [
+          0.45,
+          0.45,
+          0.42
+        ],
+        "target_m": [
+          0.12,
+          0,
+          0.055
+        ]
+      }
+    },
+    "frame_contract": {
+      "height": 480,
+      "pixel_encoding": "rgb_uint8",
+      "scenario_version": "virtual-rgb-contract-v2",
+      "source_kind": "mujoco_rgb_render",
+      "width": 640
+    },
+    "hardware_io": "disabled",
+    "robot_qpos_rad": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "table": {
+      "center_m": [
+        0,
+        0,
+        -0.025
+      ],
+      "half_extents_m": [
+        0.45,
+        0.45,
+        0.025
+      ],
+      "rgba": [
+        0.35,
+        0.3,
+        0.22,
+        1
+      ]
+    }
+  },
+  "schema_version": "first-robots/research-config/v1",
+  "status": "planned_not_executed"
+}

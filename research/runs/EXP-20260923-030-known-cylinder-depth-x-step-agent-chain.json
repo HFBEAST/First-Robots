@@ -1,0 +1,256 @@
+{
+  "artifacts": [
+    {
+      "path": "research/artifacts/EXP-20260923-030-known-cylinder-depth-x-step-agent-chain/config.json",
+      "sha256": "sha256:b09df6ee2f6a775f1c25bf3895a36add7a0e4d3dd4bf1d1b95820c384cf69e53"
+    },
+    {
+      "path": "research/artifacts/EXP-20260923-030-known-cylinder-depth-x-step-agent-chain/x-0.125-fixed_depth_01-current-depth.npy",
+      "sha256": "sha256:1414ff94dd0498630a1afe838b8d9ac6a8f3abbaf19111b4573c2fb4fa31439a"
+    },
+    {
+      "path": "research/artifacts/EXP-20260923-030-known-cylinder-depth-x-step-agent-chain/x-0.125-fixed_depth_01-foreground-mask.png",
+      "sha256": "sha256:2282e110c5cba1c42c8bf84a0b2ccaef369258ff7c8bbf14c72b93e9dc35fb27"
+    },
+    {
+      "path": "research/artifacts/EXP-20260923-030-known-cylinder-depth-x-step-agent-chain/x-0.125-fixed_depth_01-reference-depth.npy",
+      "sha256": "sha256:d462c71a303493156e54beb1cdba4e1f327f9274fbe0eeb11c1231f1e8fc41f0"
+    },
+    {
+      "path": "research/artifacts/EXP-20260923-030-known-cylinder-depth-x-step-agent-chain/x-0.125-fixed_depth_02-current-depth.npy",
+      "sha256": "sha256:223f01b7109c3f010526a4f9bb54f1ca83e9df7b77ec70e5e43113761d40cf3e"
+    },
+    {
+      "path": "research/artifacts/EXP-20260923-030-known-cylinder-depth-x-step-agent-chain/x-0.125-fixed_depth_02-foreground-mask.png",
+      "sha256": "sha256:bef5a82ffea6c419e765826bb9aba9e75f6b4505a3d0949608003274c3cfec98"
+    },
+    {
+      "path": "research/artifacts/EXP-20260923-030-known-cylinder-depth-x-step-agent-chain/x-0.125-fixed_depth_02-reference-depth.npy",
+      "sha256": "sha256:4dd463dfd34e79386690519b8cc120685eb0dcb030ade8d473e4775ff56d0c6f"
+    },
+    {
+      "path": "research/artifacts/EXP-20260923-030-known-cylinder-depth-x-step-agent-chain/x-0.150-fixed_depth_01-current-depth.npy",
+      "sha256": "sha256:1604ab2cd3f9e5e463e6e5f0e4edaa40b7538cb8abef7af1bf3789fddfb38ff7"
+    },
+    {
+      "path": "research/artifacts/EXP-20260923-030-known-cylinder-depth-x-step-agent-chain/x-0.150-fixed_depth_01-foreground-mask.png",
+      "sha256": "sha256:8f03f00373585fa13f243592a0dcc77ec4df2ef729e4dbb7f1efdbcb9b3e12f2"
+    },
+    {
+      "path": "research/artifacts/EXP-20260923-030-known-cylinder-depth-x-step-agent-chain/x-0.150-fixed_depth_01-reference-depth.npy",
+      "sha256": "sha256:d462c71a303493156e54beb1cdba4e1f327f9274fbe0eeb11c1231f1e8fc41f0"
+    },
+    {
+      "path": "research/artifacts/EXP-20260923-030-known-cylinder-depth-x-step-agent-chain/x-0.150-fixed_depth_02-current-depth.npy",
+      "sha256": "sha256:df2ea85dce3ca87cc9855b8fecc50072ff72c885fffcb41115cf609a11d723ae"
+    },
+    {
+      "path": "research/artifacts/EXP-20260923-030-known-cylinder-depth-x-step-agent-chain/x-0.150-fixed_depth_02-foreground-mask.png",
+      "sha256": "sha256:3208df70191282b68f2fc0d7238d07e6e1ad5a9fb99ca42c2bb73dc806dea1e1"
+    },
+    {
+      "path": "research/artifacts/EXP-20260923-030-known-cylinder-depth-x-step-agent-chain/x-0.150-fixed_depth_02-reference-depth.npy",
+      "sha256": "sha256:4dd463dfd34e79386690519b8cc120685eb0dcb030ade8d473e4775ff56d0c6f"
+    },
+    {
+      "path": "research/artifacts/EXP-20260923-030-known-cylinder-depth-x-step-agent-chain/x-0.175-fixed_depth_01-current-depth.npy",
+      "sha256": "sha256:113e5c71b707ebb81bb795e751a4d6b47c64034556760a6f363251a3bf948ded"
+    },
+    {
+      "path": "research/artifacts/EXP-20260923-030-known-cylinder-depth-x-step-agent-chain/x-0.175-fixed_depth_01-foreground-mask.png",
+      "sha256": "sha256:df7cd4c08b524ba1f98c1fc37a2c18340f601a69a0aa2636528ca98031f7ecc0"
+    },
+    {
+      "path": "research/artifacts/EXP-20260923-030-known-cylinder-depth-x-step-agent-chain/x-0.175-fixed_depth_01-reference-depth.npy",
+      "sha256": "sha256:d462c71a303493156e54beb1cdba4e1f327f9274fbe0eeb11c1231f1e8fc41f0"
+    },
+    {
+      "path": "research/artifacts/EXP-20260923-030-known-cylinder-depth-x-step-agent-chain/x-0.175-fixed_depth_02-current-depth.npy",
+      "sha256": "sha256:1b16a449d8bff32f2c4386fc44e6dfd2a360465cd96c095fcb065986b9bec52e"
+    },
+    {
+      "path": "research/artifacts/EXP-20260923-030-known-cylinder-depth-x-step-agent-chain/x-0.175-fixed_depth_02-foreground-mask.png",
+      "sha256": "sha256:81aba80ec654dc5201e80fe2dd9b9a2662886d5e4836d1e1e2cbc4bb3d2b4fb9"
+    },
+    {
+      "path": "research/artifacts/EXP-20260923-030-known-cylinder-depth-x-step-agent-chain/x-0.175-fixed_depth_02-reference-depth.npy",
+      "sha256": "sha256:4dd463dfd34e79386690519b8cc120685eb0dcb030ade8d473e4775ff56d0c6f"
+    },
+    {
+      "path": "research/artifacts/EXP-20260923-030-known-cylinder-depth-x-step-agent-chain/x-step-agent-chain-observations.json",
+      "sha256": "sha256:149dc1998e1c11849e4882cc91c52e60342cd88ce83d0ecfd1e8d5fb29b2a546"
+    },
+    {
+      "path": "research/experiments/EXP-20260923-030-known-cylinder-depth-x-step-agent-chain.execution.record.json",
+      "sha256": "sha256:be05230129787d4f0d5ca63142c60fb428b7f49389627499723a3c1fcf7bc906"
+    },
+    {
+      "path": "research/reports/EXP-20260923-030-known-cylinder-depth-x-step-agent-chain.result.json",
+      "sha256": "sha256:d8b067303ced302a58ed2b72d297eebbc63c5bdf3f7420ccb915d3f5a733b65f"
+    }
+  ],
+  "baseline": {
+    "kind": "known_cylinder_depth_agent_chain_golden_case",
+    "reference": "EXP-20260923-029-known-cylinder-depth-agent-chain-golden-case"
+  },
+  "code": {
+    "commit": "5311e4a85e76bfc96a9ff235d9cd00f2c7a629fb",
+    "dirty_at_start": true,
+    "repository": "H:/0_program/My_action/First-Robots",
+    "traceable": true
+  },
+  "ended_at": "2026-09-23T09:16:47.413347Z",
+  "execution": {
+    "command": [
+      "H:\\0_program\\My_action\\First-Robots\\research\\.venvs\\mrbtp-demo-py312\\Scripts\\python.exe",
+      "research\\experiments\\run_known_cylinder_depth_x_step_agent_chain.py"
+    ],
+    "parameters": {
+      "actuation": "disabled",
+      "camera_fovy_degrees": 60.0,
+      "changed_independent_variable": "cylinder_center_world_x_m",
+      "cup": {
+        "half_height_m": 0.055,
+        "radius_m": 0.035,
+        "rgba": [
+          0.9,
+          0.1,
+          0.7,
+          1
+        ]
+      },
+      "detector": {
+        "kind": "candidate_positive_depth_foreground_difference",
+        "virtual_numerical_epsilon_m": 1e-06
+      },
+      "dynamics": "disabled",
+      "fixed_cameras": {
+        "fixed_depth_01": {
+          "position_m": [
+            0.45,
+            -0.45,
+            0.42
+          ],
+          "target_m": [
+            0.12,
+            0,
+            0.055
+          ]
+        },
+        "fixed_depth_02": {
+          "position_m": [
+            0.45,
+            0.45,
+            0.42
+          ],
+          "target_m": [
+            0.12,
+            0,
+            0.055
+          ]
+        }
+      },
+      "frame_contract": {
+        "height": 480,
+        "pixel_encoding": "depth_float32_m",
+        "scenario_version": "virtual-depth-contract-v1",
+        "source_kind": "mujoco_depth_render",
+        "width": 640
+      },
+      "frozen_center_z_m": 0.055,
+      "frozen_y_m": 0.0,
+      "hardware_io": "disabled",
+      "initial_cup_a_world_m": [
+        0.12,
+        0,
+        0.055
+      ],
+      "known_object_model_version": "upright-cylinder-r0.035-h0.110-table-z0",
+      "required_depth_frames": [
+        "fixed_depth_01",
+        "fixed_depth_02"
+      ],
+      "robot_qpos_rad": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "scenario_version": "known-cylinder-depth-x-step-agent-chain-v1",
+      "table": {
+        "center_m": [
+          0,
+          0,
+          -0.025
+        ],
+        "half_extents_m": [
+          0.45,
+          0.45,
+          0.025
+        ],
+        "rgba": [
+          0.35,
+          0.3,
+          0.22,
+          1
+        ]
+      },
+      "x_values_m": [
+        0.125,
+        0.15,
+        0.175
+      ]
+    },
+    "script": "research/experiments/run_known_cylinder_depth_x_step_agent_chain.py"
+  },
+  "inputs": [
+    {
+      "kind": "configuration",
+      "path": "research/configs/EXP-20260923-030-known-cylinder-depth-x-step-agent-chain.json",
+      "sha256": "sha256:bd09376f31f164042c8fd4ed413fbb1225ad8a535f5cb4dc48460f608c85f7ea"
+    },
+    {
+      "kind": "predecessor_result",
+      "path": "research/reports/EXP-20260923-029-known-cylinder-depth-agent-chain-golden-case.result.json",
+      "sha256": "sha256:8189c2af3e709390c5c32bf26b6b16b580af8bcf477ff8dec958b65e63011645"
+    },
+    {
+      "kind": "candidate_model",
+      "path": "research/sources/mujoco_menagerie_robotstudio_so101/robotstudio_so101/scene.xml",
+      "sha256": "sha256:65496b0061ca3ddd92b58fe09bd30f6a4a443f137cc42cf8975d5cff23030bfd"
+    }
+  ],
+  "level": "formal",
+  "objective": "Change only the known virtual cylinder world X across three small conditions and run fresh dual-depth detection-to-mock-agent chains.",
+  "results": {
+    "criteria": "For every declared X condition, freshly rendered paired depth frames support one-component detection, finite known-cylinder fit, complete coordination, table-only gate, mock execution, and reviewer equality.",
+    "duration_seconds": 2.381409,
+    "metrics": [
+      {
+        "name": "known_cylinder_depth_x_step_agent_chain_valid",
+        "unit": "boolean",
+        "value": true
+      },
+      {
+        "name": "x_condition_count",
+        "unit": "count",
+        "value": 3
+      }
+    ],
+    "passed": true
+  },
+  "review": {
+    "note": "Small virtual X-only known-cylinder step; no real sensing, calibrated accuracy, reachability, collision, grasping, planning, safety, robot action, or hardware capability claim.",
+    "status": "pending_human_review"
+  },
+  "run_id": "EXP-20260923-030-known-cylinder-depth-x-step-agent-chain",
+  "runtime": {
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.12.11",
+    "random_seed": null
+  },
+  "schema_version": "experiment-management/run-manifest/v1",
+  "started_at": "2026-09-23T09:16:45.031708Z"
+}

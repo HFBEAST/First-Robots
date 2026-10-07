@@ -1,0 +1,196 @@
+{
+  "artifacts": [
+    {
+      "path": "research/artifacts/EXP-20260921-019-virtual-rgb-detection-golden-case/config.json",
+      "sha256": "sha256:3e6c91ba8c7741da549b5356675c753b3090d7f52cb3479013c5ae1a0ea231c5"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-019-virtual-rgb-detection-golden-case/fixed_depth_01-mask.png",
+      "sha256": "sha256:9ab6aa8a087ef42247117a604694aa85d4f6b378e2faa683aa5062d2c2dff516"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-019-virtual-rgb-detection-golden-case/fixed_depth_01-overlay.png",
+      "sha256": "sha256:317a5e6720618b057f365cae38ef226e1aa3b9362512fa5d6539ca2534e4f85d"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-019-virtual-rgb-detection-golden-case/fixed_depth_01-rgb.png",
+      "sha256": "sha256:d34cf89569c6ac540b9f99cb6fda886248766fea13d255ffbfe94333d93c2d26"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-019-virtual-rgb-detection-golden-case/fixed_depth_02-mask.png",
+      "sha256": "sha256:98ba31177abe77cc2ad156b57bb56002f694857500c673d14c66e2eecf88c317"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-019-virtual-rgb-detection-golden-case/fixed_depth_02-overlay.png",
+      "sha256": "sha256:83d6e4067a4dce2e7782205880d2e6a79964636bcee5a8ba504fdd554c98400e"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-019-virtual-rgb-detection-golden-case/fixed_depth_02-rgb.png",
+      "sha256": "sha256:2db12a5616667290922ce602ae9aaed0e4540c5cd1e87249d0ea36d906b97a48"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-019-virtual-rgb-detection-golden-case/rgb-detection-observations.json",
+      "sha256": "sha256:037cf5e18af37a187f71ce5ea4076505384e68af8dbe7f7de565167d1605fb8d"
+    },
+    {
+      "path": "research/experiments/EXP-20260921-019-virtual-rgb-detection-golden-case.execution.record.json",
+      "sha256": "sha256:99ab711e4b9e2eeaa7a80358fdcc5360137a7273104ef32fae03eefb7cec8217"
+    },
+    {
+      "path": "research/reports/EXP-20260921-019-virtual-rgb-detection-golden-case.result.json",
+      "sha256": "sha256:fa083bddbb94c1bc3fae39aa809e19a333f49a2f9e5f39f78d5c985768c899c4"
+    }
+  ],
+  "baseline": {
+    "kind": "no_barrier_coordinate_agent_protocol",
+    "reference": "EXP-20260921-017-no-barrier-multirange-coordinate-agent-protocol-repair"
+  },
+  "code": {
+    "commit": "5311e4a85e76bfc96a9ff235d9cd00f2c7a629fb",
+    "dirty_at_start": true,
+    "repository": "H:/0_program/My_action/First-Robots",
+    "traceable": true
+  },
+  "ended_at": "2026-09-21T14:20:32.655533Z",
+  "execution": {
+    "command": [
+      "H:\\0_program\\My_action\\First-Robots\\research\\.venvs\\mrbtp-demo-py312\\Scripts\\python.exe",
+      "research\\experiments\\run_virtual_rgb_detection_golden_case.py"
+    ],
+    "parameters": {
+      "actuation": "disabled",
+      "barrier": "absent",
+      "cup_b": {
+        "center_m": [
+          0.15,
+          0,
+          0.055
+        ],
+        "half_height_m": 0.055,
+        "radius_m": 0.035,
+        "rgba": [
+          0.9,
+          0.1,
+          0.7,
+          1
+        ]
+      },
+      "detector": {
+        "blue_min": 100,
+        "green_max": 130,
+        "kind": "candidate_artificial_magenta_signature",
+        "red_min": 120
+      },
+      "dynamics": "disabled",
+      "fixed_cameras": {
+        "fixed_depth_01": {
+          "position_m": [
+            0.45,
+            -0.45,
+            0.42
+          ],
+          "target_m": [
+            0.12,
+            0,
+            0.055
+          ]
+        },
+        "fixed_depth_02": {
+          "position_m": [
+            0.45,
+            0.45,
+            0.42
+          ],
+          "target_m": [
+            0.12,
+            0,
+            0.055
+          ]
+        }
+      },
+      "frame_contract": {
+        "height": 480,
+        "pixel_encoding": "rgb_uint8",
+        "scenario_version": "virtual-rgb-contract-v1",
+        "source_kind": "mujoco_rgb_render",
+        "width": 640
+      },
+      "hardware_io": "disabled",
+      "robot_qpos_rad": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "table": {
+        "center_m": [
+          0,
+          0,
+          -0.025
+        ],
+        "half_extents_m": [
+          0.45,
+          0.45,
+          0.025
+        ],
+        "rgba": [
+          0.35,
+          0.3,
+          0.22,
+          1
+        ]
+      }
+    },
+    "script": "research/experiments/run_virtual_rgb_detection_golden_case.py"
+  },
+  "inputs": [
+    {
+      "kind": "configuration",
+      "path": "research/configs/EXP-20260921-019-virtual-rgb-detection-golden-case.json",
+      "sha256": "sha256:be834ad3b2c3af6e731b12995ebe0530c8de87ea371ad611a2a48b9de707f08f"
+    },
+    {
+      "kind": "predecessor_result",
+      "path": "research/reports/EXP-20260921-017-no-barrier-multirange-coordinate-agent-protocol-repair.result.json",
+      "sha256": "sha256:253df9a7c0821401d892cf9fde8ffaa0611dedd096b2e7f305fbdd1c2a33c998"
+    },
+    {
+      "kind": "candidate_model",
+      "path": "research/sources/mujoco_menagerie_robotstudio_so101/robotstudio_so101/scene.xml",
+      "sha256": "sha256:65496b0061ca3ddd92b58fe09bd30f6a4a443f137cc42cf8975d5cff23030bfd"
+    }
+  ],
+  "level": "formal",
+  "objective": "Verify a virtual RGB frame adapter and RGB-only artificial-color detector in one fixed golden case.",
+  "results": {
+    "criteria": "Both virtual RGB frames conform and contain positive artificial signature detections.",
+    "duration_seconds": 0.636309,
+    "metrics": [
+      {
+        "name": "rgb_detection_golden_case_valid",
+        "unit": "boolean",
+        "value": true
+      },
+      {
+        "name": "camera_count",
+        "unit": "count",
+        "value": 2
+      }
+    ],
+    "passed": true
+  },
+  "review": {
+    "note": "Virtual RGB fixture and adapter contract only; no RGB-to-world pose or hardware implication.",
+    "status": "pending_human_review"
+  },
+  "run_id": "EXP-20260921-019-virtual-rgb-detection-golden-case",
+  "runtime": {
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.12.11",
+    "random_seed": null
+  },
+  "schema_version": "experiment-management/run-manifest/v1",
+  "started_at": "2026-09-21T14:20:32.019721Z"
+}

@@ -1,0 +1,137 @@
+{
+  "artifacts": [
+    {
+      "path": "research/artifacts/EXP-20260920-006-virtual-wrist-relative-negative-y-step/config.json",
+      "sha256": "sha256:12b75e95839846fc96d469d84c3cd244343fbde3254a9d71ff200500d32e75bb"
+    },
+    {
+      "path": "research/artifacts/EXP-20260920-006-virtual-wrist-relative-negative-y-step/relative-negative-y-step.json",
+      "sha256": "sha256:ed1ab70b0e795a587ea25a0700095538cf3666a19c728a6efeaba0bb505d381d"
+    },
+    {
+      "path": "research/artifacts/EXP-20260920-006-virtual-wrist-relative-negative-y-step/target-mask.npy",
+      "sha256": "sha256:74c5314ddbe8810e9f79ea04593fd76b29a9c3f8cd3f2ae7d68a26d3fee880d4"
+    },
+    {
+      "path": "research/reports/EXP-20260920-006-virtual-wrist-relative-negative-y-step.result.json",
+      "sha256": "sha256:81de2b90d1a444a378be06befc1925771ad56c17063ffa19d7e80e0943132332"
+    },
+    {
+      "path": "research/experiments/EXP-20260920-006-virtual-wrist-relative-negative-y-step.record.json",
+      "sha256": "sha256:7e65f3455387d223763edcc8e7b1c1eafe12f6d726057bc811b238f31708e3c2"
+    }
+  ],
+  "baseline": {
+    "kind": "center_relative_depth_step",
+    "reference": "EXP-20260920-002-virtual-wrist-relative-depth-step"
+  },
+  "code": {
+    "commit": "5311e4a85e76bfc96a9ff235d9cd00f2c7a629fb",
+    "dirty_at_start": true,
+    "repository": "H:/0_program/My_action/First-Robots",
+    "traceable": true
+  },
+  "ended_at": "2026-09-20T06:54:52.856771Z",
+  "execution": {
+    "command": [
+      "H:\\0_program\\My_action\\First-Robots\\research\\.venvs\\mrbtp-demo-py312\\Scripts\\python.exe",
+      "research\\experiments\\run_virtual_wrist_relative_negative_y_step.py"
+    ],
+    "parameters": {
+      "actuation": "disabled",
+      "camera": "wrist_cam",
+      "cup": {
+        "half_height_m": 0.055,
+        "radius_m": 0.035
+      },
+      "dynamics": "disabled",
+      "hardware_io": "disabled",
+      "independent_variable": {
+        "baseline_m": [
+          0,
+          0,
+          -0.25
+        ],
+        "name": "cup center camera-coordinate Y",
+        "tested_m": [
+          0,
+          -0.05,
+          -0.25
+        ]
+      },
+      "pass_conditions": [
+        "the predecessor result hash matches blocking_predecessor.result_sha256 and reports passed_pending_human_review",
+        "the source scene SHA-256 matches model.scene_sha256",
+        "after mj_forward, virtual_cup geom_xpos equals its camera-derived tested world position",
+        "after mj_forward, virtual_cup center expressed in wrist_cam coordinates equals independent_variable.tested_m",
+        "the tested condition renders one or more virtual_cup segmentation pixels"
+      ],
+      "qpos": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "renderer": {
+        "height": 240,
+        "mode": "MuJoCo geom segmentation",
+        "width": 320
+      },
+      "stop_conditions": [
+        "any predecessor, source, position, or nonzero-pixel condition fails"
+      ]
+    },
+    "script": "research/experiments/run_virtual_wrist_relative_negative_y_step.py"
+  },
+  "inputs": [
+    {
+      "kind": "configuration",
+      "path": "research/configs/EXP-20260920-006-virtual-wrist-relative-negative-y-step.json",
+      "sha256": "sha256:f276c69895ad40e10009ad920979fe4ddf725379647e366daef358c1a9b27bc5"
+    },
+    {
+      "kind": "predecessor_result",
+      "path": "research/reports/EXP-20260920-002-virtual-wrist-relative-depth-step.result.json",
+      "sha256": "sha256:474d9ff92ff6f3af1e4a0d15ee6d2fc424ce5734f0dafb50b7f1f9eab89ac118"
+    },
+    {
+      "kind": "model",
+      "path": "research/sources/mujoco_menagerie_robotstudio_so101/robotstudio_so101/scene.xml",
+      "revision": "da76818e269b82289eba39808e2fb91d679d6994",
+      "sha256": "sha256:65496b0061ca3ddd92b58fe09bd30f6a4a443f137cc42cf8975d5cff23030bfd"
+    }
+  ],
+  "level": "formal",
+  "objective": "Test one wrist-camera negative-Y step from the frozen center-depth baseline.",
+  "results": {
+    "criteria": "The frozen predecessor and source must match, both position invariants must pass, and the tested condition must have nonzero target pixels.",
+    "duration_seconds": 0.406731,
+    "metrics": [
+      {
+        "name": "tested_target_pixels",
+        "unit": "pixels",
+        "value": 5116
+      },
+      {
+        "name": "pixel_difference_from_baseline",
+        "unit": "pixels",
+        "value": -2388
+      }
+    ],
+    "passed": true
+  },
+  "review": {
+    "note": "Positive/negative-Y comparison is recorded without a symmetry or field-of-view interpretation.",
+    "status": "pending_human_review"
+  },
+  "run_id": "EXP-20260920-006-virtual-wrist-relative-negative-y-step",
+  "runtime": {
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.12.11",
+    "random_seed": null
+  },
+  "schema_version": "experiment-management/run-manifest/v1",
+  "started_at": "2026-09-20T06:54:52.449873Z"
+}

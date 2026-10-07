@@ -1,0 +1,2361 @@
+{
+  "limits": [
+    "This is a synthetic colour-and-known-plane multirange sweep, not RGB calibration, physical coverage, depth sensing, stereo fusion, or a general perception result.",
+    "The recorded errors and camera disagreement describe this frozen virtual fixture only; they do not establish a threshold or a real-data accuracy expectation.",
+    "No Coordinator acceptance, mock/robot execution, planning, IK, collision, grasp, safety, or hardware I/O is evaluated."
+  ],
+  "observations": {
+    "barrier_absent": true,
+    "cases": [
+      {
+        "case_id": "B-01",
+        "cup_position_matches_configuration": true,
+        "per_camera": {
+          "fixed_depth_01": {
+            "component_count": 2,
+            "components": [
+              {
+                "bbox_xywh": [
+                  0,
+                  219,
+                  26,
+                  59
+                ],
+                "centroid_pixel_xy": [
+                  8.298507462686567,
+                  256.1865671641791
+                ],
+                "pixel_count": 804
+              },
+              {
+                "bbox_xywh": [
+                  0,
+                  197,
+                  13,
+                  16
+                ],
+                "centroid_pixel_xy": [
+                  4.58273381294964,
+                  203.46043165467626
+                ],
+                "pixel_count": 139
+              }
+            ],
+            "frame": {
+              "frame_id": "fixed_depth_01",
+              "height": 480,
+              "pixel_encoding": "rgb_uint8",
+              "scenario_version": "virtual-rgb-contract-v2",
+              "source_kind": "mujoco_rgb_render",
+              "width": 640
+            },
+            "mask": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-01-fixed_depth_01-mask.png",
+            "raw_rgb": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-01-fixed_depth_01-rgb.png"
+          },
+          "fixed_depth_02": {
+            "camera_forward_distance_m": 1.1276968805850414,
+            "component_count": 1,
+            "components": [
+              {
+                "bbox_xywh": [
+                  370,
+                  111,
+                  28,
+                  51
+                ],
+                "centroid_pixel_xy": [
+                  382.71231696813095,
+                  135.15503875968992
+                ],
+                "pixel_count": 1161
+              }
+            ],
+            "evaluation_only_delta_from_b_m": [
+              -0.006121990353109119,
+              -0.0028311830587824938,
+              -6.938893903907228e-18
+            ],
+            "evaluation_only_euclidean_error_m": 0.0067449509557815255,
+            "frame": {
+              "frame_id": "fixed_depth_02",
+              "height": 480,
+              "pixel_encoding": "rgb_uint8",
+              "scenario_version": "virtual-rgb-contract-v2",
+              "source_kind": "mujoco_rgb_render",
+              "width": 640
+            },
+            "mask": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-01-fixed_depth_02-mask.png",
+            "projected_world_m": [
+              -0.3061219903531091,
+              -0.3028311830587825,
+              0.05499999999999999
+            ],
+            "raw_rgb": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-01-fixed_depth_02-rgb.png"
+          }
+        },
+        "target_b_world_m": [
+          -0.3,
+          -0.3,
+          0.055
+        ],
+        "two_camera_disagreement_m": null
+      },
+      {
+        "case_id": "B-02",
+        "cup_position_matches_configuration": true,
+        "per_camera": {
+          "fixed_depth_01": {
+            "camera_forward_distance_m": 0.8957614782961724,
+            "component_count": 1,
+            "components": [
+              {
+                "bbox_xywh": [
+                  59,
+                  167,
+                  51,
+                  71
+                ],
+                "centroid_pixel_xy": [
+                  84.68788958147819,
+                  200.82235084594836
+                ],
+                "pixel_count": 2246
+              }
+            ],
+            "evaluation_only_delta_from_b_m": [
+              -0.012252019162830252,
+              -0.003123787949366602,
+              -6.938893903907228e-18
+            ],
+            "evaluation_only_euclidean_error_m": 0.01264397187275295,
+            "frame": {
+              "frame_id": "fixed_depth_01",
+              "height": 480,
+              "pixel_encoding": "rgb_uint8",
+              "scenario_version": "virtual-rgb-contract-v2",
+              "source_kind": "mujoco_rgb_render",
+              "width": 640
+            },
+            "mask": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-02-fixed_depth_01-mask.png",
+            "projected_world_m": [
+              -0.31225201916283024,
+              -0.1531237879493666,
+              0.05499999999999999
+            ],
+            "raw_rgb": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-02-fixed_depth_01-rgb.png"
+          },
+          "fixed_depth_02": {
+            "camera_forward_distance_m": 1.033090922191635,
+            "component_count": 1,
+            "components": [
+              {
+                "bbox_xywh": [
+                  413,
+                  126,
+                  33,
+                  56
+                ],
+                "centroid_pixel_xy": [
+                  427.8265162200282,
+                  152.6290550070522
+                ],
+                "pixel_count": 1418
+              }
+            ],
+            "evaluation_only_delta_from_b_m": [
+              -0.007135702878340755,
+              -0.0006641165757143852,
+              -6.938893903907228e-18
+            ],
+            "evaluation_only_euclidean_error_m": 0.007166540755071385,
+            "frame": {
+              "frame_id": "fixed_depth_02",
+              "height": 480,
+              "pixel_encoding": "rgb_uint8",
+              "scenario_version": "virtual-rgb-contract-v2",
+              "source_kind": "mujoco_rgb_render",
+              "width": 640
+            },
+            "mask": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-02-fixed_depth_02-mask.png",
+            "projected_world_m": [
+              -0.30713570287834074,
+              -0.15066411657571438,
+              0.05499999999999999
+            ],
+            "raw_rgb": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-02-fixed_depth_02-rgb.png"
+          }
+        },
+        "target_b_world_m": [
+          -0.3,
+          -0.15,
+          0.055
+        ],
+        "two_camera_disagreement_m": 0.0056768543745014804
+      },
+      {
+        "case_id": "B-03",
+        "cup_position_matches_configuration": true,
+        "per_camera": {
+          "fixed_depth_01": {
+            "camera_forward_distance_m": 0.9553616192068298,
+            "component_count": 1,
+            "components": [
+              {
+                "bbox_xywh": [
+                  135,
+                  144,
+                  41,
+                  62
+                ],
+                "centroid_pixel_xy": [
+                  155.3939738487777,
+                  173.81978396816373
+                ],
+                "pixel_count": 1759
+              }
+            ],
+            "evaluation_only_delta_from_b_m": [
+              -0.009958679940572868,
+              -0.0006074897859577599,
+              -6.938893903907228e-18
+            ],
+            "evaluation_only_euclidean_error_m": 0.009977191488530799,
+            "frame": {
+              "frame_id": "fixed_depth_01",
+              "height": 480,
+              "pixel_encoding": "rgb_uint8",
+              "scenario_version": "virtual-rgb-contract-v2",
+              "source_kind": "mujoco_rgb_render",
+              "width": 640
+            },
+            "mask": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-03-fixed_depth_01-mask.png",
+            "projected_world_m": [
+              -0.30995867994057286,
+              -0.0006074897859577599,
+              0.05499999999999999
+            ],
+            "raw_rgb": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-03-fixed_depth_01-rgb.png"
+          },
+          "fixed_depth_02": {
+            "camera_forward_distance_m": 0.9550016792590127,
+            "component_count": 1,
+            "components": [
+              {
+                "bbox_xywh": [
+                  465,
+                  144,
+                  40,
+                  63
+                ],
+                "centroid_pixel_xy": [
+                  483.545766590389,
+                  173.883295194508
+                ],
+                "pixel_count": 1748
+              }
+            ],
+            "evaluation_only_delta_from_b_m": [
+              -0.009578487615094056,
+              0.0007297822691771927,
+              -6.938893903907228e-18
+            ],
+            "evaluation_only_euclidean_error_m": 0.009606248339123637,
+            "frame": {
+              "frame_id": "fixed_depth_02",
+              "height": 480,
+              "pixel_encoding": "rgb_uint8",
+              "scenario_version": "virtual-rgb-contract-v2",
+              "source_kind": "mujoco_rgb_render",
+              "width": 640
+            },
+            "mask": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-03-fixed_depth_02-mask.png",
+            "projected_world_m": [
+              -0.30957848761509404,
+              0.0007297822691771927,
+              0.05499999999999999
+            ],
+            "raw_rgb": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-03-fixed_depth_02-rgb.png"
+          }
+        },
+        "target_b_world_m": [
+          -0.3,
+          0.0,
+          0.055
+        ],
+        "two_camera_disagreement_m": 0.0013902671519524033
+      },
+      {
+        "case_id": "B-04",
+        "cup_position_matches_configuration": true,
+        "per_camera": {
+          "fixed_depth_01": {
+            "camera_forward_distance_m": 1.0337641831793571,
+            "component_count": 1,
+            "components": [
+              {
+                "bbox_xywh": [
+                  194,
+                  126,
+                  34,
+                  56
+                ],
+                "centroid_pixel_xy": [
+                  211.21545003543585,
+                  152.51381998582565
+                ],
+                "pixel_count": 1411
+              }
+            ],
+            "evaluation_only_delta_from_b_m": [
+              -0.007615704547918933,
+              0.001216958049957223,
+              -6.938893903907228e-18
+            ],
+            "evaluation_only_euclidean_error_m": 0.007712324076213915,
+            "frame": {
+              "frame_id": "fixed_depth_01",
+              "height": 480,
+              "pixel_encoding": "rgb_uint8",
+              "scenario_version": "virtual-rgb-contract-v2",
+              "source_kind": "mujoco_rgb_render",
+              "width": 640
+            },
+            "mask": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-04-fixed_depth_01-mask.png",
+            "projected_world_m": [
+              -0.3076157045479189,
+              0.15121695804995722,
+              0.05499999999999999
+            ],
+            "raw_rgb": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-04-fixed_depth_01-rgb.png"
+          },
+          "fixed_depth_02": {
+            "camera_forward_distance_m": 0.8958761067465663,
+            "component_count": 1,
+            "components": [
+              {
+                "bbox_xywh": [
+                  530,
+                  167,
+                  51,
+                  71
+                ],
+                "centroid_pixel_xy": [
+                  554.4344919786096,
+                  200.8217468805704
+                ],
+                "pixel_count": 2244
+              }
+            ],
+            "evaluation_only_delta_from_b_m": [
+              -0.012438917702651264,
+              0.003257863774294739,
+              -6.938893903907228e-18
+            ],
+            "evaluation_only_euclidean_error_m": 0.012858473859101358,
+            "frame": {
+              "frame_id": "fixed_depth_02",
+              "height": 480,
+              "pixel_encoding": "rgb_uint8",
+              "scenario_version": "virtual-rgb-contract-v2",
+              "source_kind": "mujoco_rgb_render",
+              "width": 640
+            },
+            "mask": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-04-fixed_depth_02-mask.png",
+            "projected_world_m": [
+              -0.31243891770265125,
+              0.15325786377429473,
+              0.05499999999999999
+            ],
+            "raw_rgb": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-04-fixed_depth_02-rgb.png"
+          }
+        },
+        "target_b_world_m": [
+          -0.3,
+          0.15,
+          0.055
+        ],
+        "two_camera_disagreement_m": 0.005237239856223567
+      },
+      {
+        "case_id": "B-05",
+        "cup_position_matches_configuration": true,
+        "per_camera": {
+          "fixed_depth_01": {
+            "camera_forward_distance_m": 1.1261855587170733,
+            "component_count": 1,
+            "components": [
+              {
+                "bbox_xywh": [
+                  242,
+                  111,
+                  28,
+                  51
+                ],
+                "centroid_pixel_xy": [
+                  256.326198630137,
+                  135.35873287671234
+                ],
+                "pixel_count": 1168
+              }
+            ],
+            "evaluation_only_delta_from_b_m": [
+              -0.004951710194945003,
+              0.001742527689244544,
+              -6.938893903907228e-18
+            ],
+            "evaluation_only_euclidean_error_m": 0.005249365352355102,
+            "frame": {
+              "frame_id": "fixed_depth_01",
+              "height": 480,
+              "pixel_encoding": "rgb_uint8",
+              "scenario_version": "virtual-rgb-contract-v2",
+              "source_kind": "mujoco_rgb_render",
+              "width": 640
+            },
+            "mask": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-05-fixed_depth_01-mask.png",
+            "projected_world_m": [
+              -0.304951710194945,
+              0.30174252768924453,
+              0.05499999999999999
+            ],
+            "raw_rgb": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-05-fixed_depth_01-rgb.png"
+          },
+          "fixed_depth_02": {
+            "component_count": 2,
+            "components": [
+              {
+                "bbox_xywh": [
+                  615,
+                  219,
+                  25,
+                  59
+                ],
+                "centroid_pixel_xy": [
+                  630.814393939394,
+                  256.2058080808081
+                ],
+                "pixel_count": 792
+              },
+              {
+                "bbox_xywh": [
+                  628,
+                  197,
+                  12,
+                  16
+                ],
+                "centroid_pixel_xy": [
+                  634.4748201438849,
+                  203.42446043165467
+                ],
+                "pixel_count": 139
+              }
+            ],
+            "frame": {
+              "frame_id": "fixed_depth_02",
+              "height": 480,
+              "pixel_encoding": "rgb_uint8",
+              "scenario_version": "virtual-rgb-contract-v2",
+              "source_kind": "mujoco_rgb_render",
+              "width": 640
+            },
+            "mask": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-05-fixed_depth_02-mask.png",
+            "raw_rgb": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-05-fixed_depth_02-rgb.png"
+          }
+        },
+        "target_b_world_m": [
+          -0.3,
+          0.3,
+          0.055
+        ],
+        "two_camera_disagreement_m": null
+      },
+      {
+        "case_id": "B-06",
+        "cup_position_matches_configuration": true,
+        "per_camera": {
+          "fixed_depth_01": {
+            "camera_forward_distance_m": 0.7287860610129501,
+            "component_count": 1,
+            "components": [
+              {
+                "bbox_xywh": [
+                  0,
+                  226,
+                  72,
+                  91
+                ],
+                "centroid_pixel_xy": [
+                  36.18398950131233,
+                  269.1832020997375
+                ],
+                "pixel_count": 3810
+              }
+            ],
+            "evaluation_only_delta_from_b_m": [
+              -0.01403209103500877,
+              -0.005539922795444185,
+              -6.938893903907228e-18
+            ],
+            "evaluation_only_euclidean_error_m": 0.015086097023228228,
+            "frame": {
+              "frame_id": "fixed_depth_01",
+              "height": 480,
+              "pixel_encoding": "rgb_uint8",
+              "scenario_version": "virtual-rgb-contract-v2",
+              "source_kind": "mujoco_rgb_render",
+              "width": 640
+            },
+            "mask": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-06-fixed_depth_01-mask.png",
+            "projected_world_m": [
+              -0.16403209103500876,
+              -0.3055399227954442,
+              0.05499999999999999
+            ],
+            "raw_rgb": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-06-fixed_depth_01-rgb.png"
+          },
+          "fixed_depth_02": {
+            "camera_forward_distance_m": 0.9604406193822395,
+            "component_count": 1,
+            "components": [
+              {
+                "bbox_xywh": [
+                  324,
+                  148,
+                  8,
+                  27
+                ],
+                "centroid_pixel_xy": [
+                  326.8071428571429,
+                  159.8357142857143
+                ],
+                "pixel_count": 140
+              }
+            ],
+            "evaluation_only_delta_from_b_m": [
+              0.061366005026242815,
+              0.043533721386540436,
+              -6.938893903907228e-18
+            ],
+            "evaluation_only_euclidean_error_m": 0.07523942763366682,
+            "frame": {
+              "frame_id": "fixed_depth_02",
+              "height": 480,
+              "pixel_encoding": "rgb_uint8",
+              "scenario_version": "virtual-rgb-contract-v2",
+              "source_kind": "mujoco_rgb_render",
+              "width": 640
+            },
+            "mask": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-06-fixed_depth_02-mask.png",
+            "projected_world_m": [
+              -0.08863399497375718,
+              -0.25646627861345955,
+              0.05499999999999999
+            ],
+            "raw_rgb": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-06-fixed_depth_02-rgb.png"
+          }
+        },
+        "target_b_world_m": [
+          -0.15,
+          -0.3,
+          0.055
+        ],
+        "two_camera_disagreement_m": 0.08996163317193477
+      },
+      {
+        "case_id": "B-07",
+        "cup_position_matches_configuration": true,
+        "per_camera": {
+          "fixed_depth_01": {
+            "camera_forward_distance_m": 0.7708318213800418,
+            "component_count": 1,
+            "components": [
+              {
+                "bbox_xywh": [
+                  106,
+                  188,
+                  53,
+                  78
+                ],
+                "centroid_pixel_xy": [
+                  132.72634643377,
+                  225.57605531295488
+                ],
+                "pixel_count": 2748
+              }
+            ],
+            "evaluation_only_delta_from_b_m": [
+              -0.010070146967156773,
+              -0.002055185258167863,
+              -6.938893903907228e-18
+            ],
+            "evaluation_only_euclidean_error_m": 0.010277725739944964,
+            "frame": {
+              "frame_id": "fixed_depth_01",
+              "height": 480,
+              "pixel_encoding": "rgb_uint8",
+              "scenario_version": "virtual-rgb-contract-v2",
+              "source_kind": "mujoco_rgb_render",
+              "width": 640
+            },
+            "mask": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-07-fixed_depth_01-mask.png",
+            "projected_world_m": [
+              -0.16007014696715677,
+              -0.15205518525816786,
+              0.05499999999999999
+            ],
+            "raw_rgb": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-07-fixed_depth_01-rgb.png"
+          },
+          "fixed_depth_02": {
+            "camera_forward_distance_m": 0.9286487906171869,
+            "component_count": 1,
+            "components": [
+              {
+                "bbox_xywh": [
+                  365,
+                  139,
+                  33,
+                  60
+                ],
+                "centroid_pixel_xy": [
+                  380.1372430471584,
+                  167.75695284159613
+                ],
+                "pixel_count": 1654
+              }
+            ],
+            "evaluation_only_delta_from_b_m": [
+              -0.005440841971490057,
+              -0.0021668898134612202,
+              -6.938893903907228e-18
+            ],
+            "evaluation_only_euclidean_error_m": 0.005856464191166015,
+            "frame": {
+              "frame_id": "fixed_depth_02",
+              "height": 480,
+              "pixel_encoding": "rgb_uint8",
+              "scenario_version": "virtual-rgb-contract-v2",
+              "source_kind": "mujoco_rgb_render",
+              "width": 640
+            },
+            "mask": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-07-fixed_depth_02-mask.png",
+            "projected_world_m": [
+              -0.15544084197149005,
+              -0.15216688981346121,
+              0.05499999999999999
+            ],
+            "raw_rgb": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-07-fixed_depth_02-rgb.png"
+          }
+        },
+        "target_b_world_m": [
+          -0.15,
+          -0.15,
+          0.055
+        ],
+        "two_camera_disagreement_m": 0.0046306525080789755
+      },
+      {
+        "case_id": "B-08",
+        "cup_position_matches_configuration": true,
+        "per_camera": {
+          "fixed_depth_01": {
+            "camera_forward_distance_m": 0.8395193324683439,
+            "component_count": 1,
+            "components": [
+              {
+                "bbox_xywh": [
+                  183,
+                  161,
+                  41,
+                  68
+                ],
+                "centroid_pixel_xy": [
+                  204.0223490252021,
+                  193.03566333808845
+                ],
+                "pixel_count": 2103
+              }
+            ],
+            "evaluation_only_delta_from_b_m": [
+              -0.007278184711867003,
+              0.0003120206713935758,
+              -6.938893903907228e-18
+            ],
+            "evaluation_only_euclidean_error_m": 0.007284869909575014,
+            "frame": {
+              "frame_id": "fixed_depth_01",
+              "height": 480,
+              "pixel_encoding": "rgb_uint8",
+              "scenario_version": "virtual-rgb-contract-v2",
+              "source_kind": "mujoco_rgb_render",
+              "width": 640
+            },
+            "mask": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-08-fixed_depth_01-mask.png",
+            "projected_world_m": [
+              -0.157278184711867,
+              0.0003120206713935758,
+              0.05499999999999999
+            ],
+            "raw_rgb": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-08-fixed_depth_01-rgb.png"
+          },
+          "fixed_depth_02": {
+            "camera_forward_distance_m": 0.8394810647633982,
+            "component_count": 1,
+            "components": [
+              {
+                "bbox_xywh": [
+                  416,
+                  161,
+                  41,
+                  68
+                ],
+                "centroid_pixel_xy": [
+                  435.0309523809524,
+                  193.05238095238096
+                ],
+                "pixel_count": 2100
+              }
+            ],
+            "evaluation_only_delta_from_b_m": [
+              -0.007305836588350018,
+              -0.00020337508954032524,
+              -6.938893903907228e-18
+            ],
+            "evaluation_only_euclidean_error_m": 0.007308666751379444,
+            "frame": {
+              "frame_id": "fixed_depth_02",
+              "height": 480,
+              "pixel_encoding": "rgb_uint8",
+              "scenario_version": "virtual-rgb-contract-v2",
+              "source_kind": "mujoco_rgb_render",
+              "width": 640
+            },
+            "mask": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-08-fixed_depth_02-mask.png",
+            "projected_world_m": [
+              -0.15730583658835,
+              -0.00020337508954032524,
+              0.05499999999999999
+            ],
+            "raw_rgb": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-08-fixed_depth_02-rgb.png"
+          }
+        },
+        "target_b_world_m": [
+          -0.15,
+          0.0,
+          0.055
+        ],
+        "two_camera_disagreement_m": 0.0005161370134583131
+      },
+      {
+        "case_id": "B-09",
+        "cup_position_matches_configuration": true,
+        "per_camera": {
+          "fixed_depth_01": {
+            "camera_forward_distance_m": 0.9283931121936181,
+            "component_count": 1,
+            "components": [
+              {
+                "bbox_xywh": [
+                  242,
+                  139,
+                  33,
+                  60
+                ],
+                "centroid_pixel_xy": [
+                  258.9614689945816,
+                  167.80192655027093
+                ],
+                "pixel_count": 1661
+              }
+            ],
+            "evaluation_only_delta_from_b_m": [
+              -0.005099700588572648,
+              0.002115539673385375,
+              -6.938893903907228e-18
+            ],
+            "evaluation_only_euclidean_error_m": 0.0055210917582264206,
+            "frame": {
+              "frame_id": "fixed_depth_01",
+              "height": 480,
+              "pixel_encoding": "rgb_uint8",
+              "scenario_version": "virtual-rgb-contract-v2",
+              "source_kind": "mujoco_rgb_render",
+              "width": 640
+            },
+            "mask": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-09-fixed_depth_01-mask.png",
+            "projected_world_m": [
+              -0.15509970058857264,
+              0.15211553967338537,
+              0.05499999999999999
+            ],
+            "raw_rgb": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-09-fixed_depth_01-rgb.png"
+          },
+          "fixed_depth_02": {
+            "camera_forward_distance_m": 0.7706633445435789,
+            "component_count": 1,
+            "components": [
+              {
+                "bbox_xywh": [
+                  481,
+                  188,
+                  53,
+                  78
+                ],
+                "centroid_pixel_xy": [
+                  506.2855579868709,
+                  225.6342086068563
+                ],
+                "pixel_count": 2742
+              }
+            ],
+            "evaluation_only_delta_from_b_m": [
+              -0.009917061498892127,
+              0.0021776222046911153,
+              -6.938893903907228e-18
+            ],
+            "evaluation_only_euclidean_error_m": 0.010153331829462304,
+            "frame": {
+              "frame_id": "fixed_depth_02",
+              "height": 480,
+              "pixel_encoding": "rgb_uint8",
+              "scenario_version": "virtual-rgb-contract-v2",
+              "source_kind": "mujoco_rgb_render",
+              "width": 640
+            },
+            "mask": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-09-fixed_depth_02-mask.png",
+            "projected_world_m": [
+              -0.15991706149889212,
+              0.1521776222046911,
+              0.05499999999999999
+            ],
+            "raw_rgb": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-09-fixed_depth_02-rgb.png"
+          }
+        },
+        "target_b_world_m": [
+          -0.15,
+          0.15,
+          0.055
+        ],
+        "two_camera_disagreement_m": 0.004817760930242124
+      },
+      {
+        "case_id": "B-10",
+        "cup_position_matches_configuration": true,
+        "per_camera": {
+          "fixed_depth_01": {
+            "camera_forward_distance_m": 0.9602915608920263,
+            "component_count": 1,
+            "components": [
+              {
+                "bbox_xywh": [
+                  308,
+                  148,
+                  8,
+                  27
+                ],
+                "centroid_pixel_xy": [
+                  312.35172413793106,
+                  159.86206896551724
+                ],
+                "pixel_count": 145
+              }
+            ],
+            "evaluation_only_delta_from_b_m": [
+              0.06174981571330232,
+              -0.04344383023302356,
+              -6.938893903907228e-18
+            ],
+            "evaluation_only_euclidean_error_m": 0.07550103393955987,
+            "frame": {
+              "frame_id": "fixed_depth_01",
+              "height": 480,
+              "pixel_encoding": "rgb_uint8",
+              "scenario_version": "virtual-rgb-contract-v2",
+              "source_kind": "mujoco_rgb_render",
+              "width": 640
+            },
+            "mask": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-10-fixed_depth_01-mask.png",
+            "projected_world_m": [
+              -0.08825018428669767,
+              0.2565561697669764,
+              0.05499999999999999
+            ],
+            "raw_rgb": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-10-fixed_depth_01-rgb.png"
+          },
+          "fixed_depth_02": {
+            "camera_forward_distance_m": 0.7286555196353234,
+            "component_count": 1,
+            "components": [
+              {
+                "bbox_xywh": [
+                  568,
+                  226,
+                  72,
+                  91
+                ],
+                "centroid_pixel_xy": [
+                  602.8950682056663,
+                  269.2667890870934
+                ],
+                "pixel_count": 3812
+              }
+            ],
+            "evaluation_only_delta_from_b_m": [
+              -0.013915004652543334,
+              0.005700889269923237,
+              -6.938893903907228e-18
+            ],
+            "evaluation_only_euclidean_error_m": 0.01503753613289852,
+            "frame": {
+              "frame_id": "fixed_depth_02",
+              "height": 480,
+              "pixel_encoding": "rgb_uint8",
+              "scenario_version": "virtual-rgb-contract-v2",
+              "source_kind": "mujoco_rgb_render",
+              "width": 640
+            },
+            "mask": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-10-fixed_depth_02-mask.png",
+            "projected_world_m": [
+              -0.16391500465254333,
+              0.3057008892699232,
+              0.05499999999999999
+            ],
+            "raw_rgb": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-10-fixed_depth_02-rgb.png"
+          }
+        },
+        "target_b_world_m": [
+          -0.15,
+          0.3,
+          0.055
+        ],
+        "two_camera_disagreement_m": 0.0902239906899435
+      },
+      {
+        "case_id": "B-11",
+        "cup_position_matches_configuration": true,
+        "per_camera": {
+          "fixed_depth_01": {
+            "camera_forward_distance_m": 0.6062829279681694,
+            "component_count": 1,
+            "components": [
+              {
+                "bbox_xywh": [
+                  56,
+                  262,
+                  75,
+                  104
+                ],
+                "centroid_pixel_xy": [
+                  93.93315725314913,
+                  311.77996749288906
+                ],
+                "pixel_count": 4922
+              }
+            ],
+            "evaluation_only_delta_from_b_m": [
+              -0.011550890117034307,
+              -0.003969987407279774,
+              -6.245004513516506e-17
+            ],
+            "evaluation_only_euclidean_error_m": 0.01221408459565271,
+            "frame": {
+              "frame_id": "fixed_depth_01",
+              "height": 480,
+              "pixel_encoding": "rgb_uint8",
+              "scenario_version": "virtual-rgb-contract-v2",
+              "source_kind": "mujoco_rgb_render",
+              "width": 640
+            },
+            "mask": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-11-fixed_depth_01-mask.png",
+            "projected_world_m": [
+              -0.011550890117034307,
+              -0.30396998740727976,
+              0.05499999999999994
+            ],
+            "raw_rgb": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-11-fixed_depth_01-rgb.png"
+          },
+          "fixed_depth_02": {
+            "camera_forward_distance_m": 0.8861060182320167,
+            "component_count": 1,
+            "components": [
+              {
+                "bbox_xywh": [
+                  270,
+                  156,
+                  28,
+                  37
+                ],
+                "centroid_pixel_xy": [
+                  284.0351089588378,
+                  175.363196125908
+                ],
+                "pixel_count": 826
+              }
+            ],
+            "evaluation_only_delta_from_b_m": [
+              0.034580550849645064,
+              0.057623255146004415,
+              -6.938893903907228e-18
+            ],
+            "evaluation_only_euclidean_error_m": 0.06720308051485745,
+            "frame": {
+              "frame_id": "fixed_depth_02",
+              "height": 480,
+              "pixel_encoding": "rgb_uint8",
+              "scenario_version": "virtual-rgb-contract-v2",
+              "source_kind": "mujoco_rgb_render",
+              "width": 640
+            },
+            "mask": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-11-fixed_depth_02-mask.png",
+            "projected_world_m": [
+              0.034580550849645064,
+              -0.24237674485399557,
+              0.05499999999999999
+            ],
+            "raw_rgb": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-11-fixed_depth_02-rgb.png"
+          }
+        },
+        "target_b_world_m": [
+          0.0,
+          -0.3,
+          0.055
+        ],
+        "two_camera_disagreement_m": 0.07695347538539063
+      },
+      {
+        "case_id": "B-12",
+        "cup_position_matches_configuration": true,
+        "per_camera": {
+          "fixed_depth_01": {
+            "camera_forward_distance_m": 0.6574483509247289,
+            "component_count": 1,
+            "components": [
+              {
+                "bbox_xywh": [
+                  165,
+                  215,
+                  54,
+                  87
+                ],
+                "centroid_pixel_xy": [
+                  192.57267441860466,
+                  256.1485465116279
+                ],
+                "pixel_count": 3440
+              }
+            ],
+            "evaluation_only_delta_from_b_m": [
+              -0.007525518340602166,
+              -0.0005275735550784588,
+              -6.938893903907228e-18
+            ],
+            "evaluation_only_euclidean_error_m": 0.007543988345083634,
+            "frame": {
+              "frame_id": "fixed_depth_01",
+              "height": 480,
+              "pixel_encoding": "rgb_uint8",
+              "scenario_version": "virtual-rgb-contract-v2",
+              "source_kind": "mujoco_rgb_render",
+              "width": 640
+            },
+            "mask": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-12-fixed_depth_01-mask.png",
+            "projected_world_m": [
+              -0.007525518340602166,
+              -0.15052757355507845,
+              0.05499999999999999
+            ],
+            "raw_rgb": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-12-fixed_depth_01-rgb.png"
+          },
+          "fixed_depth_02": {
+            "camera_forward_distance_m": 0.8400178674743454,
+            "component_count": 1,
+            "components": [
+              {
+                "bbox_xywh": [
+                  306,
+                  154,
+                  28,
+                  66
+                ],
+                "centroid_pixel_xy": [
+                  318.53194765204,
+                  185.26327944572748
+                ],
+                "pixel_count": 1299
+              }
+            ],
+            "evaluation_only_delta_from_b_m": [
+              0.0041550207196276445,
+              -0.011250580471406452,
+              -6.938893903907228e-18
+            ],
+            "evaluation_only_euclidean_error_m": 0.011993321396682707,
+            "frame": {
+              "frame_id": "fixed_depth_02",
+              "height": 480,
+              "pixel_encoding": "rgb_uint8",
+              "scenario_version": "virtual-rgb-contract-v2",
+              "source_kind": "mujoco_rgb_render",
+              "width": 640
+            },
+            "mask": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-12-fixed_depth_02-mask.png",
+            "projected_world_m": [
+              0.0041550207196276445,
+              -0.16125058047140645,
+              0.05499999999999999
+            ],
+            "raw_rgb": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-12-fixed_depth_02-rgb.png"
+          }
+        },
+        "target_b_world_m": [
+          0.0,
+          -0.15,
+          0.055
+        ],
+        "two_camera_disagreement_m": 0.01585616189577958
+      },
+      {
+        "case_id": "B-13",
+        "cup_position_matches_configuration": true,
+        "per_camera": {
+          "fixed_depth_01": {
+            "component_count": 3,
+            "components": [
+              {
+                "bbox_xywh": [
+                  241,
+                  180,
+                  38,
+                  68
+                ],
+                "centroid_pixel_xy": [
+                  259.80676576114814,
+                  211.7216811891338
+                ],
+                "pixel_count": 1951
+              },
+              {
+                "bbox_xywh": [
+                  280,
+                  247,
+                  3,
+                  3
+                ],
+                "centroid_pixel_xy": [
+                  281.0,
+                  247.8
+                ],
+                "pixel_count": 5
+              },
+              {
+                "bbox_xywh": [
+                  278,
+                  246,
+                  1,
+                  1
+                ],
+                "centroid_pixel_xy": [
+                  278.0,
+                  246.0
+                ],
+                "pixel_count": 1
+              }
+            ],
+            "frame": {
+              "frame_id": "fixed_depth_01",
+              "height": 480,
+              "pixel_encoding": "rgb_uint8",
+              "scenario_version": "virtual-rgb-contract-v2",
+              "source_kind": "mujoco_rgb_render",
+              "width": 640
+            },
+            "mask": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-13-fixed_depth_01-mask.png",
+            "raw_rgb": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-13-fixed_depth_01-rgb.png"
+          },
+          "fixed_depth_02": {
+            "component_count": 3,
+            "components": [
+              {
+                "bbox_xywh": [
+                  360,
+                  180,
+                  39,
+                  68
+                ],
+                "centroid_pixel_xy": [
+                  379.22052067381316,
+                  211.71720265441553
+                ],
+                "pixel_count": 1959
+              },
+              {
+                "bbox_xywh": [
+                  358,
+                  247,
+                  2,
+                  3
+                ],
+                "centroid_pixel_xy": [
+                  358.25,
+                  247.75
+                ],
+                "pixel_count": 4
+              },
+              {
+                "bbox_xywh": [
+                  361,
+                  246,
+                  2,
+                  1
+                ],
+                "centroid_pixel_xy": [
+                  361.5,
+                  246.0
+                ],
+                "pixel_count": 2
+              }
+            ],
+            "frame": {
+              "frame_id": "fixed_depth_02",
+              "height": 480,
+              "pixel_encoding": "rgb_uint8",
+              "scenario_version": "virtual-rgb-contract-v2",
+              "source_kind": "mujoco_rgb_render",
+              "width": 640
+            },
+            "mask": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-13-fixed_depth_02-mask.png",
+            "raw_rgb": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-13-fixed_depth_02-rgb.png"
+          }
+        },
+        "target_b_world_m": [
+          0.0,
+          0.0,
+          0.055
+        ],
+        "two_camera_disagreement_m": null
+      },
+      {
+        "case_id": "B-14",
+        "cup_position_matches_configuration": true,
+        "per_camera": {
+          "fixed_depth_01": {
+            "camera_forward_distance_m": 0.8399546632559315,
+            "component_count": 1,
+            "components": [
+              {
+                "bbox_xywh": [
+                  307,
+                  154,
+                  27,
+                  66
+                ],
+                "centroid_pixel_xy": [
+                  320.46717557251907,
+                  185.27862595419847
+                ],
+                "pixel_count": 1310
+              }
+            ],
+            "evaluation_only_delta_from_b_m": [
+              0.004194990411993171,
+              0.011192874428050364,
+              -6.938893903907228e-18
+            ],
+            "evaluation_only_euclidean_error_m": 0.011953174579115726,
+            "frame": {
+              "frame_id": "fixed_depth_01",
+              "height": 480,
+              "pixel_encoding": "rgb_uint8",
+              "scenario_version": "virtual-rgb-contract-v2",
+              "source_kind": "mujoco_rgb_render",
+              "width": 640
+            },
+            "mask": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-14-fixed_depth_01-mask.png",
+            "projected_world_m": [
+              0.004194990411993171,
+              0.16119287442805036,
+              0.05499999999999999
+            ],
+            "raw_rgb": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-14-fixed_depth_01-rgb.png"
+          },
+          "fixed_depth_02": {
+            "camera_forward_distance_m": 0.6573919300125385,
+            "component_count": 1,
+            "components": [
+              {
+                "bbox_xywh": [
+                  421,
+                  215,
+                  54,
+                  87
+                ],
+                "centroid_pixel_xy": [
+                  446.42066957787483,
+                  256.172634643377
+                ],
+                "pixel_count": 3435
+              }
+            ],
+            "evaluation_only_delta_from_b_m": [
+              -0.007467429415692617,
+              0.0005626932571548837,
+              -6.938893903907228e-18
+            ],
+            "evaluation_only_euclidean_error_m": 0.00748859972090904,
+            "frame": {
+              "frame_id": "fixed_depth_02",
+              "height": 480,
+              "pixel_encoding": "rgb_uint8",
+              "scenario_version": "virtual-rgb-contract-v2",
+              "source_kind": "mujoco_rgb_render",
+              "width": 640
+            },
+            "mask": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-14-fixed_depth_02-mask.png",
+            "projected_world_m": [
+              -0.007467429415692617,
+              0.15056269325715488,
+              0.05499999999999999
+            ],
+            "raw_rgb": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-14-fixed_depth_02-rgb.png"
+          }
+        },
+        "target_b_world_m": [
+          0.0,
+          0.15,
+          0.055
+        ],
+        "two_camera_disagreement_m": 0.01578013903497873
+      },
+      {
+        "case_id": "B-15",
+        "cup_position_matches_configuration": true,
+        "per_camera": {
+          "fixed_depth_01": {
+            "camera_forward_distance_m": 0.8861211608118666,
+            "component_count": 1,
+            "components": [
+              {
+                "bbox_xywh": [
+                  342,
+                  156,
+                  28,
+                  37
+                ],
+                "centroid_pixel_xy": [
+                  355.0534629404617,
+                  175.363304981774
+                ],
+                "pixel_count": 823
+              }
+            ],
+            "evaluation_only_delta_from_b_m": [
+              0.0347307818790879,
+              -0.05751376322715518,
+              -6.938893903907228e-18
+            ],
+            "evaluation_only_euclidean_error_m": 0.06718675591574613,
+            "frame": {
+              "frame_id": "fixed_depth_01",
+              "height": 480,
+              "pixel_encoding": "rgb_uint8",
+              "scenario_version": "virtual-rgb-contract-v2",
+              "source_kind": "mujoco_rgb_render",
+              "width": 640
+            },
+            "mask": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-15-fixed_depth_01-mask.png",
+            "projected_world_m": [
+              0.0347307818790879,
+              0.2424862367728448,
+              0.05499999999999999
+            ],
+            "raw_rgb": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-15-fixed_depth_01-rgb.png"
+          },
+          "fixed_depth_02": {
+            "camera_forward_distance_m": 0.6062715045190576,
+            "component_count": 1,
+            "components": [
+              {
+                "bbox_xywh": [
+                  509,
+                  262,
+                  75,
+                  104
+                ],
+                "centroid_pixel_xy": [
+                  545.1450861195542,
+                  311.81702127659577
+                ],
+                "pixel_count": 4935
+              }
+            ],
+            "evaluation_only_delta_from_b_m": [
+              -0.011565954431396908,
+              0.004065059353027145,
+              -6.938893903907228e-18
+            ],
+            "evaluation_only_euclidean_error_m": 0.012259527293202755,
+            "frame": {
+              "frame_id": "fixed_depth_02",
+              "height": 480,
+              "pixel_encoding": "rgb_uint8",
+              "scenario_version": "virtual-rgb-contract-v2",
+              "source_kind": "mujoco_rgb_render",
+              "width": 640
+            },
+            "mask": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-15-fixed_depth_02-mask.png",
+            "projected_world_m": [
+              -0.011565954431396908,
+              0.30406505935302713,
+              0.05499999999999999
+            ],
+            "raw_rgb": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-15-fixed_depth_02-rgb.png"
+          }
+        },
+        "target_b_world_m": [
+          0.0,
+          0.3,
+          0.055
+        ],
+        "two_camera_disagreement_m": 0.07704115253138503
+      },
+      {
+        "case_id": "B-16",
+        "cup_position_matches_configuration": true,
+        "per_camera": {
+          "fixed_depth_01": {
+            "camera_forward_distance_m": 0.5003074070159104,
+            "component_count": 1,
+            "components": [
+              {
+                "bbox_xywh": [
+                  131,
+                  311,
+                  78,
+                  120
+                ],
+                "centroid_pixel_xy": [
+                  171.69433564326604,
+                  368.252033745104
+                ],
+                "pixel_count": 6638
+              }
+            ],
+            "evaluation_only_delta_from_b_m": [
+              -0.008332432865474498,
+              -0.001630150103730521,
+              4.85722573273506e-17
+            ],
+            "evaluation_only_euclidean_error_m": 0.008490396152025664,
+            "frame": {
+              "frame_id": "fixed_depth_01",
+              "height": 480,
+              "pixel_encoding": "rgb_uint8",
+              "scenario_version": "virtual-rgb-contract-v2",
+              "source_kind": "mujoco_rgb_render",
+              "width": 640
+            },
+            "mask": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-16-fixed_depth_01-mask.png",
+            "projected_world_m": [
+              0.1416675671345255,
+              -0.3016301501037305,
+              0.05500000000000005
+            ],
+            "raw_rgb": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-16-fixed_depth_01-rgb.png"
+          },
+          "fixed_depth_02": {
+            "component_count": 2,
+            "components": [
+              {
+                "bbox_xywh": [
+                  205,
+                  174,
+                  33,
+                  38
+                ],
+                "centroid_pixel_xy": [
+                  221.19659936238045,
+                  193.96386822529223
+                ],
+                "pixel_count": 941
+              },
+              {
+                "bbox_xywh": [
+                  204,
+                  171,
+                  1,
+                  1
+                ],
+                "centroid_pixel_xy": [
+                  204.0,
+                  171.0
+                ],
+                "pixel_count": 1
+              }
+            ],
+            "frame": {
+              "frame_id": "fixed_depth_02",
+              "height": 480,
+              "pixel_encoding": "rgb_uint8",
+              "scenario_version": "virtual-rgb-contract-v2",
+              "source_kind": "mujoco_rgb_render",
+              "width": 640
+            },
+            "mask": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-16-fixed_depth_02-mask.png",
+            "raw_rgb": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-16-fixed_depth_02-rgb.png"
+          }
+        },
+        "target_b_world_m": [
+          0.15,
+          -0.3,
+          0.055
+        ],
+        "two_camera_disagreement_m": null
+      },
+      {
+        "case_id": "B-17",
+        "cup_position_matches_configuration": true,
+        "per_camera": {
+          "fixed_depth_01": {
+            "camera_forward_distance_m": 0.5627111149637902,
+            "component_count": 1,
+            "components": [
+              {
+                "bbox_xywh": [
+                  240,
+                  248,
+                  57,
+                  98
+                ],
+                "centroid_pixel_xy": [
+                  269.14440433212997,
+                  294.98849277978337
+                ],
+                "pixel_count": 4432
+              }
+            ],
+            "evaluation_only_delta_from_b_m": [
+              -0.004236279269826754,
+              0.0014284082163526224,
+              4.85722573273506e-17
+            ],
+            "evaluation_only_euclidean_error_m": 0.004470616521745918,
+            "frame": {
+              "frame_id": "fixed_depth_01",
+              "height": 480,
+              "pixel_encoding": "rgb_uint8",
+              "scenario_version": "virtual-rgb-contract-v2",
+              "source_kind": "mujoco_rgb_render",
+              "width": 640
+            },
+            "mask": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-17-fixed_depth_01-mask.png",
+            "projected_world_m": [
+              0.14576372073017324,
+              -0.14857159178364737,
+              0.05500000000000005
+            ],
+            "raw_rgb": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-17-fixed_depth_01-rgb.png"
+          },
+          "fixed_depth_02": {
+            "camera_forward_distance_m": 0.7679679835143725,
+            "component_count": 1,
+            "components": [
+              {
+                "bbox_xywh": [
+                  235,
+                  173,
+                  40,
+                  72
+                ],
+                "centroid_pixel_xy": [
+                  255.74324324324326,
+                  207.14864864864865
+                ],
+                "pixel_count": 2368
+              }
+            ],
+            "evaluation_only_delta_from_b_m": [
+              -2.4814542808032636e-05,
+              -0.0054212866770420864,
+              -6.938893903907228e-18
+            ],
+            "evaluation_only_euclidean_error_m": 0.005421343467832378,
+            "frame": {
+              "frame_id": "fixed_depth_02",
+              "height": 480,
+              "pixel_encoding": "rgb_uint8",
+              "scenario_version": "virtual-rgb-contract-v2",
+              "source_kind": "mujoco_rgb_render",
+              "width": 640
+            },
+            "mask": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-17-fixed_depth_02-mask.png",
+            "projected_world_m": [
+              0.14997518545719196,
+              -0.15542128667704208,
+              0.05499999999999999
+            ],
+            "raw_rgb": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-17-fixed_depth_02-rgb.png"
+          }
+        },
+        "target_b_world_m": [
+          0.15,
+          -0.15,
+          0.055
+        ],
+        "two_camera_disagreement_m": 0.008040818072778441
+      },
+      {
+        "case_id": "B-18",
+        "cup_position_matches_configuration": true,
+        "per_camera": {
+          "fixed_depth_01": {
+            "camera_forward_distance_m": 0.6557831169648021,
+            "component_count": 1,
+            "components": [
+              {
+                "bbox_xywh": [
+                  313,
+                  205,
+                  46,
+                  83
+                ],
+                "centroid_pixel_xy": [
+                  335.2966128521684,
+                  244.28648306426084
+                ],
+                "pixel_count": 3159
+              }
+            ],
+            "evaluation_only_delta_from_b_m": [
+              -0.0017688126084849654,
+              0.003610053055415119,
+              -6.938893903907228e-18
+            ],
+            "evaluation_only_euclidean_error_m": 0.004020097151419033,
+            "frame": {
+              "frame_id": "fixed_depth_01",
+              "height": 480,
+              "pixel_encoding": "rgb_uint8",
+              "scenario_version": "virtual-rgb-contract-v2",
+              "source_kind": "mujoco_rgb_render",
+              "width": 640
+            },
+            "mask": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-18-fixed_depth_01-mask.png",
+            "projected_world_m": [
+              0.14823118739151503,
+              0.003610053055415119,
+              0.05499999999999999
+            ],
+            "raw_rgb": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-18-fixed_depth_01-rgb.png"
+          },
+          "fixed_depth_02": {
+            "camera_forward_distance_m": 0.6555914248936984,
+            "component_count": 1,
+            "components": [
+              {
+                "bbox_xywh": [
+                  281,
+                  205,
+                  46,
+                  83
+                ],
+                "centroid_pixel_xy": [
+                  303.7866372518122,
+                  244.3658997793886
+                ],
+                "pixel_count": 3173
+              }
+            ],
+            "evaluation_only_delta_from_b_m": [
+              -0.001747502297327147,
+              -0.0033470648978267126,
+              -6.938893903907228e-18
+            ],
+            "evaluation_only_euclidean_error_m": 0.003775792328694389,
+            "frame": {
+              "frame_id": "fixed_depth_02",
+              "height": 480,
+              "pixel_encoding": "rgb_uint8",
+              "scenario_version": "virtual-rgb-contract-v2",
+              "source_kind": "mujoco_rgb_render",
+              "width": 640
+            },
+            "mask": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-18-fixed_depth_02-mask.png",
+            "projected_world_m": [
+              0.14825249770267285,
+              -0.0033470648978267126,
+              0.05499999999999999
+            ],
+            "raw_rgb": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-18-fixed_depth_02-rgb.png"
+          }
+        },
+        "target_b_world_m": [
+          0.15,
+          0.0,
+          0.055
+        ],
+        "two_camera_disagreement_m": 0.0069571505909159
+      },
+      {
+        "case_id": "B-19",
+        "cup_position_matches_configuration": true,
+        "per_camera": {
+          "fixed_depth_01": {
+            "camera_forward_distance_m": 0.7679187307968376,
+            "component_count": 1,
+            "components": [
+              {
+                "bbox_xywh": [
+                  365,
+                  173,
+                  40,
+                  72
+                ],
+                "centroid_pixel_xy": [
+                  383.2788339670469,
+                  207.1651880016899
+                ],
+                "pixel_count": 2367
+              }
+            ],
+            "evaluation_only_delta_from_b_m": [
+              3.8058494127718445e-05,
+              0.005389965853955653,
+              -6.938893903907228e-18
+            ],
+            "evaluation_only_euclidean_error_m": 0.005390100217601075,
+            "frame": {
+              "frame_id": "fixed_depth_01",
+              "height": 480,
+              "pixel_encoding": "rgb_uint8",
+              "scenario_version": "virtual-rgb-contract-v2",
+              "source_kind": "mujoco_rgb_render",
+              "width": 640
+            },
+            "mask": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-19-fixed_depth_01-mask.png",
+            "projected_world_m": [
+              0.1500380584941277,
+              0.15538996585395565,
+              0.05499999999999999
+            ],
+            "raw_rgb": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-19-fixed_depth_01-rgb.png"
+          },
+          "fixed_depth_02": {
+            "camera_forward_distance_m": 0.5628396478054729,
+            "component_count": 1,
+            "components": [
+              {
+                "bbox_xywh": [
+                  343,
+                  248,
+                  57,
+                  98
+                ],
+                "centroid_pixel_xy": [
+                  369.86950642325894,
+                  294.90669371196753
+                ],
+                "pixel_count": 4437
+              }
+            ],
+            "evaluation_only_delta_from_b_m": [
+              -0.004362545203112328,
+              -0.0015408931128119419,
+              -6.938893903907228e-18
+            ],
+            "evaluation_only_euclidean_error_m": 0.004626678315412652,
+            "frame": {
+              "frame_id": "fixed_depth_02",
+              "height": 480,
+              "pixel_encoding": "rgb_uint8",
+              "scenario_version": "virtual-rgb-contract-v2",
+              "source_kind": "mujoco_rgb_render",
+              "width": 640
+            },
+            "mask": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-19-fixed_depth_02-mask.png",
+            "projected_world_m": [
+              0.14563745479688767,
+              0.14845910688718805,
+              0.05499999999999999
+            ],
+            "raw_rgb": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-19-fixed_depth_02-rgb.png"
+          }
+        },
+        "target_b_world_m": [
+          0.15,
+          0.15,
+          0.055
+        ],
+        "two_camera_disagreement_m": 0.008209879348527939
+      },
+      {
+        "case_id": "B-20",
+        "cup_position_matches_configuration": true,
+        "per_camera": {
+          "fixed_depth_01": {
+            "camera_forward_distance_m": 0.8396525819360352,
+            "component_count": 1,
+            "components": [
+              {
+                "bbox_xywh": [
+                  402,
+                  170,
+                  34,
+                  42
+                ],
+                "centroid_pixel_xy": [
+                  418.12578616352204,
+                  190.9496855345912
+                ],
+                "pixel_count": 1113
+              }
+            ],
+            "evaluation_only_delta_from_b_m": [
+              0.022884150076552506,
+              -0.046438869697127294,
+              -6.938893903907228e-18
+            ],
+            "evaluation_only_euclidean_error_m": 0.05177115937926198,
+            "frame": {
+              "frame_id": "fixed_depth_01",
+              "height": 480,
+              "pixel_encoding": "rgb_uint8",
+              "scenario_version": "virtual-rgb-contract-v2",
+              "source_kind": "mujoco_rgb_render",
+              "width": 640
+            },
+            "mask": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-20-fixed_depth_01-mask.png",
+            "projected_world_m": [
+              0.1728841500765525,
+              0.2535611303028727,
+              0.05499999999999999
+            ],
+            "raw_rgb": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-20-fixed_depth_01-rgb.png"
+          },
+          "fixed_depth_02": {
+            "camera_forward_distance_m": 0.5002256245624358,
+            "component_count": 1,
+            "components": [
+              {
+                "bbox_xywh": [
+                  431,
+                  311,
+                  78,
+                  120
+                ],
+                "centroid_pixel_xy": [
+                  467.34866245867147,
+                  368.35467388037273
+                ],
+                "pixel_count": 6654
+              }
+            ],
+            "evaluation_only_delta_from_b_m": [
+              -0.00825503979265732,
+              0.0017451319136323473,
+              -6.938893903907228e-18
+            ],
+            "evaluation_only_euclidean_error_m": 0.008437485844393099,
+            "frame": {
+              "frame_id": "fixed_depth_02",
+              "height": 480,
+              "pixel_encoding": "rgb_uint8",
+              "scenario_version": "virtual-rgb-contract-v2",
+              "source_kind": "mujoco_rgb_render",
+              "width": 640
+            },
+            "mask": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-20-fixed_depth_02-mask.png",
+            "projected_world_m": [
+              0.14174496020734267,
+              0.30174513191363234,
+              0.05499999999999999
+            ],
+            "raw_rgb": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-20-fixed_depth_02-rgb.png"
+          }
+        },
+        "target_b_world_m": [
+          0.15,
+          0.3,
+          0.055
+        ],
+        "two_camera_disagreement_m": 0.057370263699379906
+      },
+      {
+        "case_id": "B-21",
+        "cup_position_matches_configuration": true,
+        "per_camera": {
+          "fixed_depth_01": {
+            "camera_forward_distance_m": 0.4324809992636433,
+            "component_count": 1,
+            "components": [
+              {
+                "bbox_xywh": [
+                  239,
+                  379,
+                  84,
+                  101
+                ],
+                "centroid_pixel_xy": [
+                  280.9799107142857,
+                  430.64243861607144
+                ],
+                "pixel_count": 7168
+              }
+            ],
+            "evaluation_only_delta_from_b_m": [
+              -0.014754874783230676,
+              0.013311499776474722,
+              -6.938893903907228e-18
+            ],
+            "evaluation_only_euclidean_error_m": 0.019872150265331203,
+            "frame": {
+              "frame_id": "fixed_depth_01",
+              "height": 480,
+              "pixel_encoding": "rgb_uint8",
+              "scenario_version": "virtual-rgb-contract-v2",
+              "source_kind": "mujoco_rgb_render",
+              "width": 640
+            },
+            "mask": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-21-fixed_depth_01-mask.png",
+            "projected_world_m": [
+              0.2852451252167693,
+              -0.28668850022352527,
+              0.05499999999999999
+            ],
+            "raw_rgb": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-21-fixed_depth_01-rgb.png"
+          },
+          "fixed_depth_02": {
+            "component_count": 2,
+            "components": [
+              {
+                "bbox_xywh": [
+                  126,
+                  196,
+                  41,
+                  39
+                ],
+                "centroid_pixel_xy": [
+                  146.6663822525597,
+                  214.64846416382252
+                ],
+                "pixel_count": 1172
+              },
+              {
+                "bbox_xywh": [
+                  120,
+                  166,
+                  42,
+                  19
+                ],
+                "centroid_pixel_xy": [
+                  139.580223880597,
+                  173.81902985074626
+                ],
+                "pixel_count": 536
+              }
+            ],
+            "frame": {
+              "frame_id": "fixed_depth_02",
+              "height": 480,
+              "pixel_encoding": "rgb_uint8",
+              "scenario_version": "virtual-rgb-contract-v2",
+              "source_kind": "mujoco_rgb_render",
+              "width": 640
+            },
+            "mask": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-21-fixed_depth_02-mask.png",
+            "raw_rgb": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-21-fixed_depth_02-rgb.png"
+          }
+        },
+        "target_b_world_m": [
+          0.3,
+          -0.3,
+          0.055
+        ],
+        "two_camera_disagreement_m": null
+      },
+      {
+        "case_id": "B-22",
+        "cup_position_matches_configuration": true,
+        "per_camera": {
+          "fixed_depth_01": {
+            "camera_forward_distance_m": 0.49848266001670577,
+            "component_count": 1,
+            "components": [
+              {
+                "bbox_xywh": [
+                  340,
+                  292,
+                  66,
+                  113
+                ],
+                "centroid_pixel_xy": [
+                  370.7468290208016,
+                  345.64907830204635
+                ],
+                "pixel_count": 5913
+              }
+            ],
+            "evaluation_only_delta_from_b_m": [
+              -2.336527393725918e-05,
+              0.004553693474916826,
+              -6.938893903907228e-18
+            ],
+            "evaluation_only_euclidean_error_m": 0.004553753418832232,
+            "frame": {
+              "frame_id": "fixed_depth_01",
+              "height": 480,
+              "pixel_encoding": "rgb_uint8",
+              "scenario_version": "virtual-rgb-contract-v2",
+              "source_kind": "mujoco_rgb_render",
+              "width": 640
+            },
+            "mask": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-22-fixed_depth_01-mask.png",
+            "projected_world_m": [
+              0.29997663472606273,
+              -0.14544630652508317,
+              0.05499999999999999
+            ],
+            "raw_rgb": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-22-fixed_depth_01-rgb.png"
+          },
+          "fixed_depth_02": {
+            "component_count": 2,
+            "components": [
+              {
+                "bbox_xywh": [
+                  146,
+                  198,
+                  52,
+                  77
+                ],
+                "centroid_pixel_xy": [
+                  171.83933209647495,
+                  235.92319109461965
+                ],
+                "pixel_count": 2695
+              },
+              {
+                "bbox_xywh": [
+                  190,
+                  202,
+                  3,
+                  7
+                ],
+                "centroid_pixel_xy": [
+                  191.1,
+                  205.0
+                ],
+                "pixel_count": 10
+              }
+            ],
+            "frame": {
+              "frame_id": "fixed_depth_02",
+              "height": 480,
+              "pixel_encoding": "rgb_uint8",
+              "scenario_version": "virtual-rgb-contract-v2",
+              "source_kind": "mujoco_rgb_render",
+              "width": 640
+            },
+            "mask": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-22-fixed_depth_02-mask.png",
+            "raw_rgb": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-22-fixed_depth_02-rgb.png"
+          }
+        },
+        "target_b_world_m": [
+          0.3,
+          -0.15,
+          0.055
+        ],
+        "two_camera_disagreement_m": null
+      },
+      {
+        "case_id": "B-23",
+        "cup_position_matches_configuration": true,
+        "per_camera": {
+          "fixed_depth_01": {
+            "camera_forward_distance_m": 0.6026021225286761,
+            "component_count": 1,
+            "components": [
+              {
+                "bbox_xywh": [
+                  401,
+                  235,
+                  57,
+                  94
+                ],
+                "centroid_pixel_xy": [
+                  427.27944111776446,
+                  279.77994011976045
+                ],
+                "pixel_count": 4008
+              }
+            ],
+            "evaluation_only_delta_from_b_m": [
+              0.0022239305876297077,
+              0.006143125986894427,
+              -6.938893903907228e-18
+            ],
+            "evaluation_only_euclidean_error_m": 0.006533288922851387,
+            "frame": {
+              "frame_id": "fixed_depth_01",
+              "height": 480,
+              "pixel_encoding": "rgb_uint8",
+              "scenario_version": "virtual-rgb-contract-v2",
+              "source_kind": "mujoco_rgb_render",
+              "width": 640
+            },
+            "mask": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-23-fixed_depth_01-mask.png",
+            "projected_world_m": [
+              0.3022239305876297,
+              0.006143125986894427,
+              0.05499999999999999
+            ],
+            "raw_rgb": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-23-fixed_depth_01-rgb.png"
+          },
+          "fixed_depth_02": {
+            "camera_forward_distance_m": 0.6025958723135428,
+            "component_count": 1,
+            "components": [
+              {
+                "bbox_xywh": [
+                  183,
+                  235,
+                  56,
+                  94
+                ],
+                "centroid_pixel_xy": [
+                  211.74775896414343,
+                  279.7781374501992
+                ],
+                "pixel_count": 4016
+              }
+            ],
+            "evaluation_only_delta_from_b_m": [
+              0.0021916173319289634,
+              -0.0061243989772623575,
+              -6.938893903907228e-18
+            ],
+            "evaluation_only_euclidean_error_m": 0.006504725156553783,
+            "frame": {
+              "frame_id": "fixed_depth_02",
+              "height": 480,
+              "pixel_encoding": "rgb_uint8",
+              "scenario_version": "virtual-rgb-contract-v2",
+              "source_kind": "mujoco_rgb_render",
+              "width": 640
+            },
+            "mask": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-23-fixed_depth_02-mask.png",
+            "projected_world_m": [
+              0.30219161733192895,
+              -0.0061243989772623575,
+              0.05499999999999999
+            ],
+            "raw_rgb": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-23-fixed_depth_02-rgb.png"
+          }
+        },
+        "target_b_world_m": [
+          0.3,
+          0.0,
+          0.055
+        ],
+        "two_camera_disagreement_m": 0.012267567521424282
+      },
+      {
+        "case_id": "B-24",
+        "cup_position_matches_configuration": true,
+        "per_camera": {
+          "fixed_depth_01": {
+            "camera_forward_distance_m": 0.7214856497417664,
+            "component_count": 1,
+            "components": [
+              {
+                "bbox_xywh": [
+                  442,
+                  197,
+                  52,
+                  78
+                ],
+                "centroid_pixel_xy": [
+                  466.39978902953584,
+                  234.14099859353024
+                ],
+                "pixel_count": 2844
+              }
+            ],
+            "evaluation_only_delta_from_b_m": [
+              0.004367032801768478,
+              0.005068245447022307,
+              -6.938893903907228e-18
+            ],
+            "evaluation_only_euclidean_error_m": 0.006690148533701191,
+            "frame": {
+              "frame_id": "fixed_depth_01",
+              "height": 480,
+              "pixel_encoding": "rgb_uint8",
+              "scenario_version": "virtual-rgb-contract-v2",
+              "source_kind": "mujoco_rgb_render",
+              "width": 640
+            },
+            "mask": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-24-fixed_depth_01-mask.png",
+            "projected_world_m": [
+              0.30436703280176847,
+              0.1550682454470223,
+              0.05499999999999999
+            ],
+            "raw_rgb": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-24-fixed_depth_01-rgb.png"
+          },
+          "fixed_depth_02": {
+            "camera_forward_distance_m": 0.4983518074378187,
+            "component_count": 1,
+            "components": [
+              {
+                "bbox_xywh": [
+                  234,
+                  292,
+                  66,
+                  113
+                ],
+                "centroid_pixel_xy": [
+                  268.28634064080944,
+                  345.7711635750422
+                ],
+                "pixel_count": 5930
+              }
+            ],
+            "evaluation_only_delta_from_b_m": [
+              3.979668098424982e-05,
+              -0.00437059877238502,
+              -6.938893903907228e-18
+            ],
+            "evaluation_only_euclidean_error_m": 0.0043707799538515784,
+            "frame": {
+              "frame_id": "fixed_depth_02",
+              "height": 480,
+              "pixel_encoding": "rgb_uint8",
+              "scenario_version": "virtual-rgb-contract-v2",
+              "source_kind": "mujoco_rgb_render",
+              "width": 640
+            },
+            "mask": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-24-fixed_depth_02-mask.png",
+            "projected_world_m": [
+              0.30003979668098424,
+              0.14562940122761497,
+              0.05499999999999999
+            ],
+            "raw_rgb": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-24-fixed_depth_02-rgb.png"
+          }
+        },
+        "target_b_world_m": [
+          0.3,
+          0.15,
+          0.055
+        ],
+        "two_camera_disagreement_m": 0.01038348460986286
+      },
+      {
+        "case_id": "B-25",
+        "cup_position_matches_configuration": true,
+        "per_camera": {
+          "fixed_depth_01": {
+            "component_count": 2,
+            "components": [
+              {
+                "bbox_xywh": [
+                  473,
+                  196,
+                  41,
+                  39
+                ],
+                "centroid_pixel_xy": [
+                  492.3344797936372,
+                  214.64058469475495
+                ],
+                "pixel_count": 1163
+              },
+              {
+                "bbox_xywh": [
+                  478,
+                  166,
+                  42,
+                  18
+                ],
+                "centroid_pixel_xy": [
+                  499.2490118577075,
+                  173.5494071146245
+                ],
+                "pixel_count": 506
+              }
+            ],
+            "frame": {
+              "frame_id": "fixed_depth_01",
+              "height": 480,
+              "pixel_encoding": "rgb_uint8",
+              "scenario_version": "virtual-rgb-contract-v2",
+              "source_kind": "mujoco_rgb_render",
+              "width": 640
+            },
+            "mask": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-25-fixed_depth_01-mask.png",
+            "raw_rgb": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-25-fixed_depth_01-rgb.png"
+          },
+          "fixed_depth_02": {
+            "camera_forward_distance_m": 0.4324607349689133,
+            "component_count": 1,
+            "components": [
+              {
+                "bbox_xywh": [
+                  317,
+                  379,
+                  84,
+                  101
+                ],
+                "centroid_pixel_xy": [
+                  358.030303030303,
+                  430.6813294232649
+                ],
+                "pixel_count": 7161
+              }
+            ],
+            "evaluation_only_delta_from_b_m": [
+              -0.014736938563361612,
+              -0.013275927076295935,
+              -6.938893903907228e-18
+            ],
+            "evaluation_only_euclidean_error_m": 0.019835009401445267,
+            "frame": {
+              "frame_id": "fixed_depth_02",
+              "height": 480,
+              "pixel_encoding": "rgb_uint8",
+              "scenario_version": "virtual-rgb-contract-v2",
+              "source_kind": "mujoco_rgb_render",
+              "width": 640
+            },
+            "mask": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-25-fixed_depth_02-mask.png",
+            "projected_world_m": [
+              0.2852630614366384,
+              0.28672407292370405,
+              0.05499999999999999
+            ],
+            "raw_rgb": "research/artifacts/EXP-20260921-022-virtual-rgb-multirange-projection-sweep/B-25-fixed_depth_02-rgb.png"
+          }
+        },
+        "target_b_world_m": [
+          0.3,
+          0.3,
+          0.055
+        ],
+        "two_camera_disagreement_m": null
+      }
+    ],
+    "fusion_or_execution": "not_evaluated",
+    "summary_evaluation_only": {
+      "max_single_camera_error_m": 0.07550103393955987,
+      "max_two_camera_disagreement_m": 0.0902239906899435,
+      "mean_two_camera_disagreement_m": 0.02729525713259769
+    },
+    "target_count": 25,
+    "valid_two_camera_case_count": 18
+  },
+  "review": {
+    "adopted": false,
+    "status": "pending_human_review"
+  },
+  "run_id": "EXP-20260921-022-virtual-rgb-multirange-projection-sweep",
+  "schema_version": "first-robots/research-result/v1",
+  "status": "blocked_pending_human_review"
+}

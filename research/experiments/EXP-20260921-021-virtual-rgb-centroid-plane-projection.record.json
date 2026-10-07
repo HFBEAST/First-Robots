@@ -1,0 +1,8 @@
+{
+  "schema_version": "first-robots/experiment-record/v1",
+  "run_id": "EXP-20260921-021-virtual-rgb-centroid-plane-projection",
+  "kind": "formal_virtual_rgb_centroid_plane_projection",
+  "plan": "research/experiments/EXP-20260921-021-virtual-rgb-centroid-plane-projection.md",
+  "state": "planned_not_executed",
+  "review": {"status": "pending_human_review", "adopted": false}
+}

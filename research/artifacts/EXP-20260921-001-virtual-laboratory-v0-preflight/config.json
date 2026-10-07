@@ -1,0 +1,106 @@
+{
+  "experiment_id": "EXP-20260921-001-virtual-laboratory-v0-preflight",
+  "laboratory": {
+    "actuation": "disabled",
+    "cameras": {
+      "fixed_depth_01": {
+        "kind": "virtual nominal depth",
+        "position_m": [
+          0.45,
+          -0.45,
+          0.42
+        ],
+        "target_m": [
+          0.12,
+          0,
+          0.055
+        ]
+      },
+      "fixed_depth_02": {
+        "kind": "virtual nominal depth",
+        "position_m": [
+          0.45,
+          0.45,
+          0.42
+        ],
+        "target_m": [
+          0.12,
+          0,
+          0.055
+        ]
+      },
+      "wrist_cam": {
+        "kind": "candidate-model wrist RGB",
+        "source": "candidate model only"
+      }
+    },
+    "coordinate_contract": "world origin is the nominal tabletop surface and candidate robot-base origin; +Z is upward.",
+    "cup": {
+      "center_m": [
+        0.12,
+        0,
+        0.055
+      ],
+      "half_height_m": 0.055,
+      "name": "vlab_cup",
+      "radius_m": 0.035,
+      "type": "cylinder"
+    },
+    "dynamics": "disabled",
+    "hardware_io": "disabled",
+    "qpos": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "renderer": {
+      "height": 240,
+      "outputs": [
+        "rgb",
+        "depth",
+        "geom_segmentation"
+      ],
+      "width": 320
+    },
+    "robot_model": "candidate Menagerie SO-101",
+    "robots": 1,
+    "table": {
+      "center_m": [
+        0,
+        0,
+        -0.025
+      ],
+      "half_extents_m": [
+        0.45,
+        0.45,
+        0.025
+      ],
+      "name": "vlab_table",
+      "top_z_m": 0
+    },
+    "version": "v0"
+  },
+  "model": {
+    "license": "Apache-2.0",
+    "repository_revision": "da76818e269b82289eba39808e2fb91d679d6994",
+    "scene_sha256": "sha256:65496b0061ca3ddd92b58fe09bd30f6a4a443f137cc42cf8975d5cff23030bfd"
+  },
+  "non_claims": [
+    "The table, cup and fixed cameras are virtual inputs, not a surveyed real workspace or physical calibration.",
+    "This is a static laboratory initialization, not collision safety, reachability, grasping, perception, control, sim-to-real, or multi-robot evidence.",
+    "Simulator labels are evaluation metadata only and may not be supplied to a future runtime perception component."
+  ],
+  "pass_conditions": [
+    "source scene hash matches model.scene_sha256",
+    "named table, cup and three named cameras compile",
+    "after mj_forward cup world position equals laboratory.cup.center_m",
+    "table top equals coordinate-contract Z=0",
+    "all three cameras emit RGB, depth and segmentation artifacts",
+    "both fixed nominal cameras have one or more vlab_cup segmentation pixels"
+  ],
+  "schema_version": "first-robots/research-config/v1",
+  "status": "planned_not_executed"
+}

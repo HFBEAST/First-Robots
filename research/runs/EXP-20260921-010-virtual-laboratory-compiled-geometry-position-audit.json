@@ -1,0 +1,110 @@
+{
+  "artifacts": [
+    {
+      "path": "research/artifacts/EXP-20260921-010-virtual-laboratory-compiled-geometry-position-audit/config.json",
+      "sha256": "sha256:fa8b87327ed2968138bbb580bb2959f9da8a8970447b5fb206e4f4d83f79bdde"
+    },
+    {
+      "path": "research/artifacts/EXP-20260921-010-virtual-laboratory-compiled-geometry-position-audit/terminal-assessment.json",
+      "sha256": "sha256:d1117567f1edc5ebc457b948963c77f5c1f90b8f7d758767753b4e5a8ae5e256"
+    },
+    {
+      "path": "research/experiments/EXP-20260921-010-virtual-laboratory-compiled-geometry-position-audit.execution.record.json",
+      "sha256": "sha256:56f8ffbdefa1ab74c86de632478530a2a101d57c086e0b82769cd829aa6811b1"
+    },
+    {
+      "path": "research/reports/EXP-20260921-010-virtual-laboratory-compiled-geometry-position-audit.result.json",
+      "sha256": "sha256:b9ee8d264a2fae14f14de68e41ca3919e2d0464b0f1bcf360b320b25403cc095"
+    }
+  ],
+  "baseline": {
+    "kind": "compiled_scene_equivalence",
+    "reference": "EXP-20260921-006-virtual-laboratory-barrier-width-isolation"
+  },
+  "code": {
+    "commit": "5311e4a85e76bfc96a9ff235d9cd00f2c7a629fb",
+    "dirty_at_start": true,
+    "repository": "H:/0_program/My_action/First-Robots",
+    "traceable": true
+  },
+  "ended_at": "2026-09-20T23:05:23.459785Z",
+  "execution": {
+    "command": [
+      "H:\\0_program\\My_action\\First-Robots\\research\\.venvs\\mrbtp-demo-py312\\Scripts\\python.exe",
+      "research\\experiments\\run_virtual_laboratory_compiled_geometry_position_audit.py"
+    ],
+    "parameters": {
+      "probe": "research/configs/EXP-20260921-008-virtual-laboratory-occlusion-rgb-color-probe.json",
+      "reference": "research/configs/EXP-20260921-006-virtual-laboratory-barrier-width-isolation.json"
+    },
+    "script": "research/experiments/run_virtual_laboratory_compiled_geometry_position_audit.py"
+  },
+  "inputs": [
+    {
+      "kind": "configuration",
+      "path": "research/configs/EXP-20260921-010-virtual-laboratory-compiled-geometry-position-audit.json",
+      "sha256": "sha256:0b391a0358526fcaa27053f6294da58c4feaedc6666e32c51e213ebccf53447d"
+    },
+    {
+      "kind": "rgb_probe_result",
+      "path": "research/reports/EXP-20260921-008-virtual-laboratory-occlusion-rgb-color-probe.result.json",
+      "sha256": "sha256:5b45d7a79a3fef2175f7acd3405b5239c7cd3f513e78bbbc816b312391e1191b"
+    },
+    {
+      "kind": "reference_config",
+      "path": "research/configs/EXP-20260921-006-virtual-laboratory-barrier-width-isolation.json",
+      "sha256": "sha256:294169ad0ab6a2c26655086d231a13ccb0317d0dc1d6648ebe3c2587618f95dd"
+    },
+    {
+      "kind": "probe_config",
+      "path": "research/configs/EXP-20260921-008-virtual-laboratory-occlusion-rgb-color-probe.json",
+      "sha256": "sha256:0971da5b1ec41ff1f0627644a60f47144f85bec83aac8d47b3c77139849e8e9f"
+    },
+    {
+      "kind": "position_screen_source_run",
+      "path": "research/runs/EXP-20260831-004-so101-mujoco-observation-preflight.json",
+      "sha256": "sha256:2dc2c8ce727aa6344c29180fff86678900b1a220e9201c22b76a4c3bc324afed"
+    },
+    {
+      "kind": "candidate_model",
+      "path": "research/sources/mujoco_menagerie_robotstudio_so101/robotstudio_so101/scene.xml",
+      "sha256": "sha256:65496b0061ca3ddd92b58fe09bd30f6a4a443f137cc42cf8975d5cff23030bfd"
+    }
+  ],
+  "level": "formal",
+  "objective": "Compare 006 and 008 compiled geometry, then apply a frozen position-only screen.",
+  "results": {
+    "criteria": "Compiled geometry/cameras/qpos match and cup stays inside the frozen virtual screen.",
+    "duration_seconds": 0.081392,
+    "metrics": [
+      {
+        "name": "compiled_geometry_equal_to_006",
+        "unit": "boolean",
+        "value": true
+      },
+      {
+        "name": "compiled_fixed_cameras_equal_to_006",
+        "unit": "boolean",
+        "value": true
+      },
+      {
+        "name": "inside_virtual_half_reach_screen",
+        "unit": "boolean",
+        "value": true
+      }
+    ],
+    "passed": true
+  },
+  "review": {
+    "note": "No rendering, movement, or hardware I/O; grasp reachability intentionally not evaluated.",
+    "status": "pending_human_review"
+  },
+  "run_id": "EXP-20260921-010-virtual-laboratory-compiled-geometry-position-audit",
+  "runtime": {
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.12.11",
+    "random_seed": null
+  },
+  "schema_version": "experiment-management/run-manifest/v1",
+  "started_at": "2026-09-20T23:05:23.378790Z"
+}

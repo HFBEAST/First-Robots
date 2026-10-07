@@ -1,0 +1,59 @@
+{
+  "blocking_predecessor": {
+    "result_path": "research/reports/EXP-20260923-028-known-cylinder-depth-center-fit-golden-case.result.json",
+    "result_sha256": "sha256:448512131f3954c74f56b0d5b71930047eb0cbbb2a744b00d50d12b73ee3cb93",
+    "run_id": "EXP-20260923-028-known-cylinder-depth-center-fit-golden-case"
+  },
+  "experiment_id": "EXP-20260923-029-known-cylinder-depth-agent-chain-golden-case",
+  "non_claims": [
+    "Coordinator acceptance checks message structure and table containment, not numerical accuracy, calibration, sensor quality, collision, reachability, or safety.",
+    "Mock execution changes an in-memory cup coordinate only; it is not MuJoCo robot action, motion planning, IK, collision checking, grasping, or hardware control.",
+    "The evaluation-only B comparison does not convert this one virtual known-cylinder result into an adopted real-world capability."
+  ],
+  "pass_conditions": [
+    "028 result hash matches and its fitted center is finite",
+    "Coordinate Agent publishes one candidate center with both required depth frame IDs, scenario version, and known-object-model version",
+    "Coordinator accepts only a complete, version-matched structural message; Capability Agent checks table containment only",
+    "mock Executor updates its virtual state from A to the Coordinator candidate; Reviewer verifies state equality",
+    "a missing-depth-frame message is rejected before mock execution and leaves A unchanged"
+  ],
+  "scenario": {
+    "actuation": "disabled",
+    "cup": {
+      "half_height_m": 0.055,
+      "radius_m": 0.035
+    },
+    "dynamics": "disabled",
+    "evaluation_only_b_world_m": [
+      0.15,
+      0,
+      0.055
+    ],
+    "hardware_io": "disabled",
+    "initial_cup_a_world_m": [
+      0.12,
+      0,
+      0.055
+    ],
+    "known_object_model_version": "upright-cylinder-r0.035-h0.110-table-z0",
+    "required_depth_frames": [
+      "fixed_depth_01",
+      "fixed_depth_02"
+    ],
+    "scenario_version": "known-cylinder-depth-agent-chain-v1",
+    "table": {
+      "center_m": [
+        0,
+        0,
+        -0.025
+      ],
+      "half_extents_m": [
+        0.45,
+        0.45,
+        0.025
+      ]
+    }
+  },
+  "schema_version": "first-robots/research-config/v1",
+  "status": "planned_not_executed"
+}

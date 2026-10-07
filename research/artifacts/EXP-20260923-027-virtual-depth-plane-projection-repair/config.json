@@ -1,0 +1,74 @@
+{
+  "blocking_predecessor": {
+    "observations_path": "research/artifacts/EXP-20260923-025-virtual-depth-background-detection-golden-case/depth-background-detection-observations.json",
+    "observations_sha256": "sha256:3a3c20094db3e32358e40bedcd89ea53e2c1d7be121b02450cc8de756ccea079",
+    "result_path": "research/reports/EXP-20260923-025-virtual-depth-background-detection-golden-case.result.json",
+    "result_sha256": "sha256:5e36e69124edf6fa237002f20aa29d045bba1049976e0c60029a0a31b5646134",
+    "run_id": "EXP-20260923-025-virtual-depth-background-detection-golden-case"
+  },
+  "depth_semantics_source": "research/sources/mujoco-depth-semantics-20260923.md",
+  "experiment_id": "EXP-20260923-027-virtual-depth-plane-projection-repair",
+  "non_claims": [
+    "A corrected virtual depth projection gives a visible surface-point candidate, not the cup center, object pose, calibration result, or accepted world target.",
+    "This semantics repair applies only to the frozen MuJoCo renderer contract and does not establish Orbbec units or real depth errors.",
+    "No fit, fusion, planning, IK, collision, grasp, safety, robot action, or hardware I/O is evaluated."
+  ],
+  "pass_conditions": [
+    "025 inputs and 026 failed-assumption result hashes match",
+    "each frozen foreground component provides a finite median depth from the camera plane",
+    "each component produces a finite forward virtual surface-point candidate using planar depth; evaluation-only offsets remain recorded without a tolerance",
+    "no center fitting, fusion, Coordinator, or execution is applied"
+  ],
+  "repair_of": {
+    "defect": "treated MuJoCo depth output as origin-to-surface ray range; official MuJoCo camera documentation defines depth as distance from camera plane.",
+    "result_path": "research/reports/EXP-20260923-026-virtual-depth-surface-point-projection.result.json",
+    "result_sha256": "sha256:b567306994469a87c195bce85bc79f9e13e4735b4feac89430adb07bf74d757a",
+    "run_id": "EXP-20260923-026-virtual-depth-surface-point-projection"
+  },
+  "scenario": {
+    "actuation": "disabled",
+    "camera_fovy_degrees": 60,
+    "cup_b_world_m_evaluation_only": [
+      0.15,
+      0,
+      0.055
+    ],
+    "dynamics": "disabled",
+    "fixed_cameras": {
+      "fixed_depth_01": {
+        "position_m": [
+          0.45,
+          -0.45,
+          0.42
+        ],
+        "target_m": [
+          0.12,
+          0,
+          0.055
+        ]
+      },
+      "fixed_depth_02": {
+        "position_m": [
+          0.45,
+          0.45,
+          0.42
+        ],
+        "target_m": [
+          0.12,
+          0,
+          0.055
+        ]
+      }
+    },
+    "frame_contract": {
+      "height": 480,
+      "pixel_encoding": "depth_float32_m",
+      "scenario_version": "virtual-depth-contract-v1",
+      "source_kind": "mujoco_depth_render",
+      "width": 640
+    },
+    "hardware_io": "disabled"
+  },
+  "schema_version": "first-robots/research-config/v1",
+  "status": "planned_not_executed"
+}

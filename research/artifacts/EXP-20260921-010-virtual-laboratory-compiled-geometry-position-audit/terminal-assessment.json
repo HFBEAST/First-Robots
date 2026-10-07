@@ -1,0 +1,17 @@
+{
+  "compiled_fixed_cameras_equal_to_006": true,
+  "compiled_geometry_equal_to_006": true,
+  "grasp_reachability_assessment": "not_evaluated_no_deterministic_ik_collision_protocol",
+  "position_screen": {
+    "assessment": "inside_virtual_half_reach_screen",
+    "baseframe_world_position_m": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "cup_xy_radius_from_base_m": 0.12,
+    "source_run_id": "EXP-20260831-004-so101-mujoco-observation-preflight",
+    "virtual_half_reach_radius_m": 0.23917871793616743
+  },
+  "qpos_equal_to_006": true
+}

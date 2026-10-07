@@ -1,0 +1,30 @@
+{
+  "limits": [
+    "Compiled-scene equality and a position-only screen do not prove IK, end-effector pose, collision freedom, trajectory feasibility, grasp, load safety, control, or hardware reachability.",
+    "This adds no new visibility measurement; the separately recorded 008 artificial-color RGB result remains limited to a static virtual raster observation."
+  ],
+  "observations": {
+    "compiled_fixed_cameras_equal_to_006": true,
+    "compiled_geometry_equal_to_006": true,
+    "grasp_reachability_assessment": "not_evaluated_no_deterministic_ik_collision_protocol",
+    "position_screen": {
+      "assessment": "inside_virtual_half_reach_screen",
+      "baseframe_world_position_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "cup_xy_radius_from_base_m": 0.12,
+      "source_run_id": "EXP-20260831-004-so101-mujoco-observation-preflight",
+      "virtual_half_reach_radius_m": 0.23917871793616743
+    },
+    "qpos_equal_to_006": true
+  },
+  "review": {
+    "adopted": false,
+    "status": "pending_human_review"
+  },
+  "run_id": "EXP-20260921-010-virtual-laboratory-compiled-geometry-position-audit",
+  "schema_version": "first-robots/research-result/v1",
+  "status": "passed_pending_human_review"
+}

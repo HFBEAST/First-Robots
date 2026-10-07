@@ -1,0 +1,13 @@
+{
+  "schema_version": "first-robots/experiment-preflight-failure/v1",
+  "run_id": "EXP-20260921-009-virtual-laboratory-barrier-geometry-position-audit",
+  "state": "blocked_pre_execution",
+  "failure": {
+    "type": "RuntimeError",
+    "message": "008 geometry differs from frozen 006 geometry",
+    "cause": "The 008 configuration omitted barrier name/type declarations that its execution script fixed to vlab_barrier/box; direct configuration equality therefore could not establish compiled-scene equality."
+  },
+  "artifacts_or_result_written": false,
+  "successor": "EXP-20260921-010-virtual-laboratory-compiled-geometry-position-audit",
+  "review": {"status": "pending_human_review", "adopted": false}
+}
