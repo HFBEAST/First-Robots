@@ -1,0 +1,13 @@
+{
+  "kind": "formal_single_arm_reach",
+  "result": {
+    "path": "research/reports/EXP-20261007-003-single-arm-reach-committed-baseline.result.json",
+    "sha256": "sha256:ffa51222ac543a4c748a1cfdd18c14b14249cfcbc1039f1badff7d3a179e2994"
+  },
+  "review": {
+    "adopted": false,
+    "status": "pending_human_review"
+  },
+  "run_id": "EXP-20261007-003-single-arm-reach-committed-baseline",
+  "schema_version": "first-robots/experiment-record/v1"
+}

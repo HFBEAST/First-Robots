@@ -1,0 +1,30 @@
+{
+  "ik": {
+    "damping": 0.01,
+    "line_search_steps": 10,
+    "max_iterations": 300,
+    "max_joint_step_rad": 0.1,
+    "position_tolerance_m": 1e-06
+  },
+  "initial_qpos_rad": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    1.0
+  ],
+  "model": "assets/so101/scene.xml",
+  "motion": {
+    "duration_s": 3.0,
+    "path_check_samples": 101,
+    "settle_s": 2.0
+  },
+  "scope": "Numerical experimental settings for fixed-target virtual motion; no adopted real-arm accuracy or safety thresholds.",
+  "site": "gripperframe",
+  "target_world_m": [
+    0.25,
+    0.0,
+    0.2
+  ]
+}

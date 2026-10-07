@@ -3,12 +3,13 @@
   "change_id": "CHG-20261007-001-single-arm-motion-baseline",
   "title": "Focus the project on a single SO-101 and add actuator-driven virtual reach",
   "started_at": "2026-10-07T18:30:00+09:00",
-  "ended_at": "2026-10-07T18:47:00+09:00",
-  "code": {"commit": "8bf65c6b5304628a06f41885f23bace2c3b05587", "traceable": true, "dirty_at_start": true},
+  "ended_at": "2026-10-07T18:53:00+09:00",
+  "code": {"commit": "22746b9efd254ca8481e94bf60d47e1df15329ee", "traceable": true, "dirty_at_start": false, "capture_context": "Independent clean checkout before 003 motion verification; main development attempts remain separately recorded as dirty."},
   "verification": [
     {"kind": "behavior-tests", "command": ["python", "-m", "unittest", "discover", "-s", "tests", "-v"], "status": "passed"},
     {"kind": "development-observation", "command": ["python", "research/experiments/run_single_arm_reach.py", "--config", "research/configs/EXP-20261007-001-single-arm-reach.json"], "status": "passed"},
     {"kind": "formal-provenance", "command": ["python", "-m", "experiment_management", "validate", "research/runs/EXP-20261007-001-single-arm-reach.json"], "status": "failed"},
+    {"kind": "committed-formal-baseline", "command": ["python", "-m", "experiment_management", "validate", "research/runs/EXP-20261007-003-single-arm-reach-committed-baseline.json"], "status": "passed"},
     {"kind": "project-index", "command": ["python", "-m", "experiment_management", "validate-index", "."], "status": "passed"}
   ],
   "scope": {
@@ -16,6 +17,6 @@
     "paths": ["src/first_robots", "assets/so101", "config/sim_reach.json", "requirements-simulation.txt", "tests", "project.json", "docs/overview.md", "docs/architecture.md", "docs/status.md", "research/README.md", "research/experiments/EXP-20261007-001-single-arm-reach.md"]
   },
   "risk": {"level": "low", "rollback": "Revert this scoped implementation commit; retain existing research evidence. No hardware I/O is implemented."},
-  "links": {"run_ids": ["EXP-20261007-001-single-arm-reach"]},
+  "links": {"run_ids": ["EXP-20261007-001-single-arm-reach", "EXP-20261007-002-single-arm-reach-process-repeat", "EXP-20261007-003-single-arm-reach-committed-baseline"]},
   "review": {"status": "pending_human_review", "scope": ["virtual implementation only", "no physical capability or numerical threshold adoption"]}
 }

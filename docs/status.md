@@ -14,6 +14,11 @@
 重跑取得正式基线。位置精度是本场景观测，抓取姿态、圆柱接触搬运、视觉驱动、语言任务与真机尚未实现。
 原有感知/消息实验不能代替机械运动证据。
 
+`EXP-20261007-003-single-arm-reach-committed-baseline` 已在提交 `22746b9efd254ca8481e94bf60d47e1df15329ee`
+的独立干净 checkout 实际重跑，正式 manifest 校验通过；得到同样的 15 次 IK 迭代、1,000 步实际运动和
+`0.000154691 m` 终态误差。003 是后续运动研究的正式基线，仍为 `pending_human_review`。001/002 的
+dirty-worktree 校验失败原样保留。运行不使用随机采样，null seed 的确定性协议例外已写入计划。
+
 研究状态：`optional / active`。已完成 formal virtual run
 `EXP-20260831-004-so101-mujoco-observation-preflight`；已采纳 Menagerie `robotstudio_so101`
 作为仅限研究旁车的临时虚拟模型，见 `docs/decisions/DEC-20260831-001-adopt-virtual-so101-model.md`。
