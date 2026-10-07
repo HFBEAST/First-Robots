@@ -1,0 +1,357 @@
+{
+  "artifacts": [
+    {
+      "path": "research/artifacts/EXP-20261007-005-single-arm-pick-place/attempt-01/config.json",
+      "sha256": "sha256:6ca4916ffd870d0a6b094a64301143a325961f44c15f188ac76b0a1d10e8af24"
+    },
+    {
+      "path": "research/artifacts/EXP-20261007-005-single-arm-pick-place/attempt-01/final.png",
+      "sha256": "sha256:4ed38d839317a936834f6f076a5160330746cd4cf7e0a76c28b214a4d0c81297"
+    },
+    {
+      "path": "research/artifacts/EXP-20261007-005-single-arm-pick-place/attempt-01/motion.gif",
+      "sha256": "sha256:425d9ad4c4af148ca4d79369f0a5a5c0b866248554de1b4fef6fec5ab6b7e055"
+    },
+    {
+      "path": "research/artifacts/EXP-20261007-005-single-arm-pick-place/attempt-01/observations.json",
+      "sha256": "sha256:ebe871d5fbbde8ae656c6fd999302f940378ba26b045bb2873d43b71b9777fe1"
+    },
+    {
+      "path": "research/artifacts/EXP-20261007-005-single-arm-pick-place/attempt-01/phase-close.png",
+      "sha256": "sha256:0a45c048bc3d3ccbab6701d652786053e0815ae16f8a334f0da68aa74c585ca8"
+    },
+    {
+      "path": "research/artifacts/EXP-20261007-005-single-arm-pick-place/attempt-01/phase-descend.png",
+      "sha256": "sha256:68f5161f67c3ddac386e204b6a6c9c84842398fb77216d1a36d1e6198abab61d"
+    },
+    {
+      "path": "research/artifacts/EXP-20261007-005-single-arm-pick-place/attempt-01/phase-final_settle.png",
+      "sha256": "sha256:4ed38d839317a936834f6f076a5160330746cd4cf7e0a76c28b214a4d0c81297"
+    },
+    {
+      "path": "research/artifacts/EXP-20261007-005-single-arm-pick-place/attempt-01/phase-fixture_settle.png",
+      "sha256": "sha256:eb42b732d8d329eca0a2c5dfee6a5f49b7abd7efabff392874fa51536bd7e80c"
+    },
+    {
+      "path": "research/artifacts/EXP-20261007-005-single-arm-pick-place/attempt-01/phase-lift.png",
+      "sha256": "sha256:4c8d8e3b1903f3e1aa383a1c858bedc61551bcb394f7af33008f981e23712190"
+    },
+    {
+      "path": "research/artifacts/EXP-20261007-005-single-arm-pick-place/attempt-01/phase-lower.png",
+      "sha256": "sha256:e7c634f6cec85fa59e51ba6fa683447d0459bb0cc7a98d21768f8872e8baca56"
+    },
+    {
+      "path": "research/artifacts/EXP-20261007-005-single-arm-pick-place/attempt-01/phase-pregrasp.png",
+      "sha256": "sha256:09d058555c051a3fc030a41acc04ae31944ed5d5a268e4743ea61e030ca54100"
+    },
+    {
+      "path": "research/artifacts/EXP-20261007-005-single-arm-pick-place/attempt-01/phase-release.png",
+      "sha256": "sha256:856384d3adb9e639d973402608fb7e18b509d3c298607a8e4786444dac78cb22"
+    },
+    {
+      "path": "research/artifacts/EXP-20261007-005-single-arm-pick-place/attempt-01/phase-retreat.png",
+      "sha256": "sha256:385408a1c1b9cfa3f7a574ce3320d581a514c6a5f18030edcb55e0604269476d"
+    },
+    {
+      "path": "research/artifacts/EXP-20261007-005-single-arm-pick-place/attempt-01/phase-transfer.png",
+      "sha256": "sha256:c39ce1e495b0760d24b78ae8aabeb84fa3df0e475e8fafd98fb1a92bdb06ea2d"
+    },
+    {
+      "path": "research/artifacts/EXP-20261007-005-single-arm-pick-place/attempt-01/trajectory.npz",
+      "sha256": "sha256:5eb4c104a9a18f5123677a9017d7ef99e98c061b5a953da3b90f96268b338c8e"
+    },
+    {
+      "path": "research/experiments/EXP-20261007-005-single-arm-pick-place.execution.record.json",
+      "sha256": "sha256:43a2920451c3848cfdd22c0bcdb4e097c2a9342fa3661a7e75ebcc75fd28de8d"
+    },
+    {
+      "path": "research/reports/EXP-20261007-005-single-arm-pick-place.result.json",
+      "sha256": "sha256:ea8f96b94b3154d7a5a923c06e4faf3d84330e09e56fe42ce819dd3d868b9f05"
+    }
+  ],
+  "baseline": {
+    "kind": "passed_contact_task_prerequisite",
+    "reference": "EXP-20261007-004-cylinder-fixture-side-pose"
+  },
+  "code": {
+    "commit": "df0c89d1b6ce871f63cddad0db011ba0c2101118",
+    "dirty_at_start": false,
+    "repository": "C:/Users/Administrator/.codex/worktrees/single-arm-motion-verification/First-Robots",
+    "traceable": true
+  },
+  "ended_at": "2026-10-07T10:11:47.582137Z",
+  "execution": {
+    "command": [
+      "H:\\0_program\\My_action\\First-Robots\\research\\.venvs\\mrbtp-demo-py312\\Scripts\\python.exe",
+      "research/experiments/run_single_arm_pick_place.py",
+      "--config",
+      "research/configs/EXP-20261007-005-single-arm-pick-place.json"
+    ],
+    "parameters": {
+      "closed_gripper_commands_rad": [
+        0.7
+      ],
+      "configuration": {
+        "closed_gripper_command_rad": 0.7,
+        "cylinder": {
+          "half_height_m": 0.055,
+          "initial_center_world_m": [
+            0.3,
+            0.0,
+            0.06
+          ],
+          "mass_kg": 0.05,
+          "radius_m": 0.035
+        },
+        "fixture_settle_s": 2.0,
+        "grasp_site_world_m": [
+          0.3,
+          0.015,
+          0.07
+        ],
+        "initial_qpos_rad": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1.0
+        ],
+        "lift_site_world_m": [
+          0.3,
+          0.015,
+          0.16
+        ],
+        "model": "assets/so101/scene.xml",
+        "motion": {
+          "final_settle_s": 2.0,
+          "hold_s": 0.5,
+          "jaw_duration_s": 1.0,
+          "move_duration_s": 3.0,
+          "path_check_samples": 61
+        },
+        "place_site_world_m": [
+          0.3,
+          0.115,
+          0.07
+        ],
+        "placement_region": {
+          "center_world_m": [
+            0.3,
+            0.1,
+            0.055
+          ],
+          "radius_m": 0.07
+        },
+        "pregrasp_site_world_m": [
+          0.3,
+          0.015,
+          0.16
+        ],
+        "scope": "Synthetic known-coordinate task with contact physics. Region B and solver settings are task fixtures, not adopted hardware tolerances.",
+        "side_pose_ik": {
+          "damping": 0.003,
+          "max_iterations": 400,
+          "max_joint_step_rad": 0.1,
+          "numerical_tolerance": 1e-06,
+          "orientation_weight_m": 0.1,
+          "wrist_roll_rad": -1.5707963267948966
+        },
+        "transfer_site_world_m": [
+          0.3,
+          0.115,
+          0.16
+        ]
+      }
+    },
+    "script": "research/experiments/run_single_arm_pick_place.py"
+  },
+  "inputs": [
+    {
+      "kind": "frozen_input",
+      "path": "research/configs/EXP-20261007-005-single-arm-pick-place.json",
+      "sha256": "sha256:afc3c0a0dca787c9a984e2298afeb587c5827b766f17f7cd35551d7eb1315071"
+    },
+    {
+      "kind": "frozen_input",
+      "path": "config/sim_pick_place.json",
+      "sha256": "sha256:816b142ef0d01e125bacf429a125f0e7a3552ad83d4213d48da86e5abc7ba3ba"
+    },
+    {
+      "kind": "frozen_input",
+      "path": "research/experiments/EXP-20261007-005-single-arm-pick-place.md",
+      "sha256": "sha256:e6fb215e9ef048502f5ac264359e60ec285905c4b962e63e1a12e43bb2eb5b1e"
+    },
+    {
+      "kind": "frozen_input",
+      "path": "research/experiments/run_single_arm_pick_place.py",
+      "sha256": "sha256:e141a25d6c1cdd4e4cc4a105a1786c76b78639beed4bca30df8fc10a7615f476"
+    },
+    {
+      "kind": "frozen_input",
+      "path": "research/reports/EXP-20261007-004-cylinder-fixture-side-pose.result.json",
+      "sha256": "sha256:20513c7e2fc937474bd1d136595c98efd320f1151c586152092d5340c219a43e"
+    },
+    {
+      "kind": "frozen_input",
+      "path": "src/first_robots/grasping.py",
+      "sha256": "sha256:e99ee7746c41ba5aa7d8319696e3e3366386f07862dc1be7ffc72f2172601e1a"
+    },
+    {
+      "kind": "frozen_input",
+      "path": "src/first_robots/simulation.py",
+      "sha256": "sha256:fa233b6ec6dabbbc557bd4c9e2a24c6dc0867dcc97a20bc11ebb82c81b18ff4b"
+    },
+    {
+      "kind": "frozen_input",
+      "path": "assets/so101/assets/base_motor_holder_so101_v1.stl",
+      "sha256": "sha256:8cd2f241037ea377af1191fffe0dd9d9006beea6dcc48543660ed41647072424"
+    },
+    {
+      "kind": "frozen_input",
+      "path": "assets/so101/assets/base_so101_v2.stl",
+      "sha256": "sha256:bb12b7026575e1f70ccc7240051f9d943553bf34e5128537de6cd86fae33924d"
+    },
+    {
+      "kind": "frozen_input",
+      "path": "assets/so101/assets/motor_holder_so101_base_v1.stl",
+      "sha256": "sha256:31242ae6fb59d8b15c66617b88ad8e9bded62d57c35d11c0c43a70d2f4caa95b"
+    },
+    {
+      "kind": "frozen_input",
+      "path": "assets/so101/assets/motor_holder_so101_wrist_v1.stl",
+      "sha256": "sha256:887f92e6013cb64ea3a1ab8675e92da1e0beacfd5e001f972523540545e08011"
+    },
+    {
+      "kind": "frozen_input",
+      "path": "assets/so101/assets/moving_jaw_so101_gripper_part0_v1.stl",
+      "sha256": "sha256:3a92e115d1934d4c45cff808c4eff2ea10361a137a7f89940033a1f8a821b88c"
+    },
+    {
+      "kind": "frozen_input",
+      "path": "assets/so101/assets/moving_jaw_so101_gripper_part1_v1.stl",
+      "sha256": "sha256:d10f6c671d26f62988ec95efee9370a0657b5833b3c5f8aad59fd69a87ef2aee"
+    },
+    {
+      "kind": "frozen_input",
+      "path": "assets/so101/assets/moving_jaw_so101_gripper_v1.stl",
+      "sha256": "sha256:e8a5dc040b98e27453a5b74f9087d1dbca14589cf9a17c4de7868d5ab98413cd"
+    },
+    {
+      "kind": "frozen_input",
+      "path": "assets/so101/assets/moving_jaw_so101_v1.stl",
+      "sha256": "sha256:785a9dded2f474bc1d869e0d3dae398a3dcd9c0c345640040472210d2861fa9d"
+    },
+    {
+      "kind": "frozen_input",
+      "path": "assets/so101/assets/rotation_pitch_so101_v1.stl",
+      "sha256": "sha256:9be900cc2a2bf718102841ef82ef8d2873842427648092c8ed2ca1e2ef4ffa34"
+    },
+    {
+      "kind": "frozen_input",
+      "path": "assets/so101/assets/sts3215_03a_no_horn_v1.stl",
+      "sha256": "sha256:75ef3781b752e4065891aea855e34dc161a38a549549cd0970cedd07eae6f887"
+    },
+    {
+      "kind": "frozen_input",
+      "path": "assets/so101/assets/sts3215_03a_v1.stl",
+      "sha256": "sha256:a37c871fb502483ab96c256baf457d36f2e97afc9205313d9c5ab275ef941cd0"
+    },
+    {
+      "kind": "frozen_input",
+      "path": "assets/so101/assets/under_arm_so101_v1.stl",
+      "sha256": "sha256:d01d1f2de365651dcad9d6669e94ff87ff7652b5bb2d10752a66a456a86dbc71"
+    },
+    {
+      "kind": "frozen_input",
+      "path": "assets/so101/assets/upper_arm_so101_v1.stl",
+      "sha256": "sha256:475056e03a17e71919b82fd88ab9a0b898ab50164f2a7943652a6b2941bb2d4f"
+    },
+    {
+      "kind": "frozen_input",
+      "path": "assets/so101/assets/waveshare_mounting_plate_so101_v2.stl",
+      "sha256": "sha256:e197e24005a07d01bbc06a8c42311664eaeda415bf859f68fa247884d0f1a6e9"
+    },
+    {
+      "kind": "frozen_input",
+      "path": "assets/so101/assets/wrist_roll_follower_so101_camera_mount.stl",
+      "sha256": "sha256:58c457b33a26d9c9bb337aa351173e7123f84719a93f486541adef6eba57ae21"
+    },
+    {
+      "kind": "frozen_input",
+      "path": "assets/so101/assets/wrist_roll_follower_so101_gripper_part0_v1.stl",
+      "sha256": "sha256:370eb470a6ab48b08febcaeb5274d2bcc91246692532ce12c795fb82977def72"
+    },
+    {
+      "kind": "frozen_input",
+      "path": "assets/so101/assets/wrist_roll_follower_so101_gripper_v1.stl",
+      "sha256": "sha256:65f32debcf265420c0160afe004f8befc5df4b3e578fd59ebaa62eade0371224"
+    },
+    {
+      "kind": "frozen_input",
+      "path": "assets/so101/assets/wrist_roll_follower_so101_v1.stl",
+      "sha256": "sha256:4b17b410a12d64ec39554abc3e8054d8a97384b2dc4a8d95a5ecb2a93670f5f4"
+    },
+    {
+      "kind": "frozen_input",
+      "path": "assets/so101/assets/wrist_roll_pitch_so101_v2.stl",
+      "sha256": "sha256:6c7ec5525b4d8b9e397a30ab4bb0037156a5d5f38a4adf2c7d943d6c56eda5ae"
+    },
+    {
+      "kind": "frozen_input",
+      "path": "assets/so101/CHANGELOG.md",
+      "sha256": "sha256:a7c09d960f6c7128075105709bb4a062f39a7d1f4df02c38c50ef464b3b8fea2"
+    },
+    {
+      "kind": "frozen_input",
+      "path": "assets/so101/LICENSE",
+      "sha256": "sha256:1eb85fc97224598dad1852b5d6483bbcf0aa8608790dcc657a5a2a761ae9c8c6"
+    },
+    {
+      "kind": "frozen_input",
+      "path": "assets/so101/PROVENANCE.json",
+      "sha256": "sha256:9e29b9586eb424126b57ef821c9cab1b0e94bdd533737cfb90279f11025008ca"
+    },
+    {
+      "kind": "frozen_input",
+      "path": "assets/so101/README.md",
+      "sha256": "sha256:75754572ffa83eb6729df929b58f5342743e97ba050a01cf33263f52a48a1a6a"
+    },
+    {
+      "kind": "frozen_input",
+      "path": "assets/so101/scene.xml",
+      "sha256": "sha256:65496b0061ca3ddd92b58fe09bd30f6a4a443f137cc42cf8975d5cff23030bfd"
+    },
+    {
+      "kind": "frozen_input",
+      "path": "assets/so101/so101.xml",
+      "sha256": "sha256:b5814e448689544ae8e62548419b75aee32d047355a30ada68fbf708939b88ae"
+    }
+  ],
+  "level": "formal",
+  "objective": "Verify contact-driven known-coordinate cylinder pick-and-place before adding camera or language inputs.",
+  "results": {
+    "criteria": "Formal: actual gated contact lift/transfer and released supported placement in declared B. Exploratory: all planned conditions recorded, including failed attempts.",
+    "duration_seconds": 6.113742,
+    "metrics": [
+      {
+        "name": "attempt_1_completed",
+        "unit": "boolean",
+        "value": true
+      }
+    ],
+    "passed": true
+  },
+  "review": {
+    "note": "Fixed synthetic task only; no hardware force/precision calibration, camera grounding or language task. Deterministic no-random-input protocol; null seed exception recorded in plan.",
+    "status": "pending_human_review"
+  },
+  "run_id": "EXP-20261007-005-single-arm-pick-place",
+  "runtime": {
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.12.11",
+    "random_seed": null
+  },
+  "schema_version": "experiment-management/run-manifest/v1",
+  "started_at": "2026-10-07T10:11:41.468407Z"
+}

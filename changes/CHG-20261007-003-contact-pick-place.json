@@ -1,0 +1,19 @@
+{
+  "schema_version": "experiment-management/change-manifest/v1",
+  "change_id": "CHG-20261007-003-contact-pick-place",
+  "title": "Add a gated physical cylinder pick-and-place skill and virtual CLI entry",
+  "started_at": "2026-10-07T10:11:41.468407Z",
+  "ended_at": "2026-10-07T10:11:47.582137Z",
+  "timestamp_scope": "Formal verification interval, not the entire development interval",
+  "code": {"commit": "df0c89d1b6ce871f63cddad0db011ba0c2101118", "traceable": true, "dirty_at_start": false, "capture_context": "Clean independent checkout before the 005 formal run"},
+  "scope": {"summary": "Execute bounded five-axis side-grasp phases with actual MuJoCo actuators and free-object contact; expose a research-independent pick-place command.", "paths": ["src/first_robots/grasping.py", "src/first_robots/cli.py", "config/sim_pick_place.json", "tests/test_simulation.py", "tests/test_status.py", "docs/overview.md", "docs/architecture.md", "docs/status.md", "research/experiments/run_single_arm_pick_place.py"]},
+  "verification": [
+    {"kind": "behavior-tests", "command": ["python", "-m", "unittest", "discover", "-s", "tests", "-v"], "status": "passed", "detail": "11 tests, zero skipped; includes no-grip, initial-collision and too-small placement-region rejection."},
+    {"kind": "formal-run", "command": ["python", "-m", "experiment_management", "validate", "research/runs/EXP-20261007-005-single-arm-pick-place.json"], "status": "passed", "detail": "Null seed warning retained; deterministic no-random-input exception is documented in the plan."},
+    {"kind": "record-pair", "command": ["python", "-m", "experiment_management", "validate-pair", ".", "research/experiments/EXP-20261007-005-single-arm-pick-place.execution.record.json"], "status": "passed"},
+    {"kind": "visual-review", "command": ["inspect", "research/artifacts/EXP-20261007-005-single-arm-pick-place/attempt-01/phase-lift.png", "research/artifacts/EXP-20261007-005-single-arm-pick-place/attempt-01/final.png"], "status": "passed", "detail": "Rendered lift shows a free cylinder above support; final image shows an open gripper and cylinder in green B region. Images supplement numerical gates, not replace them."}
+  ],
+  "risk": {"level": "low", "rollback": "Revert this scoped virtual skill implementation; retain immutable exploratory failures and formal evidence. No hardware I/O exists."},
+  "links": {"run_ids": ["DEV-20261007-005-gripper-command-tuning", "EXP-20261007-005-single-arm-pick-place"]},
+  "review": {"status": "pending_human_review", "scope": ["fixed virtual cylinder task only", "no hardware force or precision adoption", "camera and natural-language inputs untested"]}
+}

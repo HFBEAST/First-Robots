@@ -1,0 +1,13 @@
+{
+  "kind": "contact_pick_place",
+  "result": {
+    "path": "research/reports/EXP-20261007-005-single-arm-pick-place.result.json",
+    "sha256": "sha256:ea8f96b94b3154d7a5a923c06e4faf3d84330e09e56fe42ce819dd3d868b9f05"
+  },
+  "review": {
+    "adopted": false,
+    "status": "pending_human_review"
+  },
+  "run_id": "EXP-20261007-005-single-arm-pick-place",
+  "schema_version": "first-robots/experiment-record/v1"
+}
