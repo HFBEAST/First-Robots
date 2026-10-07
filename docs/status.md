@@ -24,6 +24,12 @@ dirty-worktree 校验失败原样保留。运行不使用随机采样，null see
 物体落地支撑与两个位姿端点；尚未连接闭爪和搬运。研究哈希产物已声明 Git `-text`，以避免 Windows
 checkout 自动换行转换改变已记录的字节哈希；003 主工作区副本已从原始运行产物恢复并通过配对校验。
 
+`EXP-20261007-004-cylinder-fixture-side-pose` 在提交 `ae5f2b1cde0c870dc00948faf5bf3ab05688f7c4`
+的干净 checkout 正式执行并通过 manifest/配对校验。50 g 圆柱由初始 Z=0.060 m 落到约
+Z=0.054858 m，终态支持法向力 0.4905 N；两秒轨迹有限。高位水平侧夹接近点 14 次迭代、低位
+夹取点 21 次迭代收敛。审图为求解位姿的静态示意，不是抓取运动回放。抓取执行尚未验证；
+下一阶段从该物理场景连接位置执行器、闭爪、抬升、搬运和释放。
+
 研究状态：`optional / active`。已完成 formal virtual run
 `EXP-20260831-004-so101-mujoco-observation-preflight`；已采纳 Menagerie `robotstudio_so101`
 作为仅限研究旁车的临时虚拟模型，见 `docs/decisions/DEC-20260831-001-adopt-virtual-so101-model.md`。

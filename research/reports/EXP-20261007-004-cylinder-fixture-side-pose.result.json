@@ -1,0 +1,86 @@
+{
+  "observations": {
+    "actual_duration_s": 1.9999999999999793,
+    "final_center_world_m": [
+      0.29999912636979004,
+      -6.170910889044008e-16,
+      0.054857847002229884
+    ],
+    "final_free_joint_velocity": [
+      2.332461853439623e-10,
+      5.273143447044311e-16,
+      7.87749348808424e-17,
+      -7.023709669317755e-15,
+      4.096212952748482e-09,
+      -1.2330042122576875e-22
+    ],
+    "final_normal_support_force_n": 0.4905000000000001,
+    "finite_fixture_trajectory": true,
+    "free_cylinder_positive_mass_contact_enabled": true,
+    "grasp_execution": "not_evaluated",
+    "initial_center_world_m": [
+      0.3,
+      0.0,
+      0.06
+    ],
+    "side_poses": {
+      "grasp_site_world_m": {
+        "approach_world_axis": [
+          0.9946128551087889,
+          0.10365938669877042,
+          -1.2558315781105445e-06
+        ],
+        "converged": true,
+        "iterations": 21,
+        "position_residual_m": 1.062553286604285e-07,
+        "qpos_rad": [
+          -0.10384593145005443,
+          0.4500707746508073,
+          1.1777472480125435,
+          -1.627816766831773,
+          -1.5707963267948966,
+          1.0
+        ],
+        "reason": "side_pose_converged",
+        "site_world_m": [
+          0.2999999306859844,
+          0.014999995902597667,
+          0.07000008042992856
+        ],
+        "weighted_pose_residual_m": 1.6450326560446114e-07
+      },
+      "pregrasp_site_world_m": {
+        "approach_world_axis": [
+          0.9946128637262048,
+          0.10365930394577458,
+          3.979328639630575e-06
+        ],
+        "converged": true,
+        "iterations": 14,
+        "position_residual_m": 1.6617991486202128e-07,
+        "qpos_rad": [
+          -0.10384584824958472,
+          -0.6771058504246608,
+          1.1851218895902973,
+          -0.5080200184942758,
+          -1.5707963267948966,
+          1.0
+        ],
+        "reason": "side_pose_converged",
+        "site_world_m": [
+          0.30000000863203985,
+          0.014999982167106343,
+          0.15999983500533374
+        ],
+        "weighted_pose_residual_m": 4.312381341270619e-07
+      }
+    }
+  },
+  "review": {
+    "adopted": false,
+    "status": "pending_human_review"
+  },
+  "run_id": "EXP-20261007-004-cylinder-fixture-side-pose",
+  "schema_version": "first-robots/research-result/v1",
+  "status": "passed_pending_human_review"
+}

@@ -1,0 +1,13 @@
+{
+  "kind": "formal_cylinder_fixture_side_pose",
+  "result": {
+    "path": "research/reports/EXP-20261007-004-cylinder-fixture-side-pose.result.json",
+    "sha256": "sha256:20513c7e2fc937474bd1d136595c98efd320f1151c586152092d5340c219a43e"
+  },
+  "review": {
+    "adopted": false,
+    "status": "pending_human_review"
+  },
+  "run_id": "EXP-20261007-004-cylinder-fixture-side-pose",
+  "schema_version": "first-robots/experiment-record/v1"
+}

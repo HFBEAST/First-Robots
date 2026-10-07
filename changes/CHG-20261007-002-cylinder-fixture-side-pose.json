@@ -1,0 +1,17 @@
+{
+  "schema_version": "experiment-management/change-manifest/v1",
+  "change_id": "CHG-20261007-002-cylinder-fixture-side-pose",
+  "title": "Add a free-cylinder contact fixture and five-axis side-grasp pose constraints",
+  "started_at": "2026-10-07T19:00:00+09:00",
+  "ended_at": "2026-10-07T19:15:00+09:00",
+  "code": {"commit": "ae5f2b1cde0c870dc00948faf5bf3ab05688f7c4", "traceable": true, "dirty_at_start": false, "capture_context": "Clean independent checkout before the 004 formal verification"},
+  "scope": {"summary": "Introduce a synthetic free cylinder with gravity/contact, solve XYZ plus horizontal gripper approach with a fixed wrist roll, and preserve research artifact bytes across checkouts.", "paths": [".gitattributes", "src/first_robots/grasping.py", "config/sim_cylinder_fixture.json", "tests/test_simulation.py", "docs/status.md", "research/experiments/run_cylinder_fixture_side_pose.py"]},
+  "verification": [
+    {"kind": "behavior-tests", "command": ["python", "-m", "unittest", "discover", "-s", "tests", "-v"], "status": "passed"},
+    {"kind": "formal-run", "command": ["python", "-m", "experiment_management", "validate", "research/runs/EXP-20261007-004-cylinder-fixture-side-pose.json"], "status": "passed"},
+    {"kind": "record-pair", "command": ["python", "-m", "experiment_management", "validate-pair", ".", "research/experiments/EXP-20261007-004-cylinder-fixture-side-pose.execution.record.json"], "status": "passed"}
+  ],
+  "risk": {"level": "low", "rollback": "Revert the scoped fixture implementation; retain the recorded failed preflight and formal run. No hardware I/O exists."},
+  "links": {"run_ids": ["EXP-20261007-004-cylinder-fixture-side-pose"]},
+  "review": {"status": "pending_human_review", "scope": ["virtual fixture and pose constraints", "no grasp or hardware capability adoption"]}
+}
