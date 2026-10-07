@@ -19,6 +19,11 @@
 `0.000154691 m` 终态误差。003 是后续运动研究的正式基线，仍为 `pending_human_review`。001/002 的
 dirty-worktree 校验失败原样保留。运行不使用随机采样，null seed 的确定性协议例外已写入计划。
 
+下一场景已建立自由圆柱、质量/重力/接触，以及五臂关节的侧夹位姿求解。开发预检的低位后退接近点
+未收敛并触及关节限位，已在 004 计划保留，当前改为水平夹爪从高位下降的接近路径。004 将独立验证
+物体落地支撑与两个位姿端点；尚未连接闭爪和搬运。研究哈希产物已声明 Git `-text`，以避免 Windows
+checkout 自动换行转换改变已记录的字节哈希；003 主工作区副本已从原始运行产物恢复并通过配对校验。
+
 研究状态：`optional / active`。已完成 formal virtual run
 `EXP-20260831-004-so101-mujoco-observation-preflight`；已采纳 Menagerie `robotstudio_so101`
 作为仅限研究旁车的临时虚拟模型，见 `docs/decisions/DEC-20260831-001-adopt-virtual-so101-model.md`。

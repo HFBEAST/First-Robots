@@ -13,6 +13,7 @@ if SIM_AVAILABLE:
     import mujoco
     import numpy as np
     from first_robots.simulation import command_limits, load_model, penetrating_contacts, simulate_reach, solve_position
+    from first_robots.grasping import build_cylinder_scene, robot_limits, solve_side_pose
 
 
 @unittest.skipUnless(SIM_AVAILABLE, "Install requirements-simulation.txt to verify virtual motion")
@@ -55,6 +56,29 @@ class SimulationTests(unittest.TestCase):
         collisions = penetrating_contacts(model, data)
         self.assertEqual(len(collisions), 1)
         self.assertLess(collisions[0]["distance_m"], 0)
+
+    def test_free_cylinder_falls_under_gravity_and_makes_floor_contact(self) -> None:
+        configuration = json.loads((ROOT / "config/sim_cylinder_fixture.json").read_text(encoding="utf-8"))
+        model, data = build_cylinder_scene(self.model_path, configuration)
+        body = model.body("task_cylinder").id
+        initial_height = float(data.xpos[body, 2])
+        for _ in range(400):
+            mujoco.mj_step(model, data)
+        mujoco.mj_forward(model, data)
+        self.assertLess(data.xpos[body, 2], initial_height)
+        self.assertTrue(any({contact.geom1, contact.geom2} == {model.geom("floor").id, model.geom("task_cylinder_geom").id} for contact in data.contact))
+        self.assertAlmostEqual(model.body_mass[body], 0.05)
+
+    def test_side_pose_respects_horizontal_approach_and_joint_limits(self) -> None:
+        configuration = json.loads((ROOT / "config/sim_cylinder_fixture.json").read_text(encoding="utf-8"))
+        model, _ = build_cylinder_scene(self.model_path, configuration)
+        for name in ("pregrasp_site_world_m", "grasp_site_world_m"):
+            pose = solve_side_pose(model, configuration[name], configuration["initial_qpos_rad"], configuration["side_pose_ik"])
+            self.assertTrue(pose["converged"])
+            self.assertLessEqual(pose["weighted_pose_residual_m"], configuration["side_pose_ik"]["numerical_tolerance"])
+            limits = robot_limits(model)
+            self.assertTrue(np.all(np.asarray(pose["qpos_rad"]) >= limits[:, 0]))
+            self.assertTrue(np.all(np.asarray(pose["qpos_rad"]) <= limits[:, 1]))
 
 
 if __name__ == "__main__":

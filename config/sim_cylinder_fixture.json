@@ -1,0 +1,10 @@
+{
+  "model": "assets/so101/scene.xml",
+  "initial_qpos_rad": [0, 0, 0, 0, 0, 1.0],
+  "cylinder": {"radius_m": 0.035, "half_height_m": 0.055, "mass_kg": 0.05, "initial_center_world_m": [0.30, 0.0, 0.060]},
+  "fixture_settle_s": 2.0,
+  "side_pose_ik": {"max_iterations": 400, "numerical_tolerance": 0.000001, "damping": 0.003, "max_joint_step_rad": 0.1, "orientation_weight_m": 0.1, "wrist_roll_rad": -1.5707963267948966},
+  "pregrasp_site_world_m": [0.30, 0.015, 0.160],
+  "grasp_site_world_m": [0.30, 0.015, 0.070],
+  "scope": "Provisional idealized fixture and side-pose numerical settings; declared cylinder mass and geometry are synthetic, not measured real hardware."
+}

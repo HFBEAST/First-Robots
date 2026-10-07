@@ -1,0 +1,8 @@
+{
+  "schema_version": "first-robots/experiment-record/v1",
+  "run_id": "EXP-20261007-004-cylinder-fixture-side-pose",
+  "kind": "formal_cylinder_fixture_side_pose",
+  "plan": "research/experiments/EXP-20261007-004-cylinder-fixture-side-pose.md",
+  "state": "planned_not_executed",
+  "review": {"status": "pending_human_review", "adopted": false}
+}

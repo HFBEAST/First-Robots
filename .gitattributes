@@ -1,0 +1,5 @@
+# Preserve the bytes used by immutable research hashes across Windows checkouts.
+research/artifacts/** -text
+research/reports/** -text
+research/runs/** -text
+research/experiments/*.execution.record.json -text
