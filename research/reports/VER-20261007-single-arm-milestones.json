@@ -1,0 +1,21 @@
+{
+  "schema_version": "first-robots/verification-summary/v1",
+  "captured_at": "2026-10-07T10:14:47.305684+00:00",
+  "environment_capture_scope": "Supplementary runtime capture after the 005/006 runs and same-interpreter behavior/CLI verification. Package versions were not recorded inside the original immutable run manifests; this is not a retroactive start-time capture.",
+  "runtime": {"python": "3.12.11", "platform": "Windows-11-10.0.26200-SP0", "packages": {"mujoco": "3.12.0", "numpy": "2.5.2", "Pillow": "12.3.0", "experiment-management": "0.5.1"}},
+  "checks": [
+    {"command": ["python", "-m", "unittest", "discover", "-s", "tests", "-v"], "status": "passed", "tests_run": 11, "skipped": 0},
+    {"command": ["python", "-m", "first_robots.cli", "pick-place", "--config", "config/sim_pick_place.json"], "status": "passed", "exit_code": 0, "observed_reason": "pick_place_completed"},
+    {"command": ["python", "-m", "experiment_management", "validate", "research/runs/EXP-20261007-005-single-arm-pick-place.json"], "status": "passed", "warning": "Null random seed; deterministic no-random-input exception documented in plan"},
+    {"command": ["python", "-m", "experiment_management", "validate", "research/runs/EXP-20261007-006-single-arm-pick-place-repeat.json"], "status": "passed", "warning": "Null random seed; deterministic no-random-input exception documented in plan"},
+    {"kind": "record-result-pairs", "run_ids": ["EXP-20261007-005-single-arm-pick-place", "EXP-20261007-006-single-arm-pick-place-repeat"], "status": "passed"},
+    {"kind": "fresh-process-repeat", "status": "passed", "all_arrays_identical": true, "arrays": ["time_s", "qpos", "qvel", "ctrl", "cylinder_center_m", "site_world_m", "phase", "fixed_jaw_force_n", "moving_jaw_force_n", "floor_support_force_n"]}
+  ],
+  "preserved_failures": [
+    {"reference": "research/artifacts/DEV-20261007-005-gripper-command-tuning/attempt-04/observations.json", "condition": "Closed command 0.8 rad", "observed_reason": "no_opposed_jaw_contact:close", "downstream_lift_applied": false},
+    {"kind": "development-test-fixture", "detail": "Cylinder at [0,0,0.06] m did not contact active robot collision geometry; corrected fixture to [0.07,0,0.10] m. Gate unchanged."},
+    {"kind": "change-schema", "detail": "DEV ID rejected in links.run_ids; exploratory reference relocated without changing run evidence."}
+  ],
+  "limitations": ["Only fixed known-coordinate synthetic cylinder task", "13.61 mm placement center error despite containment in broad declared B", "55.55/60.09 N maximum simulated jaw normal forces, uncalibrated", "No camera, language, broad workspace or hardware claim", "No detachable-research removal check: active research is not ready_to_detach"],
+  "review": {"status": "pending_human_review", "adopted": false}
+}
