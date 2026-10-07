@@ -17,7 +17,7 @@ class ProjectStatusTests(unittest.TestCase):
         self.assertEqual(status.name, "First-Robots")
         self.assertEqual(status.stage, "single_arm_simulation")
         self.assertEqual(status.research, "optional_active")
-        self.assertEqual(status.runtime_capabilities, ("project_status", "virtual_reach"))
+        self.assertEqual(status.runtime_capabilities, ("project_status", "virtual_reach", "virtual_pick_place"))
 
 
 if __name__ == "__main__":

@@ -1,0 +1,16 @@
+{
+  "model": "assets/so101/scene.xml",
+  "initial_qpos_rad": [0, 0, 0, 0, 0, 1.0],
+  "cylinder": {"radius_m": 0.035, "half_height_m": 0.055, "mass_kg": 0.05, "initial_center_world_m": [0.30, 0.0, 0.060]},
+  "fixture_settle_s": 2.0,
+  "side_pose_ik": {"max_iterations": 400, "numerical_tolerance": 0.000001, "damping": 0.003, "max_joint_step_rad": 0.1, "orientation_weight_m": 0.1, "wrist_roll_rad": -1.5707963267948966},
+  "pregrasp_site_world_m": [0.30, 0.015, 0.160],
+  "grasp_site_world_m": [0.30, 0.015, 0.070],
+  "lift_site_world_m": [0.30, 0.015, 0.160],
+  "transfer_site_world_m": [0.30, 0.115, 0.160],
+  "place_site_world_m": [0.30, 0.115, 0.070],
+  "placement_region": {"center_world_m": [0.30, 0.10, 0.055], "radius_m": 0.07},
+  "closed_gripper_command_rad": 0.7,
+  "motion": {"move_duration_s": 3.0, "jaw_duration_s": 1.0, "hold_s": 0.5, "final_settle_s": 2.0, "path_check_samples": 61},
+  "scope": "Synthetic known-coordinate task with contact physics. Region B and solver settings are task fixtures, not adopted hardware tolerances."
+}

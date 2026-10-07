@@ -1,0 +1,13 @@
+{
+  "kind": "exploratory_gripper_command_comparison",
+  "result": {
+    "path": "research/reports/DEV-20261007-005-gripper-command-tuning.result.json",
+    "sha256": "sha256:cb54ae27400791377341360e5711f6cedeffc401f72a6fa76d459425dbcf3998"
+  },
+  "review": {
+    "adopted": false,
+    "status": "pending_human_review"
+  },
+  "run_id": "DEV-20261007-005-gripper-command-tuning",
+  "schema_version": "first-robots/experiment-record/v1"
+}

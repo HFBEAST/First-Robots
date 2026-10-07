@@ -1,4 +1,4 @@
-"""Minimal product entrypoint for the planning-stage project."""
+"""Product entrypoint for status and bounded virtual single-arm tasks."""
 
 from __future__ import annotations
 
@@ -22,14 +22,14 @@ def current_status() -> ProjectStatus:
         name="First-Robots",
         stage="single_arm_simulation",
         research="optional_active",
-        runtime_capabilities=("project_status", "virtual_reach"),
+        runtime_capabilities=("project_status", "virtual_reach", "virtual_pick_place"),
     )
 
 
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(description="First-Robots project entrypoint")
-    parser.add_argument("command", nargs="?", choices=("status", "reach"), default="status")
-    parser.add_argument("--config", type=Path, default=Path("config/sim_reach.json"))
+    parser.add_argument("command", nargs="?", choices=("status", "reach", "pick-place"), default="status")
+    parser.add_argument("--config", type=Path)
     return parser
 
 
@@ -38,12 +38,20 @@ def main(argv: list[str] | None = None) -> int:
     if args.command == "status":
         print(json.dumps(asdict(current_status()), ensure_ascii=False, indent=2))
         return 0
-    from .simulation import simulate_reach
+    config_path = args.config or Path("config/sim_pick_place.json" if args.command == "pick-place" else "config/sim_reach.json")
+    configuration = json.loads(config_path.read_text(encoding="utf-8"))
+    if args.command == "pick-place":
+        from .grasping import simulate_pick_place
 
-    configuration = json.loads(args.config.read_text(encoding="utf-8"))
-    report, _ = simulate_reach(Path(configuration["model"]), configuration)
+        report, _ = simulate_pick_place(Path(configuration["model"]), configuration)
+        passed = report["completed"]
+    else:
+        from .simulation import simulate_reach
+
+        report, _ = simulate_reach(Path(configuration["model"]), configuration)
+        passed = report["reason"] == "motion_completed"
     print(json.dumps(report, ensure_ascii=False, indent=2, allow_nan=False))
-    return 0 if report["reason"] == "motion_completed" else 1
+    return 0 if passed else 1
 
 
 if __name__ == "__main__":

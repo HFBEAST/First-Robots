@@ -1,0 +1,8 @@
+{
+  "experiment_id": "EXP-20261007-006-single-arm-pick-place-repeat",
+  "runtime_configuration": "config/sim_pick_place.json",
+  "plan": "research/experiments/EXP-20261007-005-single-arm-pick-place.md",
+  "predecessor": "research/reports/EXP-20261007-005-single-arm-pick-place.result.json",
+  "repeat_reference": "research/artifacts/EXP-20261007-005-single-arm-pick-place/attempt-01/trajectory.npz",
+  "review": {"status": "pending_human_review", "adopted": false}
+}

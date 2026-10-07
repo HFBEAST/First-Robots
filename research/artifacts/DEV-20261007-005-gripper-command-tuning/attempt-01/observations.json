@@ -1,0 +1,332 @@
+{
+  "actual_duration_s": 28.999999999998515,
+  "closed_gripper_command_rad": 0.5,
+  "completed": true,
+  "evaluation_only_radial_error_to_b_m": 0.024844398258164344,
+  "final_cylinder_center_world_m": [
+    0.3204935434301802,
+    0.11404488527847759,
+    0.05485784700222988
+  ],
+  "final_cylinder_free_joint_velocity": [
+    -3.478972228592101e-10,
+    6.650565910481845e-10,
+    1.8483597569313586e-16,
+    -2.8728565853542024e-09,
+    -3.747577952626061e-10,
+    -1.4704974976662305e-19
+  ],
+  "maximum_jaw_normal_force_n": {
+    "fixed_jaw_force_n": 57.68316894269281,
+    "moving_jaw_force_n": 61.97382918108481
+  },
+  "phase_checkpoints": [
+    {
+      "contacts": {
+        "fixed_jaw_force_n": 0.0,
+        "floor_support_force_n": 0.49050000000000005,
+        "forbidden_penetrations": [],
+        "moving_jaw_force_n": 0.0
+      },
+      "cylinder_bottom_z_m": -0.00014215299777011609,
+      "cylinder_center_world_m": [
+        0.29999912639220094,
+        -5.805919259140197e-16,
+        0.054857847002229884
+      ],
+      "phase": "fixture_settle"
+    },
+    {
+      "contacts": {
+        "fixed_jaw_force_n": 0.0,
+        "floor_support_force_n": 0.49050000000000005,
+        "forbidden_penetrations": [],
+        "moving_jaw_force_n": 0.0
+      },
+      "cylinder_bottom_z_m": -0.00014215299777011609,
+      "cylinder_center_world_m": [
+        0.29999912664934736,
+        -3.5343874654403375e-17,
+        0.054857847002229884
+      ],
+      "phase": "pregrasp"
+    },
+    {
+      "contacts": {
+        "fixed_jaw_force_n": 0.1802728886860233,
+        "floor_support_force_n": 0.488363298781255,
+        "forbidden_penetrations": [],
+        "moving_jaw_force_n": 0.0
+      },
+      "cylinder_bottom_z_m": -0.00033866782477040623,
+      "cylinder_center_world_m": [
+        0.2994190193065895,
+        -0.0007923424670121336,
+        0.05487607322507406
+      ],
+      "phase": "descend"
+    },
+    {
+      "contacts": {
+        "fixed_jaw_force_n": 42.266324037477965,
+        "floor_support_force_n": 1.4362963992919004,
+        "forbidden_penetrations": [],
+        "moving_jaw_force_n": 43.33863921167471
+      },
+      "cylinder_bottom_z_m": -0.0006856269702061476,
+      "cylinder_center_world_m": [
+        0.30091594411846057,
+        0.0006001367015439416,
+        0.0548917922708306
+      ],
+      "phase": "close"
+    },
+    {
+      "contacts": {
+        "fixed_jaw_force_n": 41.06875134950696,
+        "floor_support_force_n": 0.0,
+        "forbidden_penetrations": [],
+        "moving_jaw_force_n": 40.55269780063695
+      },
+      "cylinder_bottom_z_m": 0.08838354352330029,
+      "cylinder_center_world_m": [
+        0.30520861331578103,
+        0.0013979909991471452,
+        0.1448848309512577
+      ],
+      "phase": "lift"
+    },
+    {
+      "contacts": {
+        "fixed_jaw_force_n": 37.764488255752156,
+        "floor_support_force_n": 0.0,
+        "forbidden_penetrations": [],
+        "moving_jaw_force_n": 38.07358582663085
+      },
+      "cylinder_bottom_z_m": 0.08817630363878923,
+      "cylinder_center_world_m": [
+        0.31380860552759776,
+        0.10712597059360225,
+        0.14469900770130492
+      ],
+      "phase": "transfer"
+    },
+    {
+      "contacts": {
+        "fixed_jaw_force_n": 33.353810360952394,
+        "floor_support_force_n": 4.6185454040133305,
+        "forbidden_penetrations": [],
+        "moving_jaw_force_n": 34.81679272148368
+      },
+      "cylinder_bottom_z_m": -0.001861794706930695,
+      "cylinder_center_world_m": [
+        0.31925231774444807,
+        0.1120217241232998,
+        0.05492539787560021
+      ],
+      "phase": "lower"
+    },
+    {
+      "contacts": {
+        "fixed_jaw_force_n": 0.18682178258335802,
+        "floor_support_force_n": 0.45736425556330085,
+        "forbidden_penetrations": [],
+        "moving_jaw_force_n": 0.0
+      },
+      "cylinder_bottom_z_m": -0.00035360362593368495,
+      "cylinder_center_world_m": [
+        0.3203061692736705,
+        0.11095230127167383,
+        0.05602394798031459
+      ],
+      "phase": "release"
+    },
+    {
+      "contacts": {
+        "fixed_jaw_force_n": 0.0,
+        "floor_support_force_n": 0.4904999999999999,
+        "forbidden_penetrations": [],
+        "moving_jaw_force_n": 0.0
+      },
+      "cylinder_bottom_z_m": -0.00014215299777012302,
+      "cylinder_center_world_m": [
+        0.32049354375288813,
+        0.11404488466157384,
+        0.05485784700222988
+      ],
+      "phase": "retreat"
+    },
+    {
+      "contacts": {
+        "fixed_jaw_force_n": 0.0,
+        "floor_support_force_n": 0.49050000000000027,
+        "forbidden_penetrations": [],
+        "moving_jaw_force_n": 0.0
+      },
+      "cylinder_bottom_z_m": -0.00014215299777012302,
+      "cylinder_center_world_m": [
+        0.3204935434301802,
+        0.11404488527847759,
+        0.05485784700222988
+      ],
+      "phase": "final_settle"
+    }
+  ],
+  "reason": "pick_place_completed",
+  "recorded_states": 5810,
+  "region_b_contains_cylinder": true,
+  "released_on_support": true,
+  "scope": "known-coordinate synthetic cylinder contact task; no camera or natural-language input",
+  "side_pose_solutions": {
+    "descend": {
+      "approach_world_axis": [
+        0.9946128548772589,
+        0.10365938891540208,
+        1.6107947659813049e-06
+      ],
+      "converged": true,
+      "iterations": 15,
+      "position_residual_m": 8.723073434421828e-08,
+      "qpos_rad": [
+        -0.1038459336787446,
+        0.450078502366328,
+        1.1777447514018218,
+        -1.6278248645629154,
+        -1.5707963267948966,
+        1.0
+      ],
+      "reason": "side_pose_converged",
+      "site_world_m": [
+        0.29999991609813714,
+        0.014999994967779186,
+        0.06999997666857959
+      ],
+      "weighted_pose_residual_m": 1.831824194494637e-07
+    },
+    "lift": {
+      "approach_world_axis": [
+        0.9946128505168389,
+        0.10365943072202621,
+        -3.0254727334463882e-06
+      ],
+      "converged": true,
+      "iterations": 15,
+      "position_residual_m": 2.8391426285336834e-07,
+      "qpos_rad": [
+        -0.10384597571214915,
+        -0.6771173403184615,
+        1.1851182503952933,
+        -0.5079978846040989,
+        -1.5707963267948966,
+        0.5
+      ],
+      "reason": "side_pose_converged",
+      "site_world_m": [
+        0.2999997170752439,
+        0.014999985268786573,
+        0.1599999814559334
+      ],
+      "weighted_pose_residual_m": 4.1490018228466365e-07
+    },
+    "lower": {
+      "approach_world_axis": [
+        0.8972088763587427,
+        0.441606422239626,
+        4.449544815016138e-06
+      ],
+      "converged": true,
+      "iterations": 12,
+      "position_residual_m": 4.479403660827485e-07,
+      "qpos_rad": [
+        -0.45738835239010023,
+        0.4688965057964682,
+        0.9945111048530693,
+        -1.4634120601943523,
+        -1.5707963267948966,
+        0.5
+      ],
+      "reason": "side_pose_converged",
+      "site_world_m": [
+        0.2999996805562202,
+        0.11499985537336425,
+        0.070000278728146
+      ],
+      "weighted_pose_residual_m": 6.313755318150337e-07
+    },
+    "pregrasp": {
+      "approach_world_axis": [
+        0.994612863890869,
+        0.10365930236487997,
+        4.003646568710717e-06
+      ],
+      "converged": true,
+      "iterations": 14,
+      "position_residual_m": 1.6820332787592551e-07,
+      "qpos_rad": [
+        -0.10384584666013749,
+        -0.6771057845829839,
+        1.1851218981420375,
+        -0.5080201172056226,
+        -1.5707963267948966,
+        1.0
+      ],
+      "reason": "side_pose_converged",
+      "site_world_m": [
+        0.3000000110503267,
+        0.014999982001549738,
+        0.15999983312787658
+      ],
+      "weighted_pose_residual_m": 4.3426284434663195e-07
+    },
+    "retreat": {
+      "approach_world_axis": [
+        0.8972088938170376,
+        0.4416063867921384,
+        -1.751532890947871e-08
+      ],
+      "converged": true,
+      "iterations": 13,
+      "position_residual_m": 1.1885917158454897e-09,
+      "qpos_rad": [
+        -0.4573883128766041,
+        -0.4162756933326622,
+        1.000587381534023,
+        -0.584311670686032,
+        -1.5707963267948966,
+        1.0
+      ],
+      "reason": "side_pose_converged",
+      "site_world_m": [
+        0.2999999991420025,
+        0.11499999962524825,
+        0.16000000073222378
+      ],
+      "weighted_pose_residual_m": 2.1167469700105235e-09
+    },
+    "transfer": {
+      "approach_world_axis": [
+        0.897208893886776,
+        0.4416063866504477,
+        4.895153682404896e-08
+      ],
+      "converged": true,
+      "iterations": 7,
+      "position_residual_m": 2.3678599192147374e-09,
+      "qpos_rad": [
+        -0.4573883127186811,
+        -0.4162756185845885,
+        1.0005874348199786,
+        -0.5843118651869269,
+        -1.5707963267948966,
+        0.5
+      ],
+      "reason": "side_pose_converged",
+      "site_world_m": [
+        0.2999999988220535,
+        0.11499999941758646,
+        0.15999999803022916
+      ],
+      "weighted_pose_residual_m": 5.43776518170708e-09
+    }
+  }
+}

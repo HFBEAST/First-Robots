@@ -13,7 +13,7 @@ if SIM_AVAILABLE:
     import mujoco
     import numpy as np
     from first_robots.simulation import command_limits, load_model, penetrating_contacts, simulate_reach, solve_position
-    from first_robots.grasping import build_cylinder_scene, robot_limits, solve_side_pose
+    from first_robots.grasping import build_cylinder_scene, robot_limits, simulate_pick_place, solve_side_pose
 
 
 @unittest.skipUnless(SIM_AVAILABLE, "Install requirements-simulation.txt to verify virtual motion")
@@ -79,6 +79,53 @@ class SimulationTests(unittest.TestCase):
             limits = robot_limits(model)
             self.assertTrue(np.all(np.asarray(pose["qpos_rad"]) >= limits[:, 0]))
             self.assertTrue(np.all(np.asarray(pose["qpos_rad"]) <= limits[:, 1]))
+
+    def test_cylinder_is_physically_lifted_transported_and_released(self) -> None:
+        configuration = json.loads((ROOT / "config/sim_pick_place.json").read_text(encoding="utf-8"))
+        report, trace = simulate_pick_place(self.model_path, configuration)
+        self.assertTrue(report["completed"], report["reason"])
+        self.assertEqual(trace["qpos"].shape[1], 13)  # Six robot joints plus a free object pose.
+        self.assertGreater(np.max(trace["cylinder_center_m"][:, 2]), 0.14)
+        self.assertGreater(trace["cylinder_center_m"][-1, 1] - trace["cylinder_center_m"][0, 1], 0.09)
+        for checkpoint in report["phase_checkpoints"]:
+            if checkpoint["phase"] in ("lift", "transfer"):
+                self.assertGreater(checkpoint["cylinder_bottom_z_m"], 0)
+                self.assertEqual(checkpoint["contacts"]["floor_support_force_n"], 0)
+                self.assertGreater(checkpoint["contacts"]["fixed_jaw_force_n"], 0)
+                self.assertGreater(checkpoint["contacts"]["moving_jaw_force_n"], 0)
+        self.assertTrue(report["region_b_contains_cylinder"])
+        self.assertTrue(report["released_on_support"])
+        self.assertGreater(np.max(np.abs(trace["ctrl"] - trace["qpos"][:, :6])), 1e-5)
+        model, _ = build_cylinder_scene(self.model_path, configuration)
+        limits = robot_limits(model)
+        self.assertTrue(np.all(trace["qpos"][:, :6] >= limits[:, 0]))
+        self.assertTrue(np.all(trace["qpos"][:, :6] <= limits[:, 1]))
+
+    def test_missing_opposed_grip_blocks_lift_and_downstream_phases(self) -> None:
+        configuration = json.loads((ROOT / "config/sim_pick_place.json").read_text(encoding="utf-8"))
+        configuration["closed_gripper_command_rad"] = 0.8
+        report, trace = simulate_pick_place(self.model_path, configuration)
+        self.assertFalse(report["completed"])
+        self.assertEqual(report["reason"], "no_opposed_jaw_contact:close")
+        self.assertNotIn("lift", trace["phase"])
+        self.assertFalse(report["region_b_contains_cylinder"])
+
+    def test_small_region_does_not_turn_imprecise_placement_into_success(self) -> None:
+        configuration = json.loads((ROOT / "config/sim_pick_place.json").read_text(encoding="utf-8"))
+        configuration["placement_region"]["radius_m"] = configuration["cylinder"]["radius_m"]
+        report, _ = simulate_pick_place(self.model_path, configuration)
+        self.assertFalse(report["completed"])
+        self.assertEqual(report["reason"], "placement_postcondition_failed")
+        self.assertTrue(report["released_on_support"])
+
+    def test_initial_forbidden_contact_stops_before_physics_motion(self) -> None:
+        configuration = json.loads((ROOT / "config/sim_pick_place.json").read_text(encoding="utf-8"))
+        configuration["cylinder"]["initial_center_world_m"] = [0.07, 0, 0.10]
+        report, trace = simulate_pick_place(self.model_path, configuration)
+        self.assertFalse(report["completed"])
+        self.assertEqual(report["reason"], "forbidden_actual_penetration")
+        self.assertEqual(len(trace["time_s"]), 1)
+        self.assertEqual(trace["time_s"][0], 0)
 
 
 if __name__ == "__main__":

@@ -11,7 +11,8 @@ First-Robots 的当前目标是在现实桌面场景中，用一台 SO-101、两
 ## 用户与边界
 
 - 主要用户：机器人研究者、系统开发者和实验人工复核者。
-- 当前阶段：单臂仿真运动基线；已有固定目标位置执行器运动入口，抓取、视觉驱动和语言任务仍待接入。
+- 当前阶段：单臂仿真；已有固定目标运动和已知坐标圆柱接触搬运入口，后者正式复现正在进行。
+  视觉驱动和语言任务仍待接入。
 - 当前研究平台目标：先在 MuJoCo 中使用 SO-101 / SO-ARM101 模型验证，再逐级转向真机。
 - LLM 用于语言 grounding、方案提议和解释；不直接负责关节控制或安全判定。
 - 控制基线可以显式使用已知目标坐标；视觉任务必须用相机估计替换该输入，并保留真值用于独立评价。
@@ -31,9 +32,12 @@ powershell -NoProfile -ExecutionPolicy Bypass -File scripts/governance.ps1 verif
 ```powershell
 $env:PYTHONPATH = 'src'
 python -m first_robots.cli reach --config config/sim_reach.json
+python -m first_robots.cli pick-place --config config/sim_pick_place.json
 ```
 
 `reach` 输出实际运动和 IK 结果；数值设置属于虚拟开发基线，真实相机、关节零位与动力学需另行验证。
+`pick-place` 执行受阶段门禁约束的圆柱接触搬运，输出接触力、物体位置和终态判定；B 是配置中的
+合成区域，不是精确点放置或真机精度承诺。两个命令均不读取 `research/`。
 
 最后两条依赖已安装的 `experiment-management` v0.5 CLI 包。验证通过只证明项目索引和研究
 可拆卸性，不代表任何机器人研究结论已经成立。

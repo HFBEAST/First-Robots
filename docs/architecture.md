@@ -19,8 +19,10 @@ explicit known target (later: language + camera estimate)
 `config/sim_reach.json`。运行时不依赖 `research/`。研究运行器调用产品公开接口并保存配置、代码与模型
 哈希、轨迹、结果和审图。已知坐标输入明确属于控制基线，未来用视觉估计替换。
 
-下一技能为侧面抓取：确定适合五个臂关节的抓取位姿约束，再实现接近、闭爪、抬升、搬运、释放与复核。
-语言层最终调用经过验证的技能接口；初始流程采用确定性状态机。
+`src/first_robots/grasping.py` 提供自由圆柱场景、五轴侧夹位姿求解和确定性阶段执行：接近、下降、闭爪、
+抬升、搬运、下降、释放、撤离。`config/sim_pick_place.json` 固定当前任务输入。对象是有质量的自由体，
+执行中只写关节执行器命令；回放函数才重新赋值记录的物体状态。预期夹爪/支撑接触与禁用接触分开检查；
+阶段前提失败停止下游执行。语言层最终调用经过验证的技能接口；当前流程不需要 LLM 或多 Agent。
 
 ## 后续多机器人组件草案
 
@@ -54,7 +56,7 @@ instruction
 
 ## 对外入口
 
-- `scripts/run.ps1`：薄运行入口；暴露状态和虚拟 reach，调用 `src/first_robots/` 的公开应用接口。
+- `scripts/run.ps1`：薄运行入口；暴露状态、虚拟 reach 和 pick-place，调用 `src/first_robots/` 的公开应用接口。
 - `scripts/governance.ps1`：薄治理入口，转发到安装的 Experiment-Management CLI。
 - `src/first_robots/cli.py`：当前最小产品入口；后续不得承担可复用业务逻辑。
 
