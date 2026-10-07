@@ -1,0 +1,8 @@
+{
+  "schema_version": "first-robots/experiment-record/v1",
+  "run_id": "EXP-20261007-001-single-arm-reach",
+  "kind": "formal_single_arm_reach",
+  "plan": "research/experiments/EXP-20261007-001-single-arm-reach.md",
+  "state": "planned_not_executed",
+  "review": {"status": "pending_human_review", "adopted": false}
+}

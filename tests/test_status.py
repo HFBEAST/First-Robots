@@ -11,13 +11,13 @@ from first_robots.cli import current_status  # noqa: E402
 
 
 class ProjectStatusTests(unittest.TestCase):
-    def test_planning_status_is_explicit_and_minimal(self) -> None:
+    def test_simulation_stage_exposes_implemented_commands(self) -> None:
         status = current_status()
 
         self.assertEqual(status.name, "First-Robots")
-        self.assertEqual(status.stage, "planning")
-        self.assertEqual(status.research, "optional_pending")
-        self.assertEqual(status.runtime_capabilities, ("project_status",))
+        self.assertEqual(status.stage, "single_arm_simulation")
+        self.assertEqual(status.research, "optional_active")
+        self.assertEqual(status.runtime_capabilities, ("project_status", "virtual_reach"))
 
 
 if __name__ == "__main__":

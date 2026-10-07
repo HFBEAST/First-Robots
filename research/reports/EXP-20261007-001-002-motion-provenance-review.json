@@ -1,0 +1,9 @@
+{
+  "review_id": "motion-provenance-review-20261007",
+  "runs": ["EXP-20261007-001-single-arm-reach", "EXP-20261007-002-single-arm-reach-process-repeat"],
+  "behavior": "Both runs completed the declared motion; the second trajectory equals the first exactly.",
+  "formal_validation": "failed",
+  "reason": "RunRecorder captured dirty_at_start=true while implementation and plans were uncommitted; the formal validator rejects dirty worktrees.",
+  "disposition": "Retain both immutable runs as development observations; obtain a new formally validated baseline from committed code in a clean checkout.",
+  "review": {"status": "pending_human_review", "adopted": false}
+}

@@ -1,0 +1,13 @@
+{
+  "kind": "formal_single_arm_reach",
+  "result": {
+    "path": "research/reports/EXP-20261007-002-single-arm-reach-process-repeat.result.json",
+    "sha256": "sha256:44daa03e3b50c47491b73ed7552877854ec9c84adc2077371780dd2e6b52a6c0"
+  },
+  "review": {
+    "adopted": false,
+    "status": "pending_human_review"
+  },
+  "run_id": "EXP-20261007-002-single-arm-reach-process-repeat",
+  "schema_version": "first-robots/experiment-record/v1"
+}

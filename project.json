@@ -2,7 +2,7 @@
   "schema_version": "experiment-management/project-index/v1",
   "project": {
     "name": "First-Robots",
-    "stage": "planning"
+    "stage": "single_arm_simulation"
   },
   "paths": {
     "source": "src",
@@ -10,6 +10,7 @@
     "scripts": "scripts",
     "tests": "tests",
     "docs": "docs",
+    "assets": "assets",
     "changes": "changes"
   },
   "documents": {

@@ -1,0 +1,13 @@
+{
+  "experiment_id": "EXP-20261007-002-single-arm-reach-process-repeat",
+  "runtime_configuration": "config/sim_reach.json",
+  "plan": "research/experiments/EXP-20261007-001-single-arm-reach.md",
+  "stage": "M0 fresh-process repeat; no scene or numerical-setting change",
+  "repeat_of": {
+    "result": "research/reports/EXP-20261007-001-single-arm-reach.result.json",
+    "result_sha256": "sha256:7a4c970114f168aa0c6d89ab4fe3a609e7a78507b402c3671b6111761a5bcabb",
+    "trajectory": "research/artifacts/EXP-20261007-001-single-arm-reach/trajectory.npz",
+    "trajectory_sha256": "sha256:c512e793ab2010126fbeabde08e093139c737af09e8425df714c4194fd0f8992"
+  },
+  "review": {"status": "pending_human_review", "adopted": false}
+}

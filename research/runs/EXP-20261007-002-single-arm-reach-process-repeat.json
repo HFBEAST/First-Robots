@@ -1,0 +1,266 @@
+{
+  "artifacts": [
+    {
+      "path": "research/artifacts/EXP-20261007-002-single-arm-reach-process-repeat/config.json",
+      "sha256": "sha256:fb59d338ed3ba6a0cf423f79c4e3d40db54070519627a338e0d7b117212b72ed"
+    },
+    {
+      "path": "research/artifacts/EXP-20261007-002-single-arm-reach-process-repeat/final.png",
+      "sha256": "sha256:2d14c6ec9d40bd17fa800c9fbace080f46bf6d6c762a0534d7aef32ee19f7f8d"
+    },
+    {
+      "path": "research/artifacts/EXP-20261007-002-single-arm-reach-process-repeat/motion.gif",
+      "sha256": "sha256:ae30d30ab2b7fc119c50bfd791a4070109077363e461e68317215945885d1ee5"
+    },
+    {
+      "path": "research/artifacts/EXP-20261007-002-single-arm-reach-process-repeat/trajectory.npz",
+      "sha256": "sha256:c512e793ab2010126fbeabde08e093139c737af09e8425df714c4194fd0f8992"
+    },
+    {
+      "path": "research/experiments/EXP-20261007-002-single-arm-reach-process-repeat.execution.record.json",
+      "sha256": "sha256:d3a52a38eb7cb593f3b629a576e4b968b38f4a8c6dc3a12921edcf6f7108b8a9"
+    },
+    {
+      "path": "research/reports/EXP-20261007-002-single-arm-reach-process-repeat.result.json",
+      "sha256": "sha256:44daa03e3b50c47491b73ed7552877854ec9c84adc2077371780dd2e6b52a6c0"
+    }
+  ],
+  "baseline": {
+    "kind": "known_target_motion_baseline",
+    "reference": "initial versus final position error"
+  },
+  "code": {
+    "commit": "8bf65c6b5304628a06f41885f23bace2c3b05587",
+    "dirty_at_start": true,
+    "repository": "H:/0_program/My_action/First-Robots",
+    "traceable": true
+  },
+  "ended_at": "2026-10-07T09:48:01.354134Z",
+  "execution": {
+    "command": [
+      "H:\\0_program\\My_action\\First-Robots\\research\\.venvs\\mrbtp-demo-py312\\Scripts\\python.exe",
+      "research\\experiments\\run_single_arm_reach.py",
+      "--config",
+      "research\\configs\\EXP-20261007-002-single-arm-reach-process-repeat.json"
+    ],
+    "parameters": {
+      "ik": {
+        "damping": 0.01,
+        "line_search_steps": 10,
+        "max_iterations": 300,
+        "max_joint_step_rad": 0.1,
+        "position_tolerance_m": 1e-06
+      },
+      "initial_qpos_rad": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "model": "assets/so101/scene.xml",
+      "motion": {
+        "duration_s": 3.0,
+        "path_check_samples": 101,
+        "settle_s": 2.0
+      },
+      "scope": "Numerical experimental settings for fixed-target virtual motion; no adopted real-arm accuracy or safety thresholds.",
+      "site": "gripperframe",
+      "target_world_m": [
+        0.25,
+        0.0,
+        0.2
+      ]
+    },
+    "script": "research/experiments/run_single_arm_reach.py"
+  },
+  "inputs": [
+    {
+      "kind": "frozen_input",
+      "path": "research/configs/EXP-20261007-002-single-arm-reach-process-repeat.json",
+      "sha256": "sha256:60b22012ca9216bbf31e9a04298dfa126c8c2cfe77809ddc6c0a0a302bec7061"
+    },
+    {
+      "kind": "frozen_input",
+      "path": "config/sim_reach.json",
+      "sha256": "sha256:7dcdd7692a1477772dca6fd114c72d32dbedf9f363ef4787c1adfb99164606bf"
+    },
+    {
+      "kind": "frozen_input",
+      "path": "research/experiments/run_single_arm_reach.py",
+      "sha256": "sha256:84a936f09458163e0c8aa6e0d1c5b18e8988c6b99e7eec603b7b871b4f867c14"
+    },
+    {
+      "kind": "frozen_input",
+      "path": "src/first_robots/simulation.py",
+      "sha256": "sha256:c3b229fe4b140d81b6ef2d04fe1580a2f6981d4de60c3feb98590729f68f9d72"
+    },
+    {
+      "kind": "frozen_input",
+      "path": "assets/so101/assets/base_motor_holder_so101_v1.stl",
+      "sha256": "sha256:8cd2f241037ea377af1191fffe0dd9d9006beea6dcc48543660ed41647072424"
+    },
+    {
+      "kind": "frozen_input",
+      "path": "assets/so101/assets/base_so101_v2.stl",
+      "sha256": "sha256:bb12b7026575e1f70ccc7240051f9d943553bf34e5128537de6cd86fae33924d"
+    },
+    {
+      "kind": "frozen_input",
+      "path": "assets/so101/assets/motor_holder_so101_base_v1.stl",
+      "sha256": "sha256:31242ae6fb59d8b15c66617b88ad8e9bded62d57c35d11c0c43a70d2f4caa95b"
+    },
+    {
+      "kind": "frozen_input",
+      "path": "assets/so101/assets/motor_holder_so101_wrist_v1.stl",
+      "sha256": "sha256:887f92e6013cb64ea3a1ab8675e92da1e0beacfd5e001f972523540545e08011"
+    },
+    {
+      "kind": "frozen_input",
+      "path": "assets/so101/assets/moving_jaw_so101_gripper_part0_v1.stl",
+      "sha256": "sha256:3a92e115d1934d4c45cff808c4eff2ea10361a137a7f89940033a1f8a821b88c"
+    },
+    {
+      "kind": "frozen_input",
+      "path": "assets/so101/assets/moving_jaw_so101_gripper_part1_v1.stl",
+      "sha256": "sha256:d10f6c671d26f62988ec95efee9370a0657b5833b3c5f8aad59fd69a87ef2aee"
+    },
+    {
+      "kind": "frozen_input",
+      "path": "assets/so101/assets/moving_jaw_so101_gripper_v1.stl",
+      "sha256": "sha256:e8a5dc040b98e27453a5b74f9087d1dbca14589cf9a17c4de7868d5ab98413cd"
+    },
+    {
+      "kind": "frozen_input",
+      "path": "assets/so101/assets/moving_jaw_so101_v1.stl",
+      "sha256": "sha256:785a9dded2f474bc1d869e0d3dae398a3dcd9c0c345640040472210d2861fa9d"
+    },
+    {
+      "kind": "frozen_input",
+      "path": "assets/so101/assets/rotation_pitch_so101_v1.stl",
+      "sha256": "sha256:9be900cc2a2bf718102841ef82ef8d2873842427648092c8ed2ca1e2ef4ffa34"
+    },
+    {
+      "kind": "frozen_input",
+      "path": "assets/so101/assets/sts3215_03a_no_horn_v1.stl",
+      "sha256": "sha256:75ef3781b752e4065891aea855e34dc161a38a549549cd0970cedd07eae6f887"
+    },
+    {
+      "kind": "frozen_input",
+      "path": "assets/so101/assets/sts3215_03a_v1.stl",
+      "sha256": "sha256:a37c871fb502483ab96c256baf457d36f2e97afc9205313d9c5ab275ef941cd0"
+    },
+    {
+      "kind": "frozen_input",
+      "path": "assets/so101/assets/under_arm_so101_v1.stl",
+      "sha256": "sha256:d01d1f2de365651dcad9d6669e94ff87ff7652b5bb2d10752a66a456a86dbc71"
+    },
+    {
+      "kind": "frozen_input",
+      "path": "assets/so101/assets/upper_arm_so101_v1.stl",
+      "sha256": "sha256:475056e03a17e71919b82fd88ab9a0b898ab50164f2a7943652a6b2941bb2d4f"
+    },
+    {
+      "kind": "frozen_input",
+      "path": "assets/so101/assets/waveshare_mounting_plate_so101_v2.stl",
+      "sha256": "sha256:e197e24005a07d01bbc06a8c42311664eaeda415bf859f68fa247884d0f1a6e9"
+    },
+    {
+      "kind": "frozen_input",
+      "path": "assets/so101/assets/wrist_roll_follower_so101_camera_mount.stl",
+      "sha256": "sha256:58c457b33a26d9c9bb337aa351173e7123f84719a93f486541adef6eba57ae21"
+    },
+    {
+      "kind": "frozen_input",
+      "path": "assets/so101/assets/wrist_roll_follower_so101_gripper_part0_v1.stl",
+      "sha256": "sha256:370eb470a6ab48b08febcaeb5274d2bcc91246692532ce12c795fb82977def72"
+    },
+    {
+      "kind": "frozen_input",
+      "path": "assets/so101/assets/wrist_roll_follower_so101_gripper_v1.stl",
+      "sha256": "sha256:65f32debcf265420c0160afe004f8befc5df4b3e578fd59ebaa62eade0371224"
+    },
+    {
+      "kind": "frozen_input",
+      "path": "assets/so101/assets/wrist_roll_follower_so101_v1.stl",
+      "sha256": "sha256:4b17b410a12d64ec39554abc3e8054d8a97384b2dc4a8d95a5ecb2a93670f5f4"
+    },
+    {
+      "kind": "frozen_input",
+      "path": "assets/so101/assets/wrist_roll_pitch_so101_v2.stl",
+      "sha256": "sha256:6c7ec5525b4d8b9e397a30ab4bb0037156a5d5f38a4adf2c7d943d6c56eda5ae"
+    },
+    {
+      "kind": "frozen_input",
+      "path": "assets/so101/CHANGELOG.md",
+      "sha256": "sha256:a7c09d960f6c7128075105709bb4a062f39a7d1f4df02c38c50ef464b3b8fea2"
+    },
+    {
+      "kind": "frozen_input",
+      "path": "assets/so101/LICENSE",
+      "sha256": "sha256:1eb85fc97224598dad1852b5d6483bbcf0aa8608790dcc657a5a2a761ae9c8c6"
+    },
+    {
+      "kind": "frozen_input",
+      "path": "assets/so101/PROVENANCE.json",
+      "sha256": "sha256:c793b9b8c512e1f01feee43128ba4afdfa7abbd274bd47118352a13ce8ea823b"
+    },
+    {
+      "kind": "frozen_input",
+      "path": "assets/so101/README.md",
+      "sha256": "sha256:75754572ffa83eb6729df929b58f5342743e97ba050a01cf33263f52a48a1a6a"
+    },
+    {
+      "kind": "frozen_input",
+      "path": "assets/so101/scene.xml",
+      "sha256": "sha256:65496b0061ca3ddd92b58fe09bd30f6a4a443f137cc42cf8975d5cff23030bfd"
+    },
+    {
+      "kind": "frozen_input",
+      "path": "assets/so101/so101.xml",
+      "sha256": "sha256:b5814e448689544ae8e62548419b75aee32d047355a30ada68fbf708939b88ae"
+    },
+    {
+      "kind": "frozen_input",
+      "path": "research/reports/EXP-20261007-001-single-arm-reach.result.json",
+      "sha256": "sha256:7a4c970114f168aa0c6d89ab4fe3a609e7a78507b402c3671b6111761a5bcabb"
+    },
+    {
+      "kind": "frozen_input",
+      "path": "research/artifacts/EXP-20261007-001-single-arm-reach/trajectory.npz",
+      "sha256": "sha256:c512e793ab2010126fbeabde08e093139c737af09e8425df714c4194fd0f8992"
+    }
+  ],
+  "level": "formal",
+  "objective": "Verify fixed-target actuator-driven virtual SO-101 motion before object grasping.",
+  "results": {
+    "criteria": "Bounded IK converges; actual position-actuator trajectory completes finite, within limits, without checked moving-body penetrations, and reduces target error.",
+    "duration_seconds": 1.953791,
+    "metrics": [
+      {
+        "name": "fixed_target_motion_valid",
+        "unit": "boolean",
+        "value": true
+      },
+      {
+        "name": "final_position_error_m",
+        "unit": "m",
+        "value": 0.00015469105276375882
+      }
+    ],
+    "passed": true
+  },
+  "review": {
+    "note": "Fixed virtual position-only motion; numerical settings and results are not adopted real-arm capability or grasp thresholds.",
+    "status": "pending_human_review"
+  },
+  "run_id": "EXP-20261007-002-single-arm-reach-process-repeat",
+  "runtime": {
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.12.11",
+    "random_seed": null
+  },
+  "schema_version": "experiment-management/run-manifest/v1",
+  "started_at": "2026-10-07T09:47:59.400116Z"
+}

@@ -1,0 +1,11 @@
+{
+  "repository": "https://github.com/google-deepmind/mujoco_menagerie",
+  "revision": "da76818e269b82289eba39808e2fb91d679d6994",
+  "upstream_path": "robotstudio_so101",
+  "license": "Apache-2.0",
+  "copied_on": "2026-10-07",
+  "scene_sha256": "65496b0061ca3ddd92b58fe09bd30f6a4a443f137cc42cf8975d5cff23030bfd",
+  "robot_xml_sha256": "b5814e448689544ae8e62548419b75aee32d047355a30ada68fbf708939b88ae",
+  "modifications": "None to upstream XML, meshes, license, or upstream documentation.",
+  "use": "Experimental virtual single-arm motion; physical equivalence and capability adoption remain unverified."
+}

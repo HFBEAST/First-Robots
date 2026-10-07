@@ -1,0 +1,21 @@
+{
+  "schema_version": "experiment-management/change-manifest/v1",
+  "change_id": "CHG-20261007-001-single-arm-motion-baseline",
+  "title": "Focus the project on a single SO-101 and add actuator-driven virtual reach",
+  "started_at": "2026-10-07T18:30:00+09:00",
+  "ended_at": "2026-10-07T18:47:00+09:00",
+  "code": {"commit": "8bf65c6b5304628a06f41885f23bace2c3b05587", "traceable": true, "dirty_at_start": true},
+  "verification": [
+    {"kind": "behavior-tests", "command": ["python", "-m", "unittest", "discover", "-s", "tests", "-v"], "status": "passed"},
+    {"kind": "development-observation", "command": ["python", "research/experiments/run_single_arm_reach.py", "--config", "research/configs/EXP-20261007-001-single-arm-reach.json"], "status": "passed"},
+    {"kind": "formal-provenance", "command": ["python", "-m", "experiment_management", "validate", "research/runs/EXP-20261007-001-single-arm-reach.json"], "status": "failed"},
+    {"kind": "project-index", "command": ["python", "-m", "experiment_management", "validate-index", "."], "status": "passed"}
+  ],
+  "scope": {
+    "summary": "Implement the authorized single-arm idealized motion baseline, independently vendor the unchanged research candidate as experimental runtime assets, and align planning with natural-language pick-and-place.",
+    "paths": ["src/first_robots", "assets/so101", "config/sim_reach.json", "requirements-simulation.txt", "tests", "project.json", "docs/overview.md", "docs/architecture.md", "docs/status.md", "research/README.md", "research/experiments/EXP-20261007-001-single-arm-reach.md"]
+  },
+  "risk": {"level": "low", "rollback": "Revert this scoped implementation commit; retain existing research evidence. No hardware I/O is implemented."},
+  "links": {"run_ids": ["EXP-20261007-001-single-arm-reach"]},
+  "review": {"status": "pending_human_review", "scope": ["virtual implementation only", "no physical capability or numerical threshold adoption"]}
+}

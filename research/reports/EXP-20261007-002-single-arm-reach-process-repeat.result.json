@@ -1,0 +1,46 @@
+{
+  "observations": {
+    "actual_joint_limits_satisfied": true,
+    "execution_applied": true,
+    "final_position_error_m": 0.00015469105276375882,
+    "final_site_world_m": [
+      0.25000859655333385,
+      1.0658438197888543e-07,
+      0.19984554803427698
+    ],
+    "finite_trajectory": true,
+    "fresh_process_trajectory_equals_predecessor": true,
+    "ik": {
+      "converged": true,
+      "iterations": 15,
+      "position_residual_m": 2.3586605711584654e-08,
+      "qpos_rad": [
+        -0.004868982756100851,
+        -1.1901461519316483,
+        0.7741048446057737,
+        0.7682609002491917,
+        -0.004066322394465472,
+        1.0
+      ],
+      "reason": "position_solver_converged",
+      "site_world_m": [
+        0.25000002350341305,
+        -8.0785128098778e-11,
+        0.20000000197762935
+      ]
+    },
+    "initial_position_error_m": 0.14876796845131357,
+    "path_check_samples": 101,
+    "position_error_reduced": true,
+    "reason": "motion_completed",
+    "scope": "fixed virtual position-only motion; no grasp orientation or object transport",
+    "simulated_steps": 1000
+  },
+  "review": {
+    "adopted": false,
+    "status": "pending_human_review"
+  },
+  "run_id": "EXP-20261007-002-single-arm-reach-process-repeat",
+  "schema_version": "first-robots/research-result/v1",
+  "status": "passed_pending_human_review"
+}

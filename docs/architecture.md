@@ -5,7 +5,24 @@
 产品运行时以类型化契约连接语言、感知、规划和控制。所有安全相关判断保留在确定性模块中；
 Agent 只能查询证据、提出候选动作和解释结果。研究代码通过适配器评价产品接口，产品不读取研究目录。
 
-## 计划组件与职责
+## 当前单臂执行路径
+
+```text
+explicit known target (later: language + camera estimate)
+  -> bounded deterministic IK
+  -> joint/actuator limits + sampled collision gate
+  -> MuJoCo position actuators + per-step state/contact checks
+  -> trajectory + observed terminal state
+```
+
+`src/first_robots/simulation.py` 提供独立的运动与回放接口；默认模型位于 `assets/so101`，运行配置位于
+`config/sim_reach.json`。运行时不依赖 `research/`。研究运行器调用产品公开接口并保存配置、代码与模型
+哈希、轨迹、结果和审图。已知坐标输入明确属于控制基线，未来用视觉估计替换。
+
+下一技能为侧面抓取：确定适合五个臂关节的抓取位姿约束，再实现接近、闭爪、抬升、搬运、释放与复核。
+语言层最终调用经过验证的技能接口；初始流程采用确定性状态机。
+
+## 后续多机器人组件草案
 
 | 组件 | 职责 |
 |---|---|
@@ -37,11 +54,11 @@ instruction
 
 ## 对外入口
 
-- `scripts/run.ps1`：薄运行入口；当前只暴露项目状态，后续调用 `src/first_robots/` 的公开应用接口。
+- `scripts/run.ps1`：薄运行入口；暴露状态和虚拟 reach，调用 `src/first_robots/` 的公开应用接口。
 - `scripts/governance.ps1`：薄治理入口，转发到安装的 Experiment-Management CLI。
 - `src/first_robots/cli.py`：当前最小产品入口；后续不得承担可复用业务逻辑。
 
 ## 首批待冻结协议
 
 `BeliefFact`、`RobotCapability`、`SkillContract`、`PlanStep`、`ExecutionEvent`、
-`TerminalAssessment`。协议版本冻结后才开始多机器人执行器实现。
+`TerminalAssessment`。这些草案留供后续多机器人研究，当前单臂运动和抓取不依赖全部协议冻结。
