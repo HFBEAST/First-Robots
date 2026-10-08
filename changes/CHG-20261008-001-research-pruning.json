@@ -1,0 +1,19 @@
+{
+  "schema_version": "experiment-management/change-manifest/v1",
+  "change_id": "CHG-20261008-001-research-pruning",
+  "title": "Prune superseded methods and redundant derived artifacts without rewriting evidence",
+  "started_at": "2026-10-08T11:37:40.7604198+09:00",
+  "ended_at": "2026-10-08T11:37:40.7604198+09:00",
+  "timestamp_scope": "Post-cleanup checkpoint after clean-checkout behavior verification",
+  "code": {"commit": "9305d3507023087397662c03ca1ba01df5f7ecf9", "traceable": true, "dirty_at_start": false, "capture_context": "Clean managed checkout after fast-forward, before verification"},
+  "scope": {"summary": "Delete 6 superseded source files, 4 redundant development renders and 2 invalid-method duplicate JSON artifacts; condense current notes and preserve a recoverable retirement ledger.", "paths": ["docs/status.md", "research/README.md", "research/reports/method-disposition.md", "research/retirements/RET-20261008-001-superseded-methods.json", "research/experiments", "research/protocols", "research/artifacts"]},
+  "authorization": "Direct human request on 2026-10-08 to delete clearly superseded methods/scripts and unnecessary data; necessary facts and data retained.",
+  "verification": [
+    {"kind": "behavior", "command": ["python", "-m", "unittest", "discover", "-s", "tests", "-v"], "status": "passed", "detail": "11 behavior tests, zero skips; clean checkout confirms runtime unchanged."},
+    {"kind": "evidence-pairs", "command": ["python", "-m", "experiment_management", "validate-pair"], "status": "passed", "detail": "003/004/005/006 and corrected depth 027/028 pairs passed; no claim that all historical manifests remain fully present."},
+    {"kind": "navigation-and-retirement", "command": ["inspect", "RET-20261008-001-superseded-methods"], "status": "passed", "detail": "12 named files absent; current Markdown links exist; remaining Python sources parse; no remaining imports of the deleted modules."}
+  ],
+  "risk": {"level": "low", "rollback": "Recover only ledger-listed paths from commit 6afd3af9e41accd7921f6e917b5cbca4d7f96411 in a separate checkout. User untracked files and raw valid inputs were not touched."},
+  "links": {"run_ids": ["EXP-20261007-005-single-arm-pick-place", "EXP-20261007-006-single-arm-pick-place-repeat"], "retirement": "research/retirements/RET-20261008-001-superseded-methods.json"},
+  "review": {"status": "pending_human_review", "scope": ["pruning diff", "retained historical failure boundaries", "no capability adoption"]}
+}
