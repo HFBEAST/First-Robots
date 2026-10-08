@@ -1,0 +1,35 @@
+{
+  "cx": 319.5,
+  "cy": 239.5,
+  "depth_semantics": "forward_distance_m",
+  "frame_id": "fixed_depth_01",
+  "fx": 415.69219381653056,
+  "fy": 415.69219381653056,
+  "height": 480,
+  "optical_axes": "x_right_y_down_z_forward",
+  "position_world_m": [
+    0.45,
+    -0.45,
+    0.42
+  ],
+  "scene_version": "contact-scene-depth-contract-v1",
+  "source": "compiled_nominal_virtual_camera",
+  "width": 640,
+  "world_from_optical": [
+    [
+      0.9486832980505137,
+      0.19284790211601432,
+      -0.2506186079473194
+    ],
+    [
+      0.316227766016838,
+      -0.5785437063480429,
+      0.751855823841958
+    ],
+    [
+      2.7755575615628914e-17,
+      -0.7925256251343055,
+      -0.6098386126718102
+    ]
+  ]
+}

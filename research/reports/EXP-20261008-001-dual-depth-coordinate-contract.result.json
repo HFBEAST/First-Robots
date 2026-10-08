@@ -1,0 +1,164 @@
+{
+  "observations": {
+    "cameras": {
+      "fixed_depth_01": {
+        "compiled_orientation_matches_configuration": true,
+        "compiled_position_matches_configuration": true,
+        "frame_valid": true,
+        "maximum_depth_m": 2.741149663925171,
+        "minimum_depth_m": 0.39383089542388916,
+        "plane_check_passed": true,
+        "plane_maximum_height_residual_m": 2.678973287095765e-06,
+        "plane_numerical_budget_m": 4.21507593273418e-06,
+        "plane_pixels_xy": [
+          [
+            319,
+            239
+          ],
+          [
+            159,
+            239
+          ],
+          [
+            479,
+            239
+          ],
+          [
+            319,
+            119
+          ],
+          [
+            319,
+            359
+          ]
+        ],
+        "plane_points_world_m": [
+          [
+            0.27617996427999036,
+            0.06883642145835595,
+            8.748155200244412e-08
+          ],
+          [
+            0.02430381950142163,
+            -0.015119153577445255,
+            -2.1989393421129044e-06
+          ],
+          [
+            0.5280541153845517,
+            0.1527968641239819,
+            -1.6545534148870722e-06
+          ],
+          [
+            0.1100467049012972,
+            0.5656570394613802,
+            2.678973287095765e-06
+          ],
+          [
+            0.351565819072665,
+            -0.15660457154573332,
+            -1.0846941304043511e-06
+          ]
+        ],
+        "plane_sampled_depth_m": [
+          0.6897848844528198,
+          0.6897886395454407,
+          0.689787745475769,
+          1.104956865310669,
+          0.5013933777809143
+        ],
+        "round_trip_valid": true
+      },
+      "fixed_depth_02": {
+        "compiled_orientation_matches_configuration": true,
+        "compiled_position_matches_configuration": true,
+        "frame_valid": true,
+        "maximum_depth_m": 2.7411537170410156,
+        "minimum_depth_m": 0.39383089542388916,
+        "plane_check_passed": true,
+        "plane_maximum_height_residual_m": 2.407102499102365e-06,
+        "plane_numerical_budget_m": 4.2150786612182856e-06,
+        "plane_pixels_xy": [
+          [
+            319,
+            239
+          ],
+          [
+            159,
+            239
+          ],
+          [
+            479,
+            239
+          ],
+          [
+            319,
+            119
+          ],
+          [
+            319,
+            359
+          ]
+        ],
+        "plane_points_world_m": [
+          [
+            0.2777540119787012,
+            -0.06936165225942265,
+            -3.117347946446358e-07
+          ],
+          [
+            0.5296282301245046,
+            -0.15332082144434983,
+            -1.1101674878277734e-06
+          ],
+          [
+            0.02587789289867748,
+            0.0145942630869067,
+            -2.344108922747168e-06
+          ],
+          [
+            0.11256819397742762,
+            -0.5664982666230125,
+            2.407102499102365e-06
+          ],
+          [
+            0.35271015706309244,
+            0.1562233582218227,
+            -7.851207826647943e-07
+          ]
+        ],
+        "plane_sampled_depth_m": [
+          0.6897855401039124,
+          0.6897868514060974,
+          0.6897888779640198,
+          1.1049575805664062,
+          0.5013930201530457
+        ],
+        "round_trip_valid": true
+      }
+    },
+    "center_estimation": "not_evaluated",
+    "contacts": {
+      "fixed_jaw_force_n": 0.0,
+      "floor_support_force_n": 0.4905000000000001,
+      "forbidden_penetrations": [],
+      "moving_jaw_force_n": 0.0
+    },
+    "cylinder_center_world_m_evaluation_only": [
+      0.29999912636979004,
+      -6.170910889044008e-16,
+      0.054857847002229884
+    ],
+    "fixture_valid": true,
+    "offsamples": 0,
+    "settled_physics_identical_to_base": true,
+    "vision_driven_execution": "not_evaluated",
+    "wrist_rgb": "not_evaluated"
+  },
+  "review": {
+    "adopted": false,
+    "status": "pending_human_review"
+  },
+  "run_id": "EXP-20261008-001-dual-depth-coordinate-contract",
+  "schema_version": "first-robots/research-result/v1",
+  "status": "passed_pending_human_review"
+}

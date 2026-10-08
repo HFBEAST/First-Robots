@@ -1,0 +1,20 @@
+{
+  "schema_version": "experiment-management/change-manifest/v1",
+  "change_id": "CHG-20261008-002-dual-depth-coordinate-contract",
+  "title": "Add research-independent metric depth and optical coordinate prerequisites",
+  "started_at": "2026-10-08T02:45:08.641939Z",
+  "ended_at": "2026-10-08T02:45:09.650380Z",
+  "timestamp_scope": "Formal verification interval",
+  "code": {"commit": "bc25b00cd012e74f6ce5c9c5b1998f9da8ffc692", "traceable": true, "dirty_at_start": false, "capture_context": "Clean managed checkout before EXP-20261008-001"},
+  "scope": {"summary": "Expose metric-depth capture and optical camera/world transforms; allow camera-extended scene compilation while keeping contact dynamics identical; explicitly disable multisampling for the pixel-center contract.", "paths": ["src/first_robots/depth.py", "src/first_robots/grasping.py", "config/sim_depth_observation.json", "tests/test_depth.py", "docs/architecture.md", "docs/status.md", "research/experiments/run_dual_depth_coordinate_contract.py"]},
+  "verification": [
+    {"kind": "development-independent-plane-test", "command": ["python", "-m", "unittest", "discover", "-s", "tests", "-v"], "status": "failed", "detail": "Inherited offsamples=4 failed a rendered plane check at about 0.791 mm residual. The self-inverse projection test alone would have passed. Failure and one-setting isolation retained in the plan."},
+    {"kind": "behavior", "command": ["python", "-m", "unittest", "discover", "-s", "tests", "-v"], "status": "passed", "detail": "16 tests, zero skips. Off-axis depth, rotated/translated coordinates, independent rendered plane, unchanged fixture dynamics and mismatch rejection verified."},
+    {"kind": "formal-manifest", "command": ["python", "-m", "experiment_management", "validate", "research/runs/EXP-20261008-001-dual-depth-coordinate-contract.json"], "status": "passed", "detail": "Null seed warning retained with deterministic exception; package versions captured at execution start."},
+    {"kind": "record-pair", "command": ["python", "-m", "experiment_management", "validate-pair", ".", "research/experiments/EXP-20261008-001-dual-depth-coordinate-contract.execution.record.json"], "status": "passed"},
+    {"kind": "context-image-inspection", "command": ["inspect", "research/artifacts/EXP-20261008-001-dual-depth-coordinate-contract/fixed_depth_01-context-rgb.png", "research/artifacts/EXP-20261008-001-dual-depth-coordinate-contract/fixed_depth_02-context-rgb.png"], "status": "passed", "detail": "Both nominal rendered views show the robot and cylinder; no detector or center-estimation claim inferred from visual inspection."}
+  ],
+  "risk": {"level": "low", "rollback": "Revert the new depth interface and optional scene_spec argument; retain formal raw data and failure/isolation explanation. No real device I/O or camera-driven execution exists."},
+  "links": {"run_ids": ["EXP-20261008-001-dual-depth-coordinate-contract"]},
+  "review": {"status": "pending_human_review", "scope": ["nominal virtual coordinate prerequisite", "local offsamples isolation", "no hardware precision, center fit or capability adoption"]}
+}

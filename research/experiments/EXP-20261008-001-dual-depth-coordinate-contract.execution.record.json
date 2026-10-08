@@ -1,0 +1,13 @@
+{
+  "kind": "formal_dual_depth_coordinate_contract",
+  "result": {
+    "path": "research/reports/EXP-20261008-001-dual-depth-coordinate-contract.result.json",
+    "sha256": "sha256:aaafc81da2b4b072a96d052479ca0967dd927003b756daf99d35343185eac7de"
+  },
+  "review": {
+    "adopted": false,
+    "status": "pending_human_review"
+  },
+  "run_id": "EXP-20261008-001-dual-depth-coordinate-contract",
+  "schema_version": "first-robots/experiment-record/v1"
+}
