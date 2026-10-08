@@ -24,6 +24,11 @@ explicit known target (later: language + camera estimate)
 执行中只写关节执行器命令；回放函数才重新赋值记录的物体状态。预期夹爪/支撑接触与禁用接触分开检查；
 阶段前提失败停止下游执行。语言层最终调用经过验证的技能接口；当前流程不需要 LLM 或多 Agent。
 
+`src/first_robots/depth.py` 定义产品侧 `DepthFrameSource.capture(camera_name)`、米制前向深度和
+右/下/前光学坐标合同，提供名义虚拟采集与 pixel→world 变换。当前只验证观察前提，不生成动作。
+硬件适配器将来提供同类帧及独立标定，不调用 MuJoCo。旧 `research/protocols/` 合同只供历史复现，
+不作为产品运行时的第二事实源。离屏深度关闭多重采样，单位、frame/version 和无效样本显式拒绝。
+
 ## 后续多机器人组件草案
 
 | 组件 | 职责 |

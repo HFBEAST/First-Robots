@@ -1,0 +1,8 @@
+{
+  "schema_version": "first-robots/experiment-record/v1",
+  "run_id": "EXP-20261008-001-dual-depth-coordinate-contract",
+  "kind": "formal_dual_depth_coordinate_contract",
+  "plan": "research/experiments/EXP-20261008-001-dual-depth-coordinate-contract.md",
+  "state": "planned_not_executed",
+  "review": {"status": "pending_human_review", "adopted": false}
+}

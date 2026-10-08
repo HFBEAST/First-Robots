@@ -9,13 +9,13 @@ import numpy as np
 from .simulation import ALL_JOINTS
 
 
-def build_cylinder_scene(model_path: Path, configuration: dict) -> tuple[mujoco.MjModel, mujoco.MjData]:
+def build_cylinder_scene(model_path: Path, configuration: dict, *, scene_spec: mujoco.MjSpec | None = None) -> tuple[mujoco.MjModel, mujoco.MjData]:
     cylinder = configuration["cylinder"]
     dimensions = np.asarray([cylinder["radius_m"], cylinder["half_height_m"], cylinder["mass_kg"]], dtype=float)
     center = np.asarray(cylinder["initial_center_world_m"], dtype=float)
     if not np.isfinite(dimensions).all() or np.any(dimensions <= 0) or center.shape != (3,) or not np.isfinite(center).all():
         raise ValueError("Cylinder must have finite positive dimensions/mass and a finite center")
-    spec = mujoco.MjSpec.from_file(str(model_path))
+    spec = scene_spec if scene_spec is not None else mujoco.MjSpec.from_file(str(model_path))
     body = spec.worldbody.add_body()
     body.name = "task_cylinder"
     body.pos = cylinder["initial_center_world_m"]

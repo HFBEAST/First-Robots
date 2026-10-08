@@ -1,0 +1,14 @@
+{
+  "task_configuration": "config/sim_pick_place.json",
+  "scene_version": "contact-scene-depth-contract-v1",
+  "width": 640,
+  "height": 480,
+  "fovy_degrees": 60.0,
+  "offsamples": 0,
+  "cameras": {
+    "fixed_depth_01": {"position_world_m": [0.45, -0.45, 0.42], "target_world_m": [0.30, 0.0, 0.055]},
+    "fixed_depth_02": {"position_world_m": [0.45, 0.45, 0.42], "target_world_m": [0.30, 0.0, 0.055]}
+  },
+  "plane_check_pixels_xy": [[319, 239], [159, 239], [479, 239], [319, 119], [319, 359]],
+  "scope": "Nominal virtual calibration only; wrist RGB, center estimation and vision-driven execution are not evaluated."
+}

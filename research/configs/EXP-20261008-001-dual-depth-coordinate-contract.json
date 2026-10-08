@@ -1,0 +1,7 @@
+{
+  "experiment_id": "EXP-20261008-001-dual-depth-coordinate-contract",
+  "observation_configuration": "config/sim_depth_observation.json",
+  "plan": "research/experiments/EXP-20261008-001-dual-depth-coordinate-contract.md",
+  "predecessor": "research/reports/EXP-20261007-006-single-arm-pick-place-repeat.result.json",
+  "review": {"status": "pending_human_review", "adopted": false}
+}
