@@ -1,0 +1,28 @@
+{
+  "schema_version": "first-robots/research-retirement/v1",
+  "retirement_id": "RET-20261008-001-superseded-methods",
+  "recorded_on": "2026-10-08",
+  "authorization": "User explicitly requested deletion of clearly superseded/incorrect methods, scripts and unnecessary data; retain necessary explanation and evidence.",
+  "recovery_commit": "6afd3af9e41accd7921f6e917b5cbca4d7f96411",
+  "recovery": "Restore only listed paths from recovery_commit in a separate checkout when historical reproduction is needed. Git blobs preserve exact stored bytes; Windows checkout line endings may differ for source files.",
+  "removed": [
+    {"path": "research/experiments/run_virtual_depth_surface_point_projection.py", "reason": "Wrong planar-depth semantics; use 027", "git_blob": "ef391ded528ca2fd79f4b0c6962f9e6758a33d10"},
+    {"path": "research/protocols/depth_ray_projection.py", "reason": "Normalizes ray then multiplies by planar depth", "git_blob": "c1eb6072a77ebabdf0d69dbc6e015006f31005ac"},
+    {"path": "research/experiments/run_no_barrier_multirange_coordinate_agent_protocol.py", "reason": "Imports superseded table-height formula; use 017", "git_blob": "f532378f68f4dbda682e22b024792b922b0a87c3"},
+    {"path": "research/protocols/coordinate_transfer.py", "reason": "Table top is center_z + half_height, not center_z + 2*half_height", "git_blob": "f0e47c0d7cec098c5f5b9c1792b0c242a450c54d"},
+    {"path": "research/experiments/run_virtual_wrist_projection_diagnosis.py", "reason": "Target stayed at origin without position invariant; use v2 and 002", "git_blob": "8254c56ee150b3e5b35672d502272e3fe8558979"},
+    {"path": "research/experiments/run_world_coordinate_xy_review_map.py", "reason": "Nonuniform image criterion did not check labels; use repaired layout 014", "git_blob": "d9291b7ab65fb00c19107eb02549d0c39bea6e9c"},
+    {"path": "research/artifacts/EXP-20261007-001-single-arm-reach/motion.gif", "reason": "Redundant dirty-development replay; retain raw trajectory and canonical 003 replay", "sha256": "cdce861e93b6b97e5ea182f539a8b46e403e40b6dfb0305069b679b0084af883", "git_blob": "d69383a4c320ef0600c6e27f049c4e5a5939e95e"},
+    {"path": "research/artifacts/EXP-20261007-001-single-arm-reach/final.png", "reason": "Redundant development preview", "sha256": "2d14c6ec9d40bd17fa800c9fbace080f46bf6d6c762a0534d7aef32ee19f7f8d", "git_blob": "52cb7eddd828295fbead6f7f1ca5e67f53627729"},
+    {"path": "research/artifacts/EXP-20261007-002-single-arm-reach-process-repeat/motion.gif", "reason": "Redundant dirty-development replay; retain raw repeat trajectory", "sha256": "ae30d30ab2b7fc119c50bfd791a4070109077363e461e68317215945885d1ee5", "git_blob": "85666522b82411fc65c5f9aa86d7034eb0c91f3d"},
+    {"path": "research/artifacts/EXP-20261007-002-single-arm-reach-process-repeat/final.png", "reason": "Redundant development preview", "sha256": "2d14c6ec9d40bd17fa800c9fbace080f46bf6d6c762a0534d7aef32ee19f7f8d", "git_blob": "52cb7eddd828295fbead6f7f1ca5e67f53627729"},
+    {"path": "research/artifacts/EXP-20260923-026-virtual-depth-surface-point-projection/config.json", "reason": "Duplicate invalid-method config; original research/configs file retained", "sha256": "a95d4284832762428264f80aba6666f2e34ac77a55af2eac88bd155b3304ad47", "git_blob": "3b966fbcc2908ceabb6ebab4fcc6d48cb31d72c0"},
+    {"path": "research/artifacts/EXP-20260923-026-virtual-depth-surface-point-projection/depth-surface-point-observations.json", "reason": "Invalid derived points duplicated in retained result", "sha256": "edb566746efa049a2447b91648117a67815a729e83c28ba529bf447969411360", "git_blob": "8fe5fe58bac243901e20c0e4626ea866c6a1d3ba"}
+  ],
+  "retained": ["All immutable run/result/execution records", "Invalidation reviews and corrected implementations", "025 raw depth frames/masks and 027/028 corrected evidence", "001/002 raw trajectories and provenance-failure explanation", "003/004/005/006 formal motion/contact artifacts", "Hardware/source/license records and user untracked files"],
+  "validation_policy": {
+    "historical_partial_artifacts": ["EXP-20260923-026-virtual-depth-surface-point-projection", "EXP-20261007-001-single-arm-reach", "EXP-20261007-002-single-arm-reach-process-repeat"],
+    "note": "Original manifests intentionally retain original artifact paths/hashes. Full validation of these historical runs now requires restoration; do not modify manifests or misreport them as fully present. Active checks target current evidence and corrected prerequisites."
+  },
+  "scientific_review": {"status": "pending_human_review", "capability_adopted": false}
+}
